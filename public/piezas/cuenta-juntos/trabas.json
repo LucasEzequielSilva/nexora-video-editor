@@ -1,0 +1,60 @@
+{
+  "pieza": "cuenta-juntos",
+  "fuente": "video-jc.mp4",
+  "palabras": "words.jc.json",
+  "audio": {
+    "pisoDb": -57.562,
+    "vozDb": -18.627,
+    "umbralDb": -41.988
+  },
+  "trabas": [
+    {
+      "id": "habla-sin-texto-966",
+      "desde": 9.66,
+      "hasta": 9.93,
+      "tipo": "habla-sin-texto",
+      "texto": "",
+      "detalle": "0.24 s de voz sin palabras (pico -12.3 dB)",
+      "confianza": "media",
+      "sugerencia": {
+        "desde": 9.67,
+        "hasta": 9.93
+      },
+      "senales": [
+        "habla-sin-texto"
+      ]
+    },
+    {
+      "id": "habla-sin-texto-1843",
+      "desde": 18.43,
+      "hasta": 18.74,
+      "tipo": "habla-sin-texto",
+      "texto": "",
+      "detalle": "0.28 s de voz sin palabras (pico -16.2 dB)",
+      "confianza": "media",
+      "sugerencia": {
+        "desde": 18.43,
+        "hasta": 18.73
+      },
+      "senales": [
+        "habla-sin-texto"
+      ]
+    },
+    {
+      "id": "habla-sin-texto-2509",
+      "desde": 25.09,
+      "hasta": 25.37,
+      "tipo": "habla-sin-texto",
+      "texto": "",
+      "detalle": "0.20 s de voz sin palabras (pico -21.5 dB)",
+      "confianza": "media",
+      "sugerencia": {
+        "desde": 25.09,
+        "hasta": 25.37
+      },
+      "senales": [
+        "habla-sin-texto"
+      ]
+    }
+  ]
+}

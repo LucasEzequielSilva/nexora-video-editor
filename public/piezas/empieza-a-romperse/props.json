@@ -1,0 +1,1024 @@
+{
+  "_comentario": "v1 (2026-09-25): formato ganador con las reglas nuevas de Lucas: escenas solas alternando blanco/negro sin grilla, 3D del pack (cofre, archivos, pilar) y logos oficiales en vez de iconos Airbnb, b-rolls que no se repiten con piezas anteriores (065, 340, 122), negro del hook en el corte de toma. Voz -18.5 LUFS (mas fuerte que la ganadora): musica 0.45, whooshes x2.7, remates x2.",
+  "durationSeconds": 52.833,
+  "subtitulos": {
+    "fuente": "satoshi",
+    "acentos": [
+      "romperse",
+      "estructura",
+      "plata"
+    ]
+  },
+  "pausas": [
+    {
+      "_comentario": "En el corte de toma de video-jc (cuadro 86 = 2.867 s): fin de 'romperse' 2.72 + 130 ms.",
+      "tras": {
+        "palabra": "romperse",
+        "fin": true,
+        "offsetMs": 130
+      },
+      "segundos": 0.9
+    },
+    {
+      "_comentario": "RESPIROS (Lucas: 'un toque menos rapido para que se aprecie el motion'): sostienen el ultimo cuadro en silencio mientras la escena de arriba termina de entrar.",
+      "tras": {
+        "palabra": "consultas",
+        "fin": true
+      },
+      "segundos": 0.5,
+      "modo": "congelar"
+    },
+    {
+      "tras": {
+        "palabra": "menos",
+        "fin": true,
+        "offsetMs": 40
+      },
+      "segundos": 0.5,
+      "modo": "congelar"
+    },
+    {
+      "tras": {
+        "palabra": "ocupado",
+        "fin": true,
+        "offsetMs": 40
+      },
+      "segundos": 0.5,
+      "modo": "congelar"
+    },
+    {
+      "tras": {
+        "palabra": "rastro",
+        "fin": true,
+        "offsetMs": 40
+      },
+      "segundos": 0.4,
+      "modo": "congelar"
+    },
+    {
+      "tras": {
+        "palabra": "contestó",
+        "fin": true,
+        "offsetMs": 40
+      },
+      "segundos": 0.4,
+      "modo": "congelar"
+    },
+    {
+      "_comentario": "Al final: 1 s para que el CTA termine (respuesta y chip).",
+      "tras": {
+        "palabra": "tiene",
+        "n": 3,
+        "fin": true,
+        "offsetMs": 200
+      },
+      "segundos": 1,
+      "modo": "congelar"
+    }
+  ],
+  "musica": {
+    "_comentario": "METAMORPHOSIS ganador nivelada, drop en la vuelta del negro; el 2do drop cae solo a ~47.7 s (entrada del CTA). Comercial: riesgo de mute avisado.",
+    "archivo": "recursos/musica-056-nivelada.m4a",
+    "desde": {
+      "palabra": "te",
+      "n": 1,
+      "offsetMs": 67
+    },
+    "inicioS": 0,
+    "volumen": 0.45,
+    "bajoVoz": 0.7,
+    "fadeInMs": 40,
+    "fadeOutMs": 1200
+  },
+  "zooms": [
+    {
+      "_comentario": "HOOK: 'es el dia que empieza a romperse' 1.0 -> 1.9.",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "es"
+      },
+      "fin": {
+        "palabra": "romperse",
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 1.9
+    },
+    {
+      "_comentario": "Retrato sostenido dentro del negro hasta que vuelve la imagen (3.767 s).",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "romperse",
+        "fin": true
+      },
+      "fin": {
+        "palabra": "te",
+        "n": 1,
+        "offsetMs": 67
+      },
+      "escalaInicial": 1.9,
+      "escala": 1.9
+    },
+    {
+      "_comentario": "VUELTA DEL NEGRO: 'te explico por que' abre desde el retrato.",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "te",
+        "n": 1,
+        "offsetMs": 67
+      },
+      "fin": {
+        "palabra": "te",
+        "n": 1,
+        "offsetMs": 767
+      },
+      "escalaInicial": 1.9,
+      "escala": 1,
+      "curva": "salida"
+    },
+    {
+      "_comentario": "Deriva hasta que la escena del consultorio queda opaca.",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "te",
+        "n": 1,
+        "offsetMs": 767
+      },
+      "fin": {
+        "palabra": "un",
+        "n": 1,
+        "offsetMs": 300
+      },
+      "escalaInicial": 1,
+      "escala": 1.1
+    },
+    {
+      "_comentario": "CONSULTORIO: la cara vuelve al salir la escena y sube en 'respondiendo'.",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "y",
+        "n": 1,
+        "offsetMs": 300
+      },
+      "fin": {
+        "palabra": "respondiendo",
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 1.6
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "respondiendo",
+        "fin": true
+      },
+      "fin": {
+        "palabra": "las",
+        "offsetMs": 67
+      },
+      "escalaInicial": 1.6,
+      "escala": 1.65
+    },
+    {
+      "_comentario": "'Las que no llegan...': zoom out desde el corte.",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "las",
+        "offsetMs": 67
+      },
+      "fin": {
+        "palabra": "las",
+        "offsetMs": 667
+      },
+      "escalaInicial": 1.65,
+      "escala": 1,
+      "curva": "salida"
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "las",
+        "offsetMs": 667
+      },
+      "fin": {
+        "palabra": "lado",
+        "n": 1,
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 1.5
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "lado",
+        "n": 1,
+        "fin": true
+      },
+      "fin": {
+        "palabra": "un",
+        "n": 2,
+        "offsetMs": 87
+      },
+      "escalaInicial": 1.5,
+      "escala": 1.52
+    },
+    {
+      "_comentario": "COMERCIO: debajo del b-roll del local.",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "un",
+        "n": 2,
+        "offsetMs": 87
+      },
+      "fin": {
+        "palabra": "ahora",
+        "n": 2
+      },
+      "escalaInicial": 1.52,
+      "escala": 1,
+      "curva": "salida"
+    },
+    {
+      "_comentario": "'ahora tiene mas presupuestos pendientes y el que no recibe respuesta hoy' sube hasta 'hoy'; despues b-roll.",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "ahora",
+        "n": 2
+      },
+      "fin": {
+        "palabra": "hoy",
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 1.7
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "hoy",
+        "fin": true
+      },
+      "fin": {
+        "palabra": "se",
+        "n": 2,
+        "offsetMs": 300
+      },
+      "escalaInicial": 1.7,
+      "escala": 1.72
+    },
+    {
+      "_comentario": "EN LOS TRES: la cara aparece al salir la escena de la marca personal.",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "en",
+        "offsetMs": 300
+      },
+      "fin": {
+        "palabra": "entró"
+      },
+      "escalaInicial": 1,
+      "escala": 1.15
+    },
+    {
+      "_comentario": "Sube hasta retrato en 'sostener' (remate-b).",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "entró"
+      },
+      "fin": {
+        "palabra": "sostener",
+        "fin": true
+      },
+      "escalaInicial": 1.15,
+      "escala": 1.95
+    },
+    {
+      "_comentario": "Retrato sostenido hasta que la escena de la trampa queda opaca.",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "sostener",
+        "fin": true
+      },
+      "fin": {
+        "palabra": "y",
+        "n": 4,
+        "offsetMs": 400
+      },
+      "escalaInicial": 1.95,
+      "escala": 2
+    },
+    {
+      "_comentario": "'Por eso nadie lo arregla a tiempo. Lo arreglas cuando ya perdiste plata': sube hasta retrato en 'plata' (remate).",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "por",
+        "n": 2,
+        "offsetMs": 300
+      },
+      "fin": {
+        "palabra": "plata",
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 1.9
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "plata",
+        "fin": true
+      },
+      "fin": {
+        "palabra": "y",
+        "n": 5,
+        "offsetMs": 60
+      },
+      "escalaInicial": 1.9,
+      "escala": 1.95
+    },
+    {
+      "_comentario": "'Y ahi no sabes cuanta': zoom out desde el corte (34.6 s).",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "y",
+        "n": 5,
+        "offsetMs": 60
+      },
+      "fin": {
+        "palabra": "y",
+        "n": 5,
+        "offsetMs": 660
+      },
+      "escalaInicial": 1.95,
+      "escala": 1,
+      "curva": "salida"
+    },
+    {
+      "_comentario": "Deriva hasta la escena negra de 'no deja rastro'.",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "y",
+        "n": 5,
+        "offsetMs": 660
+      },
+      "fin": {
+        "palabra": "porque",
+        "offsetMs": 400
+      },
+      "escalaInicial": 1,
+      "escala": 1.12
+    },
+    {
+      "_comentario": "TESIS 'tu negocio crece, pero tu estructura no': sale la escena y sube a retrato en 'no' (remate).",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "tu",
+        "n": 2,
+        "offsetMs": 300
+      },
+      "fin": {
+        "palabra": "no",
+        "n": 7,
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 2
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "no",
+        "n": 7,
+        "fin": true
+      },
+      "fin": {
+        "palabra": "no",
+        "n": 7,
+        "fin": true,
+        "offsetMs": 147
+      },
+      "escalaInicial": 2,
+      "escala": 2.05
+    },
+    {
+      "_comentario": "'Y eso no se arregla...': zoom out largo desde el corte (42.067 s).",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "no",
+        "n": 7,
+        "fin": true,
+        "offsetMs": 147
+      },
+      "fin": {
+        "palabra": "no",
+        "n": 7,
+        "fin": true,
+        "offsetMs": 947
+      },
+      "escalaInicial": 2.05,
+      "escala": 1,
+      "curva": "salida"
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "no",
+        "n": 7,
+        "fin": true,
+        "offsetMs": 947
+      },
+      "fin": {
+        "palabra": "trabajando"
+      },
+      "escalaInicial": 1,
+      "escala": 1.1
+    },
+    {
+      "_comentario": "Debajo del b-roll de 'trabajando mas horas' y despues sube en 'instalando lo que falta' con el pilar.",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "trabajando"
+      },
+      "fin": {
+        "palabra": "falta",
+        "fin": true
+      },
+      "escalaInicial": 1.1,
+      "escala": 1.7
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "falta",
+        "fin": true
+      },
+      "fin": {
+        "palabra": "escribime",
+        "offsetMs": -100
+      },
+      "escalaInicial": 1.7,
+      "escala": 1.72
+    }
+  ],
+  "sfx": [
+    {
+      "nombre": "riser",
+      "palabra": "romperse",
+      "fin": true,
+      "corte": {
+        "palabra": "romperse",
+        "fin": true,
+        "offsetMs": 40
+      },
+      "volumen": 0.07
+    },
+    {
+      "_comentario": "Boom en el cuadro en que entra el negro (el corte de toma), no en el fin de la palabra.",
+      "nombre": "boom-negro",
+      "palabra": "romperse",
+      "fin": true,
+      "offsetMs": 230,
+      "volumen": 0.3
+    },
+    {
+      "archivo": "piezas/empieza-a-romperse/cola-romperse.wav",
+      "palabra": "romperse",
+      "offsetMs": -20,
+      "volumen": 1
+    },
+    {
+      "_comentario": "Remate de 'la estructura puede sostener'.",
+      "nombre": "remate-b",
+      "palabra": "sostener",
+      "fin": true,
+      "offsetMs": 90,
+      "volumen": 0.26
+    },
+    {
+      "_comentario": "Remate de 'ya perdiste plata'.",
+      "nombre": "remate",
+      "palabra": "plata",
+      "fin": true,
+      "offsetMs": 90,
+      "volumen": 0.2
+    },
+    {
+      "_comentario": "Remate de la tesis 'tu estructura no', en el corte siguiente.",
+      "nombre": "remate",
+      "palabra": "no",
+      "n": 7,
+      "fin": true,
+      "offsetMs": 147,
+      "volumen": 0.2
+    }
+  ],
+  "overlays": [
+    {
+      "_comentario": "HOOK: cofre 3D sobre la cara en 'tu negocio empieza a andar bien' (se va antes de 'es', cuando arranca el zoom).",
+      "tipo": "icono",
+      "modelo": "recursos/objeto-3d-006.glb",
+      "en": {
+        "palabra": "negocio",
+        "n": 1,
+        "offsetMs": -150
+      },
+      "duracionMs": 1100,
+      "tamano": 600,
+      "centroY": 70,
+      "volumenSfx": 0.2
+    },
+    {
+      "_comentario": "ESCENA BLANCA: consultorio + Google Calendar.",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "blanco",
+      "pip": "ninguno",
+      "gananciaSfx": 2.7,
+      "desde": {
+        "palabra": "un",
+        "n": 1,
+        "offsetMs": -200
+      },
+      "hasta": {
+        "palabra": "y",
+        "n": 1,
+        "offsetMs": 300
+      },
+      "cues": {
+        "consultorio": {
+          "palabra": "consultorio"
+        },
+        "agenda": {
+          "palabra": "agenda"
+        },
+        "triple": {
+          "palabra": "triple"
+        },
+        "consultas": {
+          "palabra": "consultas"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "un consultorio que llena la",
+              "estilo": "serif",
+              "cue": "consultorio",
+              "tamano": 84
+            },
+            {
+              "texto": "agenda,",
+              "estilo": "sans",
+              "cue": "agenda",
+              "tamano": 130
+            }
+          ],
+          [
+            {
+              "texto": "el triple de",
+              "estilo": "serif",
+              "cue": "triple"
+            },
+            {
+              "texto": "consultas.",
+              "estilo": "sans",
+              "cue": "consultas",
+              "tamano": 140
+            }
+          ]
+        ],
+        "objeto": {
+          "marca": "googlecalendar",
+          "cue": "consultorio",
+          "lado": 560,
+          "y": 600
+        }
+      }
+    },
+    {
+      "_comentario": "B-ROLL 'un comercio que vende mas': local con vitrina.",
+      "tipo": "broll",
+      "archivo": "recursos/broll-065.mp4",
+      "inicioS": 1.1,
+      "desde": {
+        "palabra": "un",
+        "n": 2,
+        "offsetMs": 87
+      },
+      "hasta": {
+        "palabra": "ahora",
+        "n": 2
+      },
+      "sfx": "corte-broll",
+      "volumenSfx": 0.3
+    },
+    {
+      "_comentario": "Carpeta de archivos 3D en 'presupuestos pendientes'.",
+      "tipo": "icono",
+      "modelo": "recursos/objeto-3d-001.glb",
+      "en": {
+        "palabra": "presupuestos",
+        "offsetMs": -100
+      },
+      "duracionMs": 1400,
+      "tamano": 600,
+      "centroY": 70,
+      "volumenSfx": 0.2
+    },
+    {
+      "_comentario": "B-ROLL 'se va a otro lado': alguien que se aleja de noche por una pasarela.",
+      "tipo": "broll",
+      "archivo": "recursos/broll-340.mp4",
+      "inicioS": 0.3,
+      "desde": {
+        "palabra": "se",
+        "n": 2
+      },
+      "hasta": {
+        "palabra": "una",
+        "offsetMs": 7
+      },
+      "sfx": "corte-broll-b",
+      "volumenSfx": 0.3
+    },
+    {
+      "_comentario": "ESCENA NEGRA: marca personal + Instagram.",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "negro",
+      "pip": "ninguno",
+      "gananciaSfx": 2.7,
+      "desde": {
+        "palabra": "una",
+        "offsetMs": -200
+      },
+      "hasta": {
+        "palabra": "en",
+        "offsetMs": 300
+      },
+      "cues": {
+        "marca": {
+          "palabra": "marca"
+        },
+        "crece": {
+          "palabra": "crece",
+          "n": 1
+        },
+        "mas": {
+          "palabra": "más",
+          "n": 3
+        },
+        "escribiendote": {
+          "palabra": "escribiéndote"
+        },
+        "vos": {
+          "palabra": "vos"
+        },
+        "cada": {
+          "palabra": "cada"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "una marca personal que",
+              "estilo": "serif",
+              "cue": "marca",
+              "tamano": 80
+            },
+            {
+              "texto": "crece,",
+              "estilo": "sans",
+              "cue": "crece",
+              "tamano": 120
+            }
+          ],
+          [
+            {
+              "texto": "más gente",
+              "estilo": "serif",
+              "cue": "mas",
+              "tamano": 84
+            },
+            {
+              "texto": "escribiéndote,",
+              "estilo": "sans",
+              "cue": "escribiendote",
+              "tamano": 112
+            }
+          ],
+          [
+            {
+              "texto": "y vos contestando",
+              "estilo": "serif",
+              "cue": "vos",
+              "tamano": 84
+            },
+            {
+              "texto": "cada vez menos.",
+              "estilo": "sans",
+              "cue": "cada",
+              "tamano": 112
+            }
+          ]
+        ],
+        "objeto": {
+          "marca": "instagram",
+          "cue": "marca",
+          "lado": 520,
+          "y": 520
+        }
+      }
+    },
+    {
+      "_comentario": "ESCENA BLANCA: la trampa (solo texto).",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "blanco",
+      "pip": "ninguno",
+      "gananciaSfx": 2.7,
+      "desde": {
+        "palabra": "y",
+        "n": 4,
+        "offsetMs": -100
+      },
+      "hasta": {
+        "palabra": "por",
+        "n": 2,
+        "offsetMs": 300
+      },
+      "cues": {
+        "aca": {
+          "palabra": "acá"
+        },
+        "trampa": {
+          "palabra": "trampa"
+        },
+        "siente1": {
+          "palabra": "siente",
+          "n": 1
+        },
+        "problema": {
+          "palabra": "problema"
+        },
+        "siente2": {
+          "palabra": "siente",
+          "n": 2
+        },
+        "ocupado": {
+          "palabra": "ocupado"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "y acá está la",
+              "estilo": "serif",
+              "cue": "aca"
+            },
+            {
+              "texto": "trampa.",
+              "estilo": "sans",
+              "cue": "trampa"
+            }
+          ],
+          [
+            {
+              "texto": "no se siente como un",
+              "estilo": "serif",
+              "cue": "siente1",
+              "tamano": 82
+            },
+            {
+              "texto": "problema,",
+              "estilo": "sans",
+              "cue": "problema",
+              "tamano": 130
+            }
+          ],
+          [
+            {
+              "texto": "se siente como que estás",
+              "estilo": "serif",
+              "cue": "siente2",
+              "tamano": 82
+            },
+            {
+              "texto": "ocupado.",
+              "estilo": "sans",
+              "cue": "ocupado",
+              "tamano": 130
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "_comentario": "ESCENA NEGRA: 'lo que se pierde no deja rastro' (solo texto).",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "negro",
+      "pip": "ninguno",
+      "gananciaSfx": 2.7,
+      "desde": {
+        "palabra": "porque",
+        "offsetMs": -200
+      },
+      "hasta": {
+        "palabra": "nadie",
+        "n": 2,
+        "offsetMs": 100
+      },
+      "cues": {
+        "lo": {
+          "palabra": "lo",
+          "n": 5
+        },
+        "pierde": {
+          "palabra": "pierde"
+        },
+        "deja": {
+          "palabra": "deja"
+        },
+        "rastro": {
+          "palabra": "rastro"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "lo que se",
+              "estilo": "serif",
+              "cue": "lo"
+            },
+            {
+              "texto": "pierde,",
+              "estilo": "sans",
+              "cue": "pierde"
+            }
+          ],
+          [
+            {
+              "texto": "no deja",
+              "estilo": "serif",
+              "cue": "deja"
+            },
+            {
+              "texto": "rastro.",
+              "estilo": "sans",
+              "cue": "rastro"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "_comentario": "ESCENA BLANCA: 'nadie anota el mensaje que no contestó' + WhatsApp tachado en 'contestó'.",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "blanco",
+      "pip": "ninguno",
+      "gananciaSfx": 2.7,
+      "desde": {
+        "palabra": "nadie",
+        "n": 2,
+        "offsetMs": -250
+      },
+      "hasta": {
+        "palabra": "tu",
+        "n": 2,
+        "offsetMs": 300
+      },
+      "cues": {
+        "nadie": {
+          "palabra": "nadie",
+          "n": 2
+        },
+        "mensaje": {
+          "palabra": "mensaje"
+        },
+        "que": {
+          "palabra": "no",
+          "n": 6,
+          "offsetMs": -120
+        },
+        "contesto": {
+          "palabra": "contestó"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "nadie anota el",
+              "estilo": "serif",
+              "cue": "nadie"
+            },
+            {
+              "texto": "mensaje",
+              "estilo": "sans",
+              "cue": "mensaje"
+            }
+          ],
+          [
+            {
+              "texto": "que no",
+              "estilo": "serif",
+              "cue": "que"
+            },
+            {
+              "texto": "contestó.",
+              "estilo": "sans",
+              "cue": "contesto"
+            }
+          ]
+        ],
+        "objeto": {
+          "marca": "whatsapp",
+          "cue": "nadie",
+          "tachar": "contesto",
+          "lado": 520,
+          "y": 560
+        }
+      }
+    },
+    {
+      "_comentario": "B-ROLL 'trabajando mas horas': trabajando de noche.",
+      "tipo": "broll",
+      "archivo": "recursos/broll-122.mp4",
+      "inicioS": 6,
+      "desde": {
+        "palabra": "trabajando"
+      },
+      "hasta": {
+        "palabra": "horas",
+        "fin": true,
+        "offsetMs": 350
+      },
+      "sfx": "corte-broll",
+      "volumenSfx": 0.3
+    },
+    {
+      "_comentario": "Pilar griego 3D (la estructura que falta) en 'instalando lo que falta'.",
+      "tipo": "icono",
+      "modelo": "recursos/objeto-3d-017.glb",
+      "en": {
+        "palabra": "instalando",
+        "offsetMs": -100
+      },
+      "duracionMs": 1300,
+      "tamano": 600,
+      "centroY": 70,
+      "volumenSfx": 0.2
+    },
+    {
+      "_comentario": "CTA: 'Escribime ESTRUCTURA' = comentario que se tipea; respuesta y chip derivados de lo dicho.",
+      "tipo": "escena",
+      "escena": "cta",
+      "tema": "blanco",
+      "pip": "ninguno",
+      "gananciaSfx": 2.7,
+      "desde": {
+        "palabra": "escribime",
+        "offsetMs": -350
+      },
+      "hasta": "fin",
+      "cues": {
+        "ver": {
+          "palabra": "escribime",
+          "offsetMs": -100
+        },
+        "comentar": {
+          "palabra": "escribime"
+        },
+        "palabra": {
+          "palabra": "escribime",
+          "fin": true
+        },
+        "respuesta": {
+          "palabra": "negocio",
+          "n": 3
+        },
+        "privado": {
+          "palabra": "tiene",
+          "n": 3
+        }
+      },
+      "datos": {
+        "cuenta": "nexorasistem.ar",
+        "usuario": "tu_negocio",
+        "palabra": "ESTRUCTURA",
+        "respuesta": "¡Te muestro cómo se ve!",
+        "enviado": "Te lo mostramos por privado",
+        "verbo": "escribime",
+        "bajar": 320
+      }
+    }
+  ]
+}

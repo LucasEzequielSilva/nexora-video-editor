@@ -1,0 +1,15 @@
+node_modules/
+out/
+*.log
+
+# Pesados: van por Drive (ver README, "Lo que no está en el repo")
+PACKS/
+models/
+public/recursos/
+public/reserva/video/
+public/piezas/**/*.mp4
+public/piezas/**/*.webm
+
+# Locales
+.playwright-mcp/
+.claude/settings.local.json

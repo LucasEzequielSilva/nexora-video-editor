@@ -1,0 +1,23 @@
+{
+  "duracion_s": 48.565,
+  "uniones": [
+    {
+      "salida_s": 1.651,
+      "origen_antes_s": 1.651,
+      "origen_despues_s": 1.96,
+      "silencio_quitado_s": 0.309
+    },
+    {
+      "salida_s": 16.775,
+      "origen_antes_s": 17.084,
+      "origen_despues_s": 17.625,
+      "silencio_quitado_s": 0.54
+    },
+    {
+      "salida_s": 41.924,
+      "origen_antes_s": 42.773,
+      "origen_despues_s": 43.521,
+      "silencio_quitado_s": 0.748
+    }
+  ]
+}

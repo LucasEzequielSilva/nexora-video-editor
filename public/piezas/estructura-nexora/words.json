@@ -1,0 +1,1141 @@
+{
+ "language": "es",
+ "duration": 55.251,
+ "segments": [
+  {
+   "start": 0.051,
+   "end": 55.109,
+   "text": " tu negocio crece pero tu estructura no y llega un día en que crecer te empieza a costar plata en vez de darte fíjate cuántas cosas de tu negocio hoy dependen de que vos estés, El mensaje que entra a las 11 de la noche, el turno que hay que confirmar, el presupuesto que quedó sin responder, el video que ibas a subir hace tres semanas, ninguna de esas cosas es difícil, todas necesitan que alguien esté ese alguien sos vos siempre. Nosotros instalamos la estructura para que esas cosas pasen sin vos. Armamos tu contenido, estrategia, guion, grabación, edición y publicación. Vos no tocás nada. Un sistema en tu WhatsApp que responde al instante, agenda, confirma y recuerda. Conectado a la agenda que ya usás, no cambiás nada de lo que tenés. Medir un panel donde ves qué entró, qué se agendó y qué se perdió. No trabajamos con plantillas. Y no, no vendemos bots ni videos sueltos, instalamos la estructura que tu negocio necesita para seguir creciendo sin depender de vos. Si querés ver uno funcionando de verdad, comentá estructura que te lo enviamos por privado.",
+   "words": [
+    {
+     "start": 0.051,
+     "end": 0.131,
+     "word": " tu",
+     "p": 0.279
+    },
+    {
+     "start": 0.131,
+     "end": 0.511,
+     "word": " negocio",
+     "p": 0.997
+    },
+    {
+     "start": 0.511,
+     "end": 0.931,
+     "word": " crece",
+     "p": 0.985
+    },
+    {
+     "start": 1.191,
+     "end": 1.311,
+     "word": " pero",
+     "p": 0.72
+    },
+    {
+     "start": 1.311,
+     "end": 1.491,
+     "word": " tu",
+     "p": 0.978
+    },
+    {
+     "start": 1.491,
+     "end": 2.091,
+     "word": " estructura",
+     "p": 0.994
+    },
+    {
+     "start": 2.091,
+     "end": 2.267,
+     "word": " no",
+     "p": 0.928
+    },
+    {
+     "start": 3.151,
+     "end": 3.231,
+     "word": " y",
+     "p": 1
+    },
+    {
+     "start": 3.251,
+     "end": 3.411,
+     "word": " llega",
+     "p": 1
+    },
+    {
+     "start": 3.411,
+     "end": 3.531,
+     "word": " un",
+     "p": 1
+    },
+    {
+     "start": 3.531,
+     "end": 3.751,
+     "word": " día",
+     "p": 1
+    },
+    {
+     "start": 3.871,
+     "end": 4.011,
+     "word": " en",
+     "p": 0.79
+    },
+    {
+     "start": 4.011,
+     "end": 4.131,
+     "word": " que",
+     "p": 0.967
+    },
+    {
+     "start": 4.131,
+     "end": 4.531,
+     "word": " crecer",
+     "p": 0.992
+    },
+    {
+     "start": 4.651,
+     "end": 4.831,
+     "word": " te",
+     "p": 0.928
+    },
+    {
+     "start": 4.831,
+     "end": 4.951,
+     "word": " empieza",
+     "p": 0.985
+    },
+    {
+     "start": 4.951,
+     "end": 5.091,
+     "word": " a",
+     "p": 0.983
+    },
+    {
+     "start": 5.091,
+     "end": 5.351,
+     "word": " costar",
+     "p": 0.986
+    },
+    {
+     "start": 5.351,
+     "end": 5.711,
+     "word": " plata",
+     "p": 0.99
+    },
+    {
+     "start": 5.711,
+     "end": 5.971,
+     "word": " en",
+     "p": 0.922
+    },
+    {
+     "start": 5.971,
+     "end": 6.091,
+     "word": " vez",
+     "p": 0.991
+    },
+    {
+     "start": 6.091,
+     "end": 6.231,
+     "word": " de",
+     "p": 0.992
+    },
+    {
+     "start": 6.231,
+     "end": 6.451,
+     "word": " darte",
+     "p": 0.993
+    },
+    {
+     "start": 6.631,
+     "end": 7.031,
+     "word": " fíjate",
+     "p": 0.822
+    },
+    {
+     "start": 7.031,
+     "end": 7.411,
+     "word": " cuántas",
+     "p": 0.887
+    },
+    {
+     "start": 7.411,
+     "end": 7.611,
+     "word": " cosas",
+     "p": 0.995
+    },
+    {
+     "start": 7.611,
+     "end": 7.771,
+     "word": " de",
+     "p": 0.9
+    },
+    {
+     "start": 7.771,
+     "end": 7.931,
+     "word": " tu",
+     "p": 0.991
+    },
+    {
+     "start": 7.931,
+     "end": 8.331,
+     "word": " negocio",
+     "p": 0.996
+    },
+    {
+     "start": 8.391,
+     "end": 8.551,
+     "word": " hoy",
+     "p": 0.89
+    },
+    {
+     "start": 8.551,
+     "end": 9.011,
+     "word": " dependen",
+     "p": 0.965
+    },
+    {
+     "start": 9.011,
+     "end": 9.171,
+     "word": " de",
+     "p": 0.984
+    },
+    {
+     "start": 9.171,
+     "end": 9.251,
+     "word": " que",
+     "p": 0.979
+    },
+    {
+     "start": 9.251,
+     "end": 9.431,
+     "word": " vos",
+     "p": 0.983
+    },
+    {
+     "start": 9.431,
+     "end": 9.567,
+     "word": " estés,",
+     "p": 0.965
+    },
+    {
+     "start": 9.623,
+     "end": 9.723,
+     "word": " El",
+     "p": 1
+    },
+    {
+     "start": 9.715,
+     "end": 10.115,
+     "word": " mensaje",
+     "p": 0.999
+    },
+    {
+     "start": 10.115,
+     "end": 10.255,
+     "word": " que",
+     "p": 0.975
+    },
+    {
+     "start": 10.255,
+     "end": 10.375,
+     "word": " entra",
+     "p": 0.927
+    },
+    {
+     "start": 10.375,
+     "end": 10.475,
+     "word": " a",
+     "p": 0.954
+    },
+    {
+     "start": 10.475,
+     "end": 10.555,
+     "word": " las",
+     "p": 0.992
+    },
+    {
+     "start": 10.555,
+     "end": 10.735,
+     "word": " 11",
+     "p": 0.899
+    },
+    {
+     "start": 10.735,
+     "end": 10.895,
+     "word": " de",
+     "p": 0.961
+    },
+    {
+     "start": 10.895,
+     "end": 11.035,
+     "word": " la",
+     "p": 0.999
+    },
+    {
+     "start": 11.035,
+     "end": 11.307,
+     "word": " noche,",
+     "p": 0.997
+    },
+    {
+     "start": 11.451,
+     "end": 11.571,
+     "word": " el",
+     "p": 0.988
+    },
+    {
+     "start": 11.571,
+     "end": 11.811,
+     "word": " turno",
+     "p": 0.995
+    },
+    {
+     "start": 11.811,
+     "end": 11.911,
+     "word": " que",
+     "p": 0.902
+    },
+    {
+     "start": 11.911,
+     "end": 11.991,
+     "word": " hay",
+     "p": 0.992
+    },
+    {
+     "start": 11.991,
+     "end": 12.191,
+     "word": " que",
+     "p": 0.988
+    },
+    {
+     "start": 12.191,
+     "end": 12.571,
+     "word": " confirmar,",
+     "p": 0.995
+    },
+    {
+     "start": 12.838,
+     "end": 12.958,
+     "word": " el",
+     "p": 0.996
+    },
+    {
+     "start": 12.958,
+     "end": 13.378,
+     "word": " presupuesto",
+     "p": 0.999
+    },
+    {
+     "start": 13.378,
+     "end": 13.558,
+     "word": " que",
+     "p": 0.983
+    },
+    {
+     "start": 13.558,
+     "end": 13.738,
+     "word": " quedó",
+     "p": 0.896
+    },
+    {
+     "start": 13.738,
+     "end": 13.938,
+     "word": " sin",
+     "p": 0.998
+    },
+    {
+     "start": 13.938,
+     "end": 14.398,
+     "word": " responder,",
+     "p": 0.999
+    },
+    {
+     "start": 14.511,
+     "end": 14.631,
+     "word": " el",
+     "p": 0.995
+    },
+    {
+     "start": 14.631,
+     "end": 14.931,
+     "word": " video",
+     "p": 0.815
+    },
+    {
+     "start": 14.931,
+     "end": 15.031,
+     "word": " que",
+     "p": 0.971
+    },
+    {
+     "start": 15.031,
+     "end": 15.231,
+     "word": " ibas",
+     "p": 0.947
+    },
+    {
+     "start": 15.231,
+     "end": 15.391,
+     "word": " a",
+     "p": 0.997
+    },
+    {
+     "start": 15.391,
+     "end": 15.531,
+     "word": " subir",
+     "p": 0.997
+    },
+    {
+     "start": 15.531,
+     "end": 15.731,
+     "word": " hace",
+     "p": 0.95
+    },
+    {
+     "start": 15.731,
+     "end": 15.931,
+     "word": " tres",
+     "p": 0.865
+    },
+    {
+     "start": 15.931,
+     "end": 16.131,
+     "word": " semanas,",
+     "p": 0.997
+    },
+    {
+     "start": 16.505,
+     "end": 16.645,
+     "word": " ninguna",
+     "p": 0.984
+    },
+    {
+     "start": 16.645,
+     "end": 16.805,
+     "word": " de",
+     "p": 0.989
+    },
+    {
+     "start": 16.805,
+     "end": 16.985,
+     "word": " esas",
+     "p": 0.991
+    },
+    {
+     "start": 16.985,
+     "end": 17.165,
+     "word": " cosas",
+     "p": 0.993
+    },
+    {
+     "start": 17.165,
+     "end": 17.325,
+     "word": " es",
+     "p": 0.733
+    },
+    {
+     "start": 17.325,
+     "end": 17.665,
+     "word": " difícil,",
+     "p": 0.94
+    },
+    {
+     "start": 18.058,
+     "end": 18.118,
+     "word": " todas",
+     "p": 0.989
+    },
+    {
+     "start": 18.098,
+     "end": 18.718,
+     "word": " necesitan",
+     "p": 0.992
+    },
+    {
+     "start": 18.878,
+     "end": 19.018,
+     "word": " que",
+     "p": 0.981
+    },
+    {
+     "start": 19.018,
+     "end": 19.158,
+     "word": " alguien",
+     "p": 0.997
+    },
+    {
+     "start": 19.238,
+     "end": 19.298,
+     "word": " esté",
+     "p": 0.902
+    },
+    {
+     "start": 19.628,
+     "end": 19.808,
+     "word": " ese",
+     "p": 0.963
+    },
+    {
+     "start": 19.808,
+     "end": 20.108,
+     "word": " alguien",
+     "p": 0.983
+    },
+    {
+     "start": 20.268,
+     "end": 20.488,
+     "word": " sos",
+     "p": 0.884
+    },
+    {
+     "start": 20.488,
+     "end": 20.628,
+     "word": " vos",
+     "p": 0.987
+    },
+    {
+     "start": 21.208,
+     "end": 21.528,
+     "word": " siempre.",
+     "p": 0.55
+    },
+    {
+     "start": 21.984,
+     "end": 22.204,
+     "word": " Nosotros",
+     "p": 0.847
+    },
+    {
+     "start": 22.384,
+     "end": 22.724,
+     "word": " instalamos",
+     "p": 0.996
+    },
+    {
+     "start": 22.724,
+     "end": 22.924,
+     "word": " la",
+     "p": 0.943
+    },
+    {
+     "start": 22.924,
+     "end": 23.344,
+     "word": " estructura",
+     "p": 1
+    },
+    {
+     "start": 23.404,
+     "end": 23.564,
+     "word": " para",
+     "p": 0.551
+    },
+    {
+     "start": 23.564,
+     "end": 23.724,
+     "word": " que",
+     "p": 0.984
+    },
+    {
+     "start": 23.724,
+     "end": 23.904,
+     "word": " esas",
+     "p": 0.966
+    },
+    {
+     "start": 23.904,
+     "end": 24.164,
+     "word": " cosas",
+     "p": 0.998
+    },
+    {
+     "start": 24.324,
+     "end": 24.644,
+     "word": " pasen",
+     "p": 0.987
+    },
+    {
+     "start": 24.644,
+     "end": 24.884,
+     "word": " sin",
+     "p": 0.986
+    },
+    {
+     "start": 24.884,
+     "end": 24.944,
+     "word": " vos.",
+     "p": 0.728
+    },
+    {
+     "start": 25.077,
+     "end": 25.317,
+     "word": " Armamos",
+     "p": 0.914
+    },
+    {
+     "start": 25.317,
+     "end": 25.497,
+     "word": " tu",
+     "p": 0.962
+    },
+    {
+     "start": 25.497,
+     "end": 25.897,
+     "word": " contenido,",
+     "p": 0.997
+    },
+    {
+     "start": 26.497,
+     "end": 26.997,
+     "word": " estrategia,",
+     "p": 0.988
+    },
+    {
+     "start": 27.477,
+     "end": 27.677,
+     "word": " guion,",
+     "p": 0.717
+    },
+    {
+     "start": 28.057,
+     "end": 28.477,
+     "word": " grabación,",
+     "p": 0.996
+    },
+    {
+     "start": 28.917,
+     "end": 29.257,
+     "word": " edición",
+     "p": 0.995
+    },
+    {
+     "start": 29.397,
+     "end": 29.557,
+     "word": " y",
+     "p": 0.939
+    },
+    {
+     "start": 29.557,
+     "end": 30.057,
+     "word": " publicación.",
+     "p": 0.996
+    },
+    {
+     "start": 30.637,
+     "end": 30.757,
+     "word": " Vos",
+     "p": 0.931
+    },
+    {
+     "start": 31.037,
+     "end": 31.257,
+     "word": " no",
+     "p": 0.912
+    },
+    {
+     "start": 31.257,
+     "end": 31.477,
+     "word": " tocás",
+     "p": 0.728
+    },
+    {
+     "start": 31.477,
+     "end": 31.717,
+     "word": " nada.",
+     "p": 0.904
+    },
+    {
+     "start": 31.916,
+     "end": 32.016,
+     "word": " Un",
+     "p": 0.99
+    },
+    {
+     "start": 32.036,
+     "end": 32.276,
+     "word": " sistema",
+     "p": 0.983
+    },
+    {
+     "start": 32.276,
+     "end": 32.376,
+     "word": " en",
+     "p": 0.203
+    },
+    {
+     "start": 32.376,
+     "end": 32.456,
+     "word": " tu",
+     "p": 0.865
+    },
+    {
+     "start": 32.456,
+     "end": 32.696,
+     "word": " WhatsApp",
+     "p": 0.077
+    },
+    {
+     "start": 32.936,
+     "end": 33.176,
+     "word": " que",
+     "p": 0.963
+    },
+    {
+     "start": 33.176,
+     "end": 33.456,
+     "word": " responde",
+     "p": 0.737
+    },
+    {
+     "start": 33.456,
+     "end": 33.556,
+     "word": " al",
+     "p": 0.993
+    },
+    {
+     "start": 33.656,
+     "end": 33.956,
+     "word": " instante,",
+     "p": 0.997
+    },
+    {
+     "start": 34.436,
+     "end": 34.736,
+     "word": " agenda,",
+     "p": 0.959
+    },
+    {
+     "start": 35.076,
+     "end": 35.396,
+     "word": " confirma",
+     "p": 0.992
+    },
+    {
+     "start": 35.516,
+     "end": 35.856,
+     "word": " y",
+     "p": 0.956
+    },
+    {
+     "start": 35.856,
+     "end": 36.076,
+     "word": " recuerda.",
+     "p": 0.995
+    },
+    {
+     "start": 36.456,
+     "end": 36.589,
+     "word": " Conectado",
+     "p": 0.774
+    },
+    {
+     "start": 36.589,
+     "end": 36.723,
+     "word": " a",
+     "p": 0.774
+    },
+    {
+     "start": 36.723,
+     "end": 36.856,
+     "word": " la",
+     "p": 0.774
+    },
+    {
+     "start": 36.856,
+     "end": 37.056,
+     "word": " agenda",
+     "p": 0.989
+    },
+    {
+     "start": 37.056,
+     "end": 37.236,
+     "word": " que",
+     "p": 0.995
+    },
+    {
+     "start": 37.236,
+     "end": 37.356,
+     "word": " ya",
+     "p": 0.994
+    },
+    {
+     "start": 37.356,
+     "end": 37.516,
+     "word": " usás,",
+     "p": 0.94
+    },
+    {
+     "start": 37.956,
+     "end": 38.116,
+     "word": " no",
+     "p": 0.982
+    },
+    {
+     "start": 38.116,
+     "end": 38.416,
+     "word": " cambiás",
+     "p": 0.933
+    },
+    {
+     "start": 38.416,
+     "end": 38.736,
+     "word": " nada",
+     "p": 0.989
+    },
+    {
+     "start": 38.736,
+     "end": 38.856,
+     "word": " de",
+     "p": 0.992
+    },
+    {
+     "start": 38.856,
+     "end": 38.976,
+     "word": " lo",
+     "p": 0.993
+    },
+    {
+     "start": 38.976,
+     "end": 39.076,
+     "word": " que",
+     "p": 0.999
+    },
+    {
+     "start": 39.076,
+     "end": 39.136,
+     "word": " tenés.",
+     "p": 0.767
+    },
+    {
+     "start": 39.475,
+     "end": 39.655,
+     "word": " Medir",
+     "p": 0.964
+    },
+    {
+     "start": 39.955,
+     "end": 40.155,
+     "word": " un",
+     "p": 0.814
+    },
+    {
+     "start": 40.155,
+     "end": 40.415,
+     "word": " panel",
+     "p": 0.992
+    },
+    {
+     "start": 40.675,
+     "end": 40.975,
+     "word": " donde",
+     "p": 0.818
+    },
+    {
+     "start": 40.975,
+     "end": 41.135,
+     "word": " ves",
+     "p": 0.061
+    },
+    {
+     "start": 41.155,
+     "end": 41.355,
+     "word": " qué",
+     "p": 0.25
+    },
+    {
+     "start": 41.355,
+     "end": 41.615,
+     "word": " entró,",
+     "p": 0.673
+    },
+    {
+     "start": 41.915,
+     "end": 42.035,
+     "word": " qué",
+     "p": 0.902
+    },
+    {
+     "start": 42.035,
+     "end": 42.195,
+     "word": " se",
+     "p": 0.872
+    },
+    {
+     "start": 42.195,
+     "end": 42.475,
+     "word": " agendó",
+     "p": 0.961
+    },
+    {
+     "start": 42.675,
+     "end": 42.875,
+     "word": " y",
+     "p": 0.943
+    },
+    {
+     "start": 42.875,
+     "end": 43.035,
+     "word": " qué",
+     "p": 0.961
+    },
+    {
+     "start": 43.035,
+     "end": 43.215,
+     "word": " se",
+     "p": 0.995
+    },
+    {
+     "start": 43.215,
+     "end": 43.295,
+     "word": " perdió.",
+     "p": 0.984
+    },
+    {
+     "start": 43.568,
+     "end": 43.728,
+     "word": " No",
+     "p": 0.99
+    },
+    {
+     "start": 43.728,
+     "end": 44.108,
+     "word": " trabajamos",
+     "p": 0.992
+    },
+    {
+     "start": 44.108,
+     "end": 44.288,
+     "word": " con",
+     "p": 0.997
+    },
+    {
+     "start": 44.288,
+     "end": 44.688,
+     "word": " plantillas.",
+     "p": 0.987
+    },
+    {
+     "start": 44.78,
+     "end": 44.84,
+     "word": " Y",
+     "p": 1
+    },
+    {
+     "start": 44.822,
+     "end": 45.082,
+     "word": " no,",
+     "p": 0.899
+    },
+    {
+     "start": 45.182,
+     "end": 45.362,
+     "word": " no",
+     "p": 0.98
+    },
+    {
+     "start": 45.362,
+     "end": 45.702,
+     "word": " vendemos",
+     "p": 0.986
+    },
+    {
+     "start": 45.702,
+     "end": 45.962,
+     "word": " bots",
+     "p": 0.906
+    },
+    {
+     "start": 46.122,
+     "end": 46.262,
+     "word": " ni",
+     "p": 0.756
+    },
+    {
+     "start": 46.262,
+     "end": 46.482,
+     "word": " videos",
+     "p": 0.685
+    },
+    {
+     "start": 46.482,
+     "end": 46.762,
+     "word": " sueltos,",
+     "p": 0.969
+    },
+    {
+     "start": 47.342,
+     "end": 47.602,
+     "word": " instalamos",
+     "p": 0.986
+    },
+    {
+     "start": 47.602,
+     "end": 47.742,
+     "word": " la",
+     "p": 0.956
+    },
+    {
+     "start": 47.962,
+     "end": 48.202,
+     "word": " estructura",
+     "p": 0.997
+    },
+    {
+     "start": 48.202,
+     "end": 48.322,
+     "word": " que",
+     "p": 0.989
+    },
+    {
+     "start": 48.322,
+     "end": 48.462,
+     "word": " tu",
+     "p": 0.985
+    },
+    {
+     "start": 48.462,
+     "end": 48.782,
+     "word": " negocio",
+     "p": 0.997
+    },
+    {
+     "start": 48.782,
+     "end": 49.282,
+     "word": " necesita",
+     "p": 0.995
+    },
+    {
+     "start": 49.442,
+     "end": 49.662,
+     "word": " para",
+     "p": 0.968
+    },
+    {
+     "start": 49.682,
+     "end": 49.842,
+     "word": " seguir",
+     "p": 0.997
+    },
+    {
+     "start": 49.842,
+     "end": 50.322,
+     "word": " creciendo",
+     "p": 0.999
+    },
+    {
+     "start": 50.482,
+     "end": 50.642,
+     "word": " sin",
+     "p": 0.971
+    },
+    {
+     "start": 50.642,
+     "end": 51.082,
+     "word": " depender",
+     "p": 0.982
+    },
+    {
+     "start": 51.082,
+     "end": 51.262,
+     "word": " de",
+     "p": 0.992
+    },
+    {
+     "start": 51.262,
+     "end": 51.342,
+     "word": " vos.",
+     "p": 0.691
+    },
+    {
+     "start": 51.469,
+     "end": 51.549,
+     "word": " Si",
+     "p": 0.949
+    },
+    {
+     "start": 51.549,
+     "end": 51.749,
+     "word": " querés",
+     "p": 0.697
+    },
+    {
+     "start": 51.749,
+     "end": 51.889,
+     "word": " ver",
+     "p": 0.99
+    },
+    {
+     "start": 51.889,
+     "end": 52.029,
+     "word": " uno",
+     "p": 0.974
+    },
+    {
+     "start": 52.029,
+     "end": 52.489,
+     "word": " funcionando",
+     "p": 0.99
+    },
+    {
+     "start": 52.489,
+     "end": 52.589,
+     "word": " de",
+     "p": 0.972
+    },
+    {
+     "start": 52.589,
+     "end": 52.909,
+     "word": " verdad,",
+     "p": 0.999
+    },
+    {
+     "start": 53.249,
+     "end": 53.449,
+     "word": " comentá",
+     "p": 0.635
+    },
+    {
+     "start": 53.449,
+     "end": 54.009,
+     "word": " estructura",
+     "p": 0.843
+    },
+    {
+     "start": 54.109,
+     "end": 54.209,
+     "word": " que",
+     "p": 0.827
+    },
+    {
+     "start": 54.209,
+     "end": 54.329,
+     "word": " te",
+     "p": 0.962
+    },
+    {
+     "start": 54.329,
+     "end": 54.409,
+     "word": " lo",
+     "p": 0.791
+    },
+    {
+     "start": 54.409,
+     "end": 54.629,
+     "word": " enviamos",
+     "p": 0.992
+    },
+    {
+     "start": 54.629,
+     "end": 54.749,
+     "word": " por",
+     "p": 0.981
+    },
+    {
+     "start": 54.809,
+     "end": 55.109,
+     "word": " privado.",
+     "p": 0.944
+    }
+   ]
+  }
+ ]
+}

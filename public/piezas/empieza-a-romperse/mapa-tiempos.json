@@ -1,0 +1,95 @@
+{
+  "duracion_s": 52.833,
+  "tramos": [
+    {
+      "origen": [
+        0,
+        2.85
+      ],
+      "salida": 0
+    },
+    {
+      "negro": 0.9,
+      "salida": 2.85
+    },
+    {
+      "origen": [
+        2.85,
+        6.6
+      ],
+      "salida": 3.75
+    },
+    {
+      "negro": 0.5,
+      "salida": 7.5,
+      "congelar": true
+    },
+    {
+      "origen": [
+        6.6,
+        20.56
+      ],
+      "salida": 8
+    },
+    {
+      "negro": 0.5,
+      "salida": 21.96,
+      "congelar": true
+    },
+    {
+      "origen": [
+        20.56,
+        30
+      ],
+      "salida": 22.46
+    },
+    {
+      "negro": 0.5,
+      "salida": 31.9,
+      "congelar": true
+    },
+    {
+      "origen": [
+        30,
+        37.18
+      ],
+      "salida": 32.4
+    },
+    {
+      "negro": 0.4,
+      "salida": 39.58,
+      "congelar": true
+    },
+    {
+      "origen": [
+        37.18,
+        38.84
+      ],
+      "salida": 39.98
+    },
+    {
+      "negro": 0.4,
+      "salida": 41.64,
+      "congelar": true
+    },
+    {
+      "origen": [
+        38.84,
+        48.54
+      ],
+      "salida": 42.04
+    },
+    {
+      "negro": 1,
+      "salida": 51.74,
+      "congelar": true
+    },
+    {
+      "origen": [
+        48.54,
+        48.6
+      ],
+      "salida": 52.74
+    }
+  ]
+}

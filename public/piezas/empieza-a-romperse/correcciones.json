@@ -1,0 +1,55 @@
+{
+  "reemplazos": [
+    [
+      "empiezas a romper",
+      "empieza a romperse"
+    ],
+    [
+      "lleva la agenda",
+      "llena la agenda"
+    ],
+    [
+      "entra un triple",
+      "entra el triple"
+    ],
+    [
+      "a ese tiempo",
+      "a tiempo"
+    ],
+    [
+      "lo arreglas",
+      "lo arreglás"
+    ],
+    [
+      "no sabes cuánta",
+      "no sabés cuánta"
+    ],
+    [
+      "escribime estructura",
+      "escribime ESTRUCTURA"
+    ],
+    [
+      "cómo soy un negocio",
+      "cómo se ve un negocio"
+    ]
+  ],
+  "tramos": [
+    {
+      "desde": 40.3,
+      "hasta": 41.85,
+      "nota": "Whisper escribió 'estructura, instalando lo que falta' donde se dice 'estructura no' (large-v3 sobre el crudo: 'no' 405.34-405.42). Islas de energía: 40.34-40.66 y 40.72-41.04.",
+      "palabras": [
+        {
+          "word": "estructura",
+          "start": 40.34,
+          "end": 40.7
+        },
+        {
+          "word": "no.",
+          "start": 40.72,
+          "end": 41.02
+        }
+      ]
+    }
+  ]
+}

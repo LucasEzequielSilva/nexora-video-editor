@@ -1,0 +1,7 @@
+{
+  "fuente": "video-jc.mp4",
+  "hechoPor": "editor (2026-09-25), con el criterio de Lucas: pieza entregada entera para que él corrija",
+  "nota": "Sin recortes sobre video-jc: las trabas se resolvieron eligiendo tomas en cortes/empieza-a-romperse.json (el comercio arranca en el reinicio de 154.96; la toma 4 corta antes de 'no, a la mía'). La única 'posible traba' de trabas.mjs (45.49-45.81) es la cola de 'falta'.",
+  "recortes": [],
+  "descartadas": []
+}

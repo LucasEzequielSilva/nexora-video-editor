@@ -1,0 +1,613 @@
+{
+ "language": "es",
+ "duration": 26.367,
+ "segments": [
+  {
+   "start": 0.06,
+   "end": 25.83,
+   "text": " es caro me dicen, mirá, hagamos la cuenta juntos, a ver, vos me decís que la licencia mensual te parece un montón, bien, ahora contame algo, ¿cuántos turnos por mes perdiste por no contestar a tiempo? 1, 2, 5, ahora multiplicá eso por lo que te deja un turno, ¿ya superó lo que cuesta el soporte? porque la mayoría de los negocios con los que hablé me respondió que sí, que bastante, no es un gasto, es dejar de tirar plata por una canilla que gotea todos los días, hacé la cuenta con tu número real y escribime el resultado",
+   "words": [
+    {
+     "start": 0.06,
+     "end": 0.12,
+     "word": " es",
+     "p": 0.098
+    },
+    {
+     "start": 0.22,
+     "end": 0.4,
+     "word": " caro",
+     "p": 0.963
+    },
+    {
+     "start": 0.4,
+     "end": 0.48,
+     "word": " me",
+     "p": 0.897
+    },
+    {
+     "start": 0.48,
+     "end": 0.7,
+     "word": " dicen,",
+     "p": 0.997
+    },
+    {
+     "start": 1.08,
+     "end": 1.32,
+     "word": " mirá,",
+     "p": 0.823
+    },
+    {
+     "start": 1.52,
+     "end": 1.7,
+     "word": " hagamos",
+     "p": 0.872
+    },
+    {
+     "start": 1.7,
+     "end": 1.82,
+     "word": " la",
+     "p": 0.979
+    },
+    {
+     "start": 1.82,
+     "end": 1.96,
+     "word": " cuenta",
+     "p": 0.996
+    },
+    {
+     "start": 1.96,
+     "end": 2.34,
+     "word": " juntos,",
+     "p": 0.345
+    },
+    {
+     "start": 3.36,
+     "end": 3.42,
+     "word": " a",
+     "p": 0.957
+    },
+    {
+     "start": 3.4,
+     "end": 3.56,
+     "word": " ver,",
+     "p": 0.999
+    },
+    {
+     "start": 3.58,
+     "end": 3.66,
+     "word": " vos",
+     "p": 0.998
+    },
+    {
+     "start": 3.8,
+     "end": 3.92,
+     "word": " me",
+     "p": 0.999
+    },
+    {
+     "start": 3.92,
+     "end": 4.14,
+     "word": " decís",
+     "p": 0.996
+    },
+    {
+     "start": 4.14,
+     "end": 4.2,
+     "word": " que",
+     "p": 0.997
+    },
+    {
+     "start": 4.24,
+     "end": 4.32,
+     "word": " la",
+     "p": 0.997
+    },
+    {
+     "start": 4.32,
+     "end": 4.6,
+     "word": " licencia",
+     "p": 0.98
+    },
+    {
+     "start": 4.6,
+     "end": 4.9,
+     "word": " mensual",
+     "p": 0.998
+    },
+    {
+     "start": 5,
+     "end": 5.12,
+     "word": " te",
+     "p": 0.856
+    },
+    {
+     "start": 5.12,
+     "end": 5.3,
+     "word": " parece",
+     "p": 0.987
+    },
+    {
+     "start": 5.3,
+     "end": 5.44,
+     "word": " un",
+     "p": 0.999
+    },
+    {
+     "start": 5.44,
+     "end": 5.62,
+     "word": " montón,",
+     "p": 0.996
+    },
+    {
+     "start": 5.92,
+     "end": 5.98,
+     "word": " bien,",
+     "p": 0.998
+    },
+    {
+     "start": 6.08,
+     "end": 6.28,
+     "word": " ahora",
+     "p": 0.999
+    },
+    {
+     "start": 6.28,
+     "end": 6.68,
+     "word": " contame",
+     "p": 0.994
+    },
+    {
+     "start": 6.68,
+     "end": 6.92,
+     "word": " algo,",
+     "p": 0.997
+    },
+    {
+     "start": 7.32,
+     "end": 7.54,
+     "word": " ¿cuántos",
+     "p": 0.961
+    },
+    {
+     "start": 7.54,
+     "end": 7.82,
+     "word": " turnos",
+     "p": 1
+    },
+    {
+     "start": 7.82,
+     "end": 7.92,
+     "word": " por",
+     "p": 0.985
+    },
+    {
+     "start": 7.92,
+     "end": 8.12,
+     "word": " mes",
+     "p": 1
+    },
+    {
+     "start": 8.42,
+     "end": 8.64,
+     "word": " perdiste",
+     "p": 0.999
+    },
+    {
+     "start": 8.76,
+     "end": 8.92,
+     "word": " por",
+     "p": 0.968
+    },
+    {
+     "start": 8.98,
+     "end": 9.08,
+     "word": " no",
+     "p": 1
+    },
+    {
+     "start": 9.08,
+     "end": 9.44,
+     "word": " contestar",
+     "p": 0.999
+    },
+    {
+     "start": 9.44,
+     "end": 9.5,
+     "word": " a",
+     "p": 0.995
+    },
+    {
+     "start": 9.46,
+     "end": 9.68,
+     "word": " tiempo?",
+     "p": 0.999
+    },
+    {
+     "start": 9.96,
+     "end": 10.4,
+     "word": " 1,",
+     "p": 1
+    },
+    {
+     "start": 10.56,
+     "end": 10.8,
+     "word": " 2,",
+     "p": 1
+    },
+    {
+     "start": 11.24,
+     "end": 11.6,
+     "word": " 5,",
+     "p": 1
+    },
+    {
+     "start": 11.83,
+     "end": 11.93,
+     "word": " ahora",
+     "p": 0.947
+    },
+    {
+     "start": 12.33,
+     "end": 12.79,
+     "word": " multiplicá",
+     "p": 0.759
+    },
+    {
+     "start": 12.79,
+     "end": 12.97,
+     "word": " eso",
+     "p": 0.981
+    },
+    {
+     "start": 13.05,
+     "end": 13.23,
+     "word": " por",
+     "p": 0.932
+    },
+    {
+     "start": 13.39,
+     "end": 13.47,
+     "word": " lo",
+     "p": 0.996
+    },
+    {
+     "start": 13.47,
+     "end": 13.57,
+     "word": " que",
+     "p": 0.998
+    },
+    {
+     "start": 13.57,
+     "end": 13.69,
+     "word": " te",
+     "p": 0.979
+    },
+    {
+     "start": 13.69,
+     "end": 13.87,
+     "word": " deja",
+     "p": 0.985
+    },
+    {
+     "start": 13.87,
+     "end": 14.01,
+     "word": " un",
+     "p": 0.954
+    },
+    {
+     "start": 14.01,
+     "end": 14.39,
+     "word": " turno,",
+     "p": 0.996
+    },
+    {
+     "start": 14.41,
+     "end": 14.47,
+     "word": " ¿ya",
+     "p": 0.778
+    },
+    {
+     "start": 14.57,
+     "end": 14.89,
+     "word": " superó",
+     "p": 0.934
+    },
+    {
+     "start": 14.89,
+     "end": 14.95,
+     "word": " lo",
+     "p": 0.989
+    },
+    {
+     "start": 14.95,
+     "end": 15.07,
+     "word": " que",
+     "p": 0.998
+    },
+    {
+     "start": 15.07,
+     "end": 15.35,
+     "word": " cuesta",
+     "p": 0.996
+    },
+    {
+     "start": 15.35,
+     "end": 15.43,
+     "word": " el",
+     "p": 0.984
+    },
+    {
+     "start": 15.43,
+     "end": 15.81,
+     "word": " soporte?",
+     "p": 0.998
+    },
+    {
+     "start": 15.91,
+     "end": 16.01,
+     "word": " porque",
+     "p": 0.452
+    },
+    {
+     "start": 16.11,
+     "end": 16.29,
+     "word": " la",
+     "p": 0.991
+    },
+    {
+     "start": 16.29,
+     "end": 16.47,
+     "word": " mayoría",
+     "p": 0.99
+    },
+    {
+     "start": 16.47,
+     "end": 16.65,
+     "word": " de",
+     "p": 0.998
+    },
+    {
+     "start": 16.65,
+     "end": 16.75,
+     "word": " los",
+     "p": 0.992
+    },
+    {
+     "start": 16.75,
+     "end": 17.11,
+     "word": " negocios",
+     "p": 0.998
+    },
+    {
+     "start": 17.11,
+     "end": 17.17,
+     "word": " con",
+     "p": 0.989
+    },
+    {
+     "start": 17.23,
+     "end": 17.33,
+     "word": " los",
+     "p": 0.987
+    },
+    {
+     "start": 17.33,
+     "end": 17.47,
+     "word": " que",
+     "p": 0.998
+    },
+    {
+     "start": 17.47,
+     "end": 17.73,
+     "word": " hablé",
+     "p": 0.944
+    },
+    {
+     "start": 17.73,
+     "end": 17.85,
+     "word": " me",
+     "p": 0.814
+    },
+    {
+     "start": 18.03,
+     "end": 18.25,
+     "word": " respondió",
+     "p": 0.991
+    },
+    {
+     "start": 18.45,
+     "end": 18.55,
+     "word": " que",
+     "p": 0.99
+    },
+    {
+     "start": 18.55,
+     "end": 18.71,
+     "word": " sí,",
+     "p": 0.679
+    },
+    {
+     "start": 18.83,
+     "end": 18.89,
+     "word": " que",
+     "p": 0.986
+    },
+    {
+     "start": 19.38,
+     "end": 19.62,
+     "word": " bastante,",
+     "p": 1
+    },
+    {
+     "start": 19.73,
+     "end": 19.81,
+     "word": " no",
+     "p": 0.998
+    },
+    {
+     "start": 19.81,
+     "end": 19.93,
+     "word": " es",
+     "p": 0.999
+    },
+    {
+     "start": 19.93,
+     "end": 19.99,
+     "word": " un",
+     "p": 0.999
+    },
+    {
+     "start": 19.99,
+     "end": 20.23,
+     "word": " gasto,",
+     "p": 0.999
+    },
+    {
+     "start": 20.57,
+     "end": 20.63,
+     "word": " es",
+     "p": 0.997
+    },
+    {
+     "start": 20.59,
+     "end": 20.79,
+     "word": " dejar",
+     "p": 0.996
+    },
+    {
+     "start": 20.79,
+     "end": 20.95,
+     "word": " de",
+     "p": 0.998
+    },
+    {
+     "start": 20.95,
+     "end": 21.09,
+     "word": " tirar",
+     "p": 0.999
+    },
+    {
+     "start": 21.09,
+     "end": 21.37,
+     "word": " plata",
+     "p": 0.998
+    },
+    {
+     "start": 21.37,
+     "end": 21.65,
+     "word": " por",
+     "p": 0.994
+    },
+    {
+     "start": 21.73,
+     "end": 21.89,
+     "word": " una",
+     "p": 0.999
+    },
+    {
+     "start": 21.89,
+     "end": 22.29,
+     "word": " canilla",
+     "p": 0.996
+    },
+    {
+     "start": 22.29,
+     "end": 22.49,
+     "word": " que",
+     "p": 0.997
+    },
+    {
+     "start": 22.55,
+     "end": 22.81,
+     "word": " gotea",
+     "p": 0.843
+    },
+    {
+     "start": 22.81,
+     "end": 22.95,
+     "word": " todos",
+     "p": 0.998
+    },
+    {
+     "start": 23.07,
+     "end": 23.29,
+     "word": " los",
+     "p": 1
+    },
+    {
+     "start": 23.29,
+     "end": 23.53,
+     "word": " días,",
+     "p": 0.999
+    },
+    {
+     "start": 23.71,
+     "end": 23.79,
+     "word": " hacé",
+     "p": 0.355
+    },
+    {
+     "start": 23.81,
+     "end": 23.89,
+     "word": " la",
+     "p": 0.996
+    },
+    {
+     "start": 23.89,
+     "end": 24.11,
+     "word": " cuenta",
+     "p": 1
+    },
+    {
+     "start": 24.11,
+     "end": 24.29,
+     "word": " con",
+     "p": 0.999
+    },
+    {
+     "start": 24.29,
+     "end": 24.43,
+     "word": " tu",
+     "p": 0.998
+    },
+    {
+     "start": 24.45,
+     "end": 24.63,
+     "word": " número",
+     "p": 0.994
+    },
+    {
+     "start": 24.63,
+     "end": 24.83,
+     "word": " real",
+     "p": 0.985
+    },
+    {
+     "start": 24.83,
+     "end": 25.09,
+     "word": " y",
+     "p": 0.983
+    },
+    {
+     "start": 25.43,
+     "end": 25.61,
+     "word": " escribime",
+     "p": 0.916
+    },
+    {
+     "start": 25.61,
+     "end": 25.67,
+     "word": " el",
+     "p": 0.998
+    },
+    {
+     "start": 25.67,
+     "end": 25.83,
+     "word": " resultado",
+     "p": 0.999
+    }
+   ]
+  }
+ ]
+}

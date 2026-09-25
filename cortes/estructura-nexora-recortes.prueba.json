@@ -1,0 +1,69 @@
+{
+  "fuente": "video-jc.mp4",
+  "recortes": [
+    {
+      "desde": 2.88,
+      "hasta": 3.02,
+      "motivo": "silencio",
+      "nota": "",
+      "contexto": {
+        "texto": "y",
+        "antes": "no",
+        "despues": "llega",
+        "duracion": 0.14,
+        "rmsDb": -27.496,
+        "bordeAntesDb": -34.576,
+        "bordeDespuesDb": -26.519,
+        "esSilencio": false
+      }
+    },
+    {
+      "desde": 3.02,
+      "hasta": 3.06,
+      "motivo": "respiracion",
+      "nota": "",
+      "contexto": {
+        "texto": "llega",
+        "antes": "y",
+        "despues": "un",
+        "duracion": 0.04,
+        "rmsDb": -25.884,
+        "bordeAntesDb": -27.731,
+        "bordeDespuesDb": -26.909,
+        "esSilencio": false
+      }
+    },
+    {
+      "desde": 3.06,
+      "hasta": 4.12,
+      "motivo": "respiracion",
+      "nota": "",
+      "contexto": {
+        "texto": "un",
+        "antes": "llega",
+        "despues": "día",
+        "duracion": 1.06,
+        "rmsDb": -30.49,
+        "bordeAntesDb": -26.435,
+        "bordeDespuesDb": -24.737,
+        "esSilencio": false
+      }
+    },
+    {
+      "desde": 10.84,
+      "hasta": 11.54,
+      "motivo": "respiracion",
+      "nota": "",
+      "contexto": {
+        "texto": "el",
+        "antes": "estés,",
+        "despues": "mensaje",
+        "duracion": 0.7,
+        "rmsDb": -41.513,
+        "bordeAntesDb": -56.141,
+        "bordeDespuesDb": -29.668,
+        "esSilencio": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,566 @@
+{
+  "_comentario": "v2 (2026-09-25): escenas solas (sin el recorte del que habla) alternando negro / blanco / negro / blanco, fondo liso sin grilla, objetos 3D del pack en vez de los íconos estilo Airbnb, y b-rolls rotando (hook, 'no contestar a tiempo', 'la mayoría de los negocios').",
+  "durationSeconds": 26.367,
+  "subtitulos": {
+    "fuente": "satoshi",
+    "acentos": [
+      "caro",
+      "vos",
+      "bastante",
+      "canilla"
+    ]
+  },
+  "pausas": [
+    {
+      "_comentario": "+50 ms: el corte de toma en video-jc está en 2.40 s (fin de 'juntos' 2.34). Con el negro en 2.33 quedaba un cuadro de la toma anterior DESPUÉS del negro (Lucas: 'sigue haciendo brusco').",
+      "tras": {
+        "palabra": "juntos",
+        "fin": true,
+        "offsetMs": 50
+      },
+      "segundos": 0.9
+    }
+  ],
+  "musica": {
+    "_comentario": "METAMORPHOSIS ganador ya nivelada (la de estructura-nexora): el drop entra en la vuelta del negro. Volumen 0.36 (no 0.129): esta voz está ~10 dB más fuerte; con 0.129 la música quedaba 22.8 dB abajo.",
+    "archivo": "recursos/musica-056-nivelada.m4a",
+    "desde": {
+      "palabra": "a",
+      "n": 1,
+      "offsetMs": -90
+    },
+    "inicioS": 0,
+    "volumen": 0.36,
+    "bajoVoz": 0.7,
+    "fadeInMs": 40,
+    "fadeOutMs": 1200
+  },
+  "zooms": [
+    {
+      "_comentario": "HOOK: 'mirá, hagamos la cuenta juntos' 1.0 -> 1.9.",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "mirá"
+      },
+      "fin": {
+        "palabra": "juntos",
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 1.9
+    },
+    {
+      "_comentario": "Sostener el retrato DENTRO del negro (Lucas: 'pasa de esto a esto super brusco').",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "juntos",
+        "fin": true
+      },
+      "fin": {
+        "palabra": "a",
+        "n": 1,
+        "offsetMs": -90
+      },
+      "escalaInicial": 1.9,
+      "escala": 1.9
+    },
+    {
+      "_comentario": "VUELTA DEL NEGRO: 'a' n1 -90 = 3.27 s, el cuadro en que vuelve la imagen.",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "a",
+        "n": 1,
+        "offsetMs": -90
+      },
+      "fin": {
+        "palabra": "a",
+        "n": 1,
+        "offsetMs": 610
+      },
+      "escalaInicial": 1.9,
+      "escala": 1,
+      "curva": "salida"
+    },
+    {
+      "_comentario": "Deriva hasta que la escena negra de la licencia queda opaca.",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "a",
+        "n": 1,
+        "offsetMs": 610
+      },
+      "fin": {
+        "palabra": "licencia",
+        "offsetMs": 300
+      },
+      "escalaInicial": 1,
+      "escala": 1.1
+    },
+    {
+      "_comentario": "PREGUNTA: la cara aparece al salir la escena y deriva hasta el b-roll del reloj.",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "bien",
+        "offsetMs": 250
+      },
+      "fin": {
+        "palabra": "perdiste"
+      },
+      "escalaInicial": 1,
+      "escala": 1.2
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "perdiste"
+      },
+      "fin": {
+        "palabra": "1",
+        "offsetMs": 200
+      },
+      "escalaInicial": 1.2,
+      "escala": 1.3
+    },
+    {
+      "_comentario": "PRUEBA SOCIAL: debajo del b-roll del local y después sube a retrato en 'bastante'.",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "porque",
+        "offsetMs": 190
+      },
+      "fin": {
+        "palabra": "hablé"
+      },
+      "escalaInicial": 1,
+      "escala": 1.15
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "hablé"
+      },
+      "fin": {
+        "palabra": "bastante",
+        "fin": true
+      },
+      "escalaInicial": 1.15,
+      "escala": 2
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "bastante",
+        "fin": true
+      },
+      "fin": {
+        "palabra": "no",
+        "n": 2,
+        "offsetMs": 37
+      },
+      "escalaInicial": 2,
+      "escala": 2.05
+    },
+    {
+      "_comentario": "CANILLA: la cara aparece al salir la escena negra del gasto y sube a retrato en 'días'.",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "plata",
+        "fin": true,
+        "offsetMs": 250
+      },
+      "fin": {
+        "palabra": "días",
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 1.9
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "días",
+        "fin": true
+      },
+      "fin": {
+        "palabra": "hacé",
+        "offsetMs": 23
+      },
+      "escalaInicial": 1.9,
+      "escala": 1.95
+    }
+  ],
+  "sfx": [
+    {
+      "nombre": "riser",
+      "palabra": "juntos",
+      "fin": true,
+      "corte": {
+        "palabra": "juntos",
+        "fin": true,
+        "offsetMs": 40
+      },
+      "volumen": 0.07
+    },
+    {
+      "nombre": "boom-negro",
+      "palabra": "juntos",
+      "fin": true,
+      "offsetMs": 20,
+      "volumen": 0.2
+    },
+    {
+      "archivo": "piezas/cuenta-juntos/cola-juntos.wav",
+      "palabra": "juntos",
+      "offsetMs": -20,
+      "volumen": 1
+    },
+    {
+      "_comentario": "Remate de la objeción repetida ('te parece un montón').",
+      "nombre": "remate-b",
+      "palabra": "montón",
+      "fin": true,
+      "offsetMs": 90,
+      "volumen": 0.13
+    },
+    {
+      "_comentario": "Remate de la prueba social ('que bastante').",
+      "nombre": "remate",
+      "palabra": "bastante",
+      "fin": true,
+      "offsetMs": 90,
+      "volumen": 0.1
+    },
+    {
+      "_comentario": "Gota en 'gotea' (WaterDrip, golpe a 0.05 s del archivo).",
+      "archivo": "recursos/sfx-pack1-071.wav",
+      "palabra": "gotea",
+      "offsetMs": -50,
+      "volumen": 0.3
+    }
+  ],
+  "overlays": [
+    {
+      "_comentario": "HOOK: paca de billetes 3D girando sobre la cara (el diamante sin refracción se veía como un bol blanco) en 'es caro, me dicen' (Lucas: 'quitale el broll del inicio y sustituilo por un ícono relacionado superpuesto nomás'). Sale antes de 'mirá', cuando arranca el zoom.",
+      "tipo": "icono",
+      "modelo": "recursos/objeto-3d-016.glb",
+      "en": {
+        "palabra": "caro",
+        "offsetMs": -150
+      },
+      "duracionMs": 1000,
+      "tamano": 640,
+      "centroY": 72,
+      "volumenSfx": 0.15
+    },
+    {
+      "_comentario": "ESCENA NEGRA 1: 'la licencia mensual te parece un montón' + billetera 3D. Sale después del corte de 'bien' para taparlo.",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "negro",
+      "pip": "ninguno",
+      "desde": {
+        "palabra": "licencia",
+        "offsetMs": -250
+      },
+      "hasta": {
+        "palabra": "bien",
+        "offsetMs": 250
+      },
+      "cues": {
+        "licencia": {
+          "palabra": "licencia"
+        },
+        "mensual": {
+          "palabra": "mensual"
+        },
+        "parece": {
+          "palabra": "parece"
+        },
+        "monton": {
+          "palabra": "montón"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "la licencia",
+              "estilo": "serif",
+              "cue": "licencia"
+            },
+            {
+              "texto": "mensual",
+              "estilo": "sans",
+              "cue": "mensual",
+              "tamano": 120
+            }
+          ],
+          [
+            {
+              "texto": "te parece",
+              "estilo": "serif",
+              "cue": "parece"
+            },
+            {
+              "texto": "un montón.",
+              "estilo": "sans",
+              "cue": "monton"
+            }
+          ]
+        ],
+        "objeto": {
+          "archivo": "recursos/objeto-3d-003.glb",
+          "cue": "licencia",
+          "inclinacion": 1.1
+        }
+      },
+      "gananciaSfx": 2.2
+    },
+    {
+      "_comentario": "B-ROLL 'perdiste por no contestar a tiempo': despertador entre llamas (tiempo perdido).",
+      "tipo": "broll",
+      "archivo": "recursos/broll-273.mp4",
+      "inicioS": 0.5,
+      "desde": {
+        "palabra": "perdiste"
+      },
+      "hasta": {
+        "palabra": "1",
+        "offsetMs": -100
+      },
+      "sfx": "corte-broll-b",
+      "volumenSfx": 0.14
+    },
+    {
+      "_comentario": "ESCENA BLANCA: la cuenta. Números literales del guion; sin montos (barras relativas); billetes 3D en 'lo que te deja un turno'.",
+      "tipo": "escena",
+      "escena": "cuenta",
+      "tema": "blanco",
+      "pip": "ninguno",
+      "desde": {
+        "palabra": "1",
+        "offsetMs": -300
+      },
+      "hasta": {
+        "palabra": "porque",
+        "offsetMs": 490
+      },
+      "cues": {
+        "n1": {
+          "palabra": "1"
+        },
+        "n2": {
+          "palabra": "2"
+        },
+        "n3": {
+          "palabra": "5"
+        },
+        "multiplica": {
+          "palabra": "multiplicá"
+        },
+        "deja": {
+          "palabra": "deja"
+        },
+        "pregunta": {
+          "palabra": "ya"
+        },
+        "supero": {
+          "palabra": "superó"
+        },
+        "cuesta": {
+          "palabra": "cuesta"
+        }
+      },
+      "datos": {
+        "titulo": {
+          "serif": "hagamos",
+          "sans": "la cuenta."
+        },
+        "pregunta": {
+          "serif": "¿ya",
+          "sans": "superó?",
+          "cue": "pregunta"
+        },
+        "contador": {
+          "etiqueta": "turnos por mes",
+          "numeros": [
+            {
+              "valor": "1",
+              "cue": "n1"
+            },
+            {
+              "valor": "2",
+              "cue": "n2"
+            },
+            {
+              "valor": "5",
+              "cue": "n3"
+            }
+          ]
+        },
+        "multiplica": {
+          "cue": "multiplica",
+          "etiqueta": "lo que te deja un turno",
+          "valor": "$",
+          "cueValor": "deja",
+          "modelo": "recursos/objeto-3d-016.glb"
+        },
+        "barras": {
+          "perdida": "5 × $",
+          "cuePerdida": "supero",
+          "costo": "lo que cuesta el soporte",
+          "cueCosto": "cuesta",
+          "costoPct": 0.58
+        }
+      },
+      "gananciaSfx": 2.2
+    },
+    {
+      "_comentario": "B-ROLL 'la mayoría de los negocios': local de café con barista (pequeño negocio). Entra cuando sale la escena.",
+      "tipo": "broll",
+      "archivo": "recursos/broll-036.mp4",
+      "inicioS": 1.5,
+      "desde": {
+        "palabra": "porque",
+        "offsetMs": 190
+      },
+      "hasta": {
+        "palabra": "hablé"
+      },
+      "sfx": "corte-broll",
+      "volumenSfx": 0.14
+    },
+    {
+      "_comentario": "ESCENA NEGRA 2: 'no es un gasto, es dejar de tirar plata' + la billetera de la licencia, tachada en 'gasto'.",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "negro",
+      "pip": "ninguno",
+      "desde": {
+        "palabra": "no",
+        "n": 2,
+        "offsetMs": -100
+      },
+      "hasta": {
+        "palabra": "plata",
+        "fin": true,
+        "offsetMs": 250
+      },
+      "cues": {
+        "no": {
+          "palabra": "no",
+          "n": 2
+        },
+        "gasto": {
+          "palabra": "gasto"
+        },
+        "dejar": {
+          "palabra": "dejar"
+        },
+        "tirar": {
+          "palabra": "tirar"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "no es un",
+              "estilo": "serif",
+              "cue": "no"
+            },
+            {
+              "texto": "gasto,",
+              "estilo": "sans",
+              "cue": "gasto"
+            }
+          ],
+          [
+            {
+              "texto": "es dejar de",
+              "estilo": "serif",
+              "cue": "dejar"
+            },
+            {
+              "texto": "tirar plata.",
+              "estilo": "sans",
+              "cue": "tirar"
+            }
+          ]
+        ],
+        "objeto": {
+          "archivo": "recursos/objeto-3d-003.glb",
+          "cue": "no",
+          "tachar": "gasto",
+          "inclinacion": 1.1
+        }
+      },
+      "gananciaSfx": 2.2
+    },
+    {
+      "_comentario": "ESCENA BLANCA: CTA hasta el final. Lupa 3D en 'número real'.",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "blanco",
+      "pip": "ninguno",
+      "desde": {
+        "palabra": "hacé",
+        "offsetMs": -180
+      },
+      "hasta": "fin",
+      "cues": {
+        "hace": {
+          "palabra": "hacé"
+        },
+        "numero": {
+          "palabra": "número"
+        },
+        "escribime": {
+          "palabra": "escribime"
+        },
+        "resultado": {
+          "palabra": "resultado"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "hacé la cuenta con tu",
+              "estilo": "serif",
+              "cue": "hace"
+            }
+          ],
+          [
+            {
+              "texto": "número real",
+              "estilo": "sans",
+              "cue": "numero"
+            }
+          ],
+          [
+            {
+              "texto": "y escribime el",
+              "estilo": "serif",
+              "cue": "escribime"
+            }
+          ],
+          [
+            {
+              "texto": "resultado.",
+              "estilo": "sans",
+              "cue": "resultado"
+            }
+          ]
+        ],
+        "objeto": {
+          "archivo": "recursos/objeto-3d-014.glb",
+          "cue": "numero",
+          "lado": 560,
+          "y": 560
+        }
+      },
+      "gananciaSfx": 2.2
+    }
+  ]
+}

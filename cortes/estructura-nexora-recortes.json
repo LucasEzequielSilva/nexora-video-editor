@@ -1,0 +1,412 @@
+{
+  "fuente": "video-jc.mp4",
+  "recortes": [
+    {
+      "desde": 0.0,
+      "hasta": 0.489,
+      "motivo": "silencio",
+      "nota": "",
+      "contexto": {
+        "texto": "tu",
+        "antes": "",
+        "despues": "negocio",
+        "duracion": 0.489,
+        "rmsDb": -59.738,
+        "bordeAntesDb": -100,
+        "bordeDespuesDb": -31.997,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 2.756,
+      "hasta": 3.772,
+      "motivo": "silencio",
+      "nota": "",
+      "contexto": {
+        "texto": "y llega un di…",
+        "antes": "estructura",
+        "despues": "y",
+        "duracion": 1,
+        "rmsDb": -30.838,
+        "bordeAntesDb": -31.225,
+        "bordeDespuesDb": -31.394,
+        "esSilencio": false
+      }
+    },
+    {
+      "desde": 2.938,
+      "hasta": 3.705,
+      "motivo": "silencio",
+      "nota": "",
+      "contexto": {
+        "texto": "y llega un di…",
+        "antes": "no",
+        "despues": "y",
+        "duracion": 0.767,
+        "rmsDb": -29.938,
+        "bordeAntesDb": -35.888,
+        "bordeDespuesDb": -36.625,
+        "esSilencio": false
+      }
+    },
+    {
+      "desde": 2.956,
+      "hasta": 3.316,
+      "motivo": "silencio",
+      "nota": "se traba y luego vuelve a repetir",
+      "contexto": {
+        "texto": "y llega un di…",
+        "antes": "no",
+        "despues": "y",
+        "duracion": 0.36,
+        "rmsDb": -26.714,
+        "bordeAntesDb": -35.722,
+        "bordeDespuesDb": -44.162,
+        "esSilencio": false
+      }
+    },
+    {
+      "desde": 7.205,
+      "hasta": 7.621,
+      "motivo": "silencio",
+      "nota": "",
+      "contexto": {
+        "texto": "",
+        "antes": "de",
+        "despues": "cuántas",
+        "duracion": 0.4,
+        "rmsDb": -55.034,
+        "bordeAntesDb": -49.652,
+        "bordeDespuesDb": -28.575,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 10.588,
+      "hasta": 10.937,
+      "motivo": "silencio",
+      "nota": "",
+      "contexto": {
+        "texto": "estés,",
+        "antes": "vos",
+        "despues": "mensaje",
+        "duracion": 0.333,
+        "rmsDb": -45.746,
+        "bordeAntesDb": -40.731,
+        "bordeDespuesDb": -40.629,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 10.888,
+      "hasta": 11.44,
+      "motivo": "silencio",
+      "nota": "dice \"dale\" se entiende como el pero es como diciendo graba tipo avisa q ahi habla",
+      "contexto": {
+        "texto": "el",
+        "antes": "estés,",
+        "despues": "mensaje",
+        "duracion": 0.7,
+        "rmsDb": -41.517,
+        "bordeAntesDb": -56.145,
+        "bordeDespuesDb": -29.672,
+        "esSilencio": true
+      },
+      "ajuste": {
+        "antes": {
+          "desde": 10.888,
+          "hasta": 11.588
+        },
+        "por": [
+          "hasta 11.588 -> 11.44: se comía el arranque de 'El' (voz desde 11.44). Causa: la onda del recortador estaba corrida (audio con huecos), no una decisión de Lucas."
+        ]
+      }
+    },
+    {
+      "desde": 13.18,
+      "hasta": 13.67,
+      "motivo": "silencio",
+      "nota": "",
+      "contexto": {
+        "texto": "noche,",
+        "antes": "la",
+        "despues": "el",
+        "duracion": 0.6,
+        "rmsDb": -38.818,
+        "bordeAntesDb": -31.221,
+        "bordeDespuesDb": -33.557,
+        "esSilencio": false
+      },
+      "ajuste": {
+        "antes": {
+          "desde": 13.07,
+          "hasta": 13.67
+        },
+        "por": [
+          "desde 13.07 -> 13.18: se comía el final de 'noche' (suena hasta 13.16). Causa: la onda del recortador estaba corrida (audio con huecos), no una decisión de Lucas."
+        ]
+      }
+    },
+    {
+      "desde": 13.18,
+      "hasta": 13.704,
+      "motivo": "silencio",
+      "nota": "",
+      "contexto": {
+        "texto": "noche,",
+        "antes": "la",
+        "despues": "el",
+        "duracion": 0.634,
+        "rmsDb": -39.042,
+        "bordeAntesDb": -31.221,
+        "bordeDespuesDb": -31.577,
+        "esSilencio": false
+      },
+      "ajuste": {
+        "antes": {
+          "desde": 13.07,
+          "hasta": 13.704
+        },
+        "por": [
+          "desde 13.07 -> 13.18: se comía el final de 'noche' (suena hasta 13.16). Causa: la onda del recortador estaba corrida (audio con huecos), no una decisión de Lucas."
+        ]
+      }
+    },
+    {
+      "desde": 15.037,
+      "hasta": 15.47,
+      "motivo": "silencio",
+      "nota": "",
+      "contexto": {
+        "texto": "",
+        "antes": "que",
+        "despues": "el",
+        "duracion": 0.433,
+        "rmsDb": -54.794,
+        "bordeAntesDb": -32.201,
+        "bordeDespuesDb": -35.736,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 17.27,
+      "hasta": 17.737,
+      "motivo": "silencio",
+      "nota": "",
+      "contexto": {
+        "texto": "",
+        "antes": "responder,",
+        "despues": "el",
+        "duracion": 0.467,
+        "rmsDb": -54.02,
+        "bordeAntesDb": -34.482,
+        "bordeDespuesDb": -32.849,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 19.504,
+      "hasta": 19.97,
+      "motivo": "silencio",
+      "nota": "",
+      "contexto": {
+        "texto": "semanas,",
+        "antes": "tres",
+        "despues": "ninguna",
+        "duracion": 0.466,
+        "rmsDb": -63.976,
+        "bordeAntesDb": -39.345,
+        "bordeDespuesDb": -25.061,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 21.577,
+      "hasta": 21.844,
+      "motivo": "silencio",
+      "nota": "",
+      "contexto": {
+        "texto": "",
+        "antes": "es",
+        "despues": "todas",
+        "duracion": 0.267,
+        "rmsDb": -65.464,
+        "bordeAntesDb": -44.93,
+        "bordeDespuesDb": -34.413,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 23.47,
+      "hasta": 23.96,
+      "motivo": "silencio",
+      "nota": "",
+      "contexto": {
+        "texto": "y",
+        "antes": "alguien",
+        "despues": "ese",
+        "duracion": 0.667,
+        "rmsDb": -32.429,
+        "bordeAntesDb": -44.278,
+        "bordeDespuesDb": -28.929,
+        "esSilencio": false
+      },
+      "ajuste": {
+        "antes": {
+          "desde": 23.47,
+          "hasta": 24.137
+        },
+        "por": [
+          "hasta 24.137 -> 23.96: se comía el arranque de 'ese' (voz desde 23.96). Causa: la onda del recortador estaba corrida (audio con huecos), no una decisión de Lucas."
+        ]
+      }
+    },
+    {
+      "desde": 29.486,
+      "hasta": 29.953,
+      "motivo": "silencio",
+      "nota": "",
+      "contexto": {
+        "texto": "vos.",
+        "antes": "sin",
+        "despues": "Armamos",
+        "duracion": 0.467,
+        "rmsDb": -51.066,
+        "bordeAntesDb": -36.094,
+        "bordeDespuesDb": -33.609,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 36.753,
+      "hasta": 37.13,
+      "motivo": "silencio",
+      "nota": "",
+      "contexto": {
+        "texto": "",
+        "antes": "tocás",
+        "despues": "Un",
+        "duracion": 0.467,
+        "rmsDb": -52.889,
+        "bordeAntesDb": -39.02,
+        "bordeDespuesDb": -31.746,
+        "esSilencio": true
+      },
+      "ajuste": {
+        "antes": {
+          "desde": 36.753,
+          "hasta": 37.236
+        },
+        "por": [
+          "hasta 37.236 -> 37.13: se comía el arranque de 'Un' (voz desde 37.14). Causa: la onda del recortador estaba corrida (audio con huecos), no una decisión de Lucas."
+        ]
+      }
+    },
+    {
+      "desde": 44.669,
+      "hasta": 44.93,
+      "motivo": "silencio",
+      "nota": "",
+      "contexto": {
+        "texto": "",
+        "antes": "que",
+        "despues": "Medir",
+        "duracion": 0.334,
+        "rmsDb": -58.495,
+        "bordeAntesDb": -39.654,
+        "bordeDespuesDb": -33.751,
+        "esSilencio": true
+      },
+      "ajuste": {
+        "antes": {
+          "desde": 44.669,
+          "hasta": 45.003
+        },
+        "por": [
+          "hasta 45.003 -> 44.93: se comía el arranque de 'Medir' (voz desde 44.94). Causa: la onda del recortador estaba corrida (audio con huecos), no una decisión de Lucas."
+        ]
+      }
+    },
+    {
+      "desde": 49.136,
+      "hasta": 49.636,
+      "motivo": "silencio",
+      "nota": "",
+      "contexto": {
+        "texto": "perdió.",
+        "antes": "se",
+        "despues": "no",
+        "duracion": 0.5,
+        "rmsDb": -38.243,
+        "bordeAntesDb": -47.421,
+        "bordeDespuesDb": -40.071,
+        "esSilencio": false
+      }
+    },
+    {
+      "desde": 49.52,
+      "hasta": 50.5,
+      "motivo": "silencio",
+      "nota": "esta leyendo",
+      "contexto": {
+        "texto": "Números, no sensaciones.",
+        "antes": "perdió.",
+        "despues": "No",
+        "duracion": 0.98,
+        "rmsDb": -39.869,
+        "bordeAntesDb": -37.952,
+        "bordeDespuesDb": -62.576,
+        "esSilencio": false
+      }
+    },
+    {
+      "desde": 50.036,
+      "hasta": 50.619,
+      "motivo": "silencio",
+      "nota": "",
+      "contexto": {
+        "texto": "no sensaciones.",
+        "antes": "Números,",
+        "despues": "No",
+        "duracion": 0.567,
+        "rmsDb": -43.757,
+        "bordeAntesDb": -41.793,
+        "bordeDespuesDb": -35.162,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 51.859,
+      "hasta": 55.541,
+      "motivo": "silencio",
+      "nota": "lee la apntalla ",
+      "contexto": {
+        "texto": "Cada sistema se arma sobre cómo funciona tu negocio Y",
+        "antes": "plantillas.",
+        "despues": "no,",
+        "duracion": 3.666,
+        "rmsDb": -40.812,
+        "bordeAntesDb": -42.41,
+        "bordeDespuesDb": -34.176,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 62.175,
+      "hasta": 62.511,
+      "motivo": "silencio",
+      "nota": "",
+      "contexto": {
+        "texto": "",
+        "antes": "de",
+        "despues": "Si",
+        "duracion": 0.333,
+        "rmsDb": -60.115,
+        "bordeAntesDb": -40.421,
+        "bordeDespuesDb": -36.267,
+        "esSilencio": true
+      }
+    }
+  ],
+  "linea_de_tiempo": "real (pts). Los cortes hechos antes del 2026-09-23 22:30 se marcaron sobre una onda corrida (audio con huecos) y se pasaron al tiempo real con el mapa de huecos."
+}

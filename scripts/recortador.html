@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Recortador</title>
+<style>
+  :root { --bg:#0e0f12; --panel:#171920; --line:#2a2d38; --txt:#e8eaf0; --mut:#8b90a0; --red:#ef4444; --blue:#3b82f6; --ok:#22c55e; --amb:#eab308; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--txt); font:14px/1.4 system-ui,-apple-system,Segoe UI,sans-serif; }
+  header { display:flex; align-items:center; gap:18px; padding:10px 16px; border-bottom:1px solid var(--line); }
+  header h1 { font-size:15px; margin:0; }
+  header .tot { color:var(--mut); }
+  header .tot b { color:var(--txt); }
+  #estado { margin-left:auto; color:var(--mut); }
+  main { display:grid; grid-template-columns:auto minmax(0,1fr); gap:16px; padding:16px; align-items:start; }
+  #izq { display:flex; flex-direction:column; gap:10px; }
+  #v { height:60vh; aspect-ratio:9/16; background:#000; border-radius:8px; }
+  button, select, input { font:inherit; color:var(--txt); background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:6px 10px; }
+  button { cursor:pointer; }
+  button:hover { border-color:var(--mut); }
+  button.primario { background:var(--red); border-color:var(--red); font-weight:600; }
+  label.chk { display:flex; gap:6px; align-items:center; color:var(--mut); }
+  #der { display:flex; flex-direction:column; gap:12px; min-width:0; }
+  #wave-wrap { position:relative; overflow-x:auto; overflow-y:hidden; background:var(--panel); border:1px solid var(--line); border-radius:8px; height:165px; }
+  #wave-wrap canvas { position:absolute; top:10px; left:0; }
+  .barra { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  #texto { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:12px; max-height:24vh; overflow:auto; line-height:1.9; user-select:none; }
+  .w { cursor:pointer; padding:1px 0; border-radius:3px; }
+  .w:hover { background:#252838; }
+  .w.act { background:#334155; }
+  .w.sel { background:rgba(59,130,246,.45); }
+  .w.fuera { color:#6b7280; text-decoration:line-through; text-decoration-color:var(--red); }
+  .chips { display:flex; gap:6px; flex-wrap:wrap; }
+  .chip { padding:4px 10px; border-radius:999px; cursor:pointer; border:1px solid var(--line); background:var(--panel); color:var(--mut); }
+  .chip.on { background:var(--blue); border-color:var(--blue); color:#fff; }
+  #nota { flex:1; min-width:220px; }
+  #lista { display:flex; flex-direction:column; gap:8px; max-height:34vh; overflow:auto; }
+  .item { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:8px 10px; display:grid; gap:6px; }
+  .item .fila { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  .item input[type=number] { width:86px; }
+  .item input.nota { flex:1; min-width:180px; }
+  .item .ctx { color:var(--mut); font-size:12px; }
+  .vacio { color:var(--mut); padding:8px; }
+  kbd { background:var(--panel); border:1px solid var(--line); border-radius:4px; padding:0 5px; font-size:12px; }
+  .ayuda { color:var(--mut); font-size:12px; }
+  .w.traba { border-bottom:2px solid var(--amb); border-radius:0; }
+  #trabas-box { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:8px; display:grid; gap:6px; }
+  #trabas-box h2 { font-size:13px; margin:0; color:var(--amb); }
+  #trabas { display:flex; flex-direction:column; gap:6px; max-height:30vh; overflow:auto; }
+  .tr { border:1px solid var(--line); border-left:3px solid var(--amb); border-radius:6px; padding:6px 8px; display:grid; gap:4px; font-size:13px; }
+  .tr.act { background:#221f12; }
+  .tr.hecha { opacity:.45; border-left-color:var(--line); }
+  .tr .fila { display:flex; gap:6px; align-items:center; flex-wrap:wrap; }
+  .tr .det { color:var(--mut); font-size:12px; }
+  .tr button { padding:3px 8px; font-size:12px; }
+  .tag { font-size:11px; padding:1px 6px; border-radius:999px; border:1px solid var(--line); color:var(--mut); }
+  .tag.alta { color:#111; background:var(--amb); border-color:var(--amb); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Recortador</h1>
+  <span class="tot" id="tot"></span>
+  <span id="estado"></span>
+</header>
+<main>
+  <section id="izq">
+    <video id="v" src="/video" controls preload="auto"></video>
+    <div class="barra">
+      <button id="btn-sel" title="P">Escuchar selección</button>
+      <label class="chk"><input type="checkbox" id="saltar"> Saltar lo sacado</label>
+    </div>
+    <div class="ayuda">
+      <kbd>Espacio</kbd> play · <kbd>I</kbd>/<kbd>O</kbd> desde/hasta · <kbd>Backspace</kbd> sacar · <kbd>Z</kbd> deshacer<br>
+      <kbd>←</kbd>/<kbd>→</kbd> un fotograma (con <kbd>Shift</kbd> 0.2 s) · <kbd>P</kbd> escuchar selección · <kbd>Esc</kbd> limpiar<br>
+      <kbd>N</kbd> siguiente traba (la selecciona: <kbd>P</kbd> para escucharla, <kbd>I</kbd>/<kbd>O</kbd> para ajustarla)
+    </div>
+    <div id="trabas-box">
+      <h2 id="trabas-tit">Posibles trabas (…)</h2>
+      <div id="trabas"><div class="vacio">buscando…</div></div>
+    </div>
+  </section>
+  <section id="der">
+    <div class="barra">
+      <button id="zmenos">−</button><button id="zmas">+</button>
+      <span class="ayuda">Arrastrá sobre la onda para seleccionar. Click en una palabra para ir; arrastrá sobre palabras para seleccionarlas.</span>
+    </div>
+    <div id="wave-wrap"><canvas id="wave"></canvas><canvas id="ovl"></canvas></div>
+    <div id="texto"></div>
+    <div class="barra">
+      <div class="chips" id="chips"></div>
+    </div>
+    <div class="barra">
+      <input id="nota" placeholder="¿Por qué lo sacás? (en tus palabras: es lo que el editor aprende)">
+      <button class="primario" id="btn-sacar">Sacar selección</button>
+    </div>
+    <div id="lista"></div>
+  </section>
+</main>
+<script>
+const MOTIVOS = [["muletilla","Muletilla"],["respiracion","Respiración"],["silencio","Silencio"],["falso-arranque","Falso arranque"],["repeticion","Repetición"],["ritmo","Ritmo"],["otro","Otro"]];
+const MOTIVO_TRABA = { repeticion: "repeticion", arranque: "falso-arranque", aplastada: "falso-arranque", muletilla: "muletilla", "habla-sin-texto": "otro", estirada: "respiracion", "baja-confianza": "otro" };
+const $ = (s) => document.querySelector(s);
+const v = $("#v");
+const st = { trabas: [], descartadas: [], trabaAct: null, trabasError: null, words: [], recortes: [], sel: null, motivo: "silencio", px: 60, pcm: null, sr: 48000, dur: 0, undo: [], playTo: null, dragWave: null, dragWords: null, actIdx: -1 };
+const r3 = (n) => Math.round(n * 1000) / 1000;
+const fmt = (t) => `${Math.floor(t / 60)}:${(t % 60).toFixed(2).padStart(5, "0")}`;
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+const solapa = (a, b) => Math.min(a.hasta, b.hasta) - Math.max(a.desde, b.desde);
+
+function rms(a, b) {
+  const s = Math.max(0, Math.floor(a * st.sr));
+  const e = Math.min(st.pcm.length, Math.floor(b * st.sr));
+  if (e - s < 1) return -100;
+  let sum = 0;
+  for (let i = s; i < e; i++) sum += st.pcm[i] * st.pcm[i];
+  return Math.max(-100, 20 * Math.log10(Math.sqrt(sum / (e - s)) + 1e-9));
+}
+
+function contexto(desde, hasta) {
+  const centro = (w) => (w.start + w.end) / 2;
+  const dentro = st.words.filter((w) => centro(w) >= desde && centro(w) <= hasta).map((w) => w.word).join(" ");
+  const antes = [...st.words].reverse().find((w) => w.end <= desde + 0.02);
+  const despues = st.words.find((w) => w.start >= hasta - 0.02);
+  const db = rms(desde, hasta);
+  return {
+    texto: dentro,
+    antes: antes ? antes.word : "",
+    despues: despues ? despues.word : "",
+    duracion: r3(hasta - desde),
+    rmsDb: r3(db),
+    bordeAntesDb: r3(rms(Math.max(0, desde - 0.15), desde)),
+    bordeDespuesDb: r3(rms(hasta, Math.min(st.dur, hasta + 0.15))),
+    esSilencio: db < -40,
+  };
+}
+
+function fusionados() {
+  const out = [];
+  for (const r of [...st.recortes].sort((a, b) => a.desde - b.desde)) {
+    const last = out[out.length - 1];
+    if (last && r.desde <= last[1]) last[1] = Math.max(last[1], r.hasta);
+    else out.push([r.desde, r.hasta]);
+  }
+  return out;
+}
+
+function totales() {
+  const quitado = fusionados().reduce((acc, [a, b]) => acc + (b - a), 0);
+  $("#tot").innerHTML = `Original <b>${st.dur.toFixed(2)} s</b> → resultante <b>${(st.dur - quitado).toFixed(2)} s</b> (saca ${quitado.toFixed(2)} s · ${st.recortes.length} recortes)`;
+}
+
+let saveTimer;
+function guardar() {
+  $("#estado").textContent = "guardando…";
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(async () => {
+    try {
+      const r = await fetch("/recortes", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ recortes: st.recortes, descartadas: st.descartadas, version: st.version }) });
+      const j = await r.json().catch(() => ({}));
+      if (r.ok) st.version = j.version;
+      $("#estado").textContent = r.ok ? "guardado ✓" : r.status === 409 ? "⚠ hay cambios más nuevos en el archivo: recargá la página (F5)" : "error al guardar";
+    } catch {
+      $("#estado").textContent = "error al guardar";
+    }
+  }, 250);
+}
+
+function pushUndo() {
+  st.undo.push(JSON.stringify({ recortes: st.recortes, descartadas: st.descartadas }));
+  if (st.undo.length > 50) st.undo.shift();
+}
+
+function sacar() {
+  if (!st.sel || st.sel.hasta - st.sel.desde < 0.02) return;
+  pushUndo();
+  const desde = r3(st.sel.desde);
+  const hasta = r3(st.sel.hasta);
+  st.recortes.push({ desde, hasta, motivo: st.motivo, nota: $("#nota").value.trim(), contexto: contexto(desde, hasta) });
+  st.recortes.sort((a, b) => a.desde - b.desde);
+  st.sel = null;
+  $("#nota").value = "";
+  renderAll();
+  guardar();
+}
+
+function deshacer() {
+  if (!st.undo.length) return;
+  ({ recortes: st.recortes, descartadas: st.descartadas } = JSON.parse(st.undo.pop()));
+  renderAll();
+  guardar();
+}
+
+function setBorde(campo) {
+  const t = v.currentTime;
+  if (!st.sel) st.sel = { desde: t, hasta: t };
+  st.sel[campo] = t;
+  if (st.sel.hasta < st.sel.desde) st.sel = { desde: st.sel.hasta, hasta: st.sel.desde };
+  renderTexto();
+}
+
+function drawWave() {
+  const c = $("#wave");
+  const W = Math.ceil(st.dur * st.px);
+  const H = 130;
+  c.width = W; c.height = H; c.style.width = W + "px"; c.style.height = H + "px";
+  const o = $("#ovl");
+  o.width = W; o.height = H; o.style.width = W + "px"; o.style.height = H + "px";
+  const g = c.getContext("2d");
+  g.clearRect(0, 0, W, H);
+  g.fillStyle = "#7c8299";
+  const spp = st.sr / st.px;
+  for (let x = 0; x < W; x++) {
+    const s0 = Math.floor(x * spp);
+    const s1 = Math.min(st.pcm.length, Math.floor((x + 1) * spp));
+    const paso = Math.max(1, Math.floor((s1 - s0) / 40));
+    let mx = 0;
+    for (let i = s0; i < s1; i += paso) { const a = Math.abs(st.pcm[i]); if (a > mx) mx = a; }
+    const h = Math.max(1, Math.min(H, (mx / st.peak) * H * 0.9));
+    g.fillRect(x, (H - h) / 2, 1, h);
+  }
+}
+
+function drawOverlay(t) {
+  const o = $("#ovl");
+  const g = o.getContext("2d");
+  g.clearRect(0, 0, o.width, o.height);
+  for (const tr of pendientes()) {
+    g.fillStyle = tr.id === st.trabaAct ? "rgba(234,179,8,.32)" : "rgba(234,179,8,.18)";
+    g.fillRect(tr.desde * st.px, 0, (tr.hasta - tr.desde) * st.px, o.height);
+    g.fillStyle = "rgba(234,179,8,.9)";
+    g.fillRect(tr.sugerencia.desde * st.px, 0, (tr.sugerencia.hasta - tr.sugerencia.desde) * st.px, 5);
+  }
+  for (const r of st.recortes) { g.fillStyle = "rgba(239,68,68,.30)"; g.fillRect(r.desde * st.px, 0, (r.hasta - r.desde) * st.px, o.height); }
+  if (st.sel) { g.fillStyle = "rgba(59,130,246,.38)"; g.fillRect(st.sel.desde * st.px, 0, Math.max(1, (st.sel.hasta - st.sel.desde) * st.px), o.height); }
+  g.fillStyle = "#fff";
+  g.fillRect(t * st.px, 0, 2, o.height);
+  if (!v.paused) {
+    const wrap = $("#wave-wrap");
+    const x = t * st.px;
+    if (x < wrap.scrollLeft || x > wrap.scrollLeft + wrap.clientWidth - 40) wrap.scrollLeft = x - wrap.clientWidth / 3;
+  }
+}
+
+function renderTexto() {
+  const el = $("#texto");
+  el.innerHTML = "";
+  const pend = pendientes();
+  st.words.forEach((w, i) => {
+    const s = document.createElement("span");
+    s.className = "w";
+    s.dataset.i = i;
+    s.textContent = w.word + " ";
+    const c = (w.start + w.end) / 2;
+    if (st.recortes.some((r) => c >= r.desde && c <= r.hasta)) s.classList.add("fuera");
+    if (st.sel && c >= st.sel.desde && c <= st.sel.hasta) s.classList.add("sel");
+    if (pend.some((t) => c >= t.desde && c <= t.hasta)) s.classList.add("traba");
+    el.appendChild(s);
+  });
+  st.actIdx = -1;
+}
+
+function renderChips() {
+  const el = $("#chips");
+  el.innerHTML = "";
+  for (const [id, label] of MOTIVOS) {
+    const b = document.createElement("span");
+    b.className = "chip" + (id === st.motivo ? " on" : "");
+    b.textContent = label;
+    b.onclick = () => { st.motivo = id; renderChips(); };
+    el.appendChild(b);
+  }
+}
+
+function renderLista() {
+  const el = $("#lista");
+  el.innerHTML = "";
+  if (!st.recortes.length) { el.innerHTML = '<div class="vacio">Todavía no marcaste nada.</div>'; return; }
+  st.recortes.forEach((r, i) => {
+    const d = document.createElement("div");
+    d.className = "item";
+    const opts = MOTIVOS.map(([id, l]) => `<option value="${id}"${id === r.motivo ? " selected" : ""}>${l}</option>`).join("");
+    const c = r.contexto || {};
+    d.innerHTML = `
+      <div class="fila">
+        <b>#${i + 1}</b>
+        <input type="number" step="0.01" min="0" value="${r.desde}" data-k="desde">
+        <input type="number" step="0.01" min="0" value="${r.hasta}" data-k="hasta">
+        <span class="ayuda">${(r.hasta - r.desde).toFixed(2)} s</span>
+        <select data-k="motivo">${opts}</select>
+        <button data-a="ir">Ir</button><button data-a="borrar">Borrar</button>
+      </div>
+      <div class="fila"><input class="nota" data-k="nota" placeholder="¿por qué?" value="${(r.nota || "").replace(/"/g, "&quot;")}"></div>
+      <div class="ctx">${c.texto ? "“" + c.texto + "”" : "(sin palabras)"} · antes: ${c.antes || "—"} · después: ${c.despues || "—"} · ${c.rmsDb ?? "?"} dB${c.esSilencio ? " · silencio" : ""}</div>`;
+    d.querySelectorAll("[data-k]").forEach((inp) => {
+      inp.onchange = () => {
+        pushUndo();
+        const k = inp.dataset.k;
+        r[k] = k === "desde" || k === "hasta" ? r3(parseFloat(inp.value)) : inp.value;
+        if (r.hasta <= r.desde) r.hasta = r3(r.desde + 0.02);
+        r.contexto = contexto(r.desde, r.hasta);
+        st.recortes.sort((a, b) => a.desde - b.desde);
+        renderAll();
+        guardar();
+      };
+    });
+    d.querySelector('[data-a="ir"]').onclick = () => { v.currentTime = Math.max(0, r.desde - 0.3); };
+    d.querySelector('[data-a="borrar"]').onclick = () => { pushUndo(); st.recortes.splice(i, 1); renderAll(); guardar(); };
+    el.appendChild(d);
+  });
+}
+
+function estadoTraba(t) {
+  if (st.descartadas.some((d) => d.id === t.id || (d.tipo === t.tipo && solapa(d, t) > 0))) return "descartada";
+  const s = t.sugerencia;
+  if (st.recortes.some((r) => solapa(r, s) >= 0.5 * (s.hasta - s.desde))) return "sacada";
+  return "pendiente";
+}
+const pendientes = () => st.trabas.filter((t) => estadoTraba(t) === "pendiente");
+
+function irTraba(t) {
+  st.trabaAct = t.id;
+  st.sel = { desde: t.sugerencia.desde, hasta: t.sugerencia.hasta };
+  v.pause();
+  v.currentTime = Math.max(0, t.sugerencia.desde - 0.5);
+  const wrap = $("#wave-wrap");
+  wrap.scrollLeft = t.desde * st.px - wrap.clientWidth / 3;
+  renderTexto();
+  renderTrabas();
+}
+
+function sacarTraba(t) {
+  const s = st.trabaAct === t.id && st.sel && solapa(st.sel, t) > 0 ? st.sel : t.sugerencia;
+  if (s.hasta - s.desde < 0.02) return;
+  pushUndo();
+  const desde = r3(s.desde);
+  const hasta = r3(s.hasta);
+  st.recortes.push({
+    desde, hasta, motivo: MOTIVO_TRABA[t.tipo] || "otro", nota: `sugerida: ${t.tipo}`, contexto: contexto(desde, hasta),
+    traba: { id: t.id, tipo: t.tipo, confianza: t.confianza, sugerencia: t.sugerencia },
+  });
+  st.recortes.sort((a, b) => a.desde - b.desde);
+  st.trabaAct = t.id;
+  st.sel = null;
+  renderAll();
+  guardar();
+}
+
+function descartarTraba(t) {
+  pushUndo();
+  const { id, tipo, confianza, desde, hasta, texto, detalle, sugerencia } = t;
+  st.descartadas.push({ id, tipo, confianza, desde, hasta, texto, detalle, sugerencia, fecha: new Date().toISOString() });
+  if (st.trabaAct === t.id) st.sel = null;
+  renderAll();
+  guardar();
+}
+
+function siguienteTraba() {
+  const p = pendientes();
+  if (!p.length) return;
+  const act = st.trabas.find((t) => t.id === st.trabaAct);
+  const ref = act ? act.desde : v.currentTime;
+  irTraba(p.find((t) => t.desde > ref + 0.01) || p[0]);
+}
+
+function renderTrabas() {
+  const el = $("#trabas");
+  const pend = pendientes();
+  $("#trabas-tit").textContent = st.trabasError ? "Posibles trabas (error)" : `Posibles trabas (${pend.length})`;
+  if (st.trabasError) { el.innerHTML = `<div class="vacio">${esc(st.trabasError)}</div>`; return; }
+  if (!st.trabas.length) { el.innerHTML = '<div class="vacio">No encontré trabas.</div>'; return; }
+  el.innerHTML = "";
+  for (const t of st.trabas) {
+    const estado = estadoTraba(t);
+    const d = document.createElement("div");
+    d.className = "tr" + (t.id === st.trabaAct ? " act" : "") + (estado !== "pendiente" ? " hecha" : "");
+    d.dataset.id = t.id;
+    d.innerHTML = `
+      <div class="fila"><b>${fmt(t.desde)}</b><span class="tag">${esc(t.tipo)}</span><span class="tag ${t.confianza === "alta" ? "alta" : ""}">${esc(t.confianza)}</span><span>${t.texto ? "“" + esc(t.texto) + "”" : "(sin palabras)"}</span></div>
+      <div class="det">${esc(t.detalle)} · sacar ${t.sugerencia.desde.toFixed(2)}–${t.sugerencia.hasta.toFixed(2)} s</div>
+      <div class="fila">${estado === "pendiente"
+        ? '<button data-a="ir">Ir</button><button data-a="sacar">Sacar</button><button data-a="no">No es traba</button>'
+        : `<button data-a="ir">Ir</button><span class="ayuda">${estado}</span>`}</div>`;
+    d.querySelector('[data-a="ir"]').onclick = () => irTraba(t);
+    const bs = d.querySelector('[data-a="sacar"]');
+    if (bs) {
+      bs.title = "Saca la sugerencia (o tu selección, si la ajustaste después de Ir)";
+      bs.onclick = () => sacarTraba(t);
+      d.querySelector('[data-a="no"]').onclick = () => descartarTraba(t);
+    }
+    el.appendChild(d);
+  }
+  const act = el.querySelector(".tr.act");
+  if (act) act.scrollIntoView({ block: "nearest" });
+}
+
+function renderAll() { renderTexto(); renderLista(); renderTrabas(); totales(); }
+
+function markWord(t) {
+  let idx = -1;
+  for (let i = 0; i < st.words.length; i++) if (t >= st.words[i].start && t < st.words[i].end) { idx = i; break; }
+  if (idx === st.actIdx) return;
+  const spans = $("#texto").children;
+  if (st.actIdx >= 0 && spans[st.actIdx]) spans[st.actIdx].classList.remove("act");
+  if (idx >= 0 && spans[idx]) spans[idx].classList.add("act");
+  st.actIdx = idx;
+}
+
+function loop() {
+  const t = v.currentTime;
+  if (st.playTo != null && t >= st.playTo) { v.pause(); st.playTo = null; }
+  if ($("#saltar").checked && !v.paused) {
+    const r = st.recortes.find((r) => t >= r.desde && t < r.hasta - 0.001);
+    if (r) v.currentTime = r.hasta;
+  }
+  drawOverlay(t);
+  markWord(t);
+  requestAnimationFrame(loop);
+}
+
+function escucharSeleccion() {
+  if (!st.sel) return;
+  v.currentTime = st.sel.desde;
+  st.playTo = st.sel.hasta;
+  v.play();
+}
+
+function zoom(f) {
+  const wrap = $("#wave-wrap");
+  const t = v.currentTime;
+  st.px = Math.min(600, Math.max(15, st.px * f));
+  drawWave();
+  wrap.scrollLeft = t * st.px - wrap.clientWidth / 2;
+}
+
+$("#zmas").onclick = () => zoom(1.4);
+$("#zmenos").onclick = () => zoom(1 / 1.4);
+$("#btn-sacar").onclick = sacar;
+$("#btn-sel").onclick = escucharSeleccion;
+
+const ovl = $("#ovl");
+ovl.addEventListener("mousedown", (e) => {
+  const x = e.clientX - ovl.getBoundingClientRect().left;
+  st.dragWave = { t0: x / st.px, moved: false };
+});
+window.addEventListener("mousemove", (e) => {
+  if (st.dragWave) {
+    const x = e.clientX - ovl.getBoundingClientRect().left;
+    const t = Math.max(0, Math.min(st.dur, x / st.px));
+    st.dragWave.moved = Math.abs(t - st.dragWave.t0) * st.px > 3;
+    if (st.dragWave.moved) { st.sel = { desde: Math.min(st.dragWave.t0, t), hasta: Math.max(st.dragWave.t0, t) }; renderTexto(); }
+  }
+});
+window.addEventListener("mouseup", () => {
+  if (st.dragWave && !st.dragWave.moved) { st.sel = null; v.currentTime = Math.max(0, Math.min(st.dur, st.dragWave.t0)); renderTexto(); }
+  st.dragWave = null;
+  st.dragWords = null;
+});
+
+$("#texto").addEventListener("mousedown", (e) => {
+  const s = e.target.closest(".w");
+  if (!s) return;
+  const i = +s.dataset.i;
+  st.dragWords = { a: i };
+  v.currentTime = st.words[i].start;
+  st.sel = { desde: st.words[i].start, hasta: st.words[i].end };
+  renderTexto();
+});
+$("#texto").addEventListener("mouseover", (e) => {
+  if (!st.dragWords) return;
+  const s = e.target.closest(".w");
+  if (!s) return;
+  const i = +s.dataset.i;
+  const a = Math.min(st.dragWords.a, i);
+  const b = Math.max(st.dragWords.a, i);
+  st.sel = { desde: st.words[a].start, hasta: st.words[b].end };
+  renderTexto();
+});
+
+document.addEventListener("keydown", (e) => {
+  const tag = document.activeElement.tagName;
+  if (/INPUT|TEXTAREA|SELECT/.test(tag)) { if (e.key === "Escape") document.activeElement.blur(); return; }
+  const k = e.key.toLowerCase();
+  if (k === " ") { e.preventDefault(); v.paused ? v.play() : v.pause(); }
+  else if (k === "i") setBorde("desde");
+  else if (k === "o") setBorde("hasta");
+  else if (k === "p") escucharSeleccion();
+  else if (k === "backspace" || k === "delete") { e.preventDefault(); sacar(); }
+  else if (k === "z") deshacer();
+  else if (k === "escape") { st.sel = null; renderTexto(); }
+  else if (k === "n") siguienteTraba();
+  else if (k === "arrowleft") { e.preventDefault(); v.currentTime = Math.max(0, v.currentTime - (e.shiftKey ? 0.2 : 1 / 30)); }
+  else if (k === "arrowright") { e.preventDefault(); v.currentTime = Math.min(st.dur, v.currentTime + (e.shiftKey ? 0.2 : 1 / 30)); }
+});
+
+async function init() {
+  $("#estado").textContent = "cargando audio…";
+  const [w, r] = await Promise.all([fetch("/words").then((x) => x.json()), fetch("/recortes").then((x) => x.json())]);
+  st.words = w.segments.flatMap((s) => s.words).map((x) => ({ ...x, word: x.word.trim() }));
+  st.recortes = r.recortes;
+  st.version = r.version;
+  st.descartadas = Array.isArray(r.descartadas) ? r.descartadas : [];
+  fetch("/trabas")
+    .then(async (x) => { const d = await x.json(); if (!x.ok) throw new Error(d.error || x.status); return d; })
+    .then((d) => { st.trabas = d.trabas || []; })
+    .catch((e) => { st.trabasError = `No pude calcular las trabas: ${e.message}`; })
+    .finally(() => { if (st.dur) renderAll(); else renderTrabas(); });
+  if (v.readyState < 1) await new Promise((res) => v.addEventListener("loadedmetadata", res, { once: true }));
+  st.dur = v.duration;
+  const ab = await (await fetch("/video")).arrayBuffer();
+  const buf = await new AudioContext().decodeAudioData(ab);
+  st.pcm = buf.getChannelData(0);
+  st.sr = buf.sampleRate;
+  st.peak = 0.01;
+  for (let i = 0; i < st.pcm.length; i++) { const a = Math.abs(st.pcm[i]); if (a > st.peak) st.peak = a; }
+  st.px = Math.max(30, Math.floor($("#wave-wrap").clientWidth / st.dur));
+  drawWave();
+  renderChips();
+  renderAll();
+  $("#estado").textContent = "listo";
+  loop();
+}
+init();
+</script>
+</body>
+</html>

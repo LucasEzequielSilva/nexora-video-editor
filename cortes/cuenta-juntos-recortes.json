@@ -1,0 +1,7 @@
+{
+  "fuente": "video-jc.mp4",
+  "hechoPor": "editor (2026-09-25), con el criterio de Lucas: pieza entregada entera para que él corrija",
+  "nota": "Sin recortes: las 8 tomas se eligieron completas y con los bordes pegados a la voz (silencedetect sobre IMG_3524), y el jumpcut dejó las uniones a ~0.1 s. Las 3 'posibles trabas' de trabas.mjs no eran trabas: el 'dos' de '1, 2, 5' (whisper lo corrió), la cola de 'bastante' y la de 'resultado'. Se corrigieron en correcciones.json.",
+  "recortes": [],
+  "descartadas": []
+}

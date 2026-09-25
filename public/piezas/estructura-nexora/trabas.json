@@ -1,0 +1,76 @@
+{
+  "pieza": "estructura-nexora",
+  "fuente": "video-jc.mp4",
+  "palabras": "words.jc.json",
+  "audio": {
+    "pisoDb": -58.05,
+    "vozDb": -27.327,
+    "umbralDb": -45.761
+  },
+  "trabas": [
+    {
+      "id": "repeticion-291",
+      "desde": 2.91,
+      "hasta": 4.12,
+      "tipo": "repeticion",
+      "texto": "y llega un di… y llega un",
+      "detalle": "\"y llega\" repetido a 0.80 s · \"llega un\" repetido a 0.82 s",
+      "confianza": "media",
+      "sugerencia": {
+        "desde": 2.91,
+        "hasta": 3.73
+      },
+      "senales": [
+        "repeticion"
+      ]
+    },
+    {
+      "id": "estirada-1083",
+      "desde": 10.83,
+      "hasta": 11.54,
+      "tipo": "estirada",
+      "texto": "el",
+      "detalle": "\"el\" dura 0.70 s con 0.42 s de silencio adentro (sonido suelto o respiración antes de la pausa)",
+      "confianza": "media",
+      "sugerencia": {
+        "desde": 10.83,
+        "hasta": 11.43
+      },
+      "senales": [
+        "estirada"
+      ]
+    },
+    {
+      "id": "estirada-2351",
+      "desde": 23.51,
+      "hasta": 24.1,
+      "tipo": "estirada",
+      "texto": "y",
+      "detalle": "\"y\" dura 0.62 s con 0.32 s de silencio adentro (sonido suelto o respiración antes de la pausa)",
+      "confianza": "media",
+      "sugerencia": {
+        "desde": 23.51,
+        "hasta": 23.95
+      },
+      "senales": [
+        "estirada"
+      ]
+    },
+    {
+      "id": "habla-sin-texto-5177",
+      "desde": 51.77,
+      "hasta": 52.19,
+      "tipo": "habla-sin-texto",
+      "texto": "",
+      "detalle": "0.36 s de voz sin palabras (pico -33.2 dB)",
+      "confianza": "media",
+      "sugerencia": {
+        "desde": 51.77,
+        "hasta": 52.19
+      },
+      "senales": [
+        "habla-sin-texto"
+      ]
+    }
+  ]
+}

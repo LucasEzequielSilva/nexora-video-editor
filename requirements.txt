@@ -1,0 +1,11 @@
+faster-whisper
+opencv-python
+numpy
+scipy
+scikit-image
+librosa
+matplotlib
+pillow
+torch
+torchvision
+rembg

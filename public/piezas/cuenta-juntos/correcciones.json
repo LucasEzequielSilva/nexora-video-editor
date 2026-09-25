@@ -1,0 +1,25 @@
+{
+  "reemplazos": [
+    ["cuenta juntes", "cuenta juntos"]
+  ],
+  "tramos": [
+    {
+      "desde": 8.95,
+      "hasta": 10.72,
+      "nota": "Cuenta '1, 2, 5' con pausas. Whisper estiró el '2' y dejó el 'dos' real (9.66-9.90) como voz sin texto. Islas de energía: 9.06-9.50 uno, 9.66-9.90 dos, 10.34-10.70 cinco.",
+      "palabras": [
+        { "word": "1,", "start": 9.06, "end": 9.5 },
+        { "word": "2,", "start": 9.66, "end": 9.9 },
+        { "word": "5,", "start": 10.34, "end": 10.7 }
+      ]
+    },
+    {
+      "desde": 18.14,
+      "hasta": 18.84,
+      "nota": "Whisper cortó 'bastante' en 18.45 e inventó una 'y' con su cola. Energía: 18.18-18.32 y 18.46-18.72 (fin de la toma, unión en 18.75); la toma siguiente arranca en 'no'.",
+      "palabras": [
+        { "word": "bastante,", "start": 18.18, "end": 18.72 }
+      ]
+    }
+  ]
+}

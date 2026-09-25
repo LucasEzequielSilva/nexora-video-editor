@@ -1,0 +1,914 @@
+{
+  "durationSeconds": 55.321,
+  "subtitulos": {
+    "fuente": "satoshi",
+    "acentos": [
+      "estructura",
+      "vos",
+      "sistema",
+      "WhatsApp",
+      "plantillas",
+      "bots"
+    ]
+  },
+  "zooms": [
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "tu",
+        "n": 2
+      },
+      "fin": {
+        "palabra": "no",
+        "n": 1,
+        "fin": true
+      },
+      "escalaInicial": 1.0,
+      "escala": 1.9
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "y",
+        "n": 1
+      },
+      "fin": {
+        "palabra": "y",
+        "n": 1,
+        "offsetMs": 700
+      },
+      "escalaInicial": 1.9,
+      "escala": 1.0,
+      "curva": "salida"
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "y",
+        "n": 1,
+        "offsetMs": 700
+      },
+      "fin": {
+        "palabra": "costar",
+        "offsetMs": -100
+      },
+      "escalaInicial": 1.0,
+      "escala": 1.1
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "costar",
+        "offsetMs": -100
+      },
+      "fin": {
+        "palabra": "fíjate",
+        "offsetMs": -30
+      },
+      "escalaInicial": 1.1,
+      "escala": 1.7
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "fíjate",
+        "offsetMs": -30
+      },
+      "fin": {
+        "palabra": "fíjate",
+        "offsetMs": 570
+      },
+      "escalaInicial": 1.7,
+      "escala": 1.0,
+      "curva": "salida"
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "fíjate",
+        "offsetMs": 570
+      },
+      "fin": {
+        "palabra": "mensaje",
+        "offsetMs": 200
+      },
+      "escalaInicial": 1.0,
+      "escala": 1.2
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "todas",
+        "offsetMs": -100
+      },
+      "fin": {
+        "palabra": "ese",
+        "offsetMs": -200
+      },
+      "escalaInicial": 1.0,
+      "escala": 1.15
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "ese",
+        "offsetMs": -200
+      },
+      "fin": {
+        "palabra": "alguien",
+        "n": 2
+      },
+      "escalaInicial": 1.15,
+      "escala": 1.5,
+      "curva": "salida"
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "alguien",
+        "n": 2
+      },
+      "fin": {
+        "palabra": "siempre",
+        "offsetMs": -500
+      },
+      "escalaInicial": 1.5,
+      "escala": 1.6
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "siempre",
+        "offsetMs": -500
+      },
+      "fin": {
+        "palabra": "siempre"
+      },
+      "escalaInicial": 1.6,
+      "escala": 2.0
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "siempre"
+      },
+      "fin": {
+        "palabra": "siempre",
+        "fin": true,
+        "offsetMs": 70
+      },
+      "escalaInicial": 2.0,
+      "escala": 2.05
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "siempre",
+        "fin": true,
+        "offsetMs": 70
+      },
+      "fin": {
+        "palabra": "instalamos",
+        "offsetMs": 150
+      },
+      "escalaInicial": 2.05,
+      "escala": 1.0,
+      "curva": "salida"
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "publicación",
+        "fin": true,
+        "offsetMs": 250
+      },
+      "fin": {
+        "palabra": "nada",
+        "n": 1,
+        "fin": true
+      },
+      "escalaInicial": 1.0,
+      "escala": 1.9
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "nada",
+        "n": 1,
+        "fin": true
+      },
+      "fin": {
+        "palabra": "nada",
+        "n": 1,
+        "fin": true,
+        "offsetMs": 500
+      },
+      "escalaInicial": 1.9,
+      "escala": 1.95
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "usás",
+        "fin": true,
+        "offsetMs": 200
+      },
+      "fin": {
+        "palabra": "usás",
+        "fin": true,
+        "offsetMs": 800
+      },
+      "escalaInicial": 1.9,
+      "escala": 1.0,
+      "curva": "salida"
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "usás",
+        "fin": true,
+        "offsetMs": 800
+      },
+      "fin": {
+        "palabra": "medir",
+        "offsetMs": 300
+      },
+      "escalaInicial": 1.0,
+      "escala": 1.12
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "perdió",
+        "fin": true,
+        "offsetMs": 350
+      },
+      "fin": {
+        "palabra": "no",
+        "n": 5,
+        "offsetMs": 10
+      },
+      "escalaInicial": 1.0,
+      "escala": 1.8
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "no",
+        "n": 5,
+        "offsetMs": 10
+      },
+      "fin": {
+        "palabra": "no",
+        "n": 5,
+        "offsetMs": 610
+      },
+      "escalaInicial": 1.8,
+      "escala": 1.0,
+      "curva": "salida"
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "no",
+        "n": 5,
+        "offsetMs": 610
+      },
+      "fin": {
+        "palabra": "sueltos",
+        "fin": true,
+        "offsetMs": 210
+      },
+      "escalaInicial": 1.0,
+      "escala": 1.1
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "sueltos",
+        "fin": true,
+        "offsetMs": 210
+      },
+      "fin": {
+        "palabra": "depender",
+        "offsetMs": -400
+      },
+      "escalaInicial": 1.0,
+      "escala": 1.9
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "depender",
+        "offsetMs": -400
+      },
+      "fin": {
+        "palabra": "depender"
+      },
+      "escalaInicial": 1.9,
+      "escala": 1.93
+    }
+  ],
+  "sfx": [
+    {
+      "nombre": "riser",
+      "palabra": "no",
+      "n": 1,
+      "fin": true,
+      "corte": {
+        "palabra": "no",
+        "n": 1,
+        "fin": true,
+        "offsetMs": 40
+      },
+      "volumen": 0.14
+    },
+    {
+      "nombre": "boom-negro",
+      "palabra": "no",
+      "n": 1,
+      "fin": true,
+      "offsetMs": 20,
+      "volumen": 0.2
+    },
+    {
+      "archivo": "piezas/estructura-nexora/cola-no.wav",
+      "palabra": "no",
+      "n": 1,
+      "offsetMs": -20,
+      "volumen": 1
+    },
+    {
+      "nombre": "remate-b",
+      "palabra": "difícil",
+      "fin": true,
+      "offsetMs": 90,
+      "volumen": 0.13
+    },
+    {
+      "nombre": "zoom-punch",
+      "palabra": "ese",
+      "offsetMs": -200,
+      "volumen": 0.11
+    },
+    {
+      "nombre": "remate",
+      "palabra": "siempre",
+      "fin": true,
+      "offsetMs": 70,
+      "volumen": 0.1
+    }
+  ],
+  "overlays": [
+    {
+      "tipo": "broll",
+      "archivo": "recursos/broll-201.mp4",
+      "inicioS": 3.5,
+      "desde": {
+        "palabra": "negocio"
+      },
+      "hasta": {
+        "palabra": "estructura",
+        "offsetMs": -100
+      },
+      "volumenSfx": 0.2,
+      "sfx": "corte-broll"
+    },
+    {
+      "tipo": "broll",
+      "archivo": "recursos/broll-004.mp4",
+      "inicioS": 1,
+      "desde": {
+        "palabra": "instalamos"
+      },
+      "hasta": {
+        "palabra": "para",
+        "offsetMs": 1000
+      },
+      "sfx": "corte-broll-b",
+      "volumenSfx": 0.12
+    },
+    {
+      "tipo": "broll",
+      "archivo": "recursos/broll-187.mp4",
+      "inicioS": 0.5,
+      "desde": {
+        "palabra": "depender",
+        "offsetMs": -400
+      },
+      "hasta": {
+        "palabra": "querés",
+        "offsetMs": -350
+      },
+      "sfx": "corte-broll",
+      "volumenSfx": 0.11
+    },
+    {
+      "tipo": "escena",
+      "escena": "pendientes",
+      "desde": {
+        "palabra": "mensaje",
+        "offsetMs": -300
+      },
+      "hasta": {
+        "palabra": "ninguna",
+        "offsetMs": 1580
+      },
+      "cues": {
+        "m1": {
+          "palabra": "mensaje"
+        },
+        "m2": {
+          "palabra": "turno"
+        },
+        "m3": {
+          "palabra": "presupuesto"
+        },
+        "m4": {
+          "palabra": "video"
+        },
+        "facil": {
+          "palabra": "ninguna"
+        }
+      },
+      "datos": {
+        "items": [
+          {
+            "marca": "whatsapp",
+            "app": "WhatsApp",
+            "titulo": "Nuevo mensaje",
+            "detalle": "Hola, ¿tienen turno para mañana?",
+            "hora": "23:04",
+            "cue": "m1",
+            "frase": {
+              "serif": "el mensaje que entra a las",
+              "clave": "11 de la noche",
+              "claveEn": 25
+            }
+          },
+          {
+            "marca": "googlecalendar",
+            "app": "Calendario",
+            "titulo": "Turno sin confirmar",
+            "detalle": "Jueves 10:30 · Martina G.",
+            "hora": "hace 2 h",
+            "cue": "m2",
+            "frase": {
+              "serif": "el turno que hay que",
+              "clave": "confirmar",
+              "claveEn": 19
+            }
+          },
+          {
+            "marca": "gmail",
+            "app": "Gmail",
+            "titulo": "Presupuesto sin responder",
+            "detalle": "Re: Cotización",
+            "hora": "hace 3 días",
+            "cue": "m3",
+            "frase": {
+              "serif": "el presupuesto que quedó",
+              "clave": "sin responder",
+              "claveEn": 23
+            }
+          },
+          {
+            "marca": "instagram",
+            "app": "Instagram",
+            "titulo": "Borrador sin publicar",
+            "detalle": "Video guardado",
+            "hora": "hace 3 sem",
+            "cue": "m4",
+            "frase": {
+              "serif": "el video que ibas a subir hace",
+              "clave": "tres semanas",
+              "claveEn": 33
+            }
+          }
+        ],
+        "remate": {
+          "serif": "ninguna de esas cosas",
+          "clave": "es difícil.",
+          "claveEn": 20,
+          "cue": "facil"
+        }
+      }
+    },
+    {
+      "tipo": "escena",
+      "escena": "proceso",
+      "desde": {
+        "palabra": "armamos",
+        "offsetMs": -250
+      },
+      "hasta": {
+        "palabra": "publicación",
+        "fin": true,
+        "offsetMs": 250
+      },
+      "cues": {
+        "titulo": {
+          "palabra": "armamos"
+        },
+        "p1": {
+          "palabra": "estrategia"
+        },
+        "p2": {
+          "palabra": "guion"
+        },
+        "p3": {
+          "palabra": "grabación"
+        },
+        "p4": {
+          "palabra": "edición"
+        },
+        "p5": {
+          "palabra": "publicación"
+        }
+      },
+      "datos": {
+        "titulo": {
+          "chico": "Armamos tu",
+          "grande": "contenido"
+        },
+        "pasos": [
+          {
+            "nombre": "Estrategia",
+            "cue": "p1",
+            "icono": "recursos/icono-003.png"
+          },
+          {
+            "nombre": "Guion",
+            "cue": "p2",
+            "icono": "recursos/icono-006.png"
+          },
+          {
+            "nombre": "Grabación",
+            "cue": "p3",
+            "icono": "recursos/icono-002.png"
+          },
+          {
+            "nombre": "Edición",
+            "cue": "p4",
+            "icono": "recursos/icono-004.png"
+          },
+          {
+            "nombre": "Publicación",
+            "cue": "p5",
+            "icono": "recursos/icono-012.png"
+          }
+        ],
+        "estadoFinal": "Publicado"
+      }
+    },
+    {
+      "tipo": "escena",
+      "escena": "chat",
+      "desde": {
+        "palabra": "sistema",
+        "offsetMs": -350
+      },
+      "hasta": {
+        "palabra": "usás",
+        "fin": true,
+        "offsetMs": 200
+      },
+      "cues": {
+        "whatsapp": {
+          "palabra": "whatsapp"
+        },
+        "instante": {
+          "palabra": "instante"
+        },
+        "agenda": {
+          "palabra": "agenda",
+          "n": 1
+        },
+        "confirma": {
+          "palabra": "confirma"
+        },
+        "recuerda": {
+          "palabra": "recuerda"
+        },
+        "calendario": {
+          "palabra": "agenda",
+          "n": 2
+        }
+      },
+      "datos": {
+        "frases": [
+          {
+            "cue": "whatsapp",
+            "logo": "whatsapp",
+            "lineas": [
+              [
+                {
+                  "texto": "un sistema en tu",
+                  "estilo": "serif",
+                  "retraso": -16
+                }
+              ],
+              [
+                {
+                  "texto": "WhatsApp",
+                  "estilo": "sans"
+                }
+              ]
+            ]
+          },
+          {
+            "cue": "instante",
+            "lineas": [
+              [
+                {
+                  "texto": "que responde",
+                  "estilo": "serif",
+                  "retraso": -12
+                }
+              ],
+              [
+                {
+                  "texto": "al instante",
+                  "estilo": "sans"
+                }
+              ]
+            ]
+          },
+          {
+            "cue": "agenda",
+            "tamano": 104,
+            "lineas": [
+              [
+                {
+                  "texto": "Agenda,",
+                  "estilo": "sans"
+                },
+                {
+                  "texto": "confirma",
+                  "estilo": "sans",
+                  "cue": "confirma"
+                }
+              ],
+              [
+                {
+                  "texto": "y",
+                  "estilo": "serif",
+                  "cue": "recuerda",
+                  "retraso": -4
+                },
+                {
+                  "texto": "recuerda",
+                  "estilo": "sans",
+                  "cue": "recuerda"
+                }
+              ]
+            ]
+          },
+          {
+            "cue": "calendario",
+            "lineas": [
+              [
+                {
+                  "texto": "conectado a la agenda",
+                  "estilo": "serif",
+                  "retraso": -5
+                }
+              ],
+              [
+                {
+                  "texto": "que ya usás",
+                  "estilo": "sans",
+                  "retraso": 12
+                }
+              ]
+            ]
+          }
+        ],
+        "contacto": "Sofía",
+        "hora": "23:04",
+        "mensajes": [
+          {
+            "de": "cliente",
+            "texto": "Hola! ¿Tienen turno el jueves?",
+            "cue": "whatsapp",
+            "escribe": 14
+          },
+          {
+            "de": "negocio",
+            "texto": "¡Hola Sofi! Sí, jueves a las 18:00 o 19:30. ¿Cuál te queda mejor?",
+            "cue": "instante",
+            "escribe": 12
+          },
+          {
+            "de": "cliente",
+            "texto": "18:00 porfa",
+            "cue": "agenda",
+            "retraso": -11,
+            "mudo": true
+          }
+        ],
+        "turno": {
+          "etiqueta": "Turno agendado",
+          "detalle": "Jueves · 18:00 hs",
+          "cue": "agenda",
+          "confirmado": "Confirmado",
+          "cueConfirma": "confirma"
+        },
+        "recordatorio": {
+          "titulo": "Recordatorio enviado",
+          "texto": "«Sofi, te esperamos mañana a las 18:00»",
+          "cue": "recuerda"
+        },
+        "calendario": {
+          "titulo": "Jueves",
+          "franjas": [
+            {
+              "hora": "17:00",
+              "evento": "Martina · Color"
+            },
+            {
+              "hora": "18:00"
+            },
+            {
+              "hora": "19:00",
+              "evento": "Juan · Corte"
+            }
+          ],
+          "destino": 1,
+          "evento": "Sofía · Turno",
+          "cue": "calendario",
+          "caeRetraso": 10
+        }
+      }
+    },
+    {
+      "tipo": "escena",
+      "escena": "panel",
+      "desde": {
+        "palabra": "medir",
+        "offsetMs": -200
+      },
+      "hasta": {
+        "palabra": "perdió",
+        "fin": true,
+        "offsetMs": 350
+      },
+      "cues": {
+        "medir": {
+          "palabra": "medir"
+        },
+        "panel": {
+          "palabra": "panel"
+        },
+        "entro": {
+          "palabra": "entró"
+        },
+        "agendo": {
+          "palabra": "agendó"
+        },
+        "perdio": {
+          "palabra": "perdió"
+        }
+      },
+      "datos": {
+        "palabra": {
+          "texto": "Medir",
+          "cue": "medir"
+        },
+        "titulo": "Panel",
+        "periodo": "Esta semana",
+        "panelCue": "panel",
+        "metricas": [
+          {
+            "etiqueta": "Entraron",
+            "valor": 48,
+            "cue": "entro",
+            "tono": "neutro"
+          },
+          {
+            "etiqueta": "Se agendaron",
+            "valor": 31,
+            "cue": "agendo",
+            "tono": "bueno"
+          },
+          {
+            "etiqueta": "Se perdieron",
+            "valor": 6,
+            "cue": "perdio",
+            "tono": "malo"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "escena",
+      "escena": "cta",
+      "desde": {
+        "palabra": "querés",
+        "offsetMs": -350
+      },
+      "hasta": "fin",
+      "cues": {
+        "ver": {
+          "palabra": "ver"
+        },
+        "comentar": {
+          "palabra": "comentá"
+        },
+        "palabra": {
+          "palabra": "comentá",
+          "fin": true
+        },
+        "respuesta": {
+          "palabra": "enviamos"
+        },
+        "privado": {
+          "palabra": "privado"
+        }
+      },
+      "datos": {
+        "cuenta": "nexora",
+        "usuario": "tu_negocio",
+        "palabra": "ESTRUCTURA",
+        "respuesta": "¡Te lo enviamos por privado!",
+        "enviado": "Enviado por privado",
+        "gancho": {
+          "serif": "si querés ver uno",
+          "sans": "funcionando de verdad"
+        }
+      }
+    },
+    {
+      "tipo": "strike",
+      "palabras": [
+        {
+          "imagen": "recursos/icono-001.png",
+          "en": {
+            "palabra": "bots"
+          }
+        },
+        {
+          "imagen": "recursos/icono-016.png",
+          "en": {
+            "palabra": "videos"
+          }
+        }
+      ],
+      "hasta": {
+        "palabra": "instalamos",
+        "n": 2,
+        "offsetMs": 200
+      }
+    },
+    {
+      "tipo": "strike",
+      "palabras": [
+        {
+          "imagen": "recursos/icono-009.png",
+          "en": {
+            "palabra": "trabajamos"
+          },
+          "strikeDelay": 17
+        }
+      ],
+      "hasta": {
+        "palabra": "no",
+        "n": 5,
+        "offsetMs": 500
+      }
+    },
+    {
+      "tipo": "icono",
+      "imagen": "recursos/icono-005.png",
+      "en": {
+        "palabra": "estructura",
+        "n": 3
+      },
+      "duracionMs": 1500,
+      "tamano": 380,
+      "centroY": 72
+    }
+  ],
+  "pausas": [
+    {
+      "tras": {
+        "palabra": "no",
+        "n": 1,
+        "fin": true
+      },
+      "segundos": 0.9
+    }
+  ],
+  "musica": {
+    "archivo": "recursos/musica-056-nivelada.m4a",
+    "desde": {
+      "palabra": "y",
+      "n": 1
+    },
+    "inicioS": 0,
+    "volumen": 0.129,
+    "bajoVoz": 0.7,
+    "fadeInMs": 40,
+    "fadeOutMs": 1200
+  }
+}

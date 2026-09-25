@@ -1,0 +1,514 @@
+{
+  "_comentario": [
+    "Template del formato ganador-talking-head. Pieza de referencia: public/piezas/estructura-nexora/props.json (terminada 2026-09-24).",
+    "Uso: copiar a public/piezas/<slug>/props.json y reemplazar TODO lo que va entre <...> por palabras LITERALES de words.json (las de 'pausas', de words.jc.json). Borrar los bloques que el guion no pida y volver a cerrar la cadena de zooms (README §3, 'Anclas prestadas', y §4.3).",
+    "Ancla = { palabra, n, offsetMs, fin }. fin: true = final de la palabra (default: inicio). La palabra se compara en minúsculas y sin puntuación, pero CON tildes.",
+    "n = aparición n-ésima de esa palabra, contada en words.json. Todo placeholder trae \"n\": \"<contar>\": contarla SIEMPRE (la ganadora necesitó 'tu' n2, 'alguien' n2, 'no' n5, 'agenda' n2, 'instalamos' n2, 'estructura' n3). Con un n equivocado el ancla cae en otra aparición SIN error. Si la palabra aparece una sola vez, se puede borrar n.",
+    "Chequeos antes de mostrar: node formatos/ganador-talking-head/chequeo-formato.mjs public/piezas/<slug> (0 ✖: placeholders, n, rangos, strikes, cues, cortes, saltos de escala) y después npm run verificar -- <slug> (sin ❌).",
+    "durationSeconds lo escribe scripts/recortar.mjs: no tocarlo a mano.",
+    "Las claves _comentario las ignora el código (se pueden dejar o borrar). Nunca meter _comentario dentro de 'cues' ni de 'acentos', ni como elemento suelto de un array.",
+    "Orden de armado: pausas (antes de recortar.mjs) -> hook (zooms + sfx) -> musica -> zooms del cuerpo -> escenas -> broll / strike / icono -> sfx de remate -> subtitulos.",
+    "'El corte' = un corte de la lista que imprime chequeo-formato.mjs (sección 2), que sale de cara.json.cortes sin los falsos positivos. Un ancla 'en el corte' va en la primera palabra de la toma, con el offsetMs que la lleva al cuadro del corte (el chequeo imprime la distancia: tiene que dar 0 cuadros).",
+    "Todo texto en pantalla sale de la transcripción. Datos de maqueta (nombres, horas, mensajes, cifras) = ilustrativos y confirmados con Lucas; nunca como resultados reales de Nexora."
+  ],
+  "durationSeconds": 0,
+  "subtitulos": {
+    "_comentario": "Satoshi Black es el default aprobado; alternativa válida: 'helvetica-heavy'. acentos: los PROPONE el editor y los DECIDE Lucas. Van en (1) el sustantivo del concepto central, (2) el 'vos' del espectador y (3) las X de las objeciones ('no hacemos X'), que caen sobre la cara con su ícono tachado. Solo tienen efecto en palabras que caen sobre cara o b-roll: las escenas ocultan el subtítulo (el chequeo avisa los acentos que no se ven). String = todas las apariciones; { palabra, atMs, color } = una sola. La ganadora tiene 6: estructura, vos, plantillas, bots, más sistema y WhatsApp, que caen dentro de la escena chat y no se ven (no copiarlos).",
+    "fuente": "satoshi",
+    "acentos": ["<palabra del concepto central>", "<el 'vos' del espectador, si aparece>", "<cada X de las objeciones>"]
+  },
+  "pausas": [
+    {
+      "_comentario": "Negro de respiro después del hook. Va EN EL CORTE DE TOMA, no en el fin de la palabra: buscar el corte en video-jc.mp4 (ffmpeg select=gt(scene,0.1)) y poner offsetMs = corte - fin de la palabra - 10 ms; si no, queda un cuadro de la toma anterior después del negro (cuenta-juntos: +50 ms). Lo inserta scripts/recortar.mjs (negro + silencio) y remapea words.json. Se resuelve contra words.jc.json (ANTES de los recortes): el n se cuenta en words.jc.json y puede no coincidir con el de words.json (verificar.mjs lo resuelve contra words.json: el chequeo avisa si difieren). Completar antes de correr recortar.mjs; si cambia, repetir recortar.mjs + cara.py + silueta.py.",
+      "tras": { "palabra": "<ultima palabra del hook>", "n": "<contar en words.jc.json>", "fin": true },
+      "segundos": 0.9
+    }
+  ],
+  "musica": {
+    "_comentario": "Cama desde la primera palabra después del negro hasta el final. Tema elegido por Lucas a oído, con el criterio de README §4.9: derechos, largo desde el drop >= duración de la pieza - vuelta del negro, y (drop2 - drop1) ~ (corte de la tesis - vuelta del negro), medido con python formatos/ganador-talking-head/drops-musica.py \"<tema>\". Si su dinámica pasa 8 dB: python scripts/nivelar-musica.py \"<tema>\" <drop1_s> <largo_s> public/recursos/<id>-nivelada.m4a <referencia_s> (la salida ya arranca en el drop: inicioS 0). Ganadora: \"PACKS/MÚSICA DE FONDO/METAMORPHOSIS ganador.mp3\" 11.053 54 public/recursos/musica-056-nivelada.m4a 12.85 (12.85 s después del drop = el segundo 16 de la pieza, el que marcó Lucas). bajoVoz 0.7 y fadeInMs 40 SIEMPRE explícitos: los defaults del tipo (0.4 / 150) no son los del formato.",
+    "archivo": "recursos/<id del tema>-nivelada.m4a",
+    "desde": { "palabra": "<primera palabra tras el negro>", "n": "<contar>" },
+    "inicioS": 0,
+    "volumen": 0.129,
+    "bajoVoz": 0.7,
+    "fadeInMs": 40,
+    "fadeOutMs": 1200
+  },
+  "zooms": [
+    {
+      "_comentario": "HOOK. Zoom obvio 1.0 -> 1.9 desde la palabra que abre la mitad que remata (ganadora: 'tu' n2 en 'pero tu estructura no') hasta el FIN de la última palabra del hook. Arranca todavía debajo del b-roll del hook. Curva in-out (default).",
+      "tipo": "suave",
+      "inicio": { "palabra": "<palabra que abre la mitad que remata el hook>", "n": "<contar>" },
+      "fin": { "palabra": "<ultima palabra del hook>", "n": "<contar>", "fin": true },
+      "escalaInicial": 1.0,
+      "escala": 1.9
+    },
+    {
+      "_comentario": "SOSTENER EL RETRATO DENTRO DEL NEGRO (cuenta-juntos, 2026-09-25): sin este tramo el cuadro que queda entre el fin de la última palabra y el negro sale a 1.0 y se ve un salto ('pasa de esto a esto super brusco'). Hasta el cuadro en que vuelve la imagen.",
+      "tipo": "suave",
+      "inicio": { "palabra": "<ultima palabra del hook>", "n": "<contar>", "fin": true },
+      "fin": { "palabra": "<primera palabra tras el negro>", "n": "<contar>" },
+      "escalaInicial": 1.9,
+      "escala": 1.9
+    },
+    {
+      "_comentario": "VUELTA DEL NEGRO. La imagen vuelve en retrato y abre con curva 'salida' en 0.7 s.",
+      "tipo": "suave",
+      "inicio": { "palabra": "<primera palabra tras el negro>", "n": "<contar>" },
+      "fin": { "palabra": "<primera palabra tras el negro>", "n": "<contar>", "offsetMs": 700 },
+      "escalaInicial": 1.9,
+      "escala": 1.0,
+      "curva": "salida"
+    },
+    {
+      "_comentario": "CONSECUENCIA / DOLOR GENERAL (1/2): deriva lenta. La cámara nunca queda quieta.",
+      "tipo": "suave",
+      "inicio": { "palabra": "<primera palabra tras el negro>", "n": "<contar>", "offsetMs": 700 },
+      "fin": { "palabra": "<palabra de costo de la consecuencia>", "n": "<contar>", "offsetMs": -100 },
+      "escalaInicial": 1.0,
+      "escala": 1.1
+    },
+    {
+      "_comentario": "CONSECUENCIA (2/2): zoom in que aterriza en el corte siguiente, en el cierre de la idea. fin = primera palabra de la toma siguiente con el offset que la lleva al cuadro del corte (ganadora: 'fíjate' -30 = 6.60 s).",
+      "tipo": "suave",
+      "inicio": { "palabra": "<palabra de costo de la consecuencia>", "n": "<contar>", "offsetMs": -100 },
+      "fin": { "palabra": "<primera palabra de la pregunta puente>", "n": "<contar>", "offsetMs": -30 },
+      "escalaInicial": 1.1,
+      "escala": 1.7
+    },
+    {
+      "_comentario": "PREGUNTA PUENTE (1/2): zoom out desde el corte. Todo jump cut sobre la cara es el arranque de un movimiento.",
+      "tipo": "suave",
+      "inicio": { "palabra": "<primera palabra de la pregunta puente>", "n": "<contar>", "offsetMs": -30 },
+      "fin": { "palabra": "<primera palabra de la pregunta puente>", "n": "<contar>", "offsetMs": 570 },
+      "escalaInicial": 1.7,
+      "escala": 1.0,
+      "curva": "salida"
+    },
+    {
+      "_comentario": "PREGUNTA PUENTE (2/2): deriva 1.0 -> 1.2 que sigue debajo de la entrada de la escena 'pendientes' (termina en su 1er ítem +200). Sin 'pendientes': terminarla en el corte o en la entrada de la escena que venga.",
+      "tipo": "suave",
+      "inicio": { "palabra": "<primera palabra de la pregunta puente>", "n": "<contar>", "offsetMs": 570 },
+      "fin": { "palabra": "<primer sustantivo de la lista>", "n": "<contar>", "offsetMs": 200 },
+      "escalaInicial": 1.0,
+      "escala": 1.2
+    },
+    {
+      "_comentario": "GIRO PERSONAL ('ese alguien sos vos, siempre'): escalera en 5 tramos. 1) deriva.",
+      "tipo": "suave",
+      "inicio": { "palabra": "<primera palabra del giro>", "n": "<contar>", "offsetMs": -100 },
+      "fin": { "palabra": "<palabra del punch>", "n": "<contar>", "offsetMs": -200 },
+      "escalaInicial": 1.0,
+      "escala": 1.15
+    },
+    {
+      "_comentario": "GIRO 2) zoom rápido de énfasis (~0.38 s) en el jump cut, con sfx 'zoom-punch' en la misma ancla. Palabra del punch = la primera de la toma que arranca en el corte (ganadora: 'ese' -200 = 19.43 s, el corte). Es 'suave' con curva 'salida': el tipo 'punch' existe pero la ganadora no lo usa.",
+      "tipo": "suave",
+      "inicio": { "palabra": "<palabra del punch>", "n": "<contar>", "offsetMs": -200 },
+      "fin": { "palabra": "<palabra que sigue al punch>", "n": "<contar>" },
+      "escalaInicial": 1.15,
+      "escala": 1.5,
+      "curva": "salida"
+    },
+    {
+      "_comentario": "GIRO 3) sube despacio hasta 0.5 s antes de la palabra final.",
+      "tipo": "suave",
+      "inicio": { "palabra": "<palabra que sigue al punch>", "n": "<contar>" },
+      "fin": { "palabra": "<palabra final del giro>", "n": "<contar>", "offsetMs": -500 },
+      "escalaInicial": 1.5,
+      "escala": 1.6
+    },
+    {
+      "_comentario": "GIRO 4) sube a retrato en los 0.5 s previos a la palabra final.",
+      "tipo": "suave",
+      "inicio": { "palabra": "<palabra final del giro>", "n": "<contar>", "offsetMs": -500 },
+      "fin": { "palabra": "<palabra final del giro>", "n": "<contar>" },
+      "escalaInicial": 1.6,
+      "escala": 2.0
+    },
+    {
+      "_comentario": "GIRO 5) sostener el retrato sin congelarlo mientras suena la palabra; termina en el cuadro del sfx 'remate' (+70 ms), que es el corte.",
+      "tipo": "suave",
+      "inicio": { "palabra": "<palabra final del giro>", "n": "<contar>" },
+      "fin": { "palabra": "<palabra final del giro>", "n": "<contar>", "fin": true, "offsetMs": 70 },
+      "escalaInicial": 2.0,
+      "escala": 2.05
+    },
+    {
+      "_comentario": "DECLARACIÓN DE LA SOLUCIÓN: zoom out largo (~0.94 s) que arranca en el mismo cuadro del remate y del jump cut.",
+      "tipo": "suave",
+      "inicio": { "palabra": "<palabra final del giro>", "n": "<contar>", "fin": true, "offsetMs": 70 },
+      "fin": { "palabra": "<verbo de la solucion>", "n": "<contar>", "offsetMs": 150 },
+      "escalaInicial": 2.05,
+      "escala": 1.0,
+      "curva": "salida"
+    },
+    {
+      "_comentario": "BENEFICIO CORTO ('Vos no tocás nada'): arranca en el 'hasta' de la escena 'proceso' (misma ancla) y aterriza en retrato en el fin de la última palabra. Sin 'proceso': arranca en el corte de la toma del beneficio, escalaInicial 1.0. Sin SFX: el remate lo hace la cámara.",
+      "tipo": "suave",
+      "inicio": { "palabra": "<ultimo paso del proceso>", "n": "<contar>", "fin": true, "offsetMs": 250 },
+      "fin": { "palabra": "<ultima palabra del beneficio>", "n": "<contar>", "fin": true },
+      "escalaInicial": 1.0,
+      "escala": 1.9
+    },
+    {
+      "_comentario": "BENEFICIO: retrato sostenido mientras entra la escena siguiente, que tapa el salto.",
+      "tipo": "suave",
+      "inicio": { "palabra": "<ultima palabra del beneficio>", "n": "<contar>", "fin": true },
+      "fin": { "palabra": "<ultima palabra del beneficio>", "n": "<contar>", "fin": true, "offsetMs": 500 },
+      "escalaInicial": 1.9,
+      "escala": 1.95
+    },
+    {
+      "_comentario": "ANTI-FRICCIÓN: al salir la escena 'chat' la cara aparece en retrato y abre. inicio = 'hasta' de la escena (misma ancla). En la ganadora el chequeo avisa un salto 1.0 -> 1.9 en ese cuadro: la escena se va en sus últimos 10 cuadros y la cara se ve un instante a 1.0 antes de saltar; Lucas aprobó así. Si molesta, adelantar este inicio ~333 ms y mirar un still.",
+      "tipo": "suave",
+      "inicio": { "palabra": "<ultima palabra de la demo>", "n": "<contar>", "fin": true, "offsetMs": 200 },
+      "fin": { "palabra": "<ultima palabra de la demo>", "n": "<contar>", "fin": true, "offsetMs": 800 },
+      "escalaInicial": 1.9,
+      "escala": 1.0,
+      "curva": "salida"
+    },
+    {
+      "_comentario": "ANTI-FRICCIÓN: deriva hasta que entra la escena 'panel'.",
+      "tipo": "suave",
+      "inicio": { "palabra": "<ultima palabra de la demo>", "n": "<contar>", "fin": true, "offsetMs": 800 },
+      "fin": { "palabra": "<palabra de medicion>", "n": "<contar>", "offsetMs": 300 },
+      "escalaInicial": 1.0,
+      "escala": 1.12
+    },
+    {
+      "_comentario": "OBJECIÓN 'no hacemos X' (1/3): zoom in desde el 'hasta' de la escena 'panel' (misma ancla) hasta el corte que abre la toma siguiente (ganadora: el 'no' n5 de 'Y no, no vendemos', +10 ms = 44.83 s, el corte). Sin 'panel': arranca en el corte o en el fin del zoom anterior.",
+      "tipo": "suave",
+      "inicio": { "palabra": "<ultima metrica del panel>", "n": "<contar>", "fin": true, "offsetMs": 350 },
+      "fin": { "palabra": "<primera palabra de la toma siguiente a la objecion>", "n": "<contar>", "offsetMs": 10 },
+      "escalaInicial": 1.0,
+      "escala": 1.8
+    },
+    {
+      "_comentario": "OBJECIÓN (2/3): zoom out desde el corte.",
+      "tipo": "suave",
+      "inicio": { "palabra": "<primera palabra de la toma siguiente a la objecion>", "n": "<contar>", "offsetMs": 10 },
+      "fin": { "palabra": "<primera palabra de la toma siguiente a la objecion>", "n": "<contar>", "offsetMs": 610 },
+      "escalaInicial": 1.8,
+      "escala": 1.0,
+      "curva": "salida"
+    },
+    {
+      "_comentario": "OBJECIÓN (3/3): deriva hasta el corte de la tesis (el salto 1.1 -> 1.0 queda escondido en ese corte).",
+      "tipo": "suave",
+      "inicio": { "palabra": "<primera palabra de la toma siguiente a la objecion>", "n": "<contar>", "offsetMs": 610 },
+      "fin": { "palabra": "<ultima palabra de la objecion>", "n": "<contar>", "fin": true, "offsetMs": 210 },
+      "escalaInicial": 1.0,
+      "escala": 1.1
+    },
+    {
+      "_comentario": "TESIS DE CIERRE: zoom largo desde el corte hasta retrato, justo cuando entra el b-roll emocional (misma ancla). Tiene que durar >= 3.2 s (ganadora 3.27 s). Ancla del fin = la del 'desde' del b-roll emocional (ver ese overlay: la palabra de la tesis cuyo inicio -400 ms queda más cerca de 'desde' del CTA - 1.0 s; ganadora 'depender').",
+      "tipo": "suave",
+      "inicio": { "palabra": "<ultima palabra de la objecion>", "n": "<contar>", "fin": true, "offsetMs": 210 },
+      "fin": { "palabra": "<palabra de anclaje del b-roll emocional>", "n": "<contar>", "offsetMs": -400 },
+      "escalaInicial": 1.0,
+      "escala": 1.9
+    },
+    {
+      "_comentario": "TESIS: retrato sostenido debajo del b-roll.",
+      "tipo": "suave",
+      "inicio": { "palabra": "<palabra de anclaje del b-roll emocional>", "n": "<contar>", "offsetMs": -400 },
+      "fin": { "palabra": "<palabra de anclaje del b-roll emocional>", "n": "<contar>" },
+      "escalaInicial": 1.9,
+      "escala": 1.93
+    }
+  ],
+  "sfx": [
+    {
+      "_comentario": "props.sfx lleva SOLO 6 entradas: los 3 del hook (riser, boom-negro, cola), los 2 remates de los giros (remate-b, remate) y el zoom-punch. Todo lo demás (escenas, b-rolls, íconos, tachados) suena solo desde el código: no duplicarlo acá (README §4.8). RISER del hook: el golpe del archivo (3.94 s) cae en el fin de la última palabra; sube ~2.2 s antes y 'corte' lo corta en seco +40 ms. Solo en el hook. Si el hook dura bastante más de 2.2 s, consultarlo con Lucas (candidato largo: sfx-cine-024, crece 7 s).",
+      "nombre": "riser",
+      "palabra": "<ultima palabra del hook>",
+      "n": "<contar>",
+      "fin": true,
+      "corte": { "palabra": "<ultima palabra del hook>", "n": "<contar>", "fin": true, "offsetMs": 40 },
+      "volumen": 0.14
+    },
+    {
+      "_comentario": "BOOM grave sobre el negro ('Boom - Earth Core Ripper' con delay/reverb), +20 ms del fin del hook.",
+      "nombre": "boom-negro",
+      "palabra": "<ultima palabra del hook>",
+      "n": "<contar>",
+      "fin": true,
+      "offsetMs": 20,
+      "volumen": 0.2
+    },
+    {
+      "_comentario": "COLA de eco + reverb de la última palabra (solo señal húmeda). Generarla con: python scripts/cola-reverb.py public/piezas/<slug>/video.mp4 <inicio-0.02> <fin> public/piezas/<slug>/cola-<palabra>.wav 1.3 <largo> 230 4 (tiempos de words.json). largo = (inicio de la primera palabra después del negro - (inicio de la palabra - 0.02)) + 0.2: el fundido de 0.2 s arranca justo cuando vuelve la voz y pisa 0.2 s de la frase siguiente, ya bajando. Ganadora: 3.15 - 2.07 + 0.2 = 1.28 ('video.mp4 2.07 2.27 ... cola-no.wav 1.3 1.28 230 4'). Sale en PCM 16 bits.",
+      "archivo": "piezas/<slug>/cola-<ultima palabra del hook>.wav",
+      "palabra": "<ultima palabra del hook>",
+      "n": "<contar>",
+      "offsetMs": -20,
+      "volumen": 1
+    },
+    {
+      "_comentario": "REMATE de la lista de dolores: +90 ms del fin de la frase que los minimiza ('ninguna de esas cosas es difícil'). Remates sonoros solo en los puntos de giro, 20-90 ms después del fin de la idea.",
+      "nombre": "remate-b",
+      "palabra": "<ultima palabra del remate de la lista>",
+      "n": "<contar>",
+      "fin": true,
+      "offsetMs": 90,
+      "volumen": 0.13
+    },
+    {
+      "_comentario": "Látigo del zoom rápido del giro: misma ancla que el inicio del zoom de 1.15 -> 1.5 (el corte). Ningún otro zoom lleva sonido tipo riser (zoom-in, zoom-in-corto y zoom-out están vetados).",
+      "nombre": "zoom-punch",
+      "palabra": "<palabra del punch>",
+      "n": "<contar>",
+      "offsetMs": -200,
+      "volumen": 0.11
+    },
+    {
+      "_comentario": "REMATE del giro: +70 ms del fin de la palabra final, en el mismo cuadro que el jump cut y el arranque del zoom out.",
+      "nombre": "remate",
+      "palabra": "<palabra final del giro>",
+      "n": "<contar>",
+      "fin": true,
+      "offsetMs": 70,
+      "volumen": 0.1
+    }
+  ],
+  "overlays": [
+    {
+      "_comentario": "B-ROLL DEL HOOK (~1.3 s). Se elige por TONO, no por la palabra literal: acompaña al riser (tensión, ambición, noche). Ganadora: broll-201, skyline de noche con tormenta (índice 'ambición / gran ciudad'), inicioS 3.5. Criterios de los 3 b-rolls ganadores en README §4.6 (live action, 1080x1920, nadie hablándole a cámara, sin texto que compita). Sale 100 ms antes de la palabra clave: la cara vuelve cuando la dice, con el zoom ya en marcha. inicioS = el segundo donde se ve lo que se busca, mirado en una tira de la ventana exacta (README §4.6), no el 'mejor inicio' genérico del catálogo. Copiar con npm run recursos -- usar <id> <slug>.",
+      "tipo": "broll",
+      "archivo": "recursos/<broll-id>.mp4",
+      "inicioS": 0,
+      "desde": { "palabra": "<segunda palabra del hook>", "n": "<contar>" },
+      "hasta": { "palabra": "<palabra clave del hook>", "n": "<contar>", "offsetMs": -100 },
+      "sfx": "corte-broll",
+      "volumenSfx": 0.2
+    },
+    {
+      "_comentario": "B-ROLL DE LA SOLUCIÓN (~2 s) desde el verbo: metáfora literal del verbo (ganadora: broll-004, un hombre que se multiplica en una multitud; inicioS 1 para que la multitud, que aparece a ~2.5 s del clip, entre dentro del corte). El subtítulo sigue visible encima. Alternar la familia del SFX de corte.",
+      "tipo": "broll",
+      "archivo": "recursos/<broll-id>.mp4",
+      "inicioS": 0,
+      "desde": { "palabra": "<verbo de la solucion>", "n": "<contar>" },
+      "hasta": { "palabra": "<conjuncion que sigue a la solucion>", "n": "<contar>", "offsetMs": 1000 },
+      "sfx": "corte-broll-b",
+      "volumenSfx": 0.12
+    },
+    {
+      "_comentario": "B-ROLL EMOCIONAL (~1.0 s) en la cola de la tesis (tranquilidad / libertad; ganadora: broll-187, pareja de espaldas hacia montañas). hasta = EXACTAMENTE el 'desde' del CTA (misma ancla): entrega sin corte. desde = la palabra de la tesis cuyo inicio -400 ms queda más cerca de ('desde' del CTA - 1.0 s). Ganadora: CTA 51.20 -> objetivo 50.20; 'depender' -400 = 50.24 (elegida), 'sin' -400 = 50.08. Es la misma ancla que el fin del zoom largo de la tesis.",
+      "tipo": "broll",
+      "archivo": "recursos/<broll-id>.mp4",
+      "inicioS": 0,
+      "desde": { "palabra": "<palabra de anclaje del b-roll emocional>", "n": "<contar>", "offsetMs": -400 },
+      "hasta": { "palabra": "<primera palabra con contenido del CTA>", "n": "<contar>", "offsetMs": -350 },
+      "sfx": "corte-broll",
+      "volumenSfx": 0.11
+    },
+    {
+      "_comentario": "LISTA DE DOLORES CONCRETOS (README §4.5.1). 3 a 5 ítems (probado 4; con 6 la lista invade la esquina del recorte). Una notificación por ítem, que entra en el sustantivo que la nombra (cue). marca: OBLIGATORIA y solo whatsapp | instagram | googlecalendar | gmail (mensajes -> whatsapp, turnos/agenda -> googlecalendar, presupuestos/mails -> gmail, contenido/publicaciones -> instagram). Si un dolor no encaja en ninguna, no forzarla: consultar a Lucas (README §4.5.1). frase.serif = el ítem hasta antes de la clave, en minúscula; frase.clave = el complemento concreto con el que termina el ítem, sin la coma del transcript ('11 de la noche', 'confirmar', 'sin responder', 'tres semanas'); el remate cierra con punto ('es difícil.'). claveEn = round((inicio de la 1ª palabra de la clave - inicio del cue) x 30), medido en words.json. titulo/detalle/hora = maqueta ilustrativa coherente con lo dicho ('23:04' para 'las 11 de la noche'). desde: 1ª palabra con contenido -300 (ganadora 'mensaje', no 'El'); hasta: fin del remate +430 ms. pip: abajo-izquierda (default) | abajo-derecha | ninguno.",
+      "tipo": "escena",
+      "escena": "pendientes",
+      "pip": "abajo-izquierda",
+      "desde": { "palabra": "<primer sustantivo de la lista>", "n": "<contar>", "offsetMs": -300 },
+      "hasta": { "palabra": "<ultima palabra del remate de la lista>", "n": "<contar>", "fin": true, "offsetMs": 430 },
+      "cues": {
+        "m1": { "palabra": "<primer sustantivo de la lista>", "n": "<contar>" },
+        "m2": { "palabra": "<segundo sustantivo de la lista>", "n": "<contar>" },
+        "facil": { "palabra": "<primera palabra del remate de la lista>", "n": "<contar>" }
+      },
+      "datos": {
+        "items": [
+          {
+            "marca": "<whatsapp|instagram|googlecalendar|gmail>",
+            "app": "<nombre visible de la app>",
+            "titulo": "<titulo de la notificacion>",
+            "detalle": "<detalle ilustrativo>",
+            "hora": "<hora coherente con lo dicho>",
+            "cue": "m1",
+            "frase": { "serif": "<bajada literal del item 1>", "clave": "<clave literal del item 1>", "claveEn": 0 }
+          },
+          {
+            "marca": "<whatsapp|instagram|googlecalendar|gmail>",
+            "app": "<nombre visible de la app>",
+            "titulo": "<titulo de la notificacion>",
+            "detalle": "<detalle ilustrativo>",
+            "hora": "<hora coherente con lo dicho>",
+            "cue": "m2",
+            "frase": { "serif": "<bajada literal del item 2>", "clave": "<clave literal del item 2>", "claveEn": 0 }
+          }
+        ],
+        "remate": { "serif": "<bajada literal del remate>", "clave": "<clave literal del remate, con punto final>", "claveEn": 0, "cue": "facil" }
+      }
+    },
+    {
+      "_comentario": "SERVICIO CON PASOS ENUMERABLES. Título chico + grande (literal), un paso por palabra, chip final de estado (derivado de lo dicho, ej. 'Publicado'). Ganadora: 5 pasos. Íconos premium (recursos/icono-XXX.png; tabla del README §8): TODOS los pasos con ícono o NINGUNO (sin ícono, el paso muestra un número '01' en serif itálica; mezclar no está probado). Si falta uno, vale un sustituto por cercanía semántica (ganadora: 'Estrategia' con icono-003, crecimiento) y se pide el propio en paralelo (README §4.7). El cue 'titulo' tiene nombre fijo en el código; los de los pasos son libres (los referencia pasos[].cue). desde: verbo -250; hasta: fin del último paso +250.",
+      "tipo": "escena",
+      "escena": "proceso",
+      "desde": { "palabra": "<verbo del servicio>", "n": "<contar>", "offsetMs": -250 },
+      "hasta": { "palabra": "<ultimo paso del proceso>", "n": "<contar>", "fin": true, "offsetMs": 250 },
+      "cues": {
+        "titulo": { "palabra": "<verbo del servicio>", "n": "<contar>" },
+        "p1": { "palabra": "<paso 1>", "n": "<contar>" },
+        "p2": { "palabra": "<paso 2>", "n": "<contar>" },
+        "p3": { "palabra": "<ultimo paso del proceso>", "n": "<contar>" }
+      },
+      "datos": {
+        "titulo": { "chico": "<bajada literal del titulo>", "grande": "<palabra grande literal>" },
+        "pasos": [
+          { "nombre": "<Paso 1>", "cue": "p1", "icono": "recursos/<icono-id>.png" },
+          { "nombre": "<Paso 2>", "cue": "p2", "icono": "recursos/<icono-id>.png" },
+          { "nombre": "<Paso 3>", "cue": "p3", "icono": "recursos/<icono-id>.png" }
+        ],
+        "estadoFinal": "<estado final, derivado de lo dicho>"
+      }
+    },
+    {
+      "_comentario": "SERVICIO DEMOSTRABLE COMO INTERACCIÓN (README §4.5.1). Esta escena está hecha para un sistema de WhatsApp que responde, agenda, confirma, recuerda y cae en el calendario: si el servicio es otro, hace falta una escena nueva (archivo en src/pieza/escenas/ + registry.ts), consultándolo con Lucas. CUES: cada uno va en la palabra que dispara un elemento del teléfono; en las frases cinéticas el cue va en la palabra de la CLAVE SANS y la bajada serif se adelanta con retraso negativo (ganadora: cue 'instante' en 'instante', no en 'responde'). Excepción: 'calendario' va en el sustantivo que nombra la agenda ('agenda' n2) y la clave sans va con retraso positivo. RETRASO (cuadros) = round((inicio de la 1ª palabra de esa parte - inicio del cue) x 30). Ajustar a ojo solo para que (a) cada clave sans quede >= 20 cuadros antes de que entre la frase siguiente y (b) entre bajada y clave haya >= 12 cuadros; los -12, -4, -5 y +12 de abajo son esos ajustes de la ganadora, no copiarlos. ESCRIBE (cuadros de 'escribiendo...') ~ -retraso de la bajada de esa misma frase (el tipeo arranca con la bajada); si cae en los primeros 14 cuadros de la escena no suena. mudo = sin SFX cuando otro golpe cae a <= ~11 cuadros. caeRetraso 10 = default del código. mensajes/turno/recordatorio/calendario = maqueta ilustrativa (nombres ficticios, nunca clientes). calendario.destino = índice de la franja vacía donde cae el turno. desde: 1ª palabra con contenido -350 (ganadora 'sistema', no 'Un'); hasta: fin +200.",
+      "tipo": "escena",
+      "escena": "chat",
+      "desde": { "palabra": "<primera palabra con contenido de la demo>", "n": "<contar>", "offsetMs": -350 },
+      "hasta": { "palabra": "<ultima palabra de la demo>", "n": "<contar>", "fin": true, "offsetMs": 200 },
+      "cues": {
+        "whatsapp": { "palabra": "<clave sans de la 1ª frase: el canal, ej. whatsapp>", "n": "<contar>" },
+        "instante": { "palabra": "<clave sans de la 2ª frase (ganadora: 'instante')>", "n": "<contar>" },
+        "agenda": { "palabra": "<verbo 'agenda'>", "n": "<contar>" },
+        "confirma": { "palabra": "<verbo 'confirma'>", "n": "<contar>" },
+        "recuerda": { "palabra": "<verbo 'recuerda'>", "n": "<contar>" },
+        "calendario": { "palabra": "<sustantivo que nombra el calendario>", "n": "<contar>" }
+      },
+      "datos": {
+        "frases": [
+          {
+            "cue": "whatsapp",
+            "logo": "whatsapp",
+            "lineas": [
+              [{ "texto": "<bajada literal>", "estilo": "serif", "retraso": -16 }],
+              [{ "texto": "<clave literal>", "estilo": "sans" }]
+            ]
+          },
+          {
+            "cue": "instante",
+            "lineas": [
+              [{ "texto": "<bajada literal>", "estilo": "serif", "retraso": -12 }],
+              [{ "texto": "<clave literal>", "estilo": "sans" }]
+            ]
+          },
+          {
+            "cue": "agenda",
+            "tamano": 104,
+            "lineas": [
+              [{ "texto": "<Verbo 1,>", "estilo": "sans" }, { "texto": "<verbo 2>", "estilo": "sans", "cue": "confirma" }],
+              [{ "texto": "y", "estilo": "serif", "cue": "recuerda", "retraso": -4 }, { "texto": "<verbo 3>", "estilo": "sans", "cue": "recuerda" }]
+            ]
+          },
+          {
+            "cue": "calendario",
+            "lineas": [
+              [{ "texto": "<bajada literal>", "estilo": "serif", "retraso": -5 }],
+              [{ "texto": "<clave literal>", "estilo": "sans", "retraso": 12 }]
+            ]
+          }
+        ],
+        "contacto": "<nombre ficticio>",
+        "hora": "<hora ilustrativa>",
+        "mensajes": [
+          { "de": "cliente", "texto": "<consulta ilustrativa>", "cue": "whatsapp", "escribe": 14 },
+          { "de": "negocio", "texto": "<respuesta ilustrativa con opciones>", "cue": "instante", "escribe": 12 },
+          { "de": "cliente", "texto": "<eleccion ilustrativa>", "cue": "agenda", "retraso": -11, "mudo": true }
+        ],
+        "turno": {
+          "etiqueta": "<ej. Turno agendado>",
+          "detalle": "<dia y hora ilustrativos>",
+          "cue": "agenda",
+          "confirmado": "<ej. Confirmado>",
+          "cueConfirma": "confirma"
+        },
+        "recordatorio": { "titulo": "<ej. Recordatorio enviado>", "texto": "<texto ilustrativo>", "cue": "recuerda" },
+        "calendario": {
+          "titulo": "<dia>",
+          "franjas": [
+            { "hora": "<hh:mm>", "evento": "<evento ilustrativo>" },
+            { "hora": "<hh:mm>" },
+            { "hora": "<hh:mm>", "evento": "<evento ilustrativo>" }
+          ],
+          "destino": 1,
+          "evento": "<nombre ficticio> · <servicio>",
+          "cue": "calendario",
+          "caeRetraso": 10
+        }
+      }
+    },
+    {
+      "_comentario": "MEDICIÓN / RESULTADO. palabra = la palabra grande que abre y queda de título; una métrica por palabra del guion, con contador; tono: neutro | bueno | malo. valor: pedirle a Lucas la cifra real o dejarla claramente ilustrativa (ganadora: 48/31/6 de maqueta); nunca presentarla como resultado real. frase = remate opcional (no se usó en la ganadora). desde: palabra -200; hasta: fin de la última métrica +350.",
+      "tipo": "escena",
+      "escena": "panel",
+      "desde": { "palabra": "<palabra de medicion>", "n": "<contar>", "offsetMs": -200 },
+      "hasta": { "palabra": "<ultima metrica del panel>", "n": "<contar>", "fin": true, "offsetMs": 350 },
+      "cues": {
+        "medir": { "palabra": "<palabra de medicion>", "n": "<contar>" },
+        "panel": { "palabra": "<palabra que nombra el panel>", "n": "<contar>" },
+        "m1": { "palabra": "<metrica 1>", "n": "<contar>" },
+        "m2": { "palabra": "<metrica 2>", "n": "<contar>" },
+        "m3": { "palabra": "<ultima metrica del panel>", "n": "<contar>" }
+      },
+      "datos": {
+        "palabra": { "texto": "<Palabra de medicion>", "cue": "medir" },
+        "titulo": "<titulo del panel>",
+        "periodo": "<periodo ilustrativo>",
+        "panelCue": "panel",
+        "metricas": [
+          { "etiqueta": "<Metrica 1>", "valor": 0, "cue": "m1", "tono": "neutro" },
+          { "etiqueta": "<Metrica 2>", "valor": 0, "cue": "m2", "tono": "bueno" },
+          { "etiqueta": "<Metrica 3>", "valor": 0, "cue": "m3", "tono": "malo" }
+        ]
+      }
+    },
+    {
+      "_comentario": "CTA DE PALABRA CLAVE, hasta el final (sin salida). desde = la 1ª palabra CON CONTENIDO del CTA -350 ms (ganadora: 'querés', no 'Si': las funcionales de README §4.4 no cuentan); la entrada de la escena (14 cuadros) tiene que tapar el corte de toma del CTA (ganadora: el corte de 51.47 cae 8 cuadros después del desde; el chequeo lo lista). gancho = lo que se dice antes de 'comentá' (serif chica + sans grande, literal). palabra = la que dice el guion, en mayúsculas. El cue 'palabra' es el FIN de 'comentá': ahí se empieza a tipear. Los nombres de cue de esta escena son fijos en el código (ver, comentar, palabra, respuesta, privado); si falta uno, cae en un % de la duración sin avisar. Si el guion usa otro verbo que 'comentá', cambiar la palabra de las anclas. usuario genérico; cuenta = la de la marca.",
+      "tipo": "escena",
+      "escena": "cta",
+      "desde": { "palabra": "<primera palabra con contenido del CTA>", "n": "<contar>", "offsetMs": -350 },
+      "hasta": "fin",
+      "cues": {
+        "ver": { "palabra": "<palabra del gancho>", "n": "<contar>" },
+        "comentar": { "palabra": "comentá", "n": "<contar>" },
+        "palabra": { "palabra": "comentá", "n": "<contar>", "fin": true },
+        "respuesta": { "palabra": "<verbo de la respuesta, ej. enviamos>", "n": "<contar>" },
+        "privado": { "palabra": "<ultima palabra del CTA>", "n": "<contar>" }
+      },
+      "datos": {
+        "cuenta": "nexora",
+        "usuario": "tu_negocio",
+        "palabra": "<PALABRA CLAVE>",
+        "respuesta": "<respuesta literal>",
+        "enviado": "<texto del chip, derivado de lo dicho>",
+        "gancho": { "serif": "<bajada literal del gancho>", "sans": "<clave literal del gancho>" }
+      }
+    },
+    {
+      "_comentario": "OBJECIÓN ENUMERADA ('no vendemos X ni Y'): un ícono premium por cada X, en su palabra. Nunca tachar la palabra (ya está en el subtítulo). Íconos de 380 px al 70 % del alto; la línea roja entra a los strikeDelay cuadros (default 14); pop 0.2 + tachado 0.04 automáticos. hasta: ~+200 ms de la primera palabra de la frase siguiente (ganadora: 'instalamos' n2, NO n1: con n1 el hasta cae antes que los íconos y el tachado no se ve).",
+      "tipo": "strike",
+      "palabras": [
+        { "imagen": "recursos/<icono-id>.png", "en": { "palabra": "<X 1>", "n": "<contar>" } },
+        { "imagen": "recursos/<icono-id>.png", "en": { "palabra": "<X 2>", "n": "<contar>" } }
+      ],
+      "hasta": { "palabra": "<verbo de la tesis de cierre>", "n": "<contar>", "offsetMs": 200 }
+    },
+    {
+      "_comentario": "OBJECIÓN SIMPLE ('No trabajamos con X'): el ícono entra en el verbo y strikeDelay 17 hace que la línea caiga sobre X. hasta: ~+500 ms del arranque de la toma siguiente (ganadora: 'no' n5).",
+      "tipo": "strike",
+      "palabras": [
+        { "imagen": "recursos/<icono-id>.png", "en": { "palabra": "<verbo de la objecion>", "n": "<contar>" }, "strikeDelay": 17 }
+      ],
+      "hasta": { "palabra": "<primera palabra de la toma siguiente a la objecion>", "n": "<contar>", "offsetMs": 500 }
+    },
+    {
+      "_comentario": "TESIS DE CIERRE: ícono premium del concepto clave con pop (SFX pop-b 0.055 automático), sobre las manos y debajo del subtítulo; entra cuando se va el tachado. imagen = ícono premium o marca = logo oficial (whatsapp | instagram | googlecalendar | gmail). Ganadora: 'estructura' n3 (la de la tesis; con n1 el ícono sale en el hook). Si falta el ícono: sustituto por cercanía semántica o, si no hay ninguno cercano, sin ícono (README §4.7).",
+      "tipo": "icono",
+      "imagen": "recursos/<icono-id>.png",
+      "en": { "palabra": "<concepto clave de la tesis>", "n": "<contar>" },
+      "duracionMs": 1500,
+      "tamano": 380,
+      "centroY": 72
+    }
+  ]
+}

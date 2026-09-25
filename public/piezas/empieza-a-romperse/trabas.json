@@ -1,0 +1,28 @@
+{
+  "pieza": "empieza-a-romperse",
+  "fuente": "video-jc.mp4",
+  "palabras": "words.jc.json",
+  "audio": {
+    "pisoDb": -54.782,
+    "vozDb": -17.445,
+    "umbralDb": -39.847
+  },
+  "trabas": [
+    {
+      "id": "habla-sin-texto-4549",
+      "desde": 45.49,
+      "hasta": 45.81,
+      "tipo": "habla-sin-texto",
+      "texto": "",
+      "detalle": "0.24 s de voz sin palabras (pico -18.6 dB)",
+      "confianza": "media",
+      "sugerencia": {
+        "desde": 45.49,
+        "hasta": 45.81
+      },
+      "senales": [
+        "habla-sin-texto"
+      ]
+    }
+  ]
+}

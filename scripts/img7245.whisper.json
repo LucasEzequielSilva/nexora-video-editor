@@ -1,0 +1,1624 @@
+{
+ "language": "es",
+ "duration": 132.3506875,
+ "segments": [
+  {
+   "start": 1.46,
+   "end": 7.84,
+   "text": "Gracias por agendar tu llamada con nosotros. Tu día y horario ya quedaron reservados pero la",
+   "words": [
+    {
+     "start": 1.46,
+     "end": 2.1,
+     "word": " Gracias",
+     "p": 0.759
+    },
+    {
+     "start": 2.1,
+     "end": 2.32,
+     "word": " por",
+     "p": 0.997
+    },
+    {
+     "start": 2.32,
+     "end": 2.66,
+     "word": " agendar",
+     "p": 0.829
+    },
+    {
+     "start": 2.66,
+     "end": 2.86,
+     "word": " tu",
+     "p": 0.978
+    },
+    {
+     "start": 2.86,
+     "end": 3.22,
+     "word": " llamada",
+     "p": 0.992
+    },
+    {
+     "start": 3.22,
+     "end": 3.46,
+     "word": " con",
+     "p": 0.991
+    },
+    {
+     "start": 3.46,
+     "end": 4.24,
+     "word": " nosotros.",
+     "p": 0.988
+    },
+    {
+     "start": 4.74,
+     "end": 4.86,
+     "word": " Tu",
+     "p": 0.96
+    },
+    {
+     "start": 4.86,
+     "end": 5.02,
+     "word": " día",
+     "p": 0.965
+    },
+    {
+     "start": 5.02,
+     "end": 5.16,
+     "word": " y",
+     "p": 0.999
+    },
+    {
+     "start": 5.16,
+     "end": 5.52,
+     "word": " horario",
+     "p": 0.997
+    },
+    {
+     "start": 5.52,
+     "end": 5.86,
+     "word": " ya",
+     "p": 0.971
+    },
+    {
+     "start": 5.86,
+     "end": 6.48,
+     "word": " quedaron",
+     "p": 0.991
+    },
+    {
+     "start": 6.48,
+     "end": 7.28,
+     "word": " reservados",
+     "p": 0.981
+    },
+    {
+     "start": 7.28,
+     "end": 7.58,
+     "word": " pero",
+     "p": 0.518
+    },
+    {
+     "start": 7.58,
+     "end": 7.84,
+     "word": " la",
+     "p": 0.991
+    }
+   ]
+  },
+  {
+   "start": 7.84,
+   "end": 13.28,
+   "text": "llamada todavía no está confirmada. En pocos minutos vas a estar recibiendo un WhatsApp muestro",
+   "words": [
+    {
+     "start": 7.84,
+     "end": 8.12,
+     "word": " llamada",
+     "p": 0.992
+    },
+    {
+     "start": 8.12,
+     "end": 8.46,
+     "word": " todavía",
+     "p": 0.99
+    },
+    {
+     "start": 8.46,
+     "end": 8.66,
+     "word": " no",
+     "p": 0.997
+    },
+    {
+     "start": 8.66,
+     "end": 8.82,
+     "word": " está",
+     "p": 0.969
+    },
+    {
+     "start": 8.82,
+     "end": 9.76,
+     "word": " confirmada.",
+     "p": 0.996
+    },
+    {
+     "start": 10.24,
+     "end": 10.32,
+     "word": " En",
+     "p": 0.992
+    },
+    {
+     "start": 10.32,
+     "end": 10.58,
+     "word": " pocos",
+     "p": 0.999
+    },
+    {
+     "start": 10.58,
+     "end": 10.98,
+     "word": " minutos",
+     "p": 0.999
+    },
+    {
+     "start": 10.98,
+     "end": 11.28,
+     "word": " vas",
+     "p": 0.89
+    },
+    {
+     "start": 11.28,
+     "end": 11.4,
+     "word": " a",
+     "p": 0.998
+    },
+    {
+     "start": 11.4,
+     "end": 11.58,
+     "word": " estar",
+     "p": 0.997
+    },
+    {
+     "start": 11.58,
+     "end": 11.94,
+     "word": " recibiendo",
+     "p": 0.998
+    },
+    {
+     "start": 11.94,
+     "end": 12.12,
+     "word": " un",
+     "p": 0.996
+    },
+    {
+     "start": 12.12,
+     "end": 12.44,
+     "word": " WhatsApp",
+     "p": 0.25
+    },
+    {
+     "start": 12.44,
+     "end": 13.28,
+     "word": " muestro",
+     "p": 0.96
+    }
+   ]
+  },
+  {
+   "start": 13.28,
+   "end": 18.02,
+   "text": "el cual te pedimos que respondas para así completar la confirmación y que nos cometes",
+   "words": [
+    {
+     "start": 13.28,
+     "end": 13.64,
+     "word": " el",
+     "p": 0.6
+    },
+    {
+     "start": 13.64,
+     "end": 13.74,
+     "word": " cual",
+     "p": 0.977
+    },
+    {
+     "start": 13.74,
+     "end": 13.98,
+     "word": " te",
+     "p": 0.995
+    },
+    {
+     "start": 13.98,
+     "end": 14.26,
+     "word": " pedimos",
+     "p": 0.999
+    },
+    {
+     "start": 14.26,
+     "end": 14.62,
+     "word": " que",
+     "p": 0.998
+    },
+    {
+     "start": 14.62,
+     "end": 14.96,
+     "word": " respondas",
+     "p": 0.984
+    },
+    {
+     "start": 14.96,
+     "end": 15.32,
+     "word": " para",
+     "p": 0.977
+    },
+    {
+     "start": 15.32,
+     "end": 15.52,
+     "word": " así",
+     "p": 0.433
+    },
+    {
+     "start": 15.52,
+     "end": 16.0,
+     "word": " completar",
+     "p": 0.997
+    },
+    {
+     "start": 16.0,
+     "end": 16.2,
+     "word": " la",
+     "p": 0.999
+    },
+    {
+     "start": 16.2,
+     "end": 16.96,
+     "word": " confirmación",
+     "p": 0.991
+    },
+    {
+     "start": 16.96,
+     "end": 17.4,
+     "word": " y",
+     "p": 0.968
+    },
+    {
+     "start": 17.4,
+     "end": 17.52,
+     "word": " que",
+     "p": 0.992
+    },
+    {
+     "start": 17.52,
+     "end": 17.68,
+     "word": " nos",
+     "p": 0.994
+    },
+    {
+     "start": 17.68,
+     "end": 18.02,
+     "word": " cometes",
+     "p": 0.742
+    }
+   ]
+  },
+  {
+   "start": 18.02,
+   "end": 25.02,
+   "text": "un poco más sobre tu proyecto. La idea es que tengamos una llamada donde la aprovechemos del",
+   "words": [
+    {
+     "start": 18.02,
+     "end": 18.18,
+     "word": " un",
+     "p": 0.99
+    },
+    {
+     "start": 18.18,
+     "end": 18.38,
+     "word": " poco",
+     "p": 0.997
+    },
+    {
+     "start": 18.38,
+     "end": 18.6,
+     "word": " más",
+     "p": 0.995
+    },
+    {
+     "start": 18.6,
+     "end": 18.88,
+     "word": " sobre",
+     "p": 0.996
+    },
+    {
+     "start": 18.88,
+     "end": 19.06,
+     "word": " tu",
+     "p": 0.989
+    },
+    {
+     "start": 19.06,
+     "end": 19.64,
+     "word": " proyecto.",
+     "p": 1.0
+    },
+    {
+     "start": 20.96,
+     "end": 21.04,
+     "word": " La",
+     "p": 0.986
+    },
+    {
+     "start": 21.04,
+     "end": 21.46,
+     "word": " idea",
+     "p": 0.998
+    },
+    {
+     "start": 21.46,
+     "end": 21.94,
+     "word": " es",
+     "p": 0.983
+    },
+    {
+     "start": 21.94,
+     "end": 22.16,
+     "word": " que",
+     "p": 0.998
+    },
+    {
+     "start": 22.16,
+     "end": 22.5,
+     "word": " tengamos",
+     "p": 0.998
+    },
+    {
+     "start": 22.5,
+     "end": 22.78,
+     "word": " una",
+     "p": 0.998
+    },
+    {
+     "start": 22.78,
+     "end": 23.8,
+     "word": " llamada",
+     "p": 0.999
+    },
+    {
+     "start": 23.8,
+     "end": 24.14,
+     "word": " donde",
+     "p": 0.934
+    },
+    {
+     "start": 24.14,
+     "end": 24.4,
+     "word": " la",
+     "p": 0.88
+    },
+    {
+     "start": 24.4,
+     "end": 24.8,
+     "word": " aprovechemos",
+     "p": 0.979
+    },
+    {
+     "start": 24.8,
+     "end": 25.02,
+     "word": " del",
+     "p": 0.961
+    }
+   ]
+  },
+  {
+   "start": 25.02,
+   "end": 32.6,
+   "text": "minuto 1 y que nos cometes un poco sobre cómo tiene que funcionar tu app, para qué usuario es",
+   "words": [
+    {
+     "start": 25.02,
+     "end": 25.44,
+     "word": " minuto",
+     "p": 0.499
+    },
+    {
+     "start": 25.44,
+     "end": 25.92,
+     "word": " 1",
+     "p": 0.425
+    },
+    {
+     "start": 25.92,
+     "end": 26.34,
+     "word": " y",
+     "p": 0.788
+    },
+    {
+     "start": 26.34,
+     "end": 26.46,
+     "word": " que",
+     "p": 0.946
+    },
+    {
+     "start": 26.46,
+     "end": 26.72,
+     "word": " nos",
+     "p": 0.979
+    },
+    {
+     "start": 26.72,
+     "end": 27.08,
+     "word": " cometes",
+     "p": 0.704
+    },
+    {
+     "start": 27.08,
+     "end": 27.24,
+     "word": " un",
+     "p": 0.95
+    },
+    {
+     "start": 27.24,
+     "end": 27.72,
+     "word": " poco",
+     "p": 0.983
+    },
+    {
+     "start": 27.72,
+     "end": 29.4,
+     "word": " sobre",
+     "p": 0.001
+    },
+    {
+     "start": 29.4,
+     "end": 29.42,
+     "word": " cómo",
+     "p": 0.791
+    },
+    {
+     "start": 29.42,
+     "end": 29.66,
+     "word": " tiene",
+     "p": 0.945
+    },
+    {
+     "start": 29.66,
+     "end": 29.84,
+     "word": " que",
+     "p": 0.995
+    },
+    {
+     "start": 29.84,
+     "end": 30.34,
+     "word": " funcionar",
+     "p": 0.996
+    },
+    {
+     "start": 30.34,
+     "end": 30.5,
+     "word": " tu",
+     "p": 0.957
+    },
+    {
+     "start": 30.5,
+     "end": 30.76,
+     "word": " app,",
+     "p": 0.643
+    },
+    {
+     "start": 31.44,
+     "end": 31.62,
+     "word": " para",
+     "p": 0.924
+    },
+    {
+     "start": 31.62,
+     "end": 31.76,
+     "word": " qué",
+     "p": 0.841
+    },
+    {
+     "start": 31.76,
+     "end": 32.24,
+     "word": " usuario",
+     "p": 0.987
+    },
+    {
+     "start": 32.24,
+     "end": 32.6,
+     "word": " es",
+     "p": 0.957
+    }
+   ]
+  },
+  {
+   "start": 36.41,
+   "end": 53.69,
+   "text": "y cuál es el recorrido principal del producto. Si vemos que a partir de esta conversación podemos",
+   "words": [
+    {
+     "start": 36.41,
+     "end": 37.13,
+     "word": " y",
+     "p": 0.605
+    },
+    {
+     "start": 44.52,
+     "end": 44.7,
+     "word": " cuál",
+     "p": 0.681
+    },
+    {
+     "start": 44.7,
+     "end": 44.9,
+     "word": " es",
+     "p": 0.986
+    },
+    {
+     "start": 44.9,
+     "end": 46.08,
+     "word": " el",
+     "p": 0.991
+    },
+    {
+     "start": 46.08,
+     "end": 46.62,
+     "word": " recorrido",
+     "p": 0.993
+    },
+    {
+     "start": 46.62,
+     "end": 47.1,
+     "word": " principal",
+     "p": 0.991
+    },
+    {
+     "start": 47.1,
+     "end": 47.38,
+     "word": " del",
+     "p": 0.982
+    },
+    {
+     "start": 47.38,
+     "end": 47.9,
+     "word": " producto.",
+     "p": 0.993
+    },
+    {
+     "start": 51.09,
+     "end": 51.27,
+     "word": " Si",
+     "p": 0.939
+    },
+    {
+     "start": 51.27,
+     "end": 51.51,
+     "word": " vemos",
+     "p": 0.99
+    },
+    {
+     "start": 51.51,
+     "end": 51.71,
+     "word": " que",
+     "p": 0.996
+    },
+    {
+     "start": 51.71,
+     "end": 51.81,
+     "word": " a",
+     "p": 0.969
+    },
+    {
+     "start": 51.81,
+     "end": 52.05,
+     "word": " partir",
+     "p": 0.998
+    },
+    {
+     "start": 52.05,
+     "end": 52.27,
+     "word": " de",
+     "p": 1.0
+    },
+    {
+     "start": 52.27,
+     "end": 52.43,
+     "word": " esta",
+     "p": 0.986
+    },
+    {
+     "start": 52.43,
+     "end": 53.27,
+     "word": " conversación",
+     "p": 0.999
+    },
+    {
+     "start": 53.27,
+     "end": 53.69,
+     "word": " podemos",
+     "p": 0.958
+    }
+   ]
+  },
+  {
+   "start": 53.69,
+   "end": 61.55,
+   "text": "trabajar juntos, la idea es preparar una demo funcional en 48 horas y en esa llamada te",
+   "words": [
+    {
+     "start": 53.69,
+     "end": 54.25,
+     "word": " trabajar",
+     "p": 0.999
+    },
+    {
+     "start": 54.25,
+     "end": 55.01,
+     "word": " juntos,",
+     "p": 0.997
+    },
+    {
+     "start": 55.73,
+     "end": 55.73,
+     "word": " la",
+     "p": 0.985
+    },
+    {
+     "start": 55.73,
+     "end": 56.07,
+     "word": " idea",
+     "p": 0.998
+    },
+    {
+     "start": 56.07,
+     "end": 56.65,
+     "word": " es",
+     "p": 0.995
+    },
+    {
+     "start": 56.65,
+     "end": 56.99,
+     "word": " preparar",
+     "p": 0.978
+    },
+    {
+     "start": 56.99,
+     "end": 57.17,
+     "word": " una",
+     "p": 0.45
+    },
+    {
+     "start": 57.17,
+     "end": 57.49,
+     "word": " demo",
+     "p": 0.977
+    },
+    {
+     "start": 57.49,
+     "end": 58.07,
+     "word": " funcional",
+     "p": 0.959
+    },
+    {
+     "start": 58.07,
+     "end": 58.43,
+     "word": " en",
+     "p": 0.969
+    },
+    {
+     "start": 58.43,
+     "end": 59.05,
+     "word": " 48",
+     "p": 0.993
+    },
+    {
+     "start": 59.05,
+     "end": 59.67,
+     "word": " horas",
+     "p": 0.984
+    },
+    {
+     "start": 59.67,
+     "end": 60.35,
+     "word": " y",
+     "p": 0.819
+    },
+    {
+     "start": 60.35,
+     "end": 60.47,
+     "word": " en",
+     "p": 0.978
+    },
+    {
+     "start": 60.47,
+     "end": 60.67,
+     "word": " esa",
+     "p": 0.984
+    },
+    {
+     "start": 60.67,
+     "end": 61.13,
+     "word": " llamada",
+     "p": 0.999
+    },
+    {
+     "start": 61.13,
+     "end": 61.55,
+     "word": " te",
+     "p": 0.912
+    }
+   ]
+  },
+  {
+   "start": 61.55,
+   "end": 67.65,
+   "text": "explicamos cómo trabajamos, cómo tiene que ser la aplicación, definimos el alcance de la misma",
+   "words": [
+    {
+     "start": 61.55,
+     "end": 61.97,
+     "word": " explicamos",
+     "p": 0.501
+    },
+    {
+     "start": 61.97,
+     "end": 62.27,
+     "word": " cómo",
+     "p": 0.481
+    },
+    {
+     "start": 62.27,
+     "end": 63.41,
+     "word": " trabajamos,",
+     "p": 0.993
+    },
+    {
+     "start": 63.73,
+     "end": 63.79,
+     "word": " cómo",
+     "p": 0.883
+    },
+    {
+     "start": 63.79,
+     "end": 63.99,
+     "word": " tiene",
+     "p": 0.974
+    },
+    {
+     "start": 63.99,
+     "end": 64.15,
+     "word": " que",
+     "p": 0.998
+    },
+    {
+     "start": 64.15,
+     "end": 64.39,
+     "word": " ser",
+     "p": 0.997
+    },
+    {
+     "start": 64.39,
+     "end": 64.61,
+     "word": " la",
+     "p": 0.996
+    },
+    {
+     "start": 64.61,
+     "end": 65.55,
+     "word": " aplicación,",
+     "p": 0.997
+    },
+    {
+     "start": 65.91,
+     "end": 66.21,
+     "word": " definimos",
+     "p": 0.993
+    },
+    {
+     "start": 66.21,
+     "end": 66.49,
+     "word": " el",
+     "p": 0.994
+    },
+    {
+     "start": 66.49,
+     "end": 66.87,
+     "word": " alcance",
+     "p": 0.999
+    },
+    {
+     "start": 66.87,
+     "end": 67.11,
+     "word": " de",
+     "p": 0.966
+    },
+    {
+     "start": 67.11,
+     "end": 67.29,
+     "word": " la",
+     "p": 0.989
+    },
+    {
+     "start": 67.29,
+     "end": 67.65,
+     "word": " misma",
+     "p": 1.0
+    }
+   ]
+  },
+  {
+   "start": 67.65,
+   "end": 78.43,
+   "text": "y definimos también la inversión de la misma. Qué funcionalidades entran, cómo tiene que",
+   "words": [
+    {
+     "start": 67.65,
+     "end": 68.27,
+     "word": " y",
+     "p": 0.823
+    },
+    {
+     "start": 68.27,
+     "end": 68.59,
+     "word": " definimos",
+     "p": 0.99
+    },
+    {
+     "start": 68.59,
+     "end": 68.89,
+     "word": " también",
+     "p": 0.978
+    },
+    {
+     "start": 68.89,
+     "end": 69.09,
+     "word": " la",
+     "p": 0.99
+    },
+    {
+     "start": 69.09,
+     "end": 69.49,
+     "word": " inversión",
+     "p": 0.998
+    },
+    {
+     "start": 69.49,
+     "end": 69.65,
+     "word": " de",
+     "p": 0.99
+    },
+    {
+     "start": 69.65,
+     "end": 69.81,
+     "word": " la",
+     "p": 0.992
+    },
+    {
+     "start": 69.81,
+     "end": 70.31,
+     "word": " misma.",
+     "p": 0.999
+    },
+    {
+     "start": 76.17,
+     "end": 76.31,
+     "word": " Qué",
+     "p": 0.447
+    },
+    {
+     "start": 76.31,
+     "end": 77.17,
+     "word": " funcionalidades",
+     "p": 0.997
+    },
+    {
+     "start": 77.17,
+     "end": 77.65,
+     "word": " entran,",
+     "p": 0.988
+    },
+    {
+     "start": 77.87,
+     "end": 77.97,
+     "word": " cómo",
+     "p": 0.974
+    },
+    {
+     "start": 77.97,
+     "end": 78.19,
+     "word": " tiene",
+     "p": 0.979
+    },
+    {
+     "start": 78.19,
+     "end": 78.43,
+     "word": " que",
+     "p": 0.998
+    }
+   ]
+  },
+  {
+   "start": 78.43,
+   "end": 88.3,
+   "text": "funcionar, cuánto tiempo requiere y cuál es la inversión. A partir de ahí si decides avanzar",
+   "words": [
+    {
+     "start": 78.43,
+     "end": 79.51,
+     "word": " funcionar,",
+     "p": 0.999
+    },
+    {
+     "start": 79.73,
+     "end": 79.99,
+     "word": " cuánto",
+     "p": 0.966
+    },
+    {
+     "start": 79.99,
+     "end": 80.23,
+     "word": " tiempo",
+     "p": 0.999
+    },
+    {
+     "start": 80.23,
+     "end": 80.83,
+     "word": " requiere",
+     "p": 0.997
+    },
+    {
+     "start": 80.83,
+     "end": 81.05,
+     "word": " y",
+     "p": 0.885
+    },
+    {
+     "start": 81.05,
+     "end": 81.19,
+     "word": " cuál",
+     "p": 0.986
+    },
+    {
+     "start": 81.19,
+     "end": 81.31,
+     "word": " es",
+     "p": 0.998
+    },
+    {
+     "start": 81.31,
+     "end": 81.49,
+     "word": " la",
+     "p": 0.999
+    },
+    {
+     "start": 81.49,
+     "end": 82.45,
+     "word": " inversión.",
+     "p": 0.999
+    },
+    {
+     "start": 86.18,
+     "end": 86.3,
+     "word": " A",
+     "p": 0.987
+    },
+    {
+     "start": 86.3,
+     "end": 86.54,
+     "word": " partir",
+     "p": 0.989
+    },
+    {
+     "start": 86.54,
+     "end": 86.74,
+     "word": " de",
+     "p": 0.995
+    },
+    {
+     "start": 86.74,
+     "end": 87.04,
+     "word": " ahí",
+     "p": 0.989
+    },
+    {
+     "start": 87.04,
+     "end": 87.44,
+     "word": " si",
+     "p": 0.204
+    },
+    {
+     "start": 87.44,
+     "end": 87.74,
+     "word": " decides",
+     "p": 0.209
+    },
+    {
+     "start": 87.74,
+     "end": 88.3,
+     "word": " avanzar",
+     "p": 0.956
+    }
+   ]
+  },
+  {
+   "start": 89.12,
+   "end": 95.74,
+   "text": "empezamos nuestro proceso de definición, diseño y desarrollo, el cual vas a estar",
+   "words": [
+    {
+     "start": 89.12,
+     "end": 89.66,
+     "word": " empezamos",
+     "p": 0.751
+    },
+    {
+     "start": 89.66,
+     "end": 89.96,
+     "word": " nuestro",
+     "p": 0.995
+    },
+    {
+     "start": 89.96,
+     "end": 90.42,
+     "word": " proceso",
+     "p": 0.999
+    },
+    {
+     "start": 90.42,
+     "end": 91.58,
+     "word": " de",
+     "p": 0.996
+    },
+    {
+     "start": 91.58,
+     "end": 92.36,
+     "word": " definición,",
+     "p": 0.994
+    },
+    {
+     "start": 92.74,
+     "end": 93.16,
+     "word": " diseño",
+     "p": 0.995
+    },
+    {
+     "start": 93.16,
+     "end": 93.46,
+     "word": " y",
+     "p": 0.982
+    },
+    {
+     "start": 93.46,
+     "end": 94.02,
+     "word": " desarrollo,",
+     "p": 0.998
+    },
+    {
+     "start": 94.82,
+     "end": 95.02,
+     "word": " el",
+     "p": 0.989
+    },
+    {
+     "start": 95.02,
+     "end": 95.12,
+     "word": " cual",
+     "p": 0.934
+    },
+    {
+     "start": 95.12,
+     "end": 95.34,
+     "word": " vas",
+     "p": 0.945
+    },
+    {
+     "start": 95.34,
+     "end": 95.48,
+     "word": " a",
+     "p": 0.997
+    },
+    {
+     "start": 95.48,
+     "end": 95.74,
+     "word": " estar",
+     "p": 0.995
+    }
+   ]
+  },
+  {
+   "start": 95.74,
+   "end": 101.62,
+   "text": "monitoreando desde tu portal de cliente, en la cual también vamos a tener wiklis,",
+   "words": [
+    {
+     "start": 95.74,
+     "end": 96.4,
+     "word": " monitoreando",
+     "p": 0.784
+    },
+    {
+     "start": 96.4,
+     "end": 96.64,
+     "word": " desde",
+     "p": 0.98
+    },
+    {
+     "start": 96.64,
+     "end": 96.78,
+     "word": " tu",
+     "p": 0.976
+    },
+    {
+     "start": 96.78,
+     "end": 97.1,
+     "word": " portal",
+     "p": 0.987
+    },
+    {
+     "start": 97.1,
+     "end": 97.36,
+     "word": " de",
+     "p": 0.986
+    },
+    {
+     "start": 97.36,
+     "end": 99.28,
+     "word": " cliente,",
+     "p": 0.955
+    },
+    {
+     "start": 99.52,
+     "end": 99.54,
+     "word": " en",
+     "p": 0.95
+    },
+    {
+     "start": 99.54,
+     "end": 99.74,
+     "word": " la",
+     "p": 0.986
+    },
+    {
+     "start": 99.74,
+     "end": 100.14,
+     "word": " cual",
+     "p": 0.989
+    },
+    {
+     "start": 100.14,
+     "end": 100.48,
+     "word": " también",
+     "p": 0.905
+    },
+    {
+     "start": 100.48,
+     "end": 100.74,
+     "word": " vamos",
+     "p": 0.573
+    },
+    {
+     "start": 100.74,
+     "end": 100.9,
+     "word": " a",
+     "p": 0.995
+    },
+    {
+     "start": 100.9,
+     "end": 101.18,
+     "word": " tener",
+     "p": 0.994
+    },
+    {
+     "start": 101.18,
+     "end": 101.62,
+     "word": " wiklis,",
+     "p": 0.618
+    }
+   ]
+  },
+  {
+   "start": 103.64,
+   "end": 111.77,
+   "text": "en la cual también vamos a estar teniendo reuniones semanales para ir viendo cómo vienen",
+   "words": [
+    {
+     "start": 103.64,
+     "end": 103.76,
+     "word": " en",
+     "p": 0.976
+    },
+    {
+     "start": 103.76,
+     "end": 103.9,
+     "word": " la",
+     "p": 0.838
+    },
+    {
+     "start": 103.9,
+     "end": 104.76,
+     "word": " cual",
+     "p": 0.991
+    },
+    {
+     "start": 106.49,
+     "end": 107.53,
+     "word": " también",
+     "p": 0.679
+    },
+    {
+     "start": 107.53,
+     "end": 107.79,
+     "word": " vamos",
+     "p": 0.973
+    },
+    {
+     "start": 107.79,
+     "end": 107.93,
+     "word": " a",
+     "p": 0.988
+    },
+    {
+     "start": 107.93,
+     "end": 108.25,
+     "word": " estar",
+     "p": 0.993
+    },
+    {
+     "start": 108.25,
+     "end": 108.59,
+     "word": " teniendo",
+     "p": 0.984
+    },
+    {
+     "start": 108.59,
+     "end": 108.99,
+     "word": " reuniones",
+     "p": 0.994
+    },
+    {
+     "start": 108.99,
+     "end": 110.05,
+     "word": " semanales",
+     "p": 0.997
+    },
+    {
+     "start": 110.05,
+     "end": 110.55,
+     "word": " para",
+     "p": 0.851
+    },
+    {
+     "start": 110.55,
+     "end": 110.85,
+     "word": " ir",
+     "p": 0.982
+    },
+    {
+     "start": 110.85,
+     "end": 111.21,
+     "word": " viendo",
+     "p": 0.999
+    },
+    {
+     "start": 111.21,
+     "end": 111.57,
+     "word": " cómo",
+     "p": 0.737
+    },
+    {
+     "start": 111.57,
+     "end": 111.77,
+     "word": " vienen",
+     "p": 0.991
+    }
+   ]
+  },
+  {
+   "start": 111.77,
+   "end": 118.44,
+   "text": "los objetivos del proyecto. Lo único que resta a partir de ahora es que contestes el WhatsApp",
+   "words": [
+    {
+     "start": 111.77,
+     "end": 112.11,
+     "word": " los",
+     "p": 0.998
+    },
+    {
+     "start": 112.11,
+     "end": 112.53,
+     "word": " objetivos",
+     "p": 0.999
+    },
+    {
+     "start": 112.53,
+     "end": 112.75,
+     "word": " del",
+     "p": 0.984
+    },
+    {
+     "start": 112.75,
+     "end": 113.23,
+     "word": " proyecto.",
+     "p": 0.999
+    },
+    {
+     "start": 115.4,
+     "end": 115.56,
+     "word": " Lo",
+     "p": 0.958
+    },
+    {
+     "start": 115.56,
+     "end": 115.88,
+     "word": " único",
+     "p": 0.995
+    },
+    {
+     "start": 115.88,
+     "end": 116.14,
+     "word": " que",
+     "p": 0.998
+    },
+    {
+     "start": 116.14,
+     "end": 116.46,
+     "word": " resta",
+     "p": 0.966
+    },
+    {
+     "start": 116.46,
+     "end": 116.6,
+     "word": " a",
+     "p": 0.906
+    },
+    {
+     "start": 116.6,
+     "end": 116.78,
+     "word": " partir",
+     "p": 0.995
+    },
+    {
+     "start": 116.78,
+     "end": 116.96,
+     "word": " de",
+     "p": 0.991
+    },
+    {
+     "start": 116.96,
+     "end": 117.14,
+     "word": " ahora",
+     "p": 0.999
+    },
+    {
+     "start": 117.14,
+     "end": 117.3,
+     "word": " es",
+     "p": 0.903
+    },
+    {
+     "start": 117.3,
+     "end": 117.56,
+     "word": " que",
+     "p": 0.983
+    },
+    {
+     "start": 117.56,
+     "end": 117.92,
+     "word": " contestes",
+     "p": 0.931
+    },
+    {
+     "start": 117.92,
+     "end": 118.12,
+     "word": " el",
+     "p": 0.976
+    },
+    {
+     "start": 118.12,
+     "end": 118.44,
+     "word": " WhatsApp",
+     "p": 0.19
+    }
+   ]
+  },
+  {
+   "start": 118.44,
+   "end": 126.0,
+   "text": "para confirmar la llamada y vernos. Y a partir de ahí simplemente hablar sobre tu proyecto,",
+   "words": [
+    {
+     "start": 118.44,
+     "end": 118.8,
+     "word": " para",
+     "p": 0.986
+    },
+    {
+     "start": 118.8,
+     "end": 119.3,
+     "word": " confirmar",
+     "p": 0.995
+    },
+    {
+     "start": 119.3,
+     "end": 119.48,
+     "word": " la",
+     "p": 0.99
+    },
+    {
+     "start": 119.48,
+     "end": 120.16,
+     "word": " llamada",
+     "p": 0.996
+    },
+    {
+     "start": 120.16,
+     "end": 120.64,
+     "word": " y",
+     "p": 0.948
+    },
+    {
+     "start": 120.64,
+     "end": 121.48,
+     "word": " vernos.",
+     "p": 0.884
+    },
+    {
+     "start": 122.9,
+     "end": 123.14,
+     "word": " Y",
+     "p": 0.856
+    },
+    {
+     "start": 123.14,
+     "end": 123.22,
+     "word": " a",
+     "p": 0.979
+    },
+    {
+     "start": 123.22,
+     "end": 123.46,
+     "word": " partir",
+     "p": 0.999
+    },
+    {
+     "start": 123.46,
+     "end": 123.64,
+     "word": " de",
+     "p": 0.944
+    },
+    {
+     "start": 123.64,
+     "end": 123.84,
+     "word": " ahí",
+     "p": 0.989
+    },
+    {
+     "start": 123.84,
+     "end": 124.46,
+     "word": " simplemente",
+     "p": 0.822
+    },
+    {
+     "start": 124.46,
+     "end": 125.2,
+     "word": " hablar",
+     "p": 0.976
+    },
+    {
+     "start": 125.2,
+     "end": 125.48,
+     "word": " sobre",
+     "p": 0.995
+    },
+    {
+     "start": 125.48,
+     "end": 125.6,
+     "word": " tu",
+     "p": 0.985
+    },
+    {
+     "start": 125.6,
+     "end": 126.0,
+     "word": " proyecto,",
+     "p": 0.999
+    }
+   ]
+  },
+  {
+   "start": 126.0,
+   "end": 131.9,
+   "text": "así que nos vemos ahí. Nos vemos ahí y muchas gracias por agenda tu llamada.",
+   "words": [
+    {
+     "start": 126.0,
+     "end": 126.2,
+     "word": " así",
+     "p": 0.231
+    },
+    {
+     "start": 126.2,
+     "end": 126.94,
+     "word": " que",
+     "p": 0.997
+    },
+    {
+     "start": 126.94,
+     "end": 127.1,
+     "word": " nos",
+     "p": 0.873
+    },
+    {
+     "start": 127.1,
+     "end": 127.32,
+     "word": " vemos",
+     "p": 0.999
+    },
+    {
+     "start": 127.32,
+     "end": 128.92,
+     "word": " ahí.",
+     "p": 0.966
+    },
+    {
+     "start": 129.48,
+     "end": 129.56,
+     "word": " Nos",
+     "p": 0.726
+    },
+    {
+     "start": 129.56,
+     "end": 129.86,
+     "word": " vemos",
+     "p": 1.0
+    },
+    {
+     "start": 129.86,
+     "end": 130.18,
+     "word": " ahí",
+     "p": 0.95
+    },
+    {
+     "start": 130.18,
+     "end": 130.54,
+     "word": " y",
+     "p": 0.867
+    },
+    {
+     "start": 130.54,
+     "end": 130.64,
+     "word": " muchas",
+     "p": 0.978
+    },
+    {
+     "start": 130.64,
+     "end": 130.86,
+     "word": " gracias",
+     "p": 0.999
+    },
+    {
+     "start": 130.86,
+     "end": 131.04,
+     "word": " por",
+     "p": 0.984
+    },
+    {
+     "start": 131.04,
+     "end": 131.26,
+     "word": " agenda",
+     "p": 0.355
+    },
+    {
+     "start": 131.26,
+     "end": 131.46,
+     "word": " tu",
+     "p": 0.897
+    },
+    {
+     "start": 131.46,
+     "end": 131.9,
+     "word": " llamada.",
+     "p": 0.985
+    }
+   ]
+  }
+ ]
+}

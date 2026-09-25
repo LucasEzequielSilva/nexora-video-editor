@@ -1,0 +1,118 @@
+{
+  "reemplazos": [
+    [
+      "ve que entró",
+      "ves qué entró"
+    ],
+    [
+      "que se agendó",
+      "qué se agendó"
+    ],
+    [
+      "que se perdió",
+      "qué se perdió"
+    ],
+    [
+      "no sensación",
+      "no sensaciones"
+    ]
+  ],
+  "inserciones": [
+    {
+      "tras": "instalamos la",
+      "palabra": "estructura",
+      "start": 27.444,
+      "end": 27.904
+    },
+    {
+      "tras": "funciona tu",
+      "palabra": "negocio",
+      "start": 54.572,
+      "end": 55.132
+    }
+  ],
+  "tramos": [
+    {
+      "desde": 2.84,
+      "hasta": 4.36,
+      "nota": "Lucas: 'y llega un di... y llega un día'. Whisper lo colapsó en un intento con 'un' de 1.06 s. Energía medida: 2.94-3.28 primer intento, 3.30-3.72 silencio, 3.74-4.36 segundo intento.",
+      "palabras": [
+        {
+          "word": "y",
+          "start": 2.956,
+          "end": 3.036
+        },
+        {
+          "word": "llega",
+          "start": 3.036,
+          "end": 3.156
+        },
+        {
+          "word": "un",
+          "start": 3.156,
+          "end": 3.216
+        },
+        {
+          "word": "di…",
+          "start": 3.216,
+          "end": 3.316
+        },
+        {
+          "word": "y",
+          "start": 3.756,
+          "end": 3.836
+        },
+        {
+          "word": "llega",
+          "start": 3.856,
+          "end": 4.016
+        },
+        {
+          "word": "un",
+          "start": 4.016,
+          "end": 4.136
+        },
+        {
+          "word": "día",
+          "start": 4.136,
+          "end": 4.356
+        }
+      ]
+    },
+    {
+      "desde": 10.85,
+      "hasta": 11.53,
+      "nota": "Lo que whisper llamó \"el\" (10.84-11.54) es el \"dale\" de alguien fuera de cámara (energía 10.88-11.04) + silencio; el \"El\" real de \"El mensaje\" arranca en 11.48 (medido).",
+      "palabras": [
+        {
+          "word": "dale",
+          "start": 10.896,
+          "end": 11.056
+        },
+        {
+          "word": "El",
+          "start": 11.496,
+          "end": 11.596
+        }
+      ]
+    },
+    {
+      "desde": 55.0,
+      "hasta": 55.6,
+      "nota": "La \"Y\" de \"Y no, no vendemos\" arranca en 55.55 (medido); whisper la ponía en el silencio de antes.",
+      "palabras": [
+        {
+          "word": "Y",
+          "start": 55.55,
+          "end": 55.62
+        }
+      ]
+    },
+    {
+      "desde": 23.5,
+      "hasta": 23.95,
+      "nota": "Whisper estiró la 'y' (sonido suave en 23.59) hasta el arranque de 'ese' (23.96). Lucas cortó esa 'y': el subtítulo no la muestra.",
+      "palabras": []
+    }
+  ]
+}
