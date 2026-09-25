@@ -110,6 +110,13 @@ Hay dos sistemas. **No fingir automatización que no existe.**
    - `zooms`: `{ tipo: "suave"|"punch", inicio: <ancla>, fin: <ancla>|"fin", escala, escalaInicial?, curva?:
      "in-out"|"salida", rampa?, rampaSalida? }`. Los `suave` se encadenan (fin de uno = inicio del otro, misma
      escala); ver §8 "Zooms grandes". Con `cara.json` el encuadre sigue la cara solo.
+   - **Respiros** (Lucas, 2026-09-25: "un toque menos rápido"): en `pausas`, además del negro del hook, entradas con
+     `"modo": "congelar"` sostienen el último cuadro en silencio 0.4–0.6 s después de la frase de una escena (y ~1 s
+     al final para que termine el CTA); la escena se ancla para salir cuando vuelve la voz (`hasta` = palabra siguiente
+     +300 ms). Las inserta `recortar.mjs`.
+   - **Voz pareja** (Lucas, 2026-09-25): después de `recortar.mjs` + `cara.py`, `node scripts/nivelar-voz.mjs
+     public/piezas/<slug>` (`--dry` para ver) mide la voz entre cortes y nivela los tramos que se desvían más de 2 dB
+     (en `empieza-a-romperse` las 4 primeras tomas subieron +13 a +16 dB). Si se vuelve a correr `recortar.mjs`, repetirlo.
    - **Cara y recorte** (una vez por pieza, después de `recortar.mjs`; **si cambia `video.mp4`, se vuelven a correr**):
      - `python scripts/cara.py public/piezas/<slug>` → `cara.json`: ojos y ancho de cara por cuadro (YuNet,
        `models/yunet/`) + los cortes. ~30 s. Es lo que usa la cámara que calibra (§8) y el recorte de las escenas.
