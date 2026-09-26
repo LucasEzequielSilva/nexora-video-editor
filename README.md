@@ -41,6 +41,7 @@ Copialas **tal cual, en la misma ruta**, dentro de la carpeta del repo:
 | `PACKS/` | Recursos comprados: b-rolls, música, SFX, objetos 3D, íconos, fuentes. **No renombrar ni mover nada adentro**: `assets/biblioteca.json` los busca por ruta | Sí |
 | `models/large-v3/` | Modelo de Whisper para transcribir (~3 GB) | Sí |
 | `models/yunet/` | Detector de caras | Sí |
+| `models/mediapipe/face_landmarker.task` | Iris y ojos, para saber si mira a cámara. Se baja con `curl -L -o models/mediapipe/face_landmarker.task https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/latest/face_landmarker.task` | Sí |
 | `public/recursos/` | Recursos ya copiados de `PACKS/` que usan las piezas existentes | Para abrir las piezas existentes |
 | `public/piezas/<pieza>/*.mp4` | Videos de las piezas ya editadas | Para abrir las piezas existentes |
 | `public/reserva/video/` | Video del sistema viejo `reserva` | No |
@@ -67,7 +68,10 @@ El pipeline, a mano (`<slug>` = nombre de la pieza en kebab-case):
 
 1. **Explorar las tomas** del clip crudo:
    `node scripts/turno.mjs python scripts/explorar-tomas.py <clip.MOV> out/transcripciones/<clip>-explorar.json`
-2. **Elegir tomas**: `cortes/<slug>.json` (la última toma completa de cada frase, o la que se aprobó en voz alta).
+2. **Elegir tomas** con la herramienta de tomas: `npm run tomas -- <slug> --clips <carpeta con los crudos>` →
+   http://localhost:3101. Muestra el clip, la transcripción por frases y **si en cada tramo mira a cámara o está
+   leyendo** (tiene que estar arriba de 70 % a cámara). Agregás, ajustás y ordenás las tomas; se guardan en
+   `cortes/<slug>.json`. La primera vez prepara el proxy, la transcripción y la mirada de cada clip (unos minutos).
 3. **Montar y sacar silencios**:
    `node scripts/montar.mjs cortes/<slug>.json out/<slug>-bruto.mp4`, y después
    `node scripts/jumpcut.mjs out/<slug>-bruto.mp4 public/piezas/<slug>/video-jc.mp4 --uniones cortes/<slug>-uniones.json`
