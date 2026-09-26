@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Tomas</title>
+<style>
+  :root { --bg:#0e0f12; --panel:#171920; --line:#2a2d38; --txt:#e8eaf0; --mut:#8b90a0; --red:#ef4444; --blue:#3b82f6; --ok:#22c55e; --amb:#eab308; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--txt); font:14px/1.4 system-ui,-apple-system,Segoe UI,sans-serif; }
+  header { display:flex; align-items:center; gap:18px; padding:10px 16px; border-bottom:1px solid var(--line); }
+  header h1 { font-size:15px; margin:0; }
+  header .tot { color:var(--mut); }
+  header .tot b { color:var(--txt); }
+  #estado { margin-left:auto; color:var(--mut); }
+  main { display:grid; grid-template-columns:auto minmax(0,1fr); gap:16px; padding:16px; align-items:start; }
+  #izq { display:flex; flex-direction:column; gap:10px; }
+  #v { height:62vh; aspect-ratio:9/16; background:#000; border-radius:8px; }
+  button, input { font:inherit; color:var(--txt); background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:6px 10px; }
+  button { cursor:pointer; }
+  button:hover { border-color:var(--mut); }
+  button.primario { background:var(--ok); border-color:var(--ok); color:#06240f; font-weight:700; }
+  button.on { background:var(--blue); border-color:var(--blue); }
+  .barra { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  .ayuda { color:var(--mut); font-size:12px; }
+  kbd { background:var(--panel); border:1px solid var(--line); border-radius:4px; padding:0 5px; font-size:12px; }
+  #der { display:flex; flex-direction:column; gap:12px; min-width:0; }
+  #tl-wrap { position:relative; overflow-x:auto; overflow-y:hidden; background:var(--panel); border:1px solid var(--line); border-radius:8px; height:176px; }
+  #tl-wrap canvas { position:absolute; top:8px; left:0; }
+  .cols { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:12px; }
+  .caja { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:8px; display:flex; flex-direction:column; gap:6px; min-width:0; }
+  .caja h2 { font-size:13px; margin:0 0 2px; color:var(--mut); font-weight:600; }
+  .lista { display:flex; flex-direction:column; gap:6px; max-height:38vh; overflow:auto; }
+  .fr { border:1px solid var(--line); border-radius:6px; padding:6px 8px; display:grid; gap:4px; font-size:13px; cursor:pointer; }
+  .fr:hover { border-color:var(--mut); }
+  .fr.usada { border-left:3px solid var(--ok); }
+  .fr.act { background:#1d2433; }
+  .fr .fila, .tk .fila { display:flex; gap:6px; align-items:center; flex-wrap:wrap; }
+  .fr button, .tk button { padding:2px 8px; font-size:12px; }
+  .tk { border:1px solid var(--line); border-left:3px solid var(--ok); border-radius:6px; padding:6px 8px; display:grid; gap:4px; font-size:13px; }
+  .tk.act { background:#16271c; }
+  .tk input[type=number] { width:84px; padding:3px 6px; }
+  .tk input.nota { flex:1; min-width:140px; padding:3px 6px; }
+  .tk .txt { color:var(--mut); }
+  .tag { font-size:11px; padding:1px 6px; border-radius:999px; border:1px solid var(--line); color:var(--mut); white-space:nowrap; }
+  .tag.cam { color:#06240f; background:var(--ok); border-color:var(--ok); }
+  .tag.lee { color:#111; background:var(--amb); border-color:var(--amb); }
+  .tag.nada { color:var(--mut); }
+  .vacio { color:var(--mut); padding:6px; }
+  .tabs { display:flex; gap:6px; flex-wrap:wrap; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Tomas</h1>
+  <span class="tot" id="tot"></span>
+  <span id="estado">cargando…</span>
+</header>
+<main>
+  <section id="izq">
+    <video id="v" controls preload="auto"></video>
+    <div class="barra">
+      <button id="btn-sel" title="P">▶ Selección</button>
+      <button id="btn-montaje" title="M">▶ Montaje</button>
+      <button id="btn-agregar" class="primario" title="Enter">+ Toma con la selección</button>
+    </div>
+    <div class="ayuda">
+      <kbd>Espacio</kbd> play · <kbd>I</kbd>/<kbd>O</kbd> desde/hasta de la selección · <kbd>Enter</kbd> agregar como toma<br>
+      <kbd>P</kbd> escuchar selección · <kbd>M</kbd> ver el montaje entero · <kbd>Z</kbd> deshacer · <kbd>Esc</kbd> limpiar<br>
+      <kbd>←</kbd>/<kbd>→</kbd> un fotograma (con <kbd>Shift</kbd> 0.2 s)<br>
+      Arriba de la onda, la franja muestra hacia dónde mira: <span class="tag cam">a cámara</span> <span class="tag lee">mira afuera / lee</span> <span class="tag nada">sin cara</span>. Una toma buena va arriba de 70 %.
+    </div>
+  </section>
+  <section id="der">
+    <div class="barra">
+      <div class="tabs" id="tabs"></div>
+      <button id="zmenos">−</button><button id="zmas">+</button>
+      <span class="ayuda">Click en la línea de tiempo para ir; arrastrá para seleccionar. Las frases grises son la transcripción; los bloques verdes, las tomas elegidas.</span>
+    </div>
+    <div id="tl-wrap"><canvas id="tl"></canvas></div>
+    <div class="cols">
+      <div class="caja">
+        <h2>Frases del clip (click para ir · <b>+</b> la agrega como toma)</h2>
+        <div class="lista" id="frases"></div>
+      </div>
+      <div class="caja">
+        <h2>Tomas, en el orden del montaje</h2>
+        <div class="lista" id="tomas"></div>
+      </div>
+    </div>
+  </section>
+</main>
+<script>
+// Mirada "a cámara" (scripts/mirada.py): muestra = [t, giro, cabeceo, ancho, iris_h, iris_v]. Calibrado sobre IMG_3525:
+// a cámara iris_h ~0.505 y giro ~0; leyendo la pantalla iris_h 0.55 y giro -0.13; mirando el monitor, giro > 0.5.
+// desvío = (iris_h - centro) - pesoGiro * giro; a cámara si |desvío| < umbral. Sin iris, solo la cabeza.
+const MIRADA = { irisCentro: 0.505, pesoGiro: 0.25, umbral: 0.045, girado: 0.5, giroCentro: -0.03, giroSinIris: 0.1 };
+const $ = (s) => document.querySelector(s);
+const v = $("#v");
+const st = { datos: null, clip: 0, cortes: [], version: "0", sel: null, px: 12, undo: [], playTo: null, montaje: null, tomaAct: -1, fraseAct: -1, picos: {}, drag: null };
+const r2 = (n) => Math.round(n * 100) / 100;
+const fmt = (t) => `${Math.floor(t / 60)}:${(t % 60).toFixed(1).padStart(4, "0")}`;
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+const clipAct = () => st.datos.clips[st.clip];
+const idxClip = (archivo) => st.datos.clips.findIndex((c) => c.archivo === archivo);
+
+const aCamara = (m) => {
+  if (m[1] === null || Math.abs(m[1]) > MIRADA.girado) return false;
+  if (m[4] != null) return Math.abs(m[4] - MIRADA.irisCentro - MIRADA.pesoGiro * m[1]) < MIRADA.umbral;
+  return Math.abs(m[1] - MIRADA.giroCentro) < MIRADA.giroSinIris;
+};
+function mirada(ci, a, b) {
+  const ms = st.datos.clips[ci].mirada.muestras.filter((m) => m[0] >= a && m[0] <= b);
+  const con = ms.filter((m) => m[1] !== null);
+  if (!ms.length) return null;
+  return { cam: con.length ? con.filter(aCamara).length / con.length : 0, cara: con.length / ms.length };
+}
+function tagMirada(ci, a, b) {
+  const m = mirada(ci, a, b);
+  if (!m || m.cara < 0.4) return '<span class="tag nada">sin cara</span>';
+  const p = Math.round(m.cam * 100);
+  return `<span class="tag ${p >= 70 ? "cam" : "lee"}" title="Porcentaje del tramo mirando a cámara (cabeza + iris, scripts/mirada.py)">a cámara ${p}%</span>`;
+}
+const textoEn = (ci, a, b) =>
+  st.datos.clips[ci].frases.flatMap((s) => s.words).filter((w) => (w.start + w.end) / 2 >= a && (w.start + w.end) / 2 <= b).map((w) => w.word.trim()).join(" ");
+
+let saveTimer;
+function guardar() {
+  $("#estado").textContent = "guardando…";
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(async () => {
+    try {
+      const r = await fetch("/cortes", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ cortes: st.cortes, version: st.version }) });
+      const j = await r.json().catch(() => ({}));
+      if (r.ok) st.version = j.version;
+      $("#estado").textContent = r.ok ? "guardado ✓" : r.status === 409 ? "⚠ hay cambios más nuevos en el archivo: recargá la página (F5)" : `error al guardar: ${j.error ?? r.status}`;
+    } catch {
+      $("#estado").textContent = "error al guardar";
+    }
+  }, 300);
+}
+const pushUndo = () => { st.undo.push(JSON.stringify(st.cortes)); if (st.undo.length > 60) st.undo.shift(); };
+function deshacer() { if (!st.undo.length) return; st.cortes = JSON.parse(st.undo.pop()); renderAll(); guardar(); }
+
+function agregarToma(a, b) {
+  if (b - a < 0.1) return;
+  pushUndo();
+  const archivo = clipAct().archivo;
+  const toma = { archivo, desde: r2(a), hasta: r2(b), nota: textoEn(st.clip, a, b).slice(0, 120) };
+  // Se inserta en orden de tiempo dentro del clip (el orden del montaje se puede cambiar después con ↑ ↓).
+  let i = st.cortes.findIndex((c) => c.archivo === archivo && c.desde > toma.desde);
+  if (i < 0) i = st.cortes.length;
+  st.cortes.splice(i, 0, toma);
+  st.tomaAct = i;
+  st.sel = null;
+  renderAll();
+  guardar();
+}
+
+async function irA(ci, t) {
+  if (ci !== st.clip) await cambiarClip(ci);
+  v.currentTime = Math.max(0, t);
+}
+async function reproducir(ci, a, b) {
+  await irA(ci, a);
+  st.playTo = b;
+  v.play();
+}
+
+async function cambiarClip(ci) {
+  st.clip = ci;
+  const c = clipAct();
+  v.src = c.video;
+  await new Promise((res) => v.addEventListener("loadedmetadata", res, { once: true }));
+  if (!st.picos[ci]) st.picos[ci] = new Uint8Array(await (await fetch(c.picos)).arrayBuffer());
+  st.dur = v.duration;
+  st.px = Math.max(6, Math.min(40, Math.floor($("#tl-wrap").clientWidth / st.dur)));
+  renderAll();
+}
+
+function drawTimeline(t) {
+  const c = $("#tl");
+  const W = Math.ceil((st.dur || 1) * st.px);
+  const H = 160;
+  if (c.width !== W) { c.width = W; c.style.width = W + "px"; }
+  if (c.height !== H) { c.height = H; c.style.height = H + "px"; }
+  const g = c.getContext("2d");
+  g.clearRect(0, 0, W, H);
+  const clip = clipAct();
+  // Franja de mirada
+  const paso = 1 / clip.mirada.fps;
+  for (const m of clip.mirada.muestras) {
+    g.fillStyle = m[1] === null ? "#3a3d48" : aCamara(m) ? "#22c55e" : "#eab308";
+    g.fillRect(m[0] * st.px, 0, Math.max(1, paso * st.px), 12);
+  }
+  // Onda
+  const p = st.picos[st.clip];
+  if (p) {
+    g.fillStyle = "#7c8299";
+    const pps = clip.picosPorS;
+    for (let x = 0; x < W; x++) {
+      const k0 = Math.floor((x / st.px) * pps);
+      const k1 = Math.max(k0 + 1, Math.floor(((x + 1) / st.px) * pps));
+      let mx = 0;
+      for (let k = k0; k < k1 && k < p.length; k++) mx = Math.max(mx, p[k]);
+      const h = Math.max(1, (mx / 255) * 76);
+      g.fillRect(x, 16 + (80 - h) / 2, 1, h);
+    }
+  }
+  // Frases
+  clip.frases.forEach((s, i) => {
+    g.fillStyle = i === st.fraseAct ? "#64748b" : "#3f4452";
+    g.fillRect(s.start * st.px, 102, Math.max(2, (s.end - s.start) * st.px - 1), 18);
+  });
+  // Tomas de este clip
+  st.cortes.forEach((k, i) => {
+    if (k.archivo !== clip.archivo) return;
+    g.fillStyle = i === st.tomaAct ? "rgba(34,197,94,.95)" : "rgba(34,197,94,.6)";
+    g.fillRect(k.desde * st.px, 126, Math.max(2, (k.hasta - k.desde) * st.px), 28);
+    g.fillStyle = "rgba(34,197,94,.14)";
+    g.fillRect(k.desde * st.px, 14, Math.max(2, (k.hasta - k.desde) * st.px), 110);
+    g.fillStyle = "#06240f";
+    g.font = "bold 12px system-ui";
+    if ((k.hasta - k.desde) * st.px > 18) g.fillText(`#${i + 1}`, k.desde * st.px + 4, 145);
+  });
+  if (st.sel) { g.fillStyle = "rgba(59,130,246,.38)"; g.fillRect(st.sel.desde * st.px, 14, Math.max(1, (st.sel.hasta - st.sel.desde) * st.px), H - 14); }
+  g.fillStyle = "#fff";
+  g.fillRect(t * st.px, 0, 2, H);
+  if (!v.paused) {
+    const wrap = $("#tl-wrap");
+    const x = t * st.px;
+    if (x < wrap.scrollLeft || x > wrap.scrollLeft + wrap.clientWidth - 40) wrap.scrollLeft = x - wrap.clientWidth / 3;
+  }
+}
+
+function renderTabs() {
+  const el = $("#tabs");
+  el.innerHTML = "";
+  st.datos.clips.forEach((c, i) => {
+    const b = document.createElement("button");
+    b.textContent = c.archivo;
+    if (i === st.clip) b.className = "on";
+    b.onclick = () => cambiarClip(i);
+    el.appendChild(b);
+  });
+}
+
+function renderFrases() {
+  const el = $("#frases");
+  el.innerHTML = "";
+  const clip = clipAct();
+  if (!clip.frases.length) { el.innerHTML = '<div class="vacio">Sin transcripción.</div>'; return; }
+  clip.frases.forEach((s, i) => {
+    const usada = st.cortes.some((k) => k.archivo === clip.archivo && Math.min(k.hasta, s.end) - Math.max(k.desde, s.start) > 0.5 * (s.end - s.start));
+    const d = document.createElement("div");
+    d.className = "fr" + (usada ? " usada" : "") + (i === st.fraseAct ? " act" : "");
+    d.innerHTML = `<div class="fila"><b>${fmt(s.start)}</b>${tagMirada(st.clip, s.start, s.end)}<span class="ayuda">${(s.end - s.start).toFixed(1)} s</span>
+      <button data-a="play">▶</button><button data-a="add" title="Agregar como toma">+</button></div><div>${esc(s.text)}</div>`;
+    d.onclick = (e) => {
+      const a = e.target.dataset.a;
+      st.fraseAct = i;
+      st.sel = { desde: s.start, hasta: s.end };
+      if (a === "add") return agregarToma(Math.max(0, s.start - 0.08), s.end + 0.12);
+      if (a === "play") return reproducir(st.clip, s.start, s.end);
+      irA(st.clip, s.start);
+      renderFrases();
+    };
+    el.appendChild(d);
+  });
+}
+
+function mover(i, d) {
+  const j = i + d;
+  if (j < 0 || j >= st.cortes.length) return;
+  pushUndo();
+  [st.cortes[i], st.cortes[j]] = [st.cortes[j], st.cortes[i]];
+  st.tomaAct = j;
+  renderAll();
+  guardar();
+}
+
+function renderTomas() {
+  const el = $("#tomas");
+  el.innerHTML = "";
+  if (!st.cortes.length) { el.innerHTML = '<div class="vacio">Todavía no hay tomas. Agregalas desde las frases o con una selección.</div>'; return; }
+  st.cortes.forEach((k, i) => {
+    const ci = idxClip(k.archivo);
+    const d = document.createElement("div");
+    d.className = "tk" + (i === st.tomaAct ? " act" : "");
+    d.innerHTML = `
+      <div class="fila"><b>#${i + 1}</b><span class="ayuda">${esc(k.archivo)}</span>
+        <input type="number" step="0.01" min="0" value="${k.desde}" data-k="desde" title="desde (s)">
+        <input type="number" step="0.01" min="0" value="${k.hasta}" data-k="hasta" title="hasta (s)">
+        <span class="ayuda">${(k.hasta - k.desde).toFixed(2)} s</span>${tagMirada(ci, k.desde, k.hasta)}</div>
+      <div class="fila"><button data-a="play">▶</button><button data-a="in" title="desde = cursor">I</button><button data-a="out" title="hasta = cursor">O</button>
+        <button data-a="up">↑</button><button data-a="down">↓</button><button data-a="del">✕</button>
+        <input class="nota" data-k="nota" placeholder="nota" value="${esc(k.nota)}"></div>
+      <div class="txt">${esc(textoEn(ci, k.desde, k.hasta)) || "(sin palabras)"}</div>`;
+    d.querySelectorAll("[data-k]").forEach((inp) => {
+      inp.onchange = () => {
+        pushUndo();
+        const key = inp.dataset.k;
+        k[key] = key === "nota" ? inp.value : r2(parseFloat(inp.value));
+        if (k.hasta <= k.desde) k.hasta = r2(k.desde + 0.1);
+        renderAll();
+        guardar();
+      };
+    });
+    const acc = {
+      play: () => { st.tomaAct = i; reproducir(ci, k.desde, k.hasta); renderTomas(); },
+      in: () => { if (ci !== st.clip) return; pushUndo(); k.desde = r2(v.currentTime); if (k.hasta <= k.desde) k.hasta = r2(k.desde + 0.1); renderAll(); guardar(); },
+      out: () => { if (ci !== st.clip) return; pushUndo(); k.hasta = r2(v.currentTime); if (k.hasta <= k.desde) k.desde = r2(k.hasta - 0.1); renderAll(); guardar(); },
+      up: () => mover(i, -1),
+      down: () => mover(i, 1),
+      del: () => { pushUndo(); st.cortes.splice(i, 1); st.tomaAct = -1; renderAll(); guardar(); },
+    };
+    d.querySelectorAll("[data-a]").forEach((b) => (b.onclick = acc[b.dataset.a]));
+    el.appendChild(d);
+  });
+  const act = el.querySelector(".tk.act");
+  if (act) act.scrollIntoView({ block: "nearest" });
+}
+
+function totales() {
+  const dur = st.cortes.reduce((a, k) => a + (k.hasta - k.desde), 0);
+  $("#tot").innerHTML = `<b>${st.datos.slug}</b> · ${st.cortes.length} tomas · montaje de <b>${dur.toFixed(1)} s</b> (antes de sacar silencios)`;
+}
+
+function renderAll() { renderTabs(); renderFrases(); renderTomas(); totales(); }
+
+async function verMontaje() {
+  if (!st.cortes.length) return;
+  st.montaje = { i: 0 };
+  await siguienteDelMontaje();
+}
+async function siguienteDelMontaje() {
+  if (!st.montaje) return;
+  const k = st.cortes[st.montaje.i];
+  if (!k) { st.montaje = null; v.pause(); return; }
+  st.tomaAct = st.montaje.i;
+  renderTomas();
+  await reproducir(idxClip(k.archivo), k.desde, k.hasta);
+}
+
+function loop() {
+  const t = v.currentTime;
+  if (st.playTo != null && t >= st.playTo) {
+    st.playTo = null;
+    if (st.montaje) { st.montaje.i++; siguienteDelMontaje(); } else v.pause();
+  }
+  if (st.dur) drawTimeline(t);
+  requestAnimationFrame(loop);
+}
+
+function setBorde(campo) {
+  const t = v.currentTime;
+  if (!st.sel) st.sel = { desde: t, hasta: t };
+  st.sel[campo] = t;
+  if (st.sel.hasta < st.sel.desde) st.sel = { desde: st.sel.hasta, hasta: st.sel.desde };
+}
+
+function zoom(f) {
+  const t = v.currentTime;
+  st.px = Math.min(400, Math.max(4, st.px * f));
+  $("#tl-wrap").scrollLeft = t * st.px - $("#tl-wrap").clientWidth / 2;
+}
+
+$("#zmas").onclick = () => zoom(1.5);
+$("#zmenos").onclick = () => zoom(1 / 1.5);
+$("#btn-sel").onclick = () => st.sel && reproducir(st.clip, st.sel.desde, st.sel.hasta);
+$("#btn-montaje").onclick = verMontaje;
+$("#btn-agregar").onclick = () => st.sel && agregarToma(st.sel.desde, st.sel.hasta);
+
+const tl = $("#tl");
+tl.addEventListener("mousedown", (e) => { st.drag = { t0: (e.clientX - tl.getBoundingClientRect().left) / st.px, moved: false }; });
+window.addEventListener("mousemove", (e) => {
+  if (!st.drag) return;
+  const t = Math.max(0, Math.min(st.dur, (e.clientX - tl.getBoundingClientRect().left) / st.px));
+  st.drag.moved = Math.abs(t - st.drag.t0) * st.px > 3;
+  if (st.drag.moved) st.sel = { desde: Math.min(st.drag.t0, t), hasta: Math.max(st.drag.t0, t) };
+});
+window.addEventListener("mouseup", () => {
+  if (st.drag && !st.drag.moved) {
+    const t = st.drag.t0;
+    st.sel = null;
+    st.montaje = null;
+    v.currentTime = Math.max(0, Math.min(st.dur, t));
+    const k = st.cortes.findIndex((c) => c.archivo === clipAct().archivo && t >= c.desde && t <= c.hasta);
+    if (k >= 0) { st.tomaAct = k; renderTomas(); }
+  }
+  st.drag = null;
+});
+
+document.addEventListener("keydown", (e) => {
+  if (/INPUT|TEXTAREA/.test(document.activeElement.tagName)) { if (e.key === "Escape") document.activeElement.blur(); return; }
+  const k = e.key.toLowerCase();
+  if (k === " ") { e.preventDefault(); st.montaje = null; v.paused ? v.play() : v.pause(); }
+  else if (k === "i") setBorde("desde");
+  else if (k === "o") setBorde("hasta");
+  else if (k === "enter") { if (st.sel) agregarToma(st.sel.desde, st.sel.hasta); }
+  else if (k === "p") { if (st.sel) reproducir(st.clip, st.sel.desde, st.sel.hasta); }
+  else if (k === "m") verMontaje();
+  else if (k === "z") deshacer();
+  else if (k === "escape") { st.sel = null; st.montaje = null; }
+  else if (k === "arrowleft") { e.preventDefault(); v.currentTime = Math.max(0, v.currentTime - (e.shiftKey ? 0.2 : 1 / 30)); }
+  else if (k === "arrowright") { e.preventDefault(); v.currentTime = Math.min(st.dur, v.currentTime + (e.shiftKey ? 0.2 : 1 / 30)); }
+});
+
+async function init() {
+  st.datos = await (await fetch("/datos")).json();
+  st.cortes = st.datos.cortes;
+  st.version = st.datos.version;
+  const primero = st.cortes.length ? Math.max(0, idxClip(st.cortes[0].archivo)) : 0;
+  await cambiarClip(primero);
+  $("#estado").textContent = "listo";
+  loop();
+}
+init();
+</script>
+</body>
+</html>

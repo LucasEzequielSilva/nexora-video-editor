@@ -10,6 +10,7 @@
     "render:reserva:draft": "npx remotion render src/index.ts Reserva7245 out/reserva-7245-draft.mp4 --scale=0.5 --crf=28",
     "recursos": "node scripts/recursos.mjs",
     "recortador": "node scripts/recortador.mjs",
+    "tomas": "node scripts/tomas.mjs",
     "verificar": "node scripts/verificar.mjs"
   },
   "keywords": [],

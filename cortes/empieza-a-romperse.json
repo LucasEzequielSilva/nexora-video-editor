@@ -1,19 +1,90 @@
 {
   "base": "D:/moved/Downloads",
   "cortes": [
-    { "archivo": "IMG_3525.MOV", "desde": 1.42, "hasta": 4.57, "nota": "El día que tu negocio empieza a andar bien es el día que empieza a romperse (hook)" },
-    { "archivo": "IMG_3525.MOV", "desde": 4.90, "hasta": 5.55, "nota": "Te explico por qué" },
-    { "archivo": "IMG_3525.MOV", "desde": 34.85, "hasta": 39.76, "nota": "Un consultorio que llena la agenda: ahora le entra el triple de consultas y tiene a la misma persona respondiendo (3ra toma, la completa)" },
-    { "archivo": "IMG_3525.MOV", "desde": 49.48, "hasta": 51.86, "nota": "Las que no llegan a responder a tiempo se van a otro lado (corta antes del 'no, a la mía' que sigue)" },
-    { "archivo": "IMG_3525.MOV", "desde": 154.91, "hasta": 160.21, "nota": "Un comercio que vende más: ahora tiene más presupuestos pendientes, y el que no recibe respuesta hoy se va a otro lado (desde el reinicio en 154.96: el primer intento se trababa en 'ahora tiene más...')" },
-    { "archivo": "IMG_3525.MOV", "desde": 202.03, "hasta": 207.14, "nota": "Una marca personal que crece: más gente escribiéndote y vos contestando cada vez menos (última)" },
-    { "archivo": "IMG_3525.MOV", "desde": 210.43, "hasta": 215.23, "nota": "En los tres pasó exactamente lo mismo: entró más demanda de lo que la estructura puede sostener" },
-    { "archivo": "IMG_3525.MOV", "desde": 243.63, "hasta": 248.26, "nota": "Y acá está la trampa: no se siente como un problema, se siente como que estás ocupado (última)" },
-    { "archivo": "IMG_3525.MOV", "desde": 358.57, "hasta": 362.06, "nota": "Por eso nadie lo arregla a tiempo, lo arreglás cuando ya perdiste plata ('plata' termina en 362.04; con 361.74 se cortaba)" },
-    { "archivo": "IMG_3525.MOV", "desde": 368.13, "hasta": 371.67, "nota": "y ahí no sabés cuánta, porque lo que se pierde no deja rastro (último intento de la cola)" },
-    { "archivo": "IMG_3525.MOV", "desde": 396.52, "hasta": 398.24, "nota": "Nadie anota el mensaje que no contestó (última)" },
-    { "archivo": "IMG_3525.MOV", "desde": 403.38, "hasta": 405.53, "nota": "Tu negocio crece, pero tu estructura no" },
-    { "archivo": "IMG_3525.MOV", "desde": 455.29, "hasta": 460.72, "nota": "Y eso no se arregla trabajando más horas. Se arregla instalando lo que falta (última; después 'Está bien, ¿no?')" },
-    { "archivo": "IMG_3525.MOV", "desde": 463.27, "hasta": 466.00, "nota": "Escribí ESTRUCTURA y te muestro cómo se ve un negocio que sí lo tiene (CTA)" }
-  ]
+    {
+      "archivo": "IMG_3525.MOV",
+      "desde": 1.42,
+      "hasta": 4.57,
+      "nota": "El día que tu negocio empieza a andar bien es el día que empieza a romperse (hook)"
+    },
+    {
+      "archivo": "IMG_3525.MOV",
+      "desde": 4.9,
+      "hasta": 5.55,
+      "nota": "Te explico por qué"
+    },
+    {
+      "archivo": "IMG_3525.MOV",
+      "desde": 34.85,
+      "hasta": 39.76,
+      "nota": "Un consultorio que llena la agenda: ahora le entra el triple de consultas y tiene a la misma persona respondiendo (3ra toma, la completa)"
+    },
+    {
+      "archivo": "IMG_3525.MOV",
+      "desde": 49.48,
+      "hasta": 51.86,
+      "nota": "Las que no llegan a responder a tiempo se van a otro lado (corta antes del 'no, a la mía' que sigue)"
+    },
+    {
+      "archivo": "IMG_3525.MOV",
+      "desde": 154.91,
+      "hasta": 160.21,
+      "nota": "Un comercio que vende más: ahora tiene más presupuestos pendientes, y el que no recibe respuesta hoy se va a otro lado (desde el reinicio en 154.96: el primer intento se trababa en 'ahora tiene más...')"
+    },
+    {
+      "archivo": "IMG_3525.MOV",
+      "desde": 202.03,
+      "hasta": 207.14,
+      "nota": "Una marca personal que crece: más gente escribiéndote y vos contestando cada vez menos (última)"
+    },
+    {
+      "archivo": "IMG_3525.MOV",
+      "desde": 216.53,
+      "hasta": 220.8,
+      "nota": "En los tres pasó lo mismo: entró más demanda de lo que la estructura puede sostener (2da toma: 76% a cámara; la 1ra estaba girado al monitor, 0%)"
+    },
+    {
+      "archivo": "IMG_3525.MOV",
+      "desde": 243.63,
+      "hasta": 248.26,
+      "nota": "Y acá está la trampa: no se siente como un problema, se siente como que estás ocupado (última)"
+    },
+    {
+      "archivo": "IMG_3525.MOV",
+      "desde": 358.57,
+      "hasta": 362.06,
+      "nota": "Por eso nadie lo arregla a tiempo, lo arreglás cuando ya perdiste plata ('plata' termina en 362.04; con 361.74 se cortaba)"
+    },
+    {
+      "archivo": "IMG_3525.MOV",
+      "desde": 368.13,
+      "hasta": 371.67,
+      "nota": "y ahí no sabés cuánta, porque lo que se pierde no deja rastro (último intento de la cola)"
+    },
+    {
+      "archivo": "IMG_3525.MOV",
+      "desde": 381.88,
+      "hasta": 384.54,
+      "nota": "Nadie anota el mensaje que no contestó (65% a cámara; la de 396.5 era leída, 0%)"
+    },
+    {
+      "archivo": "IMG_3525.MOV",
+      "desde": 403.38,
+      "hasta": 405.53,
+      "nota": "Tu negocio crece, pero tu estructura no"
+    },
+    {
+      "archivo": "IMG_3525.MOV",
+      "desde": 455.29,
+      "hasta": 460.72,
+      "nota": "Y eso no se arregla trabajando más horas. Se arregla instalando lo que falta (última; después 'Está bien, ¿no?')"
+    },
+    {
+      "archivo": "IMG_3525.MOV",
+      "desde": 463.27,
+      "hasta": 466.0,
+      "nota": "Escribí ESTRUCTURA y te muestro cómo se ve un negocio que sí lo tiene (CTA)"
+    }
+  ],
+  "propuesta": "editor 2026-09-26 con el detector de mirada (scripts/mirada.py); Lucas ajusta con npm run tomas -- empieza-a-romperse"
 }

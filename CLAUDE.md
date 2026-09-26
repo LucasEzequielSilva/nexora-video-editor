@@ -46,9 +46,14 @@ Hay dos sistemas. **No fingir automatización que no existe.**
 
 ### 3a. Piezas verticales (`src/pieza/`, ej. `estructura-nexora`) — el que se usa para piezas nuevas
 
-1. **Elegir tomas** → `cortes/<slug>.json`. El agente propone (última toma completa, o la que el
-   equipo aprueba en voz alta: "ahí está"); **Lucas revisa**. Verificar cada borde con
-   `silencedetect` sobre el clip original, no con los tiempos de whisper.
+1. **Elegir tomas** → `cortes/<slug>.json`. El agente propone (la toma completa **dicha a cámara y fluida**, no la
+   leída de la pantalla, aunque sea la última; o la que el equipo aprueba en voz alta: "ahí está"); **Lucas la ajusta
+   a mano** con la herramienta de tomas: `npm run tomas -- <slug> [--clips <archivo o carpeta>]` →
+   http://localhost:3101 (proxy liviano del crudo, onda, frases de `explorar-tomas.py`, franja de mirada de
+   `scripts/mirada.py` y las tomas como bloques que se ajustan, reordenan, agregan o sacan; ▶ Montaje las reproduce
+   seguidas). La mirada combina el giro de la cabeza (YuNet) y la posición del iris (MediaPipe Face Landmarker,
+   `models/mediapipe/face_landmarker.task`, sobre un recorte de la cara en 1080): una toma buena va arriba de 70 %
+   a cámara. Verificar cada borde con `silencedetect` sobre el clip original, no con los tiempos de whisper.
 2. `node scripts/montar.mjs cortes/<slug>.json out/<slug>-bruto.mp4`. Después: 1080x1920, audio y
    video a menos de 50 ms, `freezedetect` en cero.
 3. `node scripts/jumpcut.mjs out/<slug>-bruto.mp4 public/piezas/<slug>/video.mp4 --uniones cortes/<slug>-uniones.json`
@@ -499,6 +504,12 @@ se corrige la vieja (no se acumulan las dos).
   generados con su imagen de estilo) quedan en pausa. En su lugar: **objetos 3D de `PACKS/OBJETOS 3D/`** (`.glb`:
   billetera, paca de billetes, lupa, cofre, archivos, diamante...) renderizados con `src/pieza/objeto-3d.tsx`
   (three.js, giran despacio), o logos oficiales (`LogoApp`). Si no hay objeto que aplique, sin ícono.
+- (2026-09-26) **Tomas a cámara, no leyendo**: "pusiste partes donde está mirando la pantalla y leyendo, pero no
+  necesariamente mirando a la cámara y hablándolo fluido". En `empieza-a-romperse` el editor eligió por texto
+  (última toma completa) y varias eran lecturas del guion en la pantalla. Criterio: la toma buena es la que dice la
+  frase **mirando a cámara y fluida**, aunque no sea la última; una lectura (mirada fuera de cámara, ritmo de
+  lectura) se descarta aunque esté completa. Lucas quiere ajustar él las tomas a mano: "tenemos que armar la tool
+  para recorte, ajuste manual".
 - (2026-09-25) **Voz pareja entre tomas**: "al principio no se pone bien el micro, entonces tenés que ajustarle los
   decibeles a la voz al principio". En `empieza-a-romperse` las 4 primeras tomas estaban 13 dB más bajas (−36 contra
   −23 dB de mediana): el micro se acomodó recién después del primer minuto de grabación. Medir el nivel de voz por
