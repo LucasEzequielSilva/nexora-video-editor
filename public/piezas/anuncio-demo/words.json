@@ -1,0 +1,1159 @@
+{
+ "language": "es",
+ "duration": 52.8,
+ "segments": [
+  {
+   "start": 0.06,
+   "end": 51.54,
+   "text": " El día que tu negocio empieza a andar bien, es el día que empieza a romperse, te explico por qué. Un consultorio que llena la agenda, ahora le entra el triple de consultas y tiene a la misma persona respondiendo. Las que no llegan a responder a tiempo, se van a otro lado. Un comercio que vende más, ahora tiene más presupuestos pendientes, y el que no recibe respuesta hoy, se va a otro lado. Una marca personal que crece, más gente escribiéndote, y vos contestando cada vez menos. En los tres, pasó exactamente lo mismo. Entró más demanda de lo que la estructura puede sostener. Y acá está la trampa. No se siente como un problema, se siente como que estás ocupado. Por eso, nadie lo arregla a tiempo. Lo arreglás cuando ya perdiste plata. Y ahí, no sabés cuánta, porque lo que se pierde, no deja rastro. Nadie anota el mensaje que no contestó. Tu negocio crece, pero tu estructura no. Y eso, no se arregla trabajando más horas. Se arregla, instalando lo que falta. Escribime ESTRUCTURA, y te muestro cómo se ve un negocio que sí lo tiene.",
+   "words": [
+    {
+     "start": 0.06,
+     "end": 0.12,
+     "word": " El",
+     "p": 0.857
+    },
+    {
+     "start": 0.08,
+     "end": 0.2,
+     "word": " día",
+     "p": 0.999
+    },
+    {
+     "start": 0.2,
+     "end": 0.32,
+     "word": " que",
+     "p": 0.979
+    },
+    {
+     "start": 0.36,
+     "end": 0.44,
+     "word": " tu",
+     "p": 0.958
+    },
+    {
+     "start": 0.5,
+     "end": 0.76,
+     "word": " negocio",
+     "p": 0.999
+    },
+    {
+     "start": 0.84,
+     "end": 0.94,
+     "word": " empieza",
+     "p": 0.792
+    },
+    {
+     "start": 1,
+     "end": 1.06,
+     "word": " a",
+     "p": 0.999
+    },
+    {
+     "start": 1.14,
+     "end": 1.24,
+     "word": " andar",
+     "p": 0.99
+    },
+    {
+     "start": 1.24,
+     "end": 1.46,
+     "word": " bien,",
+     "p": 0.999
+    },
+    {
+     "start": 1.56,
+     "end": 1.76,
+     "word": " es",
+     "p": 0.995
+    },
+    {
+     "start": 1.84,
+     "end": 1.9,
+     "word": " el",
+     "p": 1
+    },
+    {
+     "start": 1.86,
+     "end": 2.02,
+     "word": " día",
+     "p": 1
+    },
+    {
+     "start": 2.02,
+     "end": 2.14,
+     "word": " que",
+     "p": 0.999
+    },
+    {
+     "start": 2.16,
+     "end": 2.24,
+     "word": " empieza",
+     "p": 0.943
+    },
+    {
+     "start": 2.42,
+     "end": 2.48,
+     "word": " a",
+     "p": 1
+    },
+    {
+     "start": 2.42,
+     "end": 2.62,
+     "word": " romperse,",
+     "p": 0.999
+    },
+    {
+     "start": 3.7,
+     "end": 3.76,
+     "word": " te",
+     "p": 0.56
+    },
+    {
+     "start": 3.96,
+     "end": 4.04,
+     "word": " explico",
+     "p": 0.992
+    },
+    {
+     "start": 4.04,
+     "end": 4.12,
+     "word": " por",
+     "p": 0.954
+    },
+    {
+     "start": 4.18,
+     "end": 4.24,
+     "word": " qué.",
+     "p": 0.989
+    },
+    {
+     "start": 4.46,
+     "end": 4.52,
+     "word": " Un",
+     "p": 0.535
+    },
+    {
+     "start": 4.82,
+     "end": 4.92,
+     "word": " consultorio",
+     "p": 0.526
+    },
+    {
+     "start": 4.92,
+     "end": 4.98,
+     "word": " que",
+     "p": 0.973
+    },
+    {
+     "start": 5.04,
+     "end": 5.12,
+     "word": " llena",
+     "p": 0.71
+    },
+    {
+     "start": 5.24,
+     "end": 5.3,
+     "word": " la",
+     "p": 0.965
+    },
+    {
+     "start": 5.3,
+     "end": 5.38,
+     "word": " agenda,",
+     "p": 0.991
+    },
+    {
+     "start": 5.7,
+     "end": 5.76,
+     "word": " ahora",
+     "p": 0.999
+    },
+    {
+     "start": 6.06,
+     "end": 6.2,
+     "word": " le",
+     "p": 0.469
+    },
+    {
+     "start": 6.2,
+     "end": 6.32,
+     "word": " entra",
+     "p": 0.498
+    },
+    {
+     "start": 6.36,
+     "end": 6.46,
+     "word": " el",
+     "p": 0.717
+    },
+    {
+     "start": 6.46,
+     "end": 6.54,
+     "word": " triple",
+     "p": 0.029
+    },
+    {
+     "start": 6.88,
+     "end": 6.94,
+     "word": " de",
+     "p": 1
+    },
+    {
+     "start": 7.42,
+     "end": 7.5,
+     "word": " consultas",
+     "p": 0.998
+    },
+    {
+     "start": 8,
+     "end": 8.06,
+     "word": " y",
+     "p": 0.919
+    },
+    {
+     "start": 8.2,
+     "end": 8.26,
+     "word": " tiene",
+     "p": 0.7
+    },
+    {
+     "start": 8.36,
+     "end": 8.52,
+     "word": " a",
+     "p": 0.995
+    },
+    {
+     "start": 8.52,
+     "end": 8.58,
+     "word": " la",
+     "p": 0.999
+    },
+    {
+     "start": 8.58,
+     "end": 8.76,
+     "word": " misma",
+     "p": 1
+    },
+    {
+     "start": 8.76,
+     "end": 8.86,
+     "word": " persona",
+     "p": 1
+    },
+    {
+     "start": 9.52,
+     "end": 9.7,
+     "word": " respondiendo.",
+     "p": 0.996
+    },
+    {
+     "start": 9.8,
+     "end": 9.88,
+     "word": " Las",
+     "p": 0.63
+    },
+    {
+     "start": 9.88,
+     "end": 9.94,
+     "word": " que",
+     "p": 0.996
+    },
+    {
+     "start": 10.06,
+     "end": 10.12,
+     "word": " no",
+     "p": 0.967
+    },
+    {
+     "start": 10.06,
+     "end": 10.18,
+     "word": " llegan",
+     "p": 0.822
+    },
+    {
+     "start": 10.36,
+     "end": 10.42,
+     "word": " a",
+     "p": 0.999
+    },
+    {
+     "start": 10.42,
+     "end": 10.54,
+     "word": " responder",
+     "p": 0.97
+    },
+    {
+     "start": 10.78,
+     "end": 10.88,
+     "word": " a",
+     "p": 0.32
+    },
+    {
+     "start": 10.94,
+     "end": 11,
+     "word": " tiempo,",
+     "p": 0.32
+    },
+    {
+     "start": 11.32,
+     "end": 11.4,
+     "word": " se",
+     "p": 0.999
+    },
+    {
+     "start": 11.66,
+     "end": 11.72,
+     "word": " van",
+     "p": 0.999
+    },
+    {
+     "start": 11.66,
+     "end": 11.74,
+     "word": " a",
+     "p": 0.988
+    },
+    {
+     "start": 11.8,
+     "end": 11.86,
+     "word": " otro",
+     "p": 0.999
+    },
+    {
+     "start": 12,
+     "end": 12.1,
+     "word": " lado.",
+     "p": 1
+    },
+    {
+     "start": 12.18,
+     "end": 12.24,
+     "word": " Un",
+     "p": 0.998
+    },
+    {
+     "start": 12.3,
+     "end": 12.54,
+     "word": " comercio",
+     "p": 0.999
+    },
+    {
+     "start": 12.56,
+     "end": 12.66,
+     "word": " que",
+     "p": 1
+    },
+    {
+     "start": 12.66,
+     "end": 12.86,
+     "word": " vende",
+     "p": 1
+    },
+    {
+     "start": 12.86,
+     "end": 13.04,
+     "word": " más,",
+     "p": 1
+    },
+    {
+     "start": 13.22,
+     "end": 13.28,
+     "word": " ahora",
+     "p": 1
+    },
+    {
+     "start": 13.38,
+     "end": 13.62,
+     "word": " tiene",
+     "p": 1
+    },
+    {
+     "start": 13.62,
+     "end": 13.8,
+     "word": " más",
+     "p": 1
+    },
+    {
+     "start": 13.8,
+     "end": 14.28,
+     "word": " presupuestos",
+     "p": 0.999
+    },
+    {
+     "start": 14.48,
+     "end": 14.88,
+     "word": " pendientes,",
+     "p": 1
+    },
+    {
+     "start": 14.96,
+     "end": 15.02,
+     "word": " y",
+     "p": 1
+    },
+    {
+     "start": 15.18,
+     "end": 15.28,
+     "word": " el",
+     "p": 1
+    },
+    {
+     "start": 15.28,
+     "end": 15.36,
+     "word": " que",
+     "p": 1
+    },
+    {
+     "start": 15.36,
+     "end": 15.44,
+     "word": " no",
+     "p": 1
+    },
+    {
+     "start": 15.44,
+     "end": 15.68,
+     "word": " recibe",
+     "p": 1
+    },
+    {
+     "start": 15.8,
+     "end": 16.02,
+     "word": " respuesta",
+     "p": 1
+    },
+    {
+     "start": 16.1,
+     "end": 16.26,
+     "word": " hoy,",
+     "p": 1
+    },
+    {
+     "start": 16.6,
+     "end": 16.78,
+     "word": " se",
+     "p": 1
+    },
+    {
+     "start": 16.84,
+     "end": 16.9,
+     "word": " va",
+     "p": 1
+    },
+    {
+     "start": 16.9,
+     "end": 16.96,
+     "word": " a",
+     "p": 1
+    },
+    {
+     "start": 16.96,
+     "end": 17.1,
+     "word": " otro",
+     "p": 1
+    },
+    {
+     "start": 17.1,
+     "end": 17.28,
+     "word": " lado.",
+     "p": 1
+    },
+    {
+     "start": 17.56,
+     "end": 17.62,
+     "word": " Una",
+     "p": 0.999
+    },
+    {
+     "start": 17.62,
+     "end": 17.84,
+     "word": " marca",
+     "p": 1
+    },
+    {
+     "start": 18.2,
+     "end": 18.62,
+     "word": " personal",
+     "p": 0.999
+    },
+    {
+     "start": 18.62,
+     "end": 18.9,
+     "word": " que",
+     "p": 1
+    },
+    {
+     "start": 18.9,
+     "end": 19.16,
+     "word": " crece,",
+     "p": 0.999
+    },
+    {
+     "start": 19.28,
+     "end": 19.4,
+     "word": " más",
+     "p": 1
+    },
+    {
+     "start": 19.5,
+     "end": 19.72,
+     "word": " gente",
+     "p": 1
+    },
+    {
+     "start": 19.72,
+     "end": 20.3,
+     "word": " escribiéndote,",
+     "p": 0.949
+    },
+    {
+     "start": 20.44,
+     "end": 20.6,
+     "word": " y",
+     "p": 0.999
+    },
+    {
+     "start": 20.74,
+     "end": 20.86,
+     "word": " vos",
+     "p": 1
+    },
+    {
+     "start": 20.86,
+     "end": 21.3,
+     "word": " contestando",
+     "p": 1
+    },
+    {
+     "start": 21.3,
+     "end": 21.44,
+     "word": " cada",
+     "p": 1
+    },
+    {
+     "start": 21.44,
+     "end": 21.64,
+     "word": " vez",
+     "p": 1
+    },
+    {
+     "start": 21.64,
+     "end": 21.92,
+     "word": " menos.",
+     "p": 1
+    },
+    {
+     "start": 22.62,
+     "end": 22.68,
+     "word": " En",
+     "p": 1
+    },
+    {
+     "start": 22.68,
+     "end": 22.74,
+     "word": " los",
+     "p": 1
+    },
+    {
+     "start": 22.74,
+     "end": 22.84,
+     "word": " tres,",
+     "p": 0.78
+    },
+    {
+     "start": 23.42,
+     "end": 23.48,
+     "word": " pasó",
+     "p": 1
+    },
+    {
+     "start": 23.44,
+     "end": 23.8,
+     "word": " exactamente",
+     "p": 1
+    },
+    {
+     "start": 23.8,
+     "end": 24.16,
+     "word": " lo",
+     "p": 1
+    },
+    {
+     "start": 24.16,
+     "end": 24.38,
+     "word": " mismo.",
+     "p": 1
+    },
+    {
+     "start": 24.7,
+     "end": 24.86,
+     "word": " Entró",
+     "p": 0.999
+    },
+    {
+     "start": 24.86,
+     "end": 25,
+     "word": " más",
+     "p": 1
+    },
+    {
+     "start": 25,
+     "end": 25.56,
+     "word": " demanda",
+     "p": 1
+    },
+    {
+     "start": 25.56,
+     "end": 25.76,
+     "word": " de",
+     "p": 0.973
+    },
+    {
+     "start": 25.76,
+     "end": 25.9,
+     "word": " lo",
+     "p": 1
+    },
+    {
+     "start": 25.9,
+     "end": 26.02,
+     "word": " que",
+     "p": 1
+    },
+    {
+     "start": 26.02,
+     "end": 26.1,
+     "word": " la",
+     "p": 1
+    },
+    {
+     "start": 26.28,
+     "end": 26.52,
+     "word": " estructura",
+     "p": 1
+    },
+    {
+     "start": 26.52,
+     "end": 26.64,
+     "word": " puede",
+     "p": 0.984
+    },
+    {
+     "start": 26.76,
+     "end": 27.06,
+     "word": " sostener.",
+     "p": 1
+    },
+    {
+     "start": 27.24,
+     "end": 27.34,
+     "word": " Y",
+     "p": 0.815
+    },
+    {
+     "start": 27.42,
+     "end": 27.62,
+     "word": " acá",
+     "p": 0.997
+    },
+    {
+     "start": 27.68,
+     "end": 27.86,
+     "word": " está",
+     "p": 0.98
+    },
+    {
+     "start": 28.28,
+     "end": 28.4,
+     "word": " la",
+     "p": 0.999
+    },
+    {
+     "start": 28.4,
+     "end": 28.82,
+     "word": " trampa.",
+     "p": 1
+    },
+    {
+     "start": 28.86,
+     "end": 28.92,
+     "word": " No",
+     "p": 1
+    },
+    {
+     "start": 29.22,
+     "end": 29.34,
+     "word": " se",
+     "p": 1
+    },
+    {
+     "start": 29.5,
+     "end": 29.64,
+     "word": " siente",
+     "p": 1
+    },
+    {
+     "start": 29.64,
+     "end": 29.78,
+     "word": " como",
+     "p": 1
+    },
+    {
+     "start": 29.78,
+     "end": 29.92,
+     "word": " un",
+     "p": 1
+    },
+    {
+     "start": 29.92,
+     "end": 30.22,
+     "word": " problema,",
+     "p": 1
+    },
+    {
+     "start": 30.42,
+     "end": 30.48,
+     "word": " se",
+     "p": 0.999
+    },
+    {
+     "start": 30.88,
+     "end": 30.98,
+     "word": " siente",
+     "p": 1
+    },
+    {
+     "start": 30.98,
+     "end": 31.1,
+     "word": " como",
+     "p": 1
+    },
+    {
+     "start": 31.1,
+     "end": 31.26,
+     "word": " que",
+     "p": 1
+    },
+    {
+     "start": 31.26,
+     "end": 31.4,
+     "word": " estás",
+     "p": 0.998
+    },
+    {
+     "start": 31.54,
+     "end": 31.86,
+     "word": " ocupado.",
+     "p": 1
+    },
+    {
+     "start": 32.44,
+     "end": 32.64,
+     "word": " Por",
+     "p": 1
+    },
+    {
+     "start": 32.68,
+     "end": 32.88,
+     "word": " eso,",
+     "p": 1
+    },
+    {
+     "start": 33,
+     "end": 33.14,
+     "word": " nadie",
+     "p": 0.999
+    },
+    {
+     "start": 33.36,
+     "end": 33.52,
+     "word": " lo",
+     "p": 0.999
+    },
+    {
+     "start": 33.52,
+     "end": 33.84,
+     "word": " arregla",
+     "p": 1
+    },
+    {
+     "start": 33.84,
+     "end": 33.9,
+     "word": " a",
+     "p": 0.999
+    },
+    {
+     "start": 33.86,
+     "end": 34.04,
+     "word": " tiempo.",
+     "p": 1
+    },
+    {
+     "start": 34.22,
+     "end": 34.28,
+     "word": " Lo",
+     "p": 1
+    },
+    {
+     "start": 34.42,
+     "end": 34.8,
+     "word": " arreglás",
+     "p": 0.933
+    },
+    {
+     "start": 34.8,
+     "end": 34.92,
+     "word": " cuando",
+     "p": 0.999
+    },
+    {
+     "start": 35.12,
+     "end": 35.26,
+     "word": " ya",
+     "p": 1
+    },
+    {
+     "start": 35.32,
+     "end": 35.6,
+     "word": " perdiste",
+     "p": 1
+    },
+    {
+     "start": 35.78,
+     "end": 35.86,
+     "word": " plata.",
+     "p": 1
+    },
+    {
+     "start": 36.04,
+     "end": 36.1,
+     "word": " Y",
+     "p": 1
+    },
+    {
+     "start": 36.16,
+     "end": 36.42,
+     "word": " ahí,",
+     "p": 1
+    },
+    {
+     "start": 36.52,
+     "end": 36.6,
+     "word": " no",
+     "p": 1
+    },
+    {
+     "start": 36.82,
+     "end": 36.94,
+     "word": " sabés",
+     "p": 0.556
+    },
+    {
+     "start": 37.26,
+     "end": 37.58,
+     "word": " cuánta,",
+     "p": 0.992
+    },
+    {
+     "start": 37.58,
+     "end": 37.64,
+     "word": " porque",
+     "p": 1
+    },
+    {
+     "start": 37.88,
+     "end": 38.04,
+     "word": " lo",
+     "p": 1
+    },
+    {
+     "start": 38.04,
+     "end": 38.16,
+     "word": " que",
+     "p": 1
+    },
+    {
+     "start": 38.16,
+     "end": 38.24,
+     "word": " se",
+     "p": 1
+    },
+    {
+     "start": 38.28,
+     "end": 38.68,
+     "word": " pierde,",
+     "p": 1
+    },
+    {
+     "start": 38.68,
+     "end": 38.8,
+     "word": " no",
+     "p": 1
+    },
+    {
+     "start": 38.94,
+     "end": 39.14,
+     "word": " deja",
+     "p": 0.999
+    },
+    {
+     "start": 39.2,
+     "end": 39.42,
+     "word": " rastro.",
+     "p": 1
+    },
+    {
+     "start": 40.08,
+     "end": 40.22,
+     "word": " Nadie",
+     "p": 0.999
+    },
+    {
+     "start": 40.22,
+     "end": 40.46,
+     "word": " anota",
+     "p": 0.998
+    },
+    {
+     "start": 40.46,
+     "end": 40.54,
+     "word": " el",
+     "p": 0.976
+    },
+    {
+     "start": 40.54,
+     "end": 40.7,
+     "word": " mensaje",
+     "p": 1
+    },
+    {
+     "start": 40.9,
+     "end": 40.98,
+     "word": " que",
+     "p": 1
+    },
+    {
+     "start": 40.98,
+     "end": 41.1,
+     "word": " no",
+     "p": 1
+    },
+    {
+     "start": 41.1,
+     "end": 41.44,
+     "word": " contestó.",
+     "p": 1
+    },
+    {
+     "start": 42.06,
+     "end": 42.12,
+     "word": " Tu",
+     "p": 0.999
+    },
+    {
+     "start": 42.2,
+     "end": 42.58,
+     "word": " negocio",
+     "p": 1
+    },
+    {
+     "start": 42.58,
+     "end": 42.92,
+     "word": " crece,",
+     "p": 1
+    },
+    {
+     "start": 43.02,
+     "end": 43.18,
+     "word": " pero",
+     "p": 1
+    },
+    {
+     "start": 43.34,
+     "end": 43.5,
+     "word": " tu",
+     "p": 0.999
+    },
+    {
+     "start": 43.72,
+     "end": 43.88,
+     "word": " estructura",
+     "p": 1
+    },
+    {
+     "start": 43.92,
+     "end": 44.22,
+     "word": " no.",
+     "p": 1
+    },
+    {
+     "start": 45.08,
+     "end": 45.16,
+     "word": " Y",
+     "p": 1
+    },
+    {
+     "start": 45.16,
+     "end": 45.36,
+     "word": " eso,",
+     "p": 1
+    },
+    {
+     "start": 45.5,
+     "end": 45.6,
+     "word": " no",
+     "p": 0.998
+    },
+    {
+     "start": 45.76,
+     "end": 45.86,
+     "word": " se",
+     "p": 1
+    },
+    {
+     "start": 45.86,
+     "end": 46.16,
+     "word": " arregla",
+     "p": 1
+    },
+    {
+     "start": 46.16,
+     "end": 46.34,
+     "word": " trabajando",
+     "p": 1
+    },
+    {
+     "start": 46.34,
+     "end": 46.72,
+     "word": " más",
+     "p": 1
+    },
+    {
+     "start": 46.72,
+     "end": 46.8,
+     "word": " horas.",
+     "p": 1
+    },
+    {
+     "start": 47.3,
+     "end": 47.36,
+     "word": " Se",
+     "p": 0.362
+    },
+    {
+     "start": 47.4,
+     "end": 47.8,
+     "word": " arregla,",
+     "p": 0.999
+    },
+    {
+     "start": 48.18,
+     "end": 48.34,
+     "word": " instalando",
+     "p": 0.915
+    },
+    {
+     "start": 48.34,
+     "end": 48.44,
+     "word": " lo",
+     "p": 0.986
+    },
+    {
+     "start": 48.44,
+     "end": 48.54,
+     "word": " que",
+     "p": 0.999
+    },
+    {
+     "start": 48.54,
+     "end": 48.64,
+     "word": " falta.",
+     "p": 0.99
+    },
+    {
+     "start": 49.18,
+     "end": 49.34,
+     "word": " Escribime",
+     "p": 0.868
+    },
+    {
+     "start": 49.34,
+     "end": 49.84,
+     "word": " ESTRUCTURA,",
+     "p": 0.886
+    },
+    {
+     "start": 49.84,
+     "end": 49.92,
+     "word": " y",
+     "p": 0.972
+    },
+    {
+     "start": 49.92,
+     "end": 49.98,
+     "word": " te",
+     "p": 0.988
+    },
+    {
+     "start": 49.96,
+     "end": 50.24,
+     "word": " muestro",
+     "p": 0.991
+    },
+    {
+     "start": 50.24,
+     "end": 50.412,
+     "word": " cómo",
+     "p": 0.075
+    },
+    {
+     "start": 50.412,
+     "end": 50.584,
+     "word": " se",
+     "p": 0.075
+    },
+    {
+     "start": 50.584,
+     "end": 50.756,
+     "word": " ve",
+     "p": 0.075
+    },
+    {
+     "start": 50.756,
+     "end": 50.928,
+     "word": " un",
+     "p": 0.075
+    },
+    {
+     "start": 50.928,
+     "end": 51.1,
+     "word": " negocio",
+     "p": 0.075
+    },
+    {
+     "start": 51.1,
+     "end": 51.18,
+     "word": " que",
+     "p": 0.649
+    },
+    {
+     "start": 51.18,
+     "end": 51.28,
+     "word": " sí",
+     "p": 0.356
+    },
+    {
+     "start": 51.28,
+     "end": 51.38,
+     "word": " lo",
+     "p": 0.918
+    },
+    {
+     "start": 51.38,
+     "end": 51.54,
+     "word": " tiene.",
+     "p": 0.968
+    }
+   ]
+  }
+ ]
+}

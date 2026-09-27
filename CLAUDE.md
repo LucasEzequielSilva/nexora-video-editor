@@ -248,6 +248,16 @@ fondo **gris frío liso** con cruces de registro (familia propia, no mezclar con
 escenas contiguas), remate en **Helvetica Neue Bold**, zoom suave y apertura con riser (reglas de §8), y en este
 estilo **las palabras entran sin sonido: SFX solo en los cambios grandes** (excepción a "todo overlay con SFX").
 
+### Anuncio de la Biblioteca de anuncios (creativos), 2026-09-27
+
+`assets/referencias/anuncio-2026-09-27.mp4` (29 s, un creador a cámara frente a una ventana con ciudad). Lucas: "copiá
+este estilo visual para que nos quede de template, estoy por grabar unos creativos". Template en
+**`formatos/anuncio/`** (README con las capas, cómo grabar y receta de props) y demo en Studio `anuncio-demo`. En corto:
+subtítulo chico de una frase por vez con la clave en serif itálica, titular azul eléctrico entre corchetes con brillo
+arriba de la cabeza ("[4 A 6]"), aro blanco luminoso arriba a la derecha, escenas en blanco limpio con texto negro +
+serif, palabras en neón rosa, letras que se arman, objetos 3D y capturas de calendario que pasan con desenfoque; cortes
+secos cara ↔ escena y música todo el tiempo.
+
 Quedan tres técnicas de Jacob sin implementar (texto kinético en profundidad, inserts de motion graphics,
 card de título de sección) — candidatas para cuando se decida construirlas.
 
@@ -504,6 +514,10 @@ se corrige la vieja (no se acumulan las dos).
   generados con su imagen de estilo) quedan en pausa. En su lugar: **objetos 3D de `PACKS/OBJETOS 3D/`** (`.glb`:
   billetera, paca de billetes, lupa, cofre, archivos, diamante...) renderizados con `src/pieza/objeto-3d.tsx`
   (three.js, giran despacio), o logos oficiales (`LogoApp`). Si no hay objeto que aplique, sin ícono.
+- (2026-09-27) **Template de creativos = estilo del anuncio de referencia**: "copiá este estilo visual para que nos
+  quede de template, estoy por grabar unos creativos" (`assets/referencias/anuncio-2026-09-27.mp4`). Para los
+  creativos (anuncios) se usa `formatos/anuncio/`, no el formato ganador: subtítulo "anuncio", titular azul, aro,
+  escenas en blanco limpio (`tema: "limpio"`), neón, etiquetas y capturas. El formato ganador sigue para los reels.
 - (2026-09-26) **Tomas a cámara, no leyendo**: "pusiste partes donde está mirando la pantalla y leyendo, pero no
   necesariamente mirando a la cámara y hablándolo fluido". En `empieza-a-romperse` el editor eligió por texto
   (última toma completa) y varias eran lecturas del guion en la pantalla. Criterio: la toma buena es la que dice la

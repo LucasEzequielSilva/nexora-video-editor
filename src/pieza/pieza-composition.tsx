@@ -4,6 +4,7 @@ import Sfx from "../reserva/components/sfx";
 import { useReservaFonts } from "../reserva/fonts";
 import { ease, easeInOut } from "../reserva/motion";
 import { msToFrame, resolverMs } from "./anclas";
+import { AroLayer, TitularLayer } from "./anuncio";
 import CaptionsVertical from "./captions-vertical";
 import Musica from "./musica";
 import { type CaraCuadro, caraEn, inicioDePlano, suavizarCara } from "./cara";
@@ -116,6 +117,11 @@ export default function PiezaComposition({ slug, config, words, cara }: PiezaPro
         <OffthreadVideo src={staticFile(`piezas/${slug}/video.mp4`)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
       </AbsoluteFill>
       {overlays.map((o, i) => (o.tipo === "broll" ? <BrollLayer key={`b${i}`} overlay={o} words={words} /> : null))}
+      {overlays.map((o, i) => {
+        if (o.tipo === "aro") return <AroLayer key={`a${i}`} overlay={o} words={words} totalFrames={durationInFrames} />;
+        if (o.tipo === "titular") return <TitularLayer key={`t${i}`} overlay={o} words={words} />;
+        return null;
+      })}
       {overlays.map((o, i) =>
         o.tipo === "escena" ? (
           <EscenaLayer key={`e${i}`} overlay={o} words={words} slug={slug} totalFrames={durationInFrames} cara={caraSuave.cuadros} />
@@ -146,7 +152,13 @@ export default function PiezaComposition({ slug, config, words, cara }: PiezaPro
         return <Sfx key={i} name={cue.nombre} at={msToFrame(ms)} volume={cue.volumen ?? 0.3} cutAt={corte === null ? undefined : msToFrame(corte)} />;
       })}
       <AbsoluteFill style={{ opacity: 1 - tapados }}>
-        <CaptionsVertical words={words} fuente={config.subtitulos?.fuente} acentos={config.subtitulos?.acentos} />
+        <CaptionsVertical
+          words={words}
+          fuente={config.subtitulos?.fuente}
+          acentos={config.subtitulos?.acentos}
+          estilo={config.subtitulos?.estilo}
+          centroY={config.subtitulos?.estilo === "anuncio" ? 55 : undefined}
+        />
       </AbsoluteFill>
     </AbsoluteFill>
   );
