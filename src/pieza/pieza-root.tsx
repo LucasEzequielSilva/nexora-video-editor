@@ -8,7 +8,7 @@ import SubtitulosEstilos from "./previews/subtitulos-estilos";
 import type { CaraTrack, PiezaConfig, PiezaProps, RawWord } from "./types";
 
 /** Piezas verticales. Cada slug lee public/piezas/<slug>/{video.mp4, words.json, props.json}. */
-const PIEZAS = ["estructura-nexora", "cuenta-juntos", "empieza-a-romperse"] as const;
+const PIEZAS = ["estructura-nexora", "cuenta-juntos", "empieza-a-romperse", "anuncio-demo"] as const;
 
 const WIDTH = 1080;
 const HEIGHT = 1920;

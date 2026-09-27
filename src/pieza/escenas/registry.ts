@@ -1,4 +1,5 @@
 import type { ComponentType } from "react";
+import Capturas, { type Datos as DatosCapturas, PREVIEW as PREVIEW_CAPTURAS } from "./capturas";
 import Chat, { type Datos as DatosChat, PREVIEW as PREVIEW_CHAT } from "./chat";
 import Cta, { type Datos as DatosCta, PREVIEW as PREVIEW_CTA } from "./cta";
 import Cuenta, { type Datos as DatosCuenta, PREVIEW as PREVIEW_CUENTA } from "./cuenta";
@@ -16,6 +17,7 @@ export type DatosPorEscena = {
   cta: DatosCta;
   cuenta: DatosCuenta;
   frase: DatosFrase;
+  capturas: DatosCapturas;
 };
 
 export type EscenaId = keyof DatosPorEscena;
@@ -33,6 +35,7 @@ export const ESCENAS: { [K in EscenaId]: Entrada<K> } = {
   cta: { Componente: Cta, preview: PREVIEW_CTA },
   cuenta: { Componente: Cuenta, preview: PREVIEW_CUENTA },
   frase: { Componente: Frase, preview: PREVIEW_FRASE },
+  capturas: { Componente: Capturas, preview: PREVIEW_CAPTURAS },
 };
 
 export const ESCENA_IDS = Object.keys(ESCENAS) as EscenaId[];

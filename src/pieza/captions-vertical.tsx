@@ -2,10 +2,12 @@ import { useMemo } from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { ease } from "../reserva/motion";
 import { FONT, FPS } from "../reserva/theme";
-import type { Acento, FuenteSubtitulo, RawWord } from "./types";
+import type { Acento, FuenteSubtitulo, RawWord, SubtitulosConfig } from "./types";
 
-const MAX_WORDS = 4;
-const MAX_CHARS = 26;
+type Estilo = NonNullable<SubtitulosConfig["estilo"]>;
+
+/** Límites de página por estilo: "grande" (juanexplica.ia) o "anuncio" (frases cortas, referencia anuncio-2026-09-27). */
+const LIMITES = { grande: { palabras: 4, caracteres: 26 }, anuncio: { palabras: 3, caracteres: 20 } } as const;
 const GAP_BREAK_S = 0.35;
 const LINGER_FRAMES = 8;
 /** Jerarquía de tamaños (patrón juanexplica.ia): la palabra clave crece, las funcionales se achican. */
@@ -47,7 +49,8 @@ const markAccents = (words: CapWord[], acentos: Acento[]) => {
   }
 };
 
-const buildPages = (raw: RawWord[], acentos: Acento[]): Page[] => {
+const buildPages = (raw: RawWord[], acentos: Acento[], estilo: Estilo): Page[] => {
+  const { palabras: MAX_WORDS, caracteres: MAX_CHARS } = LIMITES[estilo];
   const words: CapWord[] = raw.map((w) => ({
     text: w.word.trim(),
     from: Math.round(w.start * FPS),
@@ -90,17 +93,20 @@ type CaptionsProps = {
   acentos?: Acento[];
   /** Centro vertical del subtítulo, en % del alto. Default 54: sobre el pecho, sin tapar la cara. */
   centroY?: number;
+  estilo?: Estilo;
 };
 
 /**
  * Subtítulos sin fondo, grandes y centrados (patrón @juanexplica.ia): cada palabra aparece cuando se dice,
  * el tamaño varía por jerarquía (palabra clave grande, funcionales chicas) y las clave van en serif itálica.
  */
-export default function CaptionsVertical({ words, fuente = "satoshi", acentos = [], centroY = 54 }: CaptionsProps) {
+export default function CaptionsVertical({ words, fuente = "satoshi", acentos = [], centroY = 54, estilo = "grande" }: CaptionsProps) {
   const frame = useCurrentFrame();
-  const pages = useMemo(() => buildPages(words, acentos), [words, acentos]);
+  const pages = useMemo(() => buildPages(words, acentos, estilo), [words, acentos, estilo]);
   const page = pages.find((p) => frame >= p.from && frame < p.to);
   if (!page) return null;
+
+  if (estilo === "anuncio") return <PaginaAnuncio page={page} frame={frame} centroY={centroY} />;
 
   const cfg = FUENTES[fuente];
   const enter = ease(frame, [page.from - 2, page.from + 4]);
@@ -156,3 +162,55 @@ export default function CaptionsVertical({ words, fuente = "satoshi", acentos = 
     </AbsoluteFill>
   );
 }
+
+/**
+ * Estilo anuncio: la frase entra entera, desenfocada y achicándose apenas; blanca, chica (54 px), sans medio-pesada y la
+ * palabra clave en serif itálica del mismo tamaño ("tenés una *agencia*"). Sin jerarquía de tamaños.
+ */
+const PaginaAnuncio = ({ page, frame, centroY }: { page: Page; frame: number; centroY: number }) => {
+  const enter = ease(frame, [page.from - 2, page.from + 5]);
+  const exit = ease(frame, [page.to - 3, page.to], [1, 0]);
+  return (
+    <AbsoluteFill style={{ pointerEvents: "none" }}>
+      <div
+        style={{
+          position: "absolute",
+          left: 120,
+          right: 120,
+          top: `${centroY}%`,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "baseline",
+          columnGap: "0.24em",
+          flexWrap: "wrap",
+          fontSize: 56,
+          opacity: Math.min(enter, exit),
+          transform: `translateY(-50%) scale(${1.06 - 0.06 * enter})`,
+          filter: enter < 0.999 ? `blur(${(1 - enter) * 10}px)` : undefined,
+          color: "#ffffff",
+          textShadow: "0 2px 14px rgba(0,0,0,0.5), 0 1px 3px rgba(0,0,0,0.5)",
+        }}
+      >
+        {page.words.map((word, i) => {
+          const acento = word.accent !== undefined;
+          return (
+            <span
+              key={`${word.from}-${i}`}
+              style={{
+                fontFamily: acento ? FONT.serif : "Satoshi, system-ui, sans-serif",
+                fontStyle: acento ? "italic" : "normal",
+                fontWeight: acento ? 400 : 700,
+                fontSize: acento ? "1.12em" : "1em",
+                letterSpacing: acento ? "-0.01em" : "-0.02em",
+                lineHeight: 1,
+                color: word.accent?.color ?? "#ffffff",
+              }}
+            >
+              {word.text.replace(/[,;:]$/, "")}
+            </span>
+          );
+        })}
+      </div>
+    </AbsoluteFill>
+  );
+};

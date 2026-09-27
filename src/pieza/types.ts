@@ -115,7 +115,30 @@ type EscenaBase = {
 /** Escena a pantalla completa sobre fondo liso blanco o negro; con `pip` muestra al que habla recortado delante (desde 2026-09-25 se usa sin). */
 export type EscenaOverlay = { [K in EscenaId]: EscenaBase & { escena: K; datos: DatosPorEscena[K] } }[EscenaId];
 
-export type Overlay = StrikeOverlay | BrollOverlay | IconoOverlay | EscenaOverlay;
+/**
+ * Titular arriba de la cabeza (estilo anuncio, referencia assets/referencias/anuncio-2026-09-27.mp4): frase chica,
+ * palabra o cifra grande (azul eléctrico con brillo, opcionalmente entre corchetes) y bajada en serif itálica.
+ */
+export type TitularOverlay = {
+  tipo: "titular";
+  desde: AnclaTiempo;
+  hasta: AnclaTiempo;
+  arriba?: string;
+  grande: string;
+  /** Envuelve la palabra grande en corchetes: [4 A 6]. */
+  corchetes?: boolean;
+  abajo?: string;
+  /** Cuándo entra la bajada (default: 0.4 s después de la grande). */
+  abajoEn?: AnclaTiempo;
+  color?: "azul" | "blanco" | "rosa";
+  /** Centro vertical en % del alto. Default 12: arriba de la cabeza. */
+  centroY?: number;
+};
+
+/** Aro blanco luminoso que flota arriba a la derecha sobre la cara (estilo anuncio). Las escenas lo tapan. */
+export type AroOverlay = { tipo: "aro"; desde: AnclaTiempo; hasta: AnclaTiempo | "fin" };
+
+export type Overlay = StrikeOverlay | BrollOverlay | IconoOverlay | EscenaOverlay | TitularOverlay | AroOverlay;
 
 export type FuenteSubtitulo = "satoshi" | "helvetica-heavy" | "tactic-black" | "bebas";
 
@@ -125,6 +148,8 @@ export type Acento = string | { palabra: string; atMs?: number; color?: string }
 export type SubtitulosConfig = {
   fuente?: FuenteSubtitulo;
   acentos?: Acento[];
+  /** "grande" (default, patrón juanexplica.ia) o "anuncio": chico, una frase corta por vez que entra entera desenfocada. */
+  estilo?: "grande" | "anuncio";
 };
 
 /**
