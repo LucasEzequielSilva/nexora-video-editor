@@ -1,6 +1,12 @@
 import type { ComponentType } from "react";
 import type { Escena, TipoEscena } from "../tipos";
 import Apertura from "./apertura";
+import Canales from "./canales";
+import Contactos from "./contactos";
+import Dictado from "./dictado";
+import Ficha from "./ficha";
+import Precio from "./precio";
+import Tablero from "./tablero";
 import Cierre from "./cierre";
 import Dispositivo from "./dispositivo";
 import Frase from "./frase";
@@ -19,6 +25,12 @@ export const ESCENAS_SPEC: Record<TipoEscena, ComponentType<{ escena: any }>> = 
   plate: Plate,
   mapa: Mapa,
   heroe: Heroe,
+  tablero: Tablero,
+  ficha: Ficha,
+  canales: Canales,
+  dictado: Dictado,
+  precio: Precio,
+  contactos: Contactos,
   cierre: Cierre,
 };
 

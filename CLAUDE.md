@@ -169,7 +169,10 @@ Comerciales de producto sin grabación: todo sale de `public/spec/<slug>/spec.js
 que escribe Claude como director creativo. Composiciones `spec-<slug>` (1920x1080) y `spec-<slug>-9x16`, carpeta
 `spec-ads` en Studio. Capas sueltas para DaVinci con `--props='{"capa":"stage|content|bloom"}'`. `npm run spec -- <slug>`
 chequea el spec y escribe la cue sheet. Procedimiento completo en `formatos/spec-ad/README.md` y la skill `/spec-ad`.
-**Lo real**: escenas, cámara, glow, línea de luz, capas, SFX de la paleta y cue sheet. **Lo manual todavía**: generar los
+**Lo real**: escenas, cámara, glow, línea de luz, capas, SFX de la paleta, cue sheet, el kit de componentes de UI
+(`src/spec/kit.tsx`: Tile, Numero, Anillo, Boton, Pill, Fila, Campo, BarraRango, LogoCanal, Navegador, BordeLuz, Lienzo)
+y las escenas de producto (`tablero`, `ficha`, `canales`, `dictado`, `precio`, `contactos`, `mapa`, `heroe`), más
+`luces` (plates de luz en screen como transiciones) y `ambiente` (textura bokeh). **Lo manual todavía**: generar los
 plates en Higgsfield (con costo aprobado), grabar la voz y elegir la música; sin eso la pieza sale muda y con el escenario
 en lugar del plate. Demo: `demo-agente-turnos` (agente de turnos para consultorios; el chat es de ejemplo).
 
@@ -337,6 +340,9 @@ formato.)*
 | Sin cara detectada, la cámara **sostiene la última cara** (o la primera que viene), también en planos enteros sin cara (`cara.ts`) | Studio mostró un cuadro de imagen donde `cara.py` ya veía el negro (cuadro 71 de `cuenta-juntos`): sin cara, el encuadre caía al centro con el zoom del retrato y mostraba la pared. Lucas: "sigue haciendo brusco" |
 | Si `verificar` da "900x1800: la composición no terminó de cargar en 60 s" y hay un objeto 3D en los primeros cuadros, medir la carga aparte (una ventana, 40 s, errores de consola) antes de darlo por roto | En `cuenta-juntos` (billetes 3D en el cuadro 0) el chequeo falló dos veces: la primera ventana seguía cargando el `.glb` de 17 MB con WebGL por software mientras abría la segunda. Medido aparte: 2–4 s por ventana y 0 errores en 40 s |
 | Objetos 3D (`.glb`) con `useLoader` de R3F dentro de `ThreeCanvas` (Suspense), nunca con carga propia en `useEffect` + `setState` | Al renderizar, `ThreeCanvas` solo dibuja cuando cambia el cuadro: con la carga propia el modelo llegaba después y el fotograma salía vacío (con `angle` y con `swangle`). El entorno (`RoomEnvironment`) se arma antes del primer dibujo, si no los materiales metálicos salen negros |
+| Los stills/renders de Remotion se escriben relativos al cwd del shell, que puede haber quedado en otra carpeta: usar rutas absolutas en `out/` | Seis stills de verificación de la v4 de PropMatch aparecieron en `public/spec/.../vo-arg/out/` porque el shell había quedado en esa carpeta |
+| `generate_audio_batch` de Higgsfield: de a 3–4 trabajos; 6 a la vez hizo fallar 3 ("failed" sin motivo) | Voces de la v1 de PropMatch |
+| Los presets de voz de Higgsfield cuyo preview está en inglés hablan un español con acento marcado: clonar siempre desde una muestra en español (`audio_references`) | Voz "Amanda" en la v2 de PropMatch: "es una poronga" |
 | Para detectar caras usar YuNet (`models/yunet/`, OpenCV), no el cascade LBP de skimage | El LBP no encontró la cara con anteojos de la referencia en varios cuadros y dio falsos positivos; YuNet la encontró en 1473 de 1484 con confianza ~0.94 |
 
 ## 8. Dirección creativa de Lucas
@@ -581,6 +587,29 @@ se corrige la vieja (no se acumulan las dos).
   "falta recortar correctamente el video... para que yo pueda recortar manualmente y a partir de ahí
   aprendas el porqué". El jumpcut automático no alcanza como criterio de corte. Ver herramienta de
   recorte (§3a) y guardar el motivo de cada recorte que él marque.
+
+- (2026-10-16) **Spec ads: UN componente grande por beat, nunca la pantalla entera chiquita** (Cogne, sobre la v2 de
+  PropMatch: "apenas se puede apreciar el producto, va rapidísimo, necesitamos que se pueda ver mejor, más zoom y
+  transiciones y efectos profesionales como el video de Amazon, Spotify, Revolut"). Es lo que hacen las referencias:
+  cada beat muestra un tile de vidrio con UN dato (número que cuenta, anillo que se llena, botón que se aprieta → tilde),
+  2–4 s por beat, cámara que empuja despacio. En el editor: kit `src/spec/kit.tsx` + escenas `tablero`, `ficha`,
+  `canales`, `dictado`, `precio`, `contactos`. La ventana entera solo como establishing shot y después pasa al fondo
+  desenfocada.
+- (2026-10-16) **La imagen acompaña a la voz, siempre**: "no mostrés pavadas que no tengan que ver con lo que habla la
+  voz". Cada escena se ancla a su línea de VO (los textos en pantalla son las mismas palabras); si una línea no tiene
+  imagen propia, no va escena. Los cortes dentro de una frase caen en la palabra (medir con whisper `word_timestamps`).
+- (2026-10-16) **Menos SFX en los spec ads**: "sin tanta saturación de sound effects". Solo los momentos clave (hook,
+  corte grande, el golpe del match, el drop del logo, el cierre): ~12–20 en 30 s, a 0.15–0.35. Distinto del formato
+  talking-head, donde Lucas pide más.
+- (2026-10-16) **Voz en off femenina, argentina o latina neutra, fluida**: las voces preset en inglés hablando español
+  son "una poronga". Lo que funcionó: generar con Seedance 2.5 un video con una locutora argentina diciendo frases del
+  guion (prompt con "native Rioplatense Spanish accent"), extraer el audio y clonarlo con `seed_audio`
+  (`audio_references`); una línea por archivo, verificar cada una con whisper. Cogne eligió esa muestra sobre las
+  presets de ElevenLabs/MiniMax.
+- (2026-10-16) **Tarjetas con amor y logos reales**: "no las hagas berreta simple, ponele amor, ponele el logo de fb,
+  de MercadoLibre, del que aplique". Logos oficiales de simple-icons (`LogoApp`, ahora también `facebook`) y, para
+  Mercado Libre (no está en simple-icons), el PNG oficial de su web (`public/spec/<slug>/logos/`). Tiles de vidrio
+  con relleno, borde fino, sombra larga y entrada desde la profundidad; nunca una caja plana.
 
 ### Notas por pieza
 

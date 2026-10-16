@@ -2,33 +2,11 @@ import { AbsoluteFill, Easing, Img, OffthreadVideo, interpolate, staticFile, use
 import Telefono, { TEL } from "../../pieza/escenas/chat/telefono";
 import { Content, Escenario, Stage } from "../capas";
 import { TINTA, alfa, fuenteDe, useLayout, useSpec } from "../tema";
+import { Navegador, WEB } from "../kit";
 import Notificacion from "../notificacion";
 import Texto from "../texto";
 import type { DatosDispositivo, Escena, PantallaTelefono } from "../tipos";
 
-
-const WEB = { ancho: 1600, barra: 56, radio: 22 } as const;
-
-/** Ventana de navegador oscura (el CRM web) con la captura real debajo de la barra. */
-const Navegador = ({ archivo, url, alto, zoom = 1, foco = [0.5, 0.5] }: { archivo: string; url?: string; alto: number; zoom?: number; foco?: [number, number] }) => (
-  <div style={{ width: WEB.ancho, height: alto, borderRadius: WEB.radio, overflow: "hidden", background: "#120F33", border: "1.5px solid rgba(255,255,255,0.14)", boxSizing: "border-box" }}>
-    <div style={{ height: WEB.barra, display: "flex", alignItems: "center", gap: 12, padding: "0 22px", background: "#1B1745", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
-      {["#FF5F57", "#FEBC2E", "#28C840"].map((c) => (
-        <div key={c} style={{ width: 16, height: 16, borderRadius: 99, background: c }} />
-      ))}
-      <div style={{ flex: 1, marginLeft: 24, height: 32, maxWidth: 560, borderRadius: 10, background: "rgba(255,255,255,0.07)", color: "rgba(255,255,255,0.6)", fontSize: 18, display: "flex", alignItems: "center", padding: "0 16px", fontFamily: "'SF Pro Display', system-ui, sans-serif" }}>
-        {url ?? "app.propmatch.com.ar"}
-      </div>
-    </div>
-    <div style={{ width: WEB.ancho, height: alto - WEB.barra, overflow: "hidden" }}>
-      {/* La cámara se mete en la interfaz: el zoom va adentro de la ventana, que queda quieta. */}
-      <Img
-        src={staticFile(archivo)}
-        style={{ width: WEB.ancho, height: alto - WEB.barra, objectFit: "cover", objectPosition: "top", display: "block", transform: `scale(${zoom})`, transformOrigin: `${foco[0] * 100}% ${foco[1] * 100}%` }}
-      />
-    </div>
-  </div>
-);
 
 /** Pantalla del teléfono: UI REAL (captura, grabación de pantalla o el chat de WhatsApp del editor). Nunca UI generada. */
 const Pantalla = ({ pantalla, fps, ancho }: { pantalla: PantallaTelefono; fps: number; ancho: number }) => {

@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { AbsoluteFill, useCurrentFrame } from "remotion";
+import { AbsoluteFill, OffthreadVideo, staticFile, useCurrentFrame } from "remotion";
 import { alfa, useLayout, useSpec } from "./tema";
 import type { Brillo } from "./tipos";
 
@@ -67,6 +67,11 @@ export const Escenario = ({ brillo }: { brillo?: Brillo }) => {
             background: `radial-gradient(${r * 0.6}px ${r * 0.45}px at ${100 - x * 0.6}% ${y + 18}%, ${alfa(spec.marca.color2, 0.18 * i)} 0%, transparent 70%)`,
           }}
         />
+      )}
+      {spec.ambiente && (
+        <AbsoluteFill style={{ mixBlendMode: "screen", opacity: spec.ambiente.opacidad, pointerEvents: "none" }}>
+          <OffthreadVideo src={staticFile(spec.ambiente.archivo)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+        </AbsoluteFill>
       )}
       {/* Viñeta: los bordes se pierden en negro, el ojo va al centro. */}
       <AbsoluteFill style={{ background: "radial-gradient(ellipse at center, transparent 45%, rgba(0,0,0,0.65) 100%)" }} />

@@ -169,6 +169,66 @@ export type DatosMapa = {
   textos?: TextoCinetico[];
 };
 
+export type Kpi = { valor: number; formato?: "entero" | "usd" | "usdM"; etiqueta: string; sub?: string };
+export type DatosTablero = {
+  /** Captura del CRM para la ventana de navegador (establishing shot). */
+  ventana: string;
+  /** Segundo (relativo) en que la ventana pasa al fondo (desenfocada) y salen los KPIs. */
+  kpisS: number;
+  kpis: Kpi[];
+  textos?: TextoCinetico[];
+};
+
+export type DatosFicha = {
+  fotos: string[];
+  titulo: string;
+  precio: number;
+  ambientes: string;
+  superficie: string;
+  zona: string;
+  boton: string;
+  botonDespues: string;
+  /** Segundo (relativo) en que se aprieta el botón. */
+  presionaS: number;
+  textos?: TextoCinetico[];
+};
+
+export type CanalPublicacion = { canal: "mercadolibre" | "facebook" | "instagram" | "whatsapp" | "propmatch"; nombre: string; estado: string; atS: number };
+export type DatosCanales = {
+  ficha: { foto: string; titulo: string; precio: string; zona: string };
+  canales: CanalPublicacion[];
+  logos: { mercadolibre: string; propmatch: string };
+  textos?: TextoCinetico[];
+};
+
+export type DatosDictado = {
+  /** Lo que dicta el martillero: se tipea en vivo. */
+  transcripcion: string;
+  atS: number;
+  /** Campos que se completan solos, cada uno en su segundo. */
+  campos: { etiqueta: string; valor: string; atS: number }[];
+  listoS: number;
+  textos?: TextoCinetico[];
+};
+
+export type DatosPrecio = {
+  contexto: string;
+  sugerido: number;
+  rango: [number, number];
+  escala: [number, number];
+  comparables: string;
+  m2: string;
+  atS: number;
+  textos?: TextoCinetico[];
+};
+
+export type DatosContactos = {
+  titulo: string;
+  resumen: string;
+  filas: { inicial: string; color: string; nombre: string; detalle: string; match: number; atS: number }[];
+  textos?: TextoCinetico[];
+};
+
 export type DatosCierre = {
   logo?: string;
   texto?: string;
@@ -201,6 +261,12 @@ export type Escena =
   | (Base & { tipo: "plate"; datos: DatosPlate })
   | (Base & { tipo: "mapa"; datos: DatosMapa })
   | (Base & { tipo: "heroe"; datos: DatosHeroe })
+  | (Base & { tipo: "tablero"; datos: DatosTablero })
+  | (Base & { tipo: "ficha"; datos: DatosFicha })
+  | (Base & { tipo: "canales"; datos: DatosCanales })
+  | (Base & { tipo: "dictado"; datos: DatosDictado })
+  | (Base & { tipo: "precio"; datos: DatosPrecio })
+  | (Base & { tipo: "contactos"; datos: DatosContactos })
   | (Base & { tipo: "cierre"; datos: DatosCierre });
 
 export type TipoEscena = Escena["tipo"];
@@ -219,7 +285,15 @@ export type CueSfx = {
 /** Una línea de voz en off. Sin `archivo` todavía: el texto queda como guion a grabar. */
 export type LineaVoz = { atS: number; texto: string; carril: "A" | "B"; archivo?: string; volumen?: number };
 
-export type Stem = { nombre: string; archivo?: string; desdeS?: number; volumen?: number; nota?: string };
+export type Stem = {
+  nombre: string;
+  archivo?: string;
+  desdeS?: number;
+  volumen?: number;
+  /** Automatización de volumen: puntos (segundo de la pieza, volumen) interpolados linealmente. Gana sobre `volumen`. */
+  curva?: { atS: number; v: number }[];
+  nota?: string;
+};
 
 export type Spec = {
   titulo: string;
@@ -249,6 +323,8 @@ export type Spec = {
   musica: Stem[];
   sfx: CueSfx[];
   luces?: CapaLuz[];
+  /** Textura de ambiente (bokeh generado) sumada en screen sobre el escenario de todas las escenas. */
+  ambiente?: { archivo: string; opacidad: number };
   /** Cosas a confirmar con Lucas o el cliente (datos de la UI, textos del chat, derechos). */
   pendientes?: string[];
 };

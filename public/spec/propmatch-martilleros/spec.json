@@ -1,5 +1,5 @@
 {
-  "titulo": "PropMatch — Llegás a quien busca (inmobiliarias y martilleros)",
+  "titulo": "PropMatch — Llegás a quien busca (inmobiliarias y martilleros) · v4",
   "tipoPieza": "cliente",
   "concepto": "PropMatch es el CRM de la inmobiliaria: cargás una vez, publicás en todos lados y tu propiedad le llega a quien la busca, sin pagar por aparecer primero.",
   "motivo": "Una línea de luz con el degradé de marca (la ficha viajando): revienta en el isotipo, cruza Buenos Aires de la propiedad a la persona que busca y subraya 'primero.' antes de apagarse en el logo.",
@@ -36,7 +36,7 @@
     "titulos": "mayus",
     "icono": "spec/propmatch-martilleros/isotipo.png"
   },
-  "duracionS": 28.0,
+  "duracionS": 31.9,
   "escenas": [
     {
       "id": "S01",
@@ -48,70 +48,55 @@
       "empuje": 1.06,
       "datos": {
         "logo": "spec/propmatch-martilleros/isotipo.png",
-        "revientaS": 1.2,
+        "revientaS": 1.1,
         "tamano": 300
       }
     },
     {
       "id": "S02",
       "nombre": "Toda tu inmobiliaria",
-      "tipo": "dispositivo",
+      "tipo": "tablero",
       "origen": "codigo",
       "desdeS": 1.5,
-      "hastaS": 4.9,
+      "hastaS": 5.4,
       "datos": {
-        "lado": "derecha",
-        "pantalla": {
-          "tipo": "web",
-          "archivo": "spec/propmatch-martilleros/crm/inicio.png",
-          "aspecto": 1.6,
-          "url": "app.propmatch.com.ar"
-        },
-        "giro": {
-          "desde": [
-            8,
-            -18,
-            2
-          ],
-          "hasta": [
-            3,
-            -8,
-            0
-          ]
-        },
-        "borde": {
-          "desdeS": 0.0,
-          "hastaS": 0.9
-        },
-        "zoom": {
-          "desdeS": 0.8,
-          "hastaS": 3.3,
-          "escala": 1.3,
-          "foco": [
-            0.3,
-            0.2
-          ]
-        },
+        "ventana": "spec/propmatch-martilleros/crm/inicio.png",
+        "kpisS": 1.35,
+        "kpis": [
+          {
+            "valor": 12,
+            "etiqueta": "Propiedades activas",
+            "sub": "+14 este mes"
+          },
+          {
+            "valor": 56,
+            "etiqueta": "Matches activos",
+            "sub": "21 alta compatibilidad"
+          },
+          {
+            "valor": 3.0,
+            "formato": "usdM",
+            "etiqueta": "Pipeline de ventas",
+            "sub": "18 oportunidades"
+          }
+        ],
         "textos": [
           {
-            "atS": 0.1,
+            "atS": 0.15,
             "lineas": [
               {
-                "palabras": "Toda tu",
-                "tamano": 72
+                "palabras": "Toda tu"
               },
               {
-                "palabras": "inmobiliaria,",
-                "tamano": 72
+                "palabras": "inmobiliaria,"
               }
             ]
           },
           {
-            "atS": 1.7,
+            "atS": 1.6,
             "lineas": [
               {
-                "palabras": "en un solo",
-                "tamano": 72
+                "palabras": "en un solo"
               },
               {
                 "palabras": [
@@ -119,8 +104,7 @@
                     "t": "lugar.",
                     "acento": true
                   }
-                ],
-                "tamano": 72
+                ]
               }
             ]
           }
@@ -130,46 +114,31 @@
     {
       "id": "S03",
       "nombre": "Cargás una vez",
-      "tipo": "dispositivo",
+      "tipo": "ficha",
       "origen": "codigo",
-      "desdeS": 4.9,
-      "hastaS": 6.4,
+      "desdeS": 5.4,
+      "hastaS": 8.4,
       "datos": {
-        "lado": "derecha",
-        "pantalla": {
-          "tipo": "web",
-          "archivo": "spec/propmatch-martilleros/crm/nueva-propiedad.png",
-          "aspecto": 1.6,
-          "url": "app.propmatch.com.ar"
-        },
-        "giro": {
-          "desde": [
-            6,
-            -14,
-            1
-          ],
-          "hasta": [
-            3,
-            -8,
-            0
-          ]
-        },
-        "zoom": {
-          "desdeS": 0.0,
-          "hastaS": 1.3,
-          "escala": 1.55,
-          "foco": [
-            0.85,
-            0.06
-          ]
-        },
+        "fotos": [
+          "spec/propmatch-martilleros/ui/propLiving.avif",
+          "spec/propmatch-martilleros/ui/propCocina.avif",
+          "spec/propmatch-martilleros/ui/propCama.webp",
+          "spec/propmatch-martilleros/ui/propBalcon.avif"
+        ],
+        "titulo": "Casa moderna con jardín en City Bell",
+        "precio": 185000,
+        "ambientes": "4",
+        "superficie": "220 m²",
+        "zona": "City Bell",
+        "boton": "Guardar y publicar en canales →",
+        "botonDespues": "Publicada",
+        "presionaS": 1.95,
         "textos": [
           {
-            "atS": 0.1,
+            "atS": 1.1,
             "lineas": [
               {
-                "palabras": "Cargás",
-                "tamano": 72
+                "palabras": "Cargás"
               },
               {
                 "palabras": [
@@ -180,8 +149,7 @@
                     "t": "vez.",
                     "acento": true
                   }
-                ],
-                "tamano": 72
+                ]
               }
             ]
           }
@@ -191,46 +159,53 @@
     {
       "id": "S04",
       "nombre": "Publicás en todos lados",
-      "tipo": "dispositivo",
+      "tipo": "canales",
       "origen": "codigo",
-      "desdeS": 6.4,
-      "hastaS": 8.9,
+      "desdeS": 8.4,
+      "hastaS": 11.3,
       "datos": {
-        "lado": "derecha",
-        "pantalla": {
-          "tipo": "web",
-          "archivo": "spec/propmatch-martilleros/crm/publicador.png",
-          "aspecto": 1.6,
-          "url": "app.propmatch.com.ar"
+        "ficha": {
+          "foto": "spec/propmatch-martilleros/ui/propLiving.avif",
+          "titulo": "Casa moderna en City Bell",
+          "precio": "USD 185.000",
+          "zona": "City Bell · Gonnet"
         },
-        "giro": {
-          "desde": [
-            8,
-            -16,
-            2
-          ],
-          "hasta": [
-            3,
-            -8,
-            0
-          ]
-        },
-        "zoom": {
-          "desdeS": 0.2,
-          "hastaS": 2.3,
-          "escala": 1.35,
-          "foco": [
-            0.6,
-            0.66
-          ]
+        "canales": [
+          {
+            "canal": "mercadolibre",
+            "nombre": "Mercado Libre",
+            "estado": "Publicada",
+            "atS": 0.25
+          },
+          {
+            "canal": "facebook",
+            "nombre": "Facebook",
+            "estado": "Publicada",
+            "atS": 0.55
+          },
+          {
+            "canal": "instagram",
+            "nombre": "Instagram",
+            "estado": "Publicada",
+            "atS": 0.85
+          },
+          {
+            "canal": "propmatch",
+            "nombre": "App PropMatch",
+            "estado": "Visible en la app",
+            "atS": 1.15
+          }
+        ],
+        "logos": {
+          "mercadolibre": "spec/propmatch-martilleros/logos/mercadolibre-icon@2x.png",
+          "propmatch": "spec/propmatch-martilleros/isotipo.png"
         },
         "textos": [
           {
-            "atS": 0.35,
+            "atS": 0.1,
             "lineas": [
               {
-                "palabras": "Publicás en",
-                "tamano": 72
+                "palabras": "Publicás en"
               },
               {
                 "palabras": [
@@ -241,8 +216,7 @@
                     "t": "lados.",
                     "acento": true
                   }
-                ],
-                "tamano": 72
+                ]
               }
             ]
           }
@@ -254,8 +228,8 @@
       "nombre": "Cada propiedad de tu cartera",
       "tipo": "mapa",
       "origen": "higgsfield",
-      "desdeS": 8.9,
-      "hastaS": 11.6,
+      "desdeS": 11.3,
+      "hastaS": 13.85,
       "empuje": 1.02,
       "datos": {
         "archivo": "spec/propmatch-martilleros/plates/mapa-seguimiento.mp4",
@@ -265,7 +239,7 @@
         "pines": [],
         "textos": [
           {
-            "atS": 0.1,
+            "atS": 0.05,
             "lineas": [
               {
                 "palabras": "Y ahora,"
@@ -273,10 +247,10 @@
             ]
           },
           {
-            "atS": 0.85,
+            "atS": 0.75,
             "lineas": [
               {
-                "palabras": "Cada propiedad"
+                "palabras": "cada propiedad"
               },
               {
                 "palabras": [
@@ -302,16 +276,16 @@
       "nombre": "Le llega a quien la busca",
       "tipo": "heroe",
       "origen": "higgsfield",
-      "desdeS": 11.6,
-      "hastaS": 13.4,
+      "desdeS": 13.85,
+      "hastaS": 16.25,
       "datos": {
         "archivo": "spec/propmatch-martilleros/plates/heroe-casa.mp4",
         "desdeS": 1.0,
         "empuje": 1.04,
         "notificacion": {
-          "atS": 0.9,
-          "titulo": "Nuevo match · 94 %",
-          "texto": "Tomás García busca 2 amb en Palermo"
+          "atS": 0.65,
+          "titulo": "Nuevo match · 100 %",
+          "texto": "Martín Rodríguez · Casa moderna en City Bell"
         },
         "textos": [
           {
@@ -334,7 +308,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "pasoS": 0.12
           }
         ]
       }
@@ -342,48 +317,46 @@
     {
       "id": "S07",
       "nombre": "Dictala",
-      "tipo": "dispositivo",
+      "tipo": "dictado",
       "origen": "codigo",
-      "desdeS": 13.4,
-      "hastaS": 16.4,
+      "desdeS": 16.25,
+      "hastaS": 19.85,
       "datos": {
-        "lado": "derecha",
-        "pantalla": {
-          "tipo": "web",
-          "archivo": "spec/propmatch-martilleros/crm/nueva-propiedad.png",
-          "aspecto": 1.6,
-          "url": "app.propmatch.com.ar"
-        },
-        "giro": {
-          "desde": [
-            7,
-            -16,
-            2
-          ],
-          "hasta": [
-            3,
-            -8,
-            0
-          ]
-        },
-        "zoom": {
-          "desdeS": 0.0,
-          "hastaS": 1.0,
-          "escala": 1.6,
-          "foco": [
-            0.55,
-            0.07
-          ]
-        },
-        "onda": {
-          "atS": 0.0,
-          "hastaS": 2.9
-        },
-        "dictado": {
-          "atS": 0.9,
-          "texto": "Casa moderna con jardín en City Bell, cuatro ambientes, 220 metros…",
-          "pasoS": 0.028
-        },
+        "transcripcion": "Casa moderna con jardín en City Bell, cuatro ambientes, 220 metros, 185 mil dólares.",
+        "atS": 0.15,
+        "campos": [
+          {
+            "etiqueta": "Tipo",
+            "valor": "Casa",
+            "atS": 0.9
+          },
+          {
+            "etiqueta": "Operación",
+            "valor": "Venta",
+            "atS": 1.15
+          },
+          {
+            "etiqueta": "Zona",
+            "valor": "City Bell",
+            "atS": 1.4
+          },
+          {
+            "etiqueta": "Ambientes",
+            "valor": "4",
+            "atS": 1.7
+          },
+          {
+            "etiqueta": "Superficie",
+            "valor": "220 m²",
+            "atS": 2.0
+          },
+          {
+            "etiqueta": "Precio",
+            "valor": "USD 185.000",
+            "atS": 2.35
+          }
+        ],
+        "listoS": 2.75,
         "textos": [
           {
             "atS": 0.1,
@@ -394,17 +367,15 @@
                     "t": "Dictala,",
                     "acento": true
                   }
-                ],
-                "tamano": 72
+                ]
               }
             ]
           },
           {
-            "atS": 0.95,
+            "atS": 1.0,
             "lineas": [
               {
-                "palabras": "y la ficha",
-                "tamano": 72
+                "palabras": "y la ficha"
               },
               {
                 "palabras": [
@@ -418,8 +389,7 @@
                     "t": "sola.",
                     "acento": true
                   }
-                ],
-                "tamano": 72
+                ]
               }
             ]
           }
@@ -428,47 +398,31 @@
     },
     {
       "id": "S08",
-      "nombre": "Sabé si tu precio está en rango",
-      "tipo": "dispositivo",
+      "nombre": "Precio en rango",
+      "tipo": "precio",
       "origen": "codigo",
-      "desdeS": 16.4,
-      "hastaS": 19.4,
+      "desdeS": 19.85,
+      "hastaS": 22.75,
       "datos": {
-        "lado": "derecha",
-        "pantalla": {
-          "tipo": "web",
-          "archivo": "spec/propmatch-martilleros/crm/mercado-estimado.png",
-          "aspecto": 1.6,
-          "url": "app.propmatch.com.ar"
-        },
-        "giro": {
-          "desde": [
-            6,
-            -14,
-            2
-          ],
-          "hasta": [
-            3,
-            -8,
-            0
-          ]
-        },
-        "zoom": {
-          "desdeS": 0.2,
-          "hastaS": 2.2,
-          "escala": 1.7,
-          "foco": [
-            0.35,
-            0.87
-          ]
-        },
+        "contexto": "Departamento · City Bell · 3 amb",
+        "sugerido": 95000,
+        "rango": [
+          91500,
+          103500
+        ],
+        "escala": [
+          82000,
+          112000
+        ],
+        "comparables": "3 comparables",
+        "m2": "USD 1.179 / m²",
+        "atS": 0.25,
         "textos": [
           {
             "atS": 0.1,
             "lineas": [
               {
-                "palabras": "Sabé si tu precio",
-                "tamano": 72
+                "palabras": "Sabé si tu precio"
               },
               {
                 "palabras": [
@@ -482,8 +436,7 @@
                     "t": "rango.",
                     "acento": true
                   }
-                ],
-                "tamano": 72
+                ]
               }
             ]
           }
@@ -493,46 +446,45 @@
     {
       "id": "S09",
       "nombre": "Contactos con match",
-      "tipo": "dispositivo",
+      "tipo": "contactos",
       "origen": "codigo",
-      "desdeS": 19.4,
-      "hastaS": 21.8,
+      "desdeS": 22.75,
+      "hastaS": 25.55,
       "datos": {
-        "lado": "derecha",
-        "pantalla": {
-          "tipo": "web",
-          "archivo": "spec/propmatch-martilleros/crm/contactos.png",
-          "aspecto": 1.6,
-          "url": "app.propmatch.com.ar"
-        },
-        "giro": {
-          "desde": [
-            6,
-            -14,
-            2
-          ],
-          "hasta": [
-            3,
-            -8,
-            0
-          ]
-        },
-        "zoom": {
-          "desdeS": 0.2,
-          "hastaS": 2.0,
-          "escala": 1.6,
-          "foco": [
-            0.87,
-            0.66
-          ]
-        },
+        "titulo": "Mejores matches",
+        "resumen": "56 matches activos",
+        "filas": [
+          {
+            "inicial": "MR",
+            "color": "#A855FF",
+            "nombre": "Martín Rodríguez",
+            "detalle": "Busca casa · USD 150.000 – 200.000",
+            "match": 100,
+            "atS": 0.2
+          },
+          {
+            "inicial": "LF",
+            "color": "#FF5ECA",
+            "nombre": "Lucía Fernández",
+            "detalle": "Busca departamento · USD 80.000 – 120.000",
+            "match": 100,
+            "atS": 0.55
+          },
+          {
+            "inicial": "CT",
+            "color": "#4C7CFF",
+            "nombre": "Camila Torres",
+            "detalle": "Busca casa · USD 200.000 – 300.000",
+            "match": 100,
+            "atS": 0.9
+          }
+        ],
         "textos": [
           {
             "atS": 0.1,
             "lineas": [
               {
-                "palabras": "Y mirá qué contactos",
-                "tamano": 72
+                "palabras": "Y mirá qué contactos"
               },
               {
                 "palabras": [
@@ -546,8 +498,7 @@
                     "t": "match.",
                     "acento": true
                   }
-                ],
-                "tamano": 72
+                ]
               }
             ]
           }
@@ -559,8 +510,8 @@
       "nombre": "Drop logo",
       "tipo": "cierre",
       "origen": "codigo",
-      "desdeS": 21.8,
-      "hastaS": 23.6,
+      "desdeS": 25.55,
+      "hastaS": 27.45,
       "empuje": 1.03,
       "datos": {
         "logo": "spec/propmatch-martilleros/logo-propmatch.png",
@@ -573,8 +524,8 @@
       "nombre": "Tagline",
       "tipo": "frase",
       "origen": "codigo",
-      "desdeS": 23.6,
-      "hastaS": 26.4,
+      "desdeS": 27.45,
+      "hastaS": 30.15,
       "empuje": 1.03,
       "brillo": {
         "intensidad": 0.85
@@ -633,8 +584,8 @@
               0.6
             ]
           ],
-          "desdeS": 1.2,
-          "hastaS": 1.8,
+          "desdeS": 1.15,
+          "hastaS": 1.75,
           "grosor": 5
         }
       ]
@@ -644,158 +595,269 @@
       "nombre": "End card",
       "tipo": "cierre",
       "origen": "codigo",
-      "desdeS": 26.4,
-      "hastaS": 28.0,
+      "desdeS": 30.15,
+      "hastaS": 31.9,
       "datos": {
         "logo": "spec/propmatch-martilleros/logo-propmatch.png",
         "tamano": 170,
         "bajada": "Para inmobiliarias y martilleros · propmatch.com.ar",
-        "apagaS": 1.0
+        "apagaS": 1.1
       }
     }
   ],
   "voz": [
     {
-      "atS": 1.6,
+      "atS": 1.75,
       "carril": "A",
       "texto": "Toda tu inmobiliaria, en un solo lugar.",
-      "archivo": "spec/propmatch-martilleros/vo-mujer/f1.wav"
+      "archivo": "spec/propmatch-martilleros/vo-arg/a1.wav"
     },
     {
-      "atS": 5.0,
+      "atS": 6.6,
       "carril": "A",
-      "texto": "Cargás una vez. Publicás en todos lados.",
-      "archivo": "spec/propmatch-martilleros/vo-mujer/f2.wav"
+      "texto": "Cargás una vez.",
+      "archivo": "spec/propmatch-martilleros/vo-arg/n2a.wav"
     },
     {
-      "atS": 9.0,
+      "atS": 8.6,
+      "carril": "A",
+      "texto": "Publicás en todos lados.",
+      "archivo": "spec/propmatch-martilleros/vo-arg/n2b.wav"
+    },
+    {
+      "atS": 11.45,
       "carril": "A",
       "texto": "Y ahora, cada propiedad de tu cartera le llega a quien la busca.",
-      "archivo": "spec/propmatch-martilleros/vo-mujer/f3.wav"
+      "archivo": "spec/propmatch-martilleros/vo-arg/a3.wav"
     },
     {
-      "atS": 13.5,
+      "atS": 16.4,
       "carril": "A",
       "texto": "Dictala, y la ficha se arma sola.",
-      "archivo": "spec/propmatch-martilleros/vo-mujer/f4.wav"
+      "archivo": "spec/propmatch-martilleros/vo-arg/a4.wav"
     },
     {
-      "atS": 16.5,
+      "atS": 20.0,
       "carril": "A",
       "texto": "Sabé si tu precio está en rango.",
-      "archivo": "spec/propmatch-martilleros/vo-mujer/f5.wav"
+      "archivo": "spec/propmatch-martilleros/vo-arg/a5.wav"
     },
     {
-      "atS": 19.5,
+      "atS": 22.9,
       "carril": "A",
       "texto": "Y mirá qué contactos ya tienen match.",
-      "archivo": "spec/propmatch-martilleros/vo-mujer/f6.wav"
+      "archivo": "spec/propmatch-martilleros/vo-arg/a6.wav"
     },
     {
-      "atS": 21.95,
+      "atS": 25.65,
       "carril": "A",
       "texto": "PropMatch.",
-      "archivo": "spec/propmatch-martilleros/vo-mujer/f7.wav"
+      "archivo": "spec/propmatch-martilleros/vo-arg/n7.wav"
     },
     {
-      "atS": 23.7,
+      "atS": 27.6,
       "carril": "A",
       "texto": "Sin pagar por aparecer primero.",
-      "archivo": "spec/propmatch-martilleros/vo-mujer/f8.wav"
+      "archivo": "spec/propmatch-martilleros/vo-arg/a8.wav"
     }
   ],
   "musica": [
     {
-      "nombre": "cama provisoria",
-      "archivo": "spec/propmatch-martilleros/musica/cama.wav",
+      "nombre": "Thief in the Night — Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "archivo": "spec/propmatch-martilleros/musica/thief-in-the-night.wav",
       "desdeS": 0,
-      "volumen": 0.42,
-      "nota": "cama-escena.wav del editor en loop: grave y pareja. Reemplazar por un tema del pack con stems (drop en 20.2 s)."
+      "curva": [
+        {
+          "atS": 0,
+          "v": 0
+        },
+        {
+          "atS": 0.6,
+          "v": 0.3
+        },
+        {
+          "atS": 24.5,
+          "v": 0.3
+        },
+        {
+          "atS": 25.3,
+          "v": 0.14
+        },
+        {
+          "atS": 25.55,
+          "v": 0.6
+        },
+        {
+          "atS": 27.2,
+          "v": 0.42
+        },
+        {
+          "atS": 30.1,
+          "v": 0.4
+        },
+        {
+          "atS": 31.9,
+          "v": 0
+        }
+      ],
+      "nota": "125 BPM, electrónica oscura. Licencia CC BY 4.0: acreditar en la descripción. Reemplazable por un tema del pack con stems."
     }
   ],
   "sfx": [
     {
-      "atS": 0.15,
+      "atS": 0.1,
       "nombre": "trazo",
       "categoria": "luz",
-      "nota": "entra la línea de luz",
-      "volumen": 0.2
-    },
-    {
-      "atS": 1.2,
-      "nombre": "remate",
-      "categoria": "golpe",
-      "nota": "revienta el isotipo",
-      "volumen": 0.32
-    },
-    {
-      "atS": 1.5,
-      "nombre": "trazo",
-      "categoria": "luz",
-      "nota": "el borde de luz se dibuja en el CRM",
-      "volumen": 0.16
-    },
-    {
-      "atS": 8.9,
-      "nombre": "corte-broll",
-      "categoria": "whoosh",
-      "nota": "corte al mapa",
-      "volumen": 0.25
-    },
-    {
-      "atS": 12.1,
-      "nombre": "remate-b",
-      "categoria": "golpe",
-      "nota": "aterriza la casa",
-      "volumen": 0.28
-    },
-    {
-      "atS": 12.5,
-      "nombre": "burbuja",
-      "categoria": "ui",
-      "nota": "notificación de match",
+      "nota": "entra el trazo de luz",
       "volumen": 0.22
     },
     {
-      "atS": 21.8,
-      "nombre": "riser",
+      "atS": 1.1,
+      "nombre": "remate",
+      "categoria": "golpe",
+      "nota": "revienta el isotipo",
+      "volumen": 0.34
+    },
+    {
+      "atS": 1.75,
+      "nombre": "trazo",
       "categoria": "luz",
-      "nota": "riser al drop",
-      "volumen": 0.18
+      "nota": "borde de luz en el CRM",
+      "volumen": 0.14
     },
     {
-      "atS": 21.8,
-      "nombre": "cta-cierre",
-      "categoria": "golpe",
-      "nota": "drop del logo",
-      "volumen": 0.32
+      "atS": 2.9,
+      "nombre": "tarjeta",
+      "categoria": "ui",
+      "nota": "salen los KPIs",
+      "volumen": 0.2
     },
     {
-      "atS": 21.8,
-      "nombre": "golpe-grave",
+      "atS": 7.35,
+      "nombre": "tap",
+      "categoria": "ui",
+      "nota": "publicar, en 'vez'",
+      "volumen": 0.4
+    },
+    {
+      "atS": 8.65,
+      "nombre": "tarjeta",
+      "categoria": "ui",
+      "nota": "Mercado Libre",
+      "volumen": 0.2
+    },
+    {
+      "atS": 8.95,
+      "nombre": "tarjeta-b",
+      "categoria": "ui",
+      "nota": "Facebook",
+      "volumen": 0.2
+    },
+    {
+      "atS": 9.25,
+      "nombre": "tarjeta-c",
+      "categoria": "ui",
+      "nota": "Instagram",
+      "volumen": 0.2
+    },
+    {
+      "atS": 9.55,
+      "nombre": "tarjeta",
+      "categoria": "ui",
+      "nota": "App PropMatch",
+      "volumen": 0.2
+    },
+    {
+      "atS": 11.3,
+      "nombre": "corte-broll",
+      "categoria": "whoosh",
+      "nota": "barrido de luz al mapa",
+      "volumen": 0.28
+    },
+    {
+      "atS": 11.5,
+      "nombre": "trazo",
+      "categoria": "luz",
+      "nota": "la ruta se dibuja",
+      "volumen": 0.16
+    },
+    {
+      "atS": 13.85,
+      "nombre": "remate-b",
       "categoria": "golpe",
-      "nota": "sub del drop",
+      "nota": "aterriza la casa",
       "volumen": 0.3
     },
     {
-      "atS": 25.4,
+      "atS": 14.5,
+      "nombre": "burbuja",
+      "categoria": "ui",
+      "nota": "notificación de match",
+      "volumen": 0.24
+    },
+    {
+      "atS": 16.25,
+      "nombre": "escena-entra",
+      "categoria": "whoosh",
+      "nota": "barrido al dictado",
+      "volumen": 0.26
+    },
+    {
+      "atS": 19.0,
+      "nombre": "check-b",
+      "categoria": "ui",
+      "nota": "ficha lista",
+      "volumen": 0.3
+    },
+    {
+      "atS": 21.55,
+      "nombre": "check-b",
+      "categoria": "ui",
+      "nota": "en rango",
+      "volumen": 0.3
+    },
+    {
+      "atS": 25.55,
+      "nombre": "riser",
+      "categoria": "luz",
+      "nota": "riser al drop",
+      "volumen": 0.16
+    },
+    {
+      "atS": 25.55,
+      "nombre": "cta-cierre",
+      "categoria": "golpe",
+      "nota": "drop del logo",
+      "volumen": 0.34
+    },
+    {
+      "atS": 25.55,
+      "nombre": "golpe-grave",
+      "categoria": "golpe",
+      "nota": "sub del drop",
+      "volumen": 0.32
+    },
+    {
+      "atS": 28.6,
+      "nombre": "trazo",
+      "categoria": "luz",
+      "nota": "subraya 'primero.'",
+      "volumen": 0.18
+    },
+    {
+      "atS": 29.2,
       "nombre": "remate-b",
       "categoria": "golpe",
       "nota": "remata el tagline",
       "volumen": 0.24
     },
     {
-      "atS": 27.4,
+      "atS": 31.25,
       "nombre": "escena-sale",
       "categoria": "whoosh",
-      "nota": "el logo se apaga en una línea",
+      "nota": "el logo se apaga",
       "volumen": 0.2
     }
-  ],
-  "pendientes": [
-    "UI: CRM web real (propmatch-crm, demo) re-skineado oscuro con la marca para el video; el CRM real sigue claro.",
-    "Voz: preset 'Amanda' (elegida por Cogne) hablando en español; acento sin confirmar.",
-    "Música provisoria (cama-escena en loop)."
   ],
   "luces": [
     {
@@ -804,6 +866,36 @@
       "hastaS": 1.45,
       "opacidad": 1,
       "velocidad": 3
+    },
+    {
+      "archivo": "spec/propmatch-martilleros/plates/luz-barrido.mp4",
+      "desdeS": 10.5,
+      "hastaS": 12.1,
+      "opacidad": 0.7,
+      "velocidad": 2.5
+    },
+    {
+      "archivo": "spec/propmatch-martilleros/plates/luz-barrido.mp4",
+      "desdeS": 15.45,
+      "hastaS": 17.05,
+      "opacidad": 0.55,
+      "velocidad": 2.5
+    },
+    {
+      "archivo": "spec/propmatch-martilleros/plates/luz-barrido.mp4",
+      "desdeS": 24.75,
+      "hastaS": 26.35,
+      "opacidad": 0.7,
+      "velocidad": 2.5
     }
+  ],
+  "ambiente": {
+    "archivo": "spec/propmatch-martilleros/plates/ambiente-bokeh.mp4",
+    "opacidad": 0.35
+  },
+  "pendientes": [
+    "Voz: locutora argentina generada con Seedance y clonada con seed_audio. Acento sin confirmar de oído por el editor.",
+    "Música CC BY 4.0: acreditar 'Thief in the Night — Kevin MacLeod (incompetech.com)' en la descripción, o reemplazar por un tema del pack.",
+    "Canales: confirmar con Lucas que la publicación en Mercado Libre, Facebook e Instagram está activa."
   ]
 }

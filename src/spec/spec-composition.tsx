@@ -92,7 +92,19 @@ export default function SpecComposition({ spec, capa }: SpecProps) {
             .filter((m) => m.archivo)
             .map((m, i) => (
               <Sequence key={`mu${i}`} from={f(m.desdeS ?? 0)} layout="none" name={`música: ${m.nombre}`}>
-                <Audio src={staticFile(m.archivo as string)} volume={m.volumen ?? 0.4} />
+                <Audio
+                  src={staticFile(m.archivo as string)}
+                  // `fr` cuenta desde que el audio empieza a sonar (puede ser negativo en Studio): se acota siempre.
+                  volume={
+                    m.curva?.length
+                      ? (fr) => {
+                          const curva = m.curva as { atS: number; v: number }[];
+                          const t = Math.max(0, fr) / fps + (m.desdeS ?? 0);
+                          return interpolate(t, curva.map((c) => c.atS), curva.map((c) => c.v), { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+                        }
+                      : (m.volumen ?? 0.4)
+                  }
+                />
               </Sequence>
             ))}
       </AbsoluteFill>

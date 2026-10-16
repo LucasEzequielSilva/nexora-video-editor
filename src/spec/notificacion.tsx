@@ -17,8 +17,9 @@ export default function Notificacion({ n, icono }: { n: N; icono?: string }) {
     <div
       style={{
         position: "absolute",
-        left: (width - w) / 2,
-        top: (vertical ? 120 : 48) * u,
+        // En 16:9 va arriba a la derecha (deja libre el centro, donde está el héroe); en 9:16 centrada arriba.
+        left: vertical ? (width - w) / 2 : width - w - 48 * u,
+        top: (vertical ? 120 : 28) * u,
         width: w,
         transform: `translateY(${(e - 1) * 160 * u - sale * 120 * u}px) scale(${0.96 + 0.04 * e})`,
         opacity: Math.min(e * 1.5, 1) * (1 - sale),

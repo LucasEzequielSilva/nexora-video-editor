@@ -102,6 +102,17 @@ Escena nueva = archivo en `src/spec/escenas/` + tipo en `tipos.ts` + `registry.t
    `--props='{"capa":"stage"}'`, `"content"` y `"bloom"` (para alfa: `--codec=prores --prores-profile=4444
    --pixel-format=yuva444p10le --image-format=png`). Nombrar `S0N V1 - <nombre> - STAGE (16x9).mov` como en la referencia.
 
+## 5b. Componentes de producto (v4, 2026-10-16)
+
+La ventana entera del producto chiquita no se lee: cada beat muestra **un componente grande** construido en Remotion
+con los datos reales del producto (`src/spec/kit.tsx` + escenas `tablero`, `ficha`, `canales`, `dictado`, `precio`,
+`contactos`). Reglas que salieron de los ads de referencia: tile de vidrio con un dato, número que cuenta (`Numero`),
+anillo que se llena (`Anillo`), botón que se aprieta y cambia de estado (`Boton`, el "Add to Cart → Order placed"),
+filas que entran desde la derecha (`Fila`), campos que aterrizan (`Campo`), rango con marcador (`BarraRango`). 2–4 s por
+beat, cámara que empuja, entrada desde la profundidad con desenfoque. Transiciones: plates de luz generados en screen
+(`luces`), textura bokeh de fondo (`ambiente`). Cada escena anclada a su línea de voz; cortes dentro de una frase en la
+palabra (whisper `word_timestamps`).
+
 ## 6. Reglas
 
 - **UI real siempre.** Capturas/grabaciones del producto o el chat del editor con textos aprobados. Lo generado por IA es

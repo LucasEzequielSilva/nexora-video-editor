@@ -1,5 +1,9 @@
 # PropMatch · "Llegás a quien busca"
 
+> **v4 (2026-10-16):** producida con el kit de componentes (un componente grande por beat), voz femenina argentina
+> (Seedance → clon seed_audio), logos oficiales, plates de luz y textura bokeh de Higgsfield, música CC BY 4.0. Las
+> escenas y tiempos reales están en `spec.json`; lo de abajo es el brief original.
+
 **Prompt del comercial · 25.0 s · 16:9 1920x1080 (master) + 9:16 1080x1920 · 30 fps**
 Para inmobiliarias y martilleros: los que pagan. Escrito con la estructura de los spec ads de Revolut, Spotify y Amazon
 (`formatos/spec-ad/README.md` §3). Pieza de cliente, no un spec ad: PropMatch es el producto. **Nunca se le habla al propietario**: el que paga es la inmobiliaria o el martillero, y el que busca (inquilino o comprador) se conecta con él.
