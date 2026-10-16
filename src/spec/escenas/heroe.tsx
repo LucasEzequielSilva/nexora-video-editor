@@ -26,7 +26,7 @@ export default function Heroe({ escena }: { escena: Escena & { datos: DatosHeroe
         {(d.textos ?? []).map((tx, i) => {
           const sig = d.textos?.[i + 1];
           return (
-            <div key={i} style={{ position: "absolute", left: 0, right: 0, bottom: (vertical ? 260 : 90) * u }}>
+            <div key={i} style={{ position: "absolute", left: 0, right: 0, bottom: (vertical ? 200 : 34) * u }}>
               <Texto texto={{ ...tx, lado: "centro" }} hastaS={sig ? sig.atS : finS + 1} tamanoBase={vertical ? 84 : 80} />
             </div>
           );

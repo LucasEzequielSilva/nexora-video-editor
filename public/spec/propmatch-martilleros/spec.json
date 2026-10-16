@@ -48,53 +48,9 @@
       "empuje": 1.06,
       "datos": {
         "logo": "spec/propmatch-martilleros/isotipo.png",
-        "revientaS": 0.9,
+        "revientaS": 1.2,
         "tamano": 300
-      },
-      "linea": [
-        {
-          "puntos": [
-            [
-              -0.05,
-              0.74
-            ],
-            [
-              0.2,
-              0.68
-            ],
-            [
-              0.38,
-              0.52
-            ],
-            [
-              0.5,
-              0.5
-            ]
-          ],
-          "puntosVertical": [
-            [
-              -0.05,
-              0.64
-            ],
-            [
-              0.2,
-              0.6
-            ],
-            [
-              0.38,
-              0.52
-            ],
-            [
-              0.5,
-              0.5
-            ]
-          ],
-          "desdeS": 0.0,
-          "hastaS": 0.9,
-          "cola": 0.45,
-          "apagaS": 0.95
-        }
-      ]
+      }
     },
     {
       "id": "S02",
@@ -302,33 +258,11 @@
       "hastaS": 11.6,
       "empuje": 1.02,
       "datos": {
-        "archivo": "spec/propmatch-martilleros/plates/mapa-ba-noche.mp4",
-        "archivoVertical": "spec/propmatch-martilleros/ui/baAerialDark.png",
-        "velocidad": 0.9,
+        "archivo": "spec/propmatch-martilleros/plates/mapa-seguimiento.mp4",
+        "velocidad": 1.0,
         "empuje": 1.03,
-        "oscurecer": 0.2,
-        "pines": [
-          {
-            "x": 0.33,
-            "y": 0.68,
-            "xv": 0.3,
-            "yv": 0.62,
-            "atS": 0.5,
-            "tipo": "propiedad",
-            "titulo": "USD 1.250 · Palermo Soho",
-            "detalle": "Loft luminoso · 2 amb"
-          },
-          {
-            "x": 0.68,
-            "y": 0.4,
-            "xv": 0.68,
-            "yv": 0.38,
-            "atS": 1.9,
-            "tipo": "persona",
-            "titulo": "Tomás García",
-            "detalle": "Busca 2 amb en Palermo"
-          }
-        ],
+        "oscurecer": 0.1,
+        "pines": [],
         "textos": [
           {
             "atS": 0.1,
@@ -361,58 +295,7 @@
             ]
           }
         ]
-      },
-      "linea": [
-        {
-          "puntos": [
-            [
-              0.33,
-              0.68
-            ],
-            [
-              0.44,
-              0.64
-            ],
-            [
-              0.52,
-              0.5
-            ],
-            [
-              0.6,
-              0.43
-            ],
-            [
-              0.68,
-              0.4
-            ]
-          ],
-          "puntosVertical": [
-            [
-              0.3,
-              0.62
-            ],
-            [
-              0.42,
-              0.56
-            ],
-            [
-              0.5,
-              0.48
-            ],
-            [
-              0.6,
-              0.41
-            ],
-            [
-              0.68,
-              0.38
-            ]
-          ],
-          "desdeS": 0.8,
-          "hastaS": 2.0,
-          "grosor": 5
-        }
-      ]
+      }
     },
     {
       "id": "S06",
@@ -832,14 +715,14 @@
   ],
   "sfx": [
     {
-      "atS": 0.05,
+      "atS": 0.15,
       "nombre": "trazo",
       "categoria": "luz",
       "nota": "entra la línea de luz",
       "volumen": 0.2
     },
     {
-      "atS": 0.9,
+      "atS": 1.2,
       "nombre": "remate",
       "categoria": "golpe",
       "nota": "revienta el isotipo",
@@ -858,13 +741,6 @@
       "categoria": "whoosh",
       "nota": "corte al mapa",
       "volumen": 0.25
-    },
-    {
-      "atS": 9.7,
-      "nombre": "trazo",
-      "categoria": "luz",
-      "nota": "la línea cruza la ciudad",
-      "volumen": 0.18
     },
     {
       "atS": 12.1,
@@ -921,12 +797,13 @@
     "Voz: preset 'Amanda' (elegida por Cogne) hablando en español; acento sin confirmar.",
     "Música provisoria (cama-escena en loop)."
   ],
-  "_luces": [
+  "luces": [
     {
       "archivo": "spec/propmatch-martilleros/plates/luz-trazo.mp4",
       "desdeS": 0,
-      "hastaS": 1.6,
-      "opacidad": 1
+      "hastaS": 1.45,
+      "opacidad": 1,
+      "velocidad": 3
     }
   ]
 }
