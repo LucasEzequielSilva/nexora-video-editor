@@ -344,6 +344,7 @@ formato.)*
 | `generate_audio_batch` de Higgsfield: de a 3–4 trabajos; 6 a la vez hizo fallar 3 ("failed" sin motivo) | Voces de la v1 de PropMatch |
 | Los presets de voz de Higgsfield cuyo preview está en inglés hablan un español con acento marcado: clonar siempre desde una muestra en español (`audio_references`) | Voz "Amanda" en la v2 de PropMatch: "es una poronga" |
 | Para detectar caras usar YuNet (`models/yunet/`, OpenCV), no el cascade LBP de skimage | El LBP no encontró la cara con anteojos de la referencia en varios cuadros y dio falsos positivos; YuNet la encontró en 1473 de 1484 con confianza ~0.94 |
+| Todo texto de una línea con `textOverflow: ellipsis` se verifica con un **still a resolución completa** en 16:9 **y** 9:16 antes del render final (la hoja de contactos lo tapa): si el ancho de la columna de texto queda por debajo del nombre más largo, ensanchar la tarjeta, no achicar la fuente | En la v4 de PropMatch, las tarjetas de canales (350 px, columna de texto ≈152 px) recortaban "Mercado Li…" y "App PropM…" en 16:9; en la hoja de contactos no se notaba y en 9:16 (tarjetas de 470 px) nunca pasó. Se ensancharon a 390 px (ficha 280→260) |
 
 ## 8. Dirección creativa de Lucas
 

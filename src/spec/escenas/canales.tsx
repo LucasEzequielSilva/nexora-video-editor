@@ -3,8 +3,8 @@ import { Check, Lienzo, LogoCanal, Pill, T, Tile, UI, prog, useGrad } from "../k
 import { alfa, useLayout } from "../tema";
 import type { DatosCanales, Escena } from "../tipos";
 
-const FICHA = 280;
-const CARD = 350;
+const FICHA = 260;
+const CARD = 390;
 const CARD_ALTO = 150;
 const GAP = 20;
 const PUENTE = 80;

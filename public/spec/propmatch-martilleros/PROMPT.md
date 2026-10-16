@@ -2,7 +2,12 @@
 
 > **v4 (2026-10-16):** producida con el kit de componentes (un componente grande por beat), voz femenina argentina
 > (Seedance → clon seed_audio), logos oficiales, plates de luz y textura bokeh de Higgsfield, música CC BY 4.0. Las
-> escenas y tiempos reales están en `spec.json`; lo de abajo es el brief original.
+> escenas y tiempos reales están en `spec.json`; lo de abajo es el brief original. **Exports finales:**
+> `out/propmatch-v4-16x9-master.mp4` y `out/propmatch-v4-9x16-master.mp4` (31,9 s, master lineal −14 LUFS). Los
+> pendientes de abajo quedaron así: UI = CRM web real re-vestido en oscuro (solo para el video); logos de canales puestos
+> (confirmar con Lucas que esas publicaciones están activas); créditos cargados; voz = clon de una locutora argentina
+> generada en Seedance (elegida por Cogne); música = "Thief in the Night" (Kevin MacLeod, CC BY 4.0: acreditar o cambiar
+> por un tema del pack).
 
 **Prompt del comercial · 25.0 s · 16:9 1920x1080 (master) + 9:16 1080x1920 · 30 fps**
 Para inmobiliarias y martilleros: los que pagan. Escrito con la estructura de los spec ads de Revolut, Spotify y Amazon
