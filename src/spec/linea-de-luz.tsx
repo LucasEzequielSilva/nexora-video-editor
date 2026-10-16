@@ -70,6 +70,10 @@ const Tramo = ({ tramo, finEscena }: { tramo: TramoLinea; finEscena: number }) =
   const [hx, hy] = puntoEn(m, cabeza);
   const color = spec.marca.color;
   const id = `ll-${tramo.desdeS}-${fuente.length}`;
+  // Con `marca.degradado` la línea lleva el degradé de marca de punta a punta del recorrido (la "sonrisa" de PropMatch).
+  const grad = spec.marca.degradado;
+  const [a, b] = [m.pts[0], m.pts[m.pts.length - 1]];
+  const trazo = grad ? `url(#${id}-g)` : color;
   return (
     <AbsoluteFill style={{ opacity: op, pointerEvents: "none" }}>
       <svg width={width} height={height} style={{ overflow: "visible" }}>
@@ -77,10 +81,17 @@ const Tramo = ({ tramo, finEscena }: { tramo: TramoLinea; finEscena: number }) =
           <filter id={id} x={-width} y={-height} width={width * 3} height={height * 3} filterUnits="userSpaceOnUse">
             <feGaussianBlur stdDeviation={g * 2.2} />
           </filter>
+          {grad && (
+            <linearGradient id={`${id}-g`} gradientUnits="userSpaceOnUse" x1={a[0]} y1={a[1]} x2={b[0] === a[0] && b[1] === a[1] ? a[0] + 1 : b[0]} y2={b[1]}>
+              {grad.map((c, i) => (
+                <stop key={c + i} offset={i / Math.max(1, grad.length - 1)} stopColor={c} />
+              ))}
+            </linearGradient>
+          )}
         </defs>
         {/* Halo ancho + núcleo blanco: la línea se lee como luz, no como trazo. */}
-        <path d={d} fill="none" stroke={color} strokeWidth={g * 3} strokeLinecap="round" strokeDasharray={dash} strokeDashoffset={off} filter={`url(#${id})`} />
-        <path d={d} fill="none" stroke={color} strokeWidth={g} strokeLinecap="round" strokeDasharray={dash} strokeDashoffset={off} />
+        <path d={d} fill="none" stroke={trazo} strokeWidth={g * 3} strokeLinecap="round" strokeDasharray={dash} strokeDashoffset={off} filter={`url(#${id})`} />
+        <path d={d} fill="none" stroke={trazo} strokeWidth={g} strokeLinecap="round" strokeDasharray={dash} strokeDashoffset={off} />
         <path d={d} fill="none" stroke="#ffffff" strokeWidth={g * 0.35} strokeLinecap="round" strokeDasharray={dash} strokeDashoffset={off} opacity={0.85} />
         {p < 1 && (
           <>

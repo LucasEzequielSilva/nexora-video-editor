@@ -43,7 +43,7 @@ export default function Apertura({ escena }: { escena: Escena & { datos: DatosAp
               color: TINTA.texto,
             }}
           >
-            {d.logo ? <Img src={staticFile(d.logo)} style={{ height: 150 * u, maxWidth: width * 0.7, objectFit: "contain", display: "block" }} /> : (d.texto ?? spec.marca.nombre)}
+            {d.logo ? <Img src={staticFile(d.logo)} style={{ height: (d.tamano ?? 150) * u, maxWidth: width * 0.7, objectFit: "contain", display: "block" }} /> : (d.texto ?? spec.marca.nombre)}
           </div>
           {d.bajada && (
             <div

@@ -39,7 +39,7 @@ export default function Cierre({ escena }: { escena: Escena & { datos: DatosCier
                 color: TINTA.texto,
               }}
             >
-              {d.logo ? <Img src={staticFile(d.logo)} style={{ height: 140 * u, maxWidth: width * 0.7, objectFit: "contain", display: "block" }} /> : (d.texto ?? spec.marca.nombre)}
+              {d.logo ? <Img src={staticFile(d.logo)} style={{ height: (d.tamano ?? 140) * u, maxWidth: width * 0.7, objectFit: "contain", display: "block" }} /> : (d.texto ?? spec.marca.nombre)}
             </div>
           )}
           {aplasta >= 1 && linea > 0 && (

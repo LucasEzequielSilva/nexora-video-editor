@@ -1,6 +1,6 @@
 import type { CSSProperties } from "react";
 import { Easing, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
-import { SERIF, SPEC, TINTA, fuenteDe, useLayout, useSpec } from "./tema";
+import { SERIF, SPEC, TINTA, fuenteDe, tintaAcento, useLayout, useSpec } from "./tema";
 import type { Palabra, TextoCinetico } from "./tipos";
 
 const palabrasDe = (p: Palabra[] | string): Palabra[] =>
@@ -26,6 +26,7 @@ export default function Texto({
   const { fps } = useVideoConfig();
   const { u, vertical } = useLayout();
   const { spec } = useSpec();
+  const mayus = spec.marca.titulos === "mayus";
   const paso = (texto.pasoS ?? SPEC.pasoPalabra) * fps;
   const at = texto.atS * fps;
   const sale = hastaS !== undefined ? hastaS * fps : Infinity;
@@ -68,11 +69,13 @@ export default function Texto({
                   display: "inline-block",
                   fontFamily: linea.serif ? SERIF : fuenteDe(spec),
                   fontStyle: linea.serif ? "italic" : "normal",
-                  fontWeight: linea.serif ? 400 : 700,
+                  fontWeight: linea.serif ? 400 : mayus ? 900 : 700,
+                  textTransform: mayus && !linea.serif ? "uppercase" : undefined,
                   fontSize: tam,
-                  lineHeight: 1.04,
-                  letterSpacing: linea.serif ? "-0.01em" : "-0.035em",
-                  color: p.acento ? spec.marca.color : linea.serif ? TINTA.tenue : TINTA.texto,
+                  lineHeight: mayus ? 0.95 : 1.04,
+                  letterSpacing: linea.serif ? "-0.01em" : mayus ? "-0.045em" : "-0.035em",
+                  color: linea.serif ? TINTA.tenue : TINTA.texto,
+                  ...(p.acento ? tintaAcento(spec) : {}),
                   opacity: t,
                   transform: `translateY(${(1 - t) * 0.35 * tam}px)`,
                   filter: t < 0.999 ? `blur(${(1 - t) * 0.12 * tam}px)` : undefined,

@@ -32,6 +32,7 @@ esc.forEach((e, i) => {
   if (sig && Math.abs(sig.desdeS - e.hastaS) > 0.001) errores.push(`${e.id} → ${sig.id}: hueco o solape (${e.hastaS} vs ${sig.desdeS})`);
   if (e.hastaS - e.desdeS > 8) avisos.push(`${e.id}: ${(e.hastaS - e.desdeS).toFixed(1)} s (una idea por plano: los beats de referencia duran 2–5 s)`);
   if (e.tipo === "plate" && !e.datos.archivo) avisos.push(`${e.id}: plate sin generar (${e.origen})`);
+  if (e.tipo === "mapa") for (const f of [e.datos.archivo, e.datos.archivoVertical].filter(Boolean)) if (!existe(f)) errores.push(`${e.id}: no existe public/${f}`);
   if (e.tipo === "plate" && e.datos.archivo && !existe(e.datos.archivo)) errores.push(`${e.id}: no existe public/${e.datos.archivo}`);
   if (e.tipo === "dispositivo" && e.datos.pantalla.tipo !== "chat" && !existe(e.datos.pantalla.archivo))
     errores.push(`${e.id}: no existe public/${e.datos.pantalla.archivo}`);

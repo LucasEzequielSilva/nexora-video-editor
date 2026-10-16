@@ -1,4 +1,4 @@
-import { createContext, useContext } from "react";
+import { type CSSProperties, createContext, useContext } from "react";
 import { useVideoConfig } from "remotion";
 import type { Capa, Spec } from "./tipos";
 
@@ -25,7 +25,22 @@ export const TINTA = {
 } as const;
 
 export const fuenteDe = (spec: Spec) =>
-  spec.marca.fuente === "helvetica" ? "'Helvetica Neue', Satoshi, system-ui, sans-serif" : "Satoshi, system-ui, sans-serif";
+  spec.marca.familia
+    ? `'${spec.marca.familia}', Satoshi, system-ui, sans-serif`
+    : spec.marca.fuente === "helvetica"
+      ? "'Helvetica Neue', Satoshi, system-ui, sans-serif"
+      : "Satoshi, system-ui, sans-serif";
+
+/** CSS de texto con el degradé de marca (o el color plano si la marca no tiene degradé). */
+export const tintaAcento = (spec: Spec): CSSProperties =>
+  spec.marca.degradado
+    ? {
+        backgroundImage: `linear-gradient(95deg, ${spec.marca.degradado.join(", ")})`,
+        WebkitBackgroundClip: "text",
+        backgroundClip: "text",
+        color: "transparent",
+      }
+    : { color: spec.marca.color };
 
 export const SERIF = "'Instrument Serif', Georgia, serif";
 

@@ -3,6 +3,7 @@ import { AbsoluteFill, Audio, Easing, Sequence, interpolate, staticFile, useCurr
 import Sfx from "../reserva/components/sfx";
 import { useReservaFonts } from "../reserva/fonts";
 import { componenteDe } from "./escenas/registry";
+import { useFuentesMarca } from "./fuentes";
 import LineaDeLuz from "./linea-de-luz";
 import { SPEC, SpecCtx, useLayout } from "./tema";
 import type { Escena, SpecProps } from "./tipos";
@@ -38,6 +39,7 @@ const Marco = ({ escena, primera, ultima, children }: { escena: Escena; primera:
 
 export default function SpecComposition({ spec, capa }: SpecProps) {
   useReservaFonts();
+  useFuentesMarca(spec);
   const { fps } = useVideoConfig();
   if (!spec) return null;
   const f = (s: number) => Math.round(s * fps);

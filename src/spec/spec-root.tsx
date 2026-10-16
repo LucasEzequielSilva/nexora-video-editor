@@ -8,7 +8,7 @@ import type { Spec, SpecProps } from "./tipos";
  * `spec-<slug>-9x16`. Capas sueltas para DaVinci: `--props='{"capa":"stage"}'` (o content / bloom), ver
  * formatos/spec-ad/README.md §5.
  */
-const SPECS = ["demo-agente-turnos"] as const;
+const SPECS = ["demo-agente-turnos", "propmatch-martilleros"] as const;
 
 const calculateMetadata: CalculateMetadataFunction<SpecProps> = async ({ props }) => {
   const spec = (await fetch(staticFile(`spec/${props.slug}/spec.json`), { cache: "no-store" }).then((r) => r.json())) as Spec;

@@ -2,7 +2,7 @@
 
 **Prompt del comercial · 25.0 s · 16:9 1920x1080 (master) + 9:16 1080x1920 · 30 fps**
 Para inmobiliarias y martilleros: los que pagan. Escrito con la estructura de los spec ads de Revolut, Spotify y Amazon
-(`formatos/spec-ad/README.md` §3). Pieza de cliente, no un spec ad: PropMatch es el producto.
+(`formatos/spec-ad/README.md` §3). Pieza de cliente, no un spec ad: PropMatch es el producto. **Nunca se le habla al propietario**: el que paga es la inmobiliaria o el martillero, y el que busca (inquilino o comprador) se conecta con él.
 
 ---
 
@@ -59,7 +59,7 @@ Ritmo natural, con voseo.
 |---|---|---|---|
 | 1 | "Toda tu inmobiliaria, en un solo lugar." | A | 1.4 s |
 | 2 | "Cargás una vez." … "Publicás en todos lados." (pausa corta después de "vez.") | B | 3.5 s |
-| 3 | "Y ahora, tu propiedad le llega a quien la busca." | A | 7.3 s |
+| 3 | "Y ahora, cada propiedad de tu cartera le llega a quien la busca." | A | 7.15 s |
 | 4 | "Dictala, y la ficha se arma sola." | B | 11.0 s |
 | 5 | "Sabé si tu precio está en rango." | A | 13.2 s |
 | 6 | "Y mirá qué contactos ya tienen match." | B | 15.3 s |
@@ -77,7 +77,7 @@ Los textos de pantalla salen de las pantallas del prototipo (dark) y del pitch.
 | 4.6 – 6.2 | **PUBLICÁS EN TODOS LADOS.** La ficha se despega del teléfono y se abre en 4 tarjetas de vidrio que vuelan a su lugar: "MercadoLibre", "Facebook", "Instagram" y "App PropMatch". Cada una aterriza con un golpe en el beat. La línea de luz las une. | ficha 17 + chips de texto |
 | 6.2 – 7.2 | Respiro. Las tres tarjetas de canales se apagan y queda la de PropMatch; la línea sale de ella hacia el fondo. VO "Y ahora,". | — |
 | 7.2 – 9.8 | **HÉROE · EL MAPA.** Buenos Aires de noche desde arriba (avenidas iluminadas, el Obelisco en violeta), con push-in lento y parallax. Un pin "USD 1.250 · Palermo Soho" se enciende. La línea viaja por las calles hasta un pin de persona "Tomás · busca 2 amb en Palermo"; en "busca" salta el chip "94 % match" y el pin late. | aérea oscura del prototipo (`baAerialDark`) + pines de la app |
-| 9.8 – 11.0 | Corte a la tarjeta de interesado: "TOMÁS GARCÍA · 28 · Le gustó Loft Palermo Soho · USD 1.250". Se aprieta "✓ Aceptar". | 15 · Inbox (Owner) |
+| 10.9 – 12.0 | **EL QUE BUSCA, CONECTADO CON VOS.** Dos tarjetas de vidrio: "Nuevo interesado · Tomás García · 94 % match" y "Pidió visita · Loft Palermo Soho · jueves 18 h". (No se usa la pantalla de interesados del flujo de dueño: la pieza le habla a la inmobiliaria.) | tarjetas |
 | 11.0 – 13.2 | **DICTALA.** Botón de micrófono con la onda de voz en el degradé. La línea sale de la onda, el texto dictado aparece ("Loft en Guatemala 4500, dos ambientes, sesenta metros…") y los campos de la ficha se completan solos: título, ubicación, detalles. VO 4. | 17 · New Listing (estado "cargá hablando") |
 | 13.2 – 15.3 | **PRECIO CON RESPALDO.** "Tu precio vs. mercado": el marcador se desliza por el rango de 8 comparables (Palermo Hollywood · 2 amb · 38–42 m²) y aterriza con un anillo que se cierra en "rango". | 18 · Property Diagnostic |
 | 15.3 – 17.4 | **CONTACTOS CRUZADOS.** "LEADS DE HOY · 5 nuevos compatibles con tu cartera". Tomás G. 94 %, Camila R. 89 % y Joaquín P. se apilan, y la línea los une con "Loft Guatemala 4500 · 14 leads". VO 6, con el golpe en "match". | 19 · Broker Dashboard + 16 |

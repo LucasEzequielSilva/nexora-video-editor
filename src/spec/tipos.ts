@@ -52,7 +52,12 @@ export type TextoCinetico = {
 };
 
 export type PantallaTelefono =
-  | { tipo: "imagen"; archivo: string }
+  | {
+      tipo: "imagen";
+      archivo: string;
+      /** Ancho/alto de la captura (las del prototipo PropMatch: 402/874). Default: el del teléfono del editor. */
+      aspecto?: number;
+    }
   | { tipo: "video"; archivo: string; desdeS?: number }
   | {
       tipo: "chat";
@@ -69,6 +74,8 @@ export type DatosApertura = {
   /** Segundo (relativo) en que el punto de luz revienta en el logo. */
   revientaS: number;
   bajada?: string;
+  /** Alto del logo en u (default 150). */
+  tamano?: number;
 };
 
 export type DatosDispositivo = {
@@ -78,6 +85,10 @@ export type DatosDispositivo = {
   /** Lado del teléfono en 16:9. En 9:16 va siempre abajo-centro. */
   lado?: "izquierda" | "centro" | "derecha";
   textos?: TextoCinetico[];
+  /** Acercamiento de cámara a una zona de la pantalla (foco normalizado sobre la pantalla). */
+  zoom?: { desdeS: number; hastaS: number; escala: number; foco: Punto };
+  /** Onda de voz con el degradé al costado del teléfono (dictado). */
+  onda?: { atS: number; hastaS: number };
 };
 
 export type Tarjeta = {
@@ -110,12 +121,40 @@ export type DatosPlate = {
   textos?: TextoCinetico[];
 };
 
+export type PinMapa = {
+  /** Posición normalizada sobre el cuadro; `xv`/`yv` para 9:16. */
+  x: number;
+  y: number;
+  xv?: number;
+  yv?: number;
+  atS: number;
+  tipo: "propiedad" | "persona";
+  titulo: string;
+  detalle?: string;
+};
+
+export type DatosMapa = {
+  /** Video (plate de Higgsfield) o imagen de fondo; `archivoVertical` para 9:16. */
+  archivo: string;
+  archivoVertical?: string;
+  /** Velocidad del plate (< 1 lo estira cuando la escena dura más que el video generado). */
+  velocidad?: number;
+  empuje?: number;
+  oscurecer?: number;
+  pines: PinMapa[];
+  /** Chip de match que salta sobre un pin. */
+  match?: { texto: string; atS: number; pin: number };
+  textos?: TextoCinetico[];
+};
+
 export type DatosCierre = {
   logo?: string;
   texto?: string;
   bajada?: string;
   /** Segundo (relativo) en que el logo se cierra en una línea y se apaga. */
   apagaS?: number;
+  /** Alto del logo en u (default 140). */
+  tamano?: number;
 };
 
 type Base = {
@@ -138,6 +177,7 @@ export type Escena =
   | (Base & { tipo: "tarjetas"; datos: DatosTarjetas })
   | (Base & { tipo: "frase"; datos: DatosFrase })
   | (Base & { tipo: "plate"; datos: DatosPlate })
+  | (Base & { tipo: "mapa"; datos: DatosMapa })
   | (Base & { tipo: "cierre"; datos: DatosCierre });
 
 export type TipoEscena = Escena["tipo"];
@@ -164,7 +204,20 @@ export type Spec = {
   tipoPieza: "spec" | "cliente";
   concepto: string;
   motivo: string;
-  marca: { nombre: string; color: string; color2?: string; fondo: string; fuente?: "satoshi" | "helvetica" };
+  marca: {
+    nombre: string;
+    color: string;
+    color2?: string;
+    fondo: string;
+    fuente?: "satoshi" | "helvetica";
+    /** Familia CSS propia de la marca (se carga de `fuentes`). Gana sobre `fuente`. */
+    familia?: string;
+    fuentes?: { archivo: string; peso: number }[];
+    /** Degradé de marca: la línea de luz y las palabras acentuadas lo usan en vez del color plano. */
+    degradado?: string[];
+    /** "mayus": titulares en mayúsculas 900 apretadas (el estilo de la UI de PropMatch). */
+    titulos?: "mayus";
+  };
   duracionS: number;
   escenas: Escena[];
   voz: LineaVoz[];

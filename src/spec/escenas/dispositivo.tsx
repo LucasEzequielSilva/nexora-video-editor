@@ -1,12 +1,12 @@
 import { AbsoluteFill, Easing, Img, OffthreadVideo, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import Telefono, { TEL } from "../../pieza/escenas/chat/telefono";
 import { Content, Escenario, Stage } from "../capas";
-import { TINTA, useLayout } from "../tema";
+import { TINTA, alfa, useLayout, useSpec } from "../tema";
 import Texto from "../texto";
 import type { DatosDispositivo, Escena, PantallaTelefono } from "../tipos";
 
 /** Pantalla del teléfono: UI REAL (captura, grabación de pantalla o el chat de WhatsApp del editor). Nunca UI generada. */
-const Pantalla = ({ pantalla, fps }: { pantalla: PantallaTelefono; fps: number }) => {
+const Pantalla = ({ pantalla, fps, ancho }: { pantalla: PantallaTelefono; fps: number; ancho: number }) => {
   if (pantalla.tipo === "chat") {
     const s = (x: number) => Math.round(x * fps);
     const t = pantalla.turno;
@@ -41,8 +41,42 @@ const Pantalla = ({ pantalla, fps }: { pantalla: PantallaTelefono; fps: number }
       />
     );
   return (
-    <div style={{ width: TEL.ancho, height: TEL.alto, borderRadius: 64, background: TINTA.marcoTelefono, padding: 12, boxSizing: "border-box" }}>
+    <div style={{ width: ancho, height: TEL.alto, borderRadius: 64, background: TINTA.marcoTelefono, padding: 12, boxSizing: "border-box" }}>
       <div style={{ width: "100%", height: "100%", borderRadius: 52, overflow: "hidden", background: "#000" }}>{media}</div>
+    </div>
+  );
+};
+
+/** Onda de voz del dictado: barras con el degradé de marca que respiran con la voz. */
+const Onda = ({ onda, cx, cy }: { onda: { atS: number; hastaS: number }; cx: number; cy: number }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const { u } = useLayout();
+  const { spec } = useSpec();
+  const ent = interpolate(frame, [onda.atS * fps, onda.atS * fps + 10, onda.hastaS * fps - 8, onda.hastaS * fps], [0, 1, 1, 0], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+  if (ent <= 0) return null;
+  const barras = 32;
+  const grad = spec.marca.degradado ?? [spec.marca.color, spec.marca.color];
+  return (
+    <div style={{ position: "absolute", left: cx - 330 * u, top: cy - 70 * u, width: 660 * u, height: 140 * u, display: "flex", alignItems: "center", gap: 8 * u, opacity: ent }}>
+      {Array.from({ length: barras }, (_, i) => {
+        const k = Math.abs(Math.sin(frame / 3.1 + i * 0.7) * Math.sin(frame / 7.3 + i * 0.31)) * (0.35 + 0.65 * Math.sin((i / barras) * Math.PI));
+        return (
+          <div
+            key={i}
+            style={{
+              flex: 1,
+              height: `${12 + 88 * k * ent}%`,
+              borderRadius: 99,
+              background: `linear-gradient(180deg, ${grad.join(", ")})`,
+              boxShadow: `0 0 ${14 * u}px ${alfa(grad[Math.floor((i / barras) * grad.length)] ?? grad[0], 0.6)}`,
+            }}
+          />
+        );
+      })}
     </div>
   );
 };
@@ -65,6 +99,15 @@ export default function Dispositivo({ escena }: { escena: Escena & { datos: Dato
 
   const alto = (vertical ? 0.6 : 0.86) * height;
   const escala = alto / TEL.alto;
+  const p = d.pantalla;
+  const anchoTel = p.tipo === "imagen" && p.aspecto ? Math.round((TEL.alto - 24) * p.aspecto + 24) : TEL.ancho;
+  const z = d.zoom
+    ? interpolate(frame, [d.zoom.desdeS * fps, d.zoom.hastaS * fps], [1, d.zoom.escala], {
+        easing: Easing.inOut(Easing.cubic),
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp",
+      })
+    : 1;
   const lado = vertical ? "centro" : (d.lado ?? "derecha");
   const cx = lado === "izquierda" ? width * 0.3 : lado === "derecha" ? width * 0.68 : width / 2;
   const cy = vertical ? height * 0.64 : height / 2;
@@ -81,18 +124,19 @@ export default function Dispositivo({ escena }: { escena: Escena & { datos: Dato
           <div
             style={{
               position: "absolute",
-              left: cx - (TEL.ancho * escala) / 2,
+              left: cx - (anchoTel * escala) / 2,
               top: cy - (TEL.alto * escala) / 2 + (1 - ent) * 220 * u + flota,
-              width: TEL.ancho * escala,
+              width: anchoTel * escala,
               height: TEL.alto * escala,
               transformStyle: "preserve-3d",
-              transform: `rotateX(${rot[0] + (1 - ent) * 25}deg) rotateY(${rot[1]}deg) rotateZ(${rot[2]}deg)`,
+              transform: `scale(${z}) rotateX(${rot[0] + (1 - ent) * 25}deg) rotateY(${rot[1]}deg) rotateZ(${rot[2]}deg)`,
+              transformOrigin: d.zoom ? `${d.zoom.foco[0] * 100}% ${d.zoom.foco[1] * 100}%` : "50% 50%",
               opacity: ent,
               filter: `drop-shadow(0 ${40 * u}px ${60 * u}px rgba(0,0,0,0.55))`,
             }}
           >
-            <div style={{ transform: `scale(${escala})`, transformOrigin: "0 0", width: TEL.ancho, height: TEL.alto, position: "relative" }}>
-              <Pantalla pantalla={d.pantalla} fps={fps} />
+            <div style={{ transform: `scale(${escala})`, transformOrigin: "0 0", width: anchoTel, height: TEL.alto, position: "relative" }}>
+              <Pantalla pantalla={d.pantalla} fps={fps} ancho={anchoTel} />
               {/* Reflejo que barre el vidrio. */}
               <div
                 style={{
@@ -107,6 +151,7 @@ export default function Dispositivo({ escena }: { escena: Escena & { datos: Dato
             </div>
           </div>
         </AbsoluteFill>
+        {d.onda && <Onda onda={d.onda} cx={vertical ? width / 2 : lado === "derecha" ? width * 0.29 : width * 0.71} cy={vertical ? height * 0.26 : height * 0.68} />}
         {(d.textos ?? []).map((tx, i) => {
           const sig = d.textos?.[i + 1];
           const zona = vertical
