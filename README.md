@@ -111,6 +111,8 @@ El pipeline, a mano (`<slug>` = nombre de la pieza en kebab-case):
 ```
 CLAUDE.md                  contrato del proyecto (pipeline, reglas, dirección creativa)
 formatos/ganador-talking-head/   el formato replicable: README, plantilla de props, chequeo
+formatos/spec-ad/          comercial de producto (Claude director + Remotion + Higgsfield): README y pipeline
+.claude/skills/spec-ad/    skill /spec-ad
 .claude/skills/formato-ganador/  skill de Claude Code para hacer una pieza nueva
 scripts/                   pipeline (montar, jumpcut, transcribir, recortar, cara, nivelar-voz, verificar, master...)
 cortes/                    tomas elegidas y recortes de cada pieza
@@ -118,4 +120,5 @@ assets/                    biblioteca.json (catálogo de PACKS), catálogos legi
 public/piezas/<slug>/      datos de cada pieza (words.json, props.json, cara.json, correcciones.json)
 src/pieza/                 la composición vertical: cámara, subtítulos, overlays, escenas, 3D
 src/reserva/               sistema horizontal viejo (un solo video)
+src/spec/                  spec ads: escenas, glow, línea de luz, capas (lee public/spec/<slug>/spec.json)
 ```

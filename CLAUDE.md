@@ -19,6 +19,9 @@ video-editor/
 ├── formatos/ganador-talking-head/   EL FORMATO GANADOR (estructura-nexora): README con anatomía, gramática
 │                          guion → recursos, reglas, pipeline y checklist + props.template.json + chequeo-formato.mjs
 │                          + drops-musica.py. Una pieza nueva de este tipo arranca acá.
+├── formatos/spec-ad/      FORMATO SPEC AD (comercial de producto 16:9 + 9:16 estilo Revolut/Spotify/Amazon): README con
+│                          roles (Claude director, Remotion UI, Higgsfield plates), estructura, referencias, spec.json y
+│                          pipeline. Skill `/spec-ad`. Motor en `src/spec/`, piezas en `public/spec/<slug>/spec.json`.
 ├── assets/catalogo/       catálogos legibles: brolls.md, musica.md, sonidos.md, iconos.md, fuentes.md, icon-set-prompt.md
 ├── assets/referencias/    videos de referencia de estilo + estilo-editorial.md
 ├── cortes/                <slug>.json = qué toma de qué clip va en la pieza (con la frase de cada una)
@@ -160,6 +163,16 @@ Lo que **todavía es manual o falta**: elegir tomas, escribir `props.json`, tran
 se transcribe el montaje entero y hay que parchear omisiones), SFX y música, conectar la biblioteca
 de `PACKS/` a los overlays, y que el editor proponga zooms/overlays solo.
 
+### 3c. Spec ads (`src/spec/`, 2026-10-16)
+
+Comerciales de producto sin grabación: todo sale de `public/spec/<slug>/spec.json` (escenas, motivo, voz, SFX, plates),
+que escribe Claude como director creativo. Composiciones `spec-<slug>` (1920x1080) y `spec-<slug>-9x16`, carpeta
+`spec-ads` en Studio. Capas sueltas para DaVinci con `--props='{"capa":"stage|content|bloom"}'`. `npm run spec -- <slug>`
+chequea el spec y escribe la cue sheet. Procedimiento completo en `formatos/spec-ad/README.md` y la skill `/spec-ad`.
+**Lo real**: escenas, cámara, glow, línea de luz, capas, SFX de la paleta y cue sheet. **Lo manual todavía**: generar los
+plates en Higgsfield (con costo aprobado), grabar la voz y elegir la música; sin eso la pieza sale muda y con el escenario
+en lugar del plate. Demo: `demo-agente-turnos` (agente de turnos para consultorios; el chat es de ejemplo).
+
 ### 3b. Sistema `reserva` (horizontal, un solo video: IMG_7245) — el más viejo
 
 El sistema `src/reserva/` es maduro pero **buena parte del trabajo pesado es manual**:
@@ -250,6 +263,14 @@ estilo **las palabras entran sin sonido: SFX solo en los cambios grandes** (exce
 
 Quedan tres técnicas de Jacob sin implementar (texto kinético en profundidad, inserts de motion graphics,
 card de título de sección) — candidatas para cuando se decida construirlas.
+
+### Spec ads de Revolut / Spotify / Amazon ("Opus 5.5 + Katana", Riccardo Bosso), 2026-10-16
+
+Tres reels que mandó Cogne, analizados cuadro por cuadro + audio transcripto + lectura de las timelines de DaVinci que se
+ven en pantalla. Escenario oscuro con un glow de marca, UI real flotando, un motivo que viaja por todas las escenas (la línea
+de la sonrisa de Amazon), tagline cinético y end card que se apaga en una línea; escenas exportadas en capas STAGE / CONTENT /
+BLOOM / BAKED; VO en dos carriles; SFX con su timecode en el nombre. Detalle en `formatos/spec-ad/README.md` §3. Katana
+remixa una referencia **sobre la que hay que tener derechos**: esos ads no se usan como referencia.
 
 ## 6. Biblioteca de recursos
 

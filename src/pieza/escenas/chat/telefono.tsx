@@ -18,6 +18,8 @@ type TelefonoProps = {
   hora: string;
   mensajes: MensajeTel[];
   turno: TurnoTel;
+  /** Color del marco del teléfono. Default: blanco (escenas claras). Los spec ads (`src/spec/`) lo usan oscuro. */
+  marco?: string;
 };
 
 /** `piso`: opacidad del primer frame, para que no quede un hueco al reemplazar a "escribiendo…". */
@@ -201,7 +203,7 @@ const TarjetaTurno = ({ turno }: { turno: TurnoTel }) => {
   );
 };
 
-export default function Telefono({ contacto, hora, mensajes, turno }: TelefonoProps) {
+export default function Telefono({ contacto, hora, mensajes, turno, marco = PAPER.card }: TelefonoProps) {
   const frame = useCurrentFrame();
   const clienteEscribe = mensajes.some(
     (m) => m.de === "cliente" && m.escribeDesde !== undefined && frame >= m.escribeDesde && frame < m.at,
@@ -213,7 +215,7 @@ export default function Telefono({ contacto, hora, mensajes, turno }: TelefonoPr
         width: TEL.ancho,
         height: TEL.alto,
         borderRadius: 64,
-        background: PAPER.card,
+        background: marco,
         boxShadow: SHADOW.lifted,
         padding: 12,
         boxSizing: "border-box",

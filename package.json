@@ -11,7 +11,8 @@
     "recursos": "node scripts/recursos.mjs",
     "recortador": "node scripts/recortador.mjs",
     "tomas": "node scripts/tomas.mjs",
-    "verificar": "node scripts/verificar.mjs"
+    "verificar": "node scripts/verificar.mjs",
+    "spec": "node scripts/spec-cues.mjs"
   },
   "keywords": [],
   "author": "",

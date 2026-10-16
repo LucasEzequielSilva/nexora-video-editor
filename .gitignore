@@ -13,3 +13,8 @@ public/piezas/**/*.webm
 # Locales
 .playwright-mcp/
 .claude/settings.local.json
+
+# Spec ads: plates, voz y capas pesadas van por Drive como las piezas
+public/spec/**/*.mp4
+public/spec/**/*.mov
+public/spec/**/*.wav
