@@ -59,6 +59,8 @@ export type PantallaTelefono =
       aspecto?: number;
     }
   | { tipo: "video"; archivo: string; desdeS?: number }
+  /** Captura de una web app (el CRM) dentro de una ventana de navegador. `aspecto` = ancho/alto de la captura. */
+  | { tipo: "web"; archivo: string; aspecto?: number; url?: string }
   | {
       tipo: "chat";
       contacto: string;
@@ -89,7 +91,15 @@ export type DatosDispositivo = {
   zoom?: { desdeS: number; hastaS: number; escala: number; foco: Punto };
   /** Onda de voz con el degradé al costado del teléfono (dictado). */
   onda?: { atS: number; hastaS: number };
+  /** Texto dictado que se tipea en vivo debajo de la onda. */
+  dictado?: { atS: number; texto: string; pasoS?: number };
+  /** Borde de luz con el degradé que se dibuja alrededor del teléfono al entrar (la línea del motivo "entra" al celular). */
+  borde?: { desdeS: number; hastaS: number };
+  /** Notificación tipo iOS que cae desde arriba. */
+  notificacion?: Notificacion;
 };
+
+export type Notificacion = { atS: number; titulo: string; texto: string; hastaS?: number };
 
 export type Tarjeta = {
   titulo: string;
@@ -107,6 +117,17 @@ export type DatosTarjetas = {
 };
 
 export type DatosFrase = { textos: TextoCinetico[] };
+
+export type DatosHeroe = {
+  /** Video del objeto héroe (plate de Higgsfield) a pantalla completa, con texto encima. */
+  archivo: string;
+  /** Segundo del video desde el que arranca. */
+  desdeS?: number;
+  velocidad?: number;
+  empuje?: number;
+  notificacion?: Notificacion;
+  textos?: TextoCinetico[];
+};
 
 export type DatosPlate = {
   /** Video o imagen generado en Higgsfield, en public/spec/<slug>/plates/. Si falta, se ve el escenario con un aviso en Studio. */
@@ -144,6 +165,7 @@ export type DatosMapa = {
   pines: PinMapa[];
   /** Chip de match que salta sobre un pin. */
   match?: { texto: string; atS: number; pin: number };
+  notificacion?: Notificacion;
   textos?: TextoCinetico[];
 };
 
@@ -178,6 +200,7 @@ export type Escena =
   | (Base & { tipo: "frase"; datos: DatosFrase })
   | (Base & { tipo: "plate"; datos: DatosPlate })
   | (Base & { tipo: "mapa"; datos: DatosMapa })
+  | (Base & { tipo: "heroe"; datos: DatosHeroe })
   | (Base & { tipo: "cierre"; datos: DatosCierre });
 
 export type TipoEscena = Escena["tipo"];
@@ -217,14 +240,20 @@ export type Spec = {
     degradado?: string[];
     /** "mayus": titulares en mayúsculas 900 apretadas (el estilo de la UI de PropMatch). */
     titulos?: "mayus";
+    /** Ícono de app (notificaciones). */
+    icono?: string;
   };
   duracionS: number;
   escenas: Escena[];
   voz: LineaVoz[];
   musica: Stem[];
   sfx: CueSfx[];
+  luces?: CapaLuz[];
   /** Cosas a confirmar con Lucas o el cliente (datos de la UI, textos del chat, derechos). */
   pendientes?: string[];
 };
+
+/** Capa de luz generada (trazo, destellos) que se suma en `screen` sobre las escenas: el hook y las transiciones. */
+export type CapaLuz = { archivo: string; desdeS: number; hastaS: number; opacidad?: number; velocidad?: number };
 
 export type SpecProps = { slug: string; spec: Spec | null; capa: Capa };

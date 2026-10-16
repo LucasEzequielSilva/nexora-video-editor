@@ -33,21 +33,22 @@
       "#FF5ECA",
       "#FF8A3D"
     ],
-    "titulos": "mayus"
+    "titulos": "mayus",
+    "icono": "spec/propmatch-martilleros/isotipo.png"
   },
-  "duracionS": 26.6,
+  "duracionS": 28.0,
   "escenas": [
     {
       "id": "S01",
       "nombre": "Hook isotipo",
       "tipo": "apertura",
-      "origen": "codigo",
+      "origen": "higgsfield",
       "desdeS": 0,
-      "hastaS": 1.6,
+      "hastaS": 1.5,
       "empuje": 1.06,
       "datos": {
         "logo": "spec/propmatch-martilleros/isotipo.png",
-        "revientaS": 0.7,
+        "revientaS": 0.9,
         "tamano": 300
       },
       "linea": [
@@ -89,44 +90,49 @@
             ]
           ],
           "desdeS": 0.0,
-          "hastaS": 0.7,
+          "hastaS": 0.9,
           "cola": 0.45,
-          "apagaS": 0.75
+          "apagaS": 0.95
         }
       ]
     },
     {
       "id": "S02",
-      "nombre": "Modo martillero",
+      "nombre": "Toda tu inmobiliaria",
       "tipo": "dispositivo",
       "origen": "codigo",
-      "desdeS": 1.6,
-      "hastaS": 3.9,
+      "desdeS": 1.5,
+      "hastaS": 4.9,
       "datos": {
         "lado": "derecha",
         "pantalla": {
-          "tipo": "imagen",
-          "archivo": "spec/propmatch-martilleros/ui/19-broker-dashboard.png",
-          "aspecto": 0.46
+          "tipo": "web",
+          "archivo": "spec/propmatch-martilleros/crm/inicio.png",
+          "aspecto": 1.6,
+          "url": "app.propmatch.com.ar"
         },
         "giro": {
           "desde": [
-            10,
-            -22,
-            3
+            8,
+            -18,
+            2
           ],
           "hasta": [
-            5,
-            -12,
-            1
+            3,
+            -8,
+            0
           ]
         },
+        "borde": {
+          "desdeS": 0.0,
+          "hastaS": 0.9
+        },
         "zoom": {
-          "desdeS": 0.4,
-          "hastaS": 2.3,
+          "desdeS": 0.8,
+          "hastaS": 3.3,
           "escala": 1.3,
           "foco": [
-            0.5,
+            0.3,
             0.2
           ]
         },
@@ -135,18 +141,21 @@
             "atS": 0.1,
             "lineas": [
               {
-                "palabras": "Toda tu"
+                "palabras": "Toda tu",
+                "tamano": 72
               },
               {
-                "palabras": "inmobiliaria,"
+                "palabras": "inmobiliaria,",
+                "tamano": 72
               }
             ]
           },
           {
-            "atS": 1.4,
+            "atS": 1.7,
             "lineas": [
               {
-                "palabras": "en un solo"
+                "palabras": "en un solo",
+                "tamano": 72
               },
               {
                 "palabras": [
@@ -154,7 +163,8 @@
                     "t": "lugar.",
                     "acento": true
                   }
-                ]
+                ],
+                "tamano": 72
               }
             ]
           }
@@ -166,42 +176,44 @@
       "nombre": "Cargás una vez",
       "tipo": "dispositivo",
       "origen": "codigo",
-      "desdeS": 3.9,
-      "hastaS": 5.05,
+      "desdeS": 4.9,
+      "hastaS": 6.4,
       "datos": {
         "lado": "derecha",
         "pantalla": {
-          "tipo": "imagen",
-          "archivo": "spec/propmatch-martilleros/ui/17-new-listing.png",
-          "aspecto": 0.46
+          "tipo": "web",
+          "archivo": "spec/propmatch-martilleros/crm/nueva-propiedad.png",
+          "aspecto": 1.6,
+          "url": "app.propmatch.com.ar"
         },
         "giro": {
           "desde": [
             6,
-            -18,
-            2
+            -14,
+            1
           ],
           "hasta": [
             3,
-            -10,
+            -8,
             0
           ]
         },
         "zoom": {
           "desdeS": 0.0,
-          "hastaS": 1.1,
-          "escala": 1.25,
+          "hastaS": 1.3,
+          "escala": 1.55,
           "foco": [
-            0.5,
-            0.3
+            0.85,
+            0.06
           ]
         },
         "textos": [
           {
-            "atS": 0.05,
+            "atS": 0.1,
             "lineas": [
               {
-                "palabras": "Cargás"
+                "palabras": "Cargás",
+                "tamano": 72
               },
               {
                 "palabras": [
@@ -212,7 +224,8 @@
                     "t": "vez.",
                     "acento": true
                   }
-                ]
+                ],
+                "tamano": 72
               }
             ]
           }
@@ -222,48 +235,46 @@
     {
       "id": "S04",
       "nombre": "Publicás en todos lados",
-      "tipo": "tarjetas",
+      "tipo": "dispositivo",
       "origen": "codigo",
-      "desdeS": 5.05,
-      "hastaS": 7.1,
-      "brillo": {
-        "x": 0.68,
-        "y": 0.5
-      },
+      "desdeS": 6.4,
+      "hastaS": 8.9,
       "datos": {
-        "tarjetas": [
-          {
-            "titulo": "MercadoLibre",
-            "detalle": "Publicada",
-            "check": true,
-            "atS": 0.15
-          },
-          {
-            "titulo": "Facebook",
-            "detalle": "Publicada",
-            "check": true,
-            "atS": 0.45
-          },
-          {
-            "titulo": "Instagram",
-            "detalle": "Publicada",
-            "check": true,
-            "atS": 0.75
-          },
-          {
-            "titulo": "App PropMatch",
-            "detalle": "Visible para quien busca",
-            "imagen": "spec/propmatch-martilleros/isotipo.png",
-            "check": true,
-            "atS": 1.05
-          }
-        ],
+        "lado": "derecha",
+        "pantalla": {
+          "tipo": "web",
+          "archivo": "spec/propmatch-martilleros/crm/publicador.png",
+          "aspecto": 1.6,
+          "url": "app.propmatch.com.ar"
+        },
+        "giro": {
+          "desde": [
+            8,
+            -16,
+            2
+          ],
+          "hasta": [
+            3,
+            -8,
+            0
+          ]
+        },
+        "zoom": {
+          "desdeS": 0.2,
+          "hastaS": 2.3,
+          "escala": 1.35,
+          "foco": [
+            0.6,
+            0.66
+          ]
+        },
         "textos": [
           {
-            "atS": 0.05,
+            "atS": 0.35,
             "lineas": [
               {
-                "palabras": "Publicás en"
+                "palabras": "Publicás en",
+                "tamano": 72
               },
               {
                 "palabras": [
@@ -274,7 +285,8 @@
                     "t": "lados.",
                     "acento": true
                   }
-                ]
+                ],
+                "tamano": 72
               }
             ]
           }
@@ -283,15 +295,16 @@
     },
     {
       "id": "S05",
-      "nombre": "El mapa: llega a quien busca",
+      "nombre": "Cada propiedad de tu cartera",
       "tipo": "mapa",
       "origen": "higgsfield",
-      "desdeS": 7.1,
-      "hastaS": 10.9,
+      "desdeS": 8.9,
+      "hastaS": 11.6,
       "empuje": 1.02,
       "datos": {
         "archivo": "spec/propmatch-martilleros/plates/mapa-ba-noche.mp4",
         "archivoVertical": "spec/propmatch-martilleros/ui/baAerialDark.png",
+        "velocidad": 0.9,
         "empuje": 1.03,
         "oscurecer": 0.2,
         "pines": [
@@ -300,7 +313,7 @@
             "y": 0.68,
             "xv": 0.3,
             "yv": 0.62,
-            "atS": 0.2,
+            "atS": 0.5,
             "tipo": "propiedad",
             "titulo": "USD 1.250 · Palermo Soho",
             "detalle": "Loft luminoso · 2 amb"
@@ -310,39 +323,44 @@
             "y": 0.4,
             "xv": 0.68,
             "yv": 0.38,
-            "atS": 1.6,
+            "atS": 1.9,
             "tipo": "persona",
             "titulo": "Tomás García",
             "detalle": "Busca 2 amb en Palermo"
           }
         ],
-        "match": {
-          "texto": "94 % match",
-          "atS": 2.75,
-          "pin": 1
-        },
         "textos": [
           {
-            "atS": 0.3,
+            "atS": 0.1,
             "lineas": [
               {
-                "palabras": "Llegás a"
+                "palabras": "Y ahora,"
+              }
+            ]
+          },
+          {
+            "atS": 0.85,
+            "lineas": [
+              {
+                "palabras": "Cada propiedad"
               },
               {
                 "palabras": [
                   {
-                    "t": "quien"
+                    "t": "de"
                   },
                   {
-                    "t": "busca.",
+                    "t": "tu"
+                  },
+                  {
+                    "t": "cartera",
                     "acento": true
                   }
                 ]
               }
             ]
           }
-        ],
-        "velocidad": 0.9
+        ]
       },
       "linea": [
         {
@@ -390,55 +408,45 @@
               0.38
             ]
           ],
-          "desdeS": 0.5,
-          "hastaS": 1.9,
+          "desdeS": 0.8,
+          "hastaS": 2.0,
           "grosor": 5
         }
       ]
     },
     {
       "id": "S06",
-      "nombre": "El que busca, conectado con vos",
-      "tipo": "tarjetas",
-      "origen": "codigo",
-      "desdeS": 10.9,
-      "hastaS": 12.0,
-      "brillo": {
-        "x": 0.68,
-        "y": 0.5
-      },
+      "nombre": "Le llega a quien la busca",
+      "tipo": "heroe",
+      "origen": "higgsfield",
+      "desdeS": 11.6,
+      "hastaS": 13.4,
       "datos": {
-        "tarjetas": [
-          {
-            "titulo": "Nuevo interesado",
-            "detalle": "Tomás García · 94 % match",
-            "check": true,
-            "atS": 0.1
-          },
-          {
-            "titulo": "Pidió visita",
-            "detalle": "Loft Palermo Soho · jueves 18 h",
-            "check": true,
-            "atS": 0.45
-          }
-        ],
+        "archivo": "spec/propmatch-martilleros/plates/heroe-casa.mp4",
+        "desdeS": 1.0,
+        "empuje": 1.04,
+        "notificacion": {
+          "atS": 0.9,
+          "titulo": "Nuevo match · 94 %",
+          "texto": "Tomás García busca 2 amb en Palermo"
+        },
         "textos": [
           {
-            "atS": 0.05,
+            "atS": 0.0,
             "lineas": [
               {
-                "palabras": "El que busca,"
+                "palabras": "le llega a"
               },
               {
                 "palabras": [
                   {
-                    "t": "conectado"
+                    "t": "quien"
                   },
                   {
-                    "t": "con"
+                    "t": "la"
                   },
                   {
-                    "t": "vos.",
+                    "t": "busca.",
                     "acento": true
                   }
                 ]
@@ -453,59 +461,67 @@
       "nombre": "Dictala",
       "tipo": "dispositivo",
       "origen": "codigo",
-      "desdeS": 12.0,
-      "hastaS": 14.6,
+      "desdeS": 13.4,
+      "hastaS": 16.4,
       "datos": {
         "lado": "derecha",
         "pantalla": {
-          "tipo": "imagen",
-          "archivo": "spec/propmatch-martilleros/ui/17-new-listing.png",
-          "aspecto": 0.46
+          "tipo": "web",
+          "archivo": "spec/propmatch-martilleros/crm/nueva-propiedad.png",
+          "aspecto": 1.6,
+          "url": "app.propmatch.com.ar"
         },
         "giro": {
           "desde": [
-            8,
-            -20,
+            7,
+            -16,
             2
           ],
           "hasta": [
-            4,
-            -10,
-            1
+            3,
+            -8,
+            0
           ]
         },
         "zoom": {
-          "desdeS": 0.8,
-          "hastaS": 2.5,
-          "escala": 1.3,
+          "desdeS": 0.0,
+          "hastaS": 1.0,
+          "escala": 1.6,
           "foco": [
-            0.5,
-            0.55
+            0.55,
+            0.07
           ]
         },
         "onda": {
           "atS": 0.0,
-          "hastaS": 1.5
+          "hastaS": 2.9
+        },
+        "dictado": {
+          "atS": 0.9,
+          "texto": "Casa moderna con jardín en City Bell, cuatro ambientes, 220 metros…",
+          "pasoS": 0.028
         },
         "textos": [
           {
-            "atS": 0.05,
+            "atS": 0.1,
             "lineas": [
               {
                 "palabras": [
                   {
-                    "t": "Dictala.",
+                    "t": "Dictala,",
                     "acento": true
                   }
-                ]
+                ],
+                "tamano": 72
               }
             ]
           },
           {
-            "atS": 1.0,
+            "atS": 0.95,
             "lineas": [
               {
-                "palabras": "La ficha"
+                "palabras": "y la ficha",
+                "tamano": 72
               },
               {
                 "palabras": [
@@ -519,7 +535,8 @@
                     "t": "sola.",
                     "acento": true
                   }
-                ]
+                ],
+                "tamano": 72
               }
             ]
           }
@@ -528,37 +545,38 @@
     },
     {
       "id": "S08",
-      "nombre": "Precio con respaldo",
+      "nombre": "Sabé si tu precio está en rango",
       "tipo": "dispositivo",
       "origen": "codigo",
-      "desdeS": 14.6,
-      "hastaS": 16.4,
+      "desdeS": 16.4,
+      "hastaS": 19.4,
       "datos": {
         "lado": "derecha",
         "pantalla": {
-          "tipo": "imagen",
-          "archivo": "spec/propmatch-martilleros/ui/18-property-diagnostic.png",
-          "aspecto": 0.46
+          "tipo": "web",
+          "archivo": "spec/propmatch-martilleros/crm/mercado-estimado.png",
+          "aspecto": 1.6,
+          "url": "app.propmatch.com.ar"
         },
         "giro": {
           "desde": [
             6,
-            -16,
+            -14,
             2
           ],
           "hasta": [
             3,
-            -9,
+            -8,
             0
           ]
         },
         "zoom": {
-          "desdeS": 0.1,
-          "hastaS": 1.4,
-          "escala": 1.45,
+          "desdeS": 0.2,
+          "hastaS": 2.2,
+          "escala": 1.7,
           "foco": [
-            0.5,
-            0.45
+            0.35,
+            0.87
           ]
         },
         "textos": [
@@ -566,15 +584,23 @@
             "atS": 0.1,
             "lineas": [
               {
-                "palabras": "Precio con"
+                "palabras": "Sabé si tu precio",
+                "tamano": 72
               },
               {
                 "palabras": [
                   {
-                    "t": "respaldo.",
+                    "t": "está"
+                  },
+                  {
+                    "t": "en"
+                  },
+                  {
+                    "t": "rango.",
                     "acento": true
                   }
-                ]
+                ],
+                "tamano": 72
               }
             ]
           }
@@ -586,34 +612,35 @@
       "nombre": "Contactos con match",
       "tipo": "dispositivo",
       "origen": "codigo",
-      "desdeS": 16.4,
-      "hastaS": 18.5,
+      "desdeS": 19.4,
+      "hastaS": 21.8,
       "datos": {
         "lado": "derecha",
         "pantalla": {
-          "tipo": "imagen",
-          "archivo": "spec/propmatch-martilleros/ui/19-broker-dashboard.png",
-          "aspecto": 0.46
+          "tipo": "web",
+          "archivo": "spec/propmatch-martilleros/crm/contactos.png",
+          "aspecto": 1.6,
+          "url": "app.propmatch.com.ar"
         },
         "giro": {
           "desde": [
-            7,
-            -18,
+            6,
+            -14,
             2
           ],
           "hasta": [
             3,
-            -10,
+            -8,
             0
           ]
         },
         "zoom": {
-          "desdeS": 0.1,
-          "hastaS": 1.5,
-          "escala": 1.5,
+          "desdeS": 0.2,
+          "hastaS": 2.0,
+          "escala": 1.6,
           "foco": [
-            0.5,
-            0.56
+            0.87,
+            0.66
           ]
         },
         "textos": [
@@ -621,18 +648,23 @@
             "atS": 0.1,
             "lineas": [
               {
-                "palabras": "Contactos"
+                "palabras": "Y mirá qué contactos",
+                "tamano": 72
               },
               {
                 "palabras": [
                   {
-                    "t": "con"
+                    "t": "ya"
+                  },
+                  {
+                    "t": "tienen"
                   },
                   {
                     "t": "match.",
                     "acento": true
                   }
-                ]
+                ],
+                "tamano": 72
               }
             ]
           }
@@ -641,69 +673,11 @@
     },
     {
       "id": "S10",
-      "nombre": "Mis operaciones",
-      "tipo": "dispositivo",
-      "origen": "codigo",
-      "desdeS": 18.5,
-      "hastaS": 20.2,
-      "datos": {
-        "lado": "derecha",
-        "pantalla": {
-          "tipo": "imagen",
-          "archivo": "spec/propmatch-martilleros/ui/20-broker-pipeline.png",
-          "aspecto": 0.46
-        },
-        "giro": {
-          "desde": [
-            12,
-            -26,
-            4
-          ],
-          "hasta": [
-            4,
-            -8,
-            0
-          ]
-        },
-        "zoom": {
-          "desdeS": 0.0,
-          "hastaS": 1.8,
-          "escala": 1.2,
-          "foco": [
-            0.5,
-            0.35
-          ]
-        },
-        "textos": [
-          {
-            "atS": 0.1,
-            "lineas": [
-              {
-                "palabras": "De la carga"
-              },
-              {
-                "palabras": [
-                  {
-                    "t": "al"
-                  },
-                  {
-                    "t": "cierre.",
-                    "acento": true
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "id": "S11",
       "nombre": "Drop logo",
       "tipo": "cierre",
       "origen": "codigo",
-      "desdeS": 20.2,
-      "hastaS": 22.2,
+      "desdeS": 21.8,
+      "hastaS": 23.6,
       "empuje": 1.03,
       "datos": {
         "logo": "spec/propmatch-martilleros/logo-propmatch.png",
@@ -712,12 +686,12 @@
       }
     },
     {
-      "id": "S12",
+      "id": "S11",
       "nombre": "Tagline",
       "tipo": "frase",
       "origen": "codigo",
-      "desdeS": 22.2,
-      "hastaS": 24.8,
+      "desdeS": 23.6,
+      "hastaS": 26.4,
       "empuje": 1.03,
       "brillo": {
         "intensidad": 0.85
@@ -783,68 +757,68 @@
       ]
     },
     {
-      "id": "S13",
+      "id": "S12",
       "nombre": "End card",
       "tipo": "cierre",
       "origen": "codigo",
-      "desdeS": 24.8,
-      "hastaS": 26.6,
+      "desdeS": 26.4,
+      "hastaS": 28.0,
       "datos": {
         "logo": "spec/propmatch-martilleros/logo-propmatch.png",
         "tamano": 170,
         "bajada": "Para inmobiliarias y martilleros · propmatch.com.ar",
-        "apagaS": 1.2
+        "apagaS": 1.0
       }
     }
   ],
   "voz": [
     {
-      "atS": 1.7,
+      "atS": 1.6,
       "carril": "A",
       "texto": "Toda tu inmobiliaria, en un solo lugar.",
-      "archivo": "spec/propmatch-martilleros/vo/vo1.wav"
+      "archivo": "spec/propmatch-martilleros/vo-mujer/f1.wav"
     },
     {
-      "atS": 4.0,
-      "carril": "B",
+      "atS": 5.0,
+      "carril": "A",
       "texto": "Cargás una vez. Publicás en todos lados.",
-      "archivo": "spec/propmatch-martilleros/vo/vo2.wav"
+      "archivo": "spec/propmatch-martilleros/vo-mujer/f2.wav"
     },
     {
-      "atS": 7.15,
+      "atS": 9.0,
       "carril": "A",
       "texto": "Y ahora, cada propiedad de tu cartera le llega a quien la busca.",
-      "archivo": "spec/propmatch-martilleros/vo/vo3.wav"
+      "archivo": "spec/propmatch-martilleros/vo-mujer/f3.wav"
     },
     {
-      "atS": 12.1,
-      "carril": "B",
-      "texto": "Dictala, y la ficha se arma sola.",
-      "archivo": "spec/propmatch-martilleros/vo/vo4.wav"
-    },
-    {
-      "atS": 14.7,
+      "atS": 13.5,
       "carril": "A",
-      "texto": "Sabé si tu precio está en rango.",
-      "archivo": "spec/propmatch-martilleros/vo/vo5.wav"
+      "texto": "Dictala, y la ficha se arma sola.",
+      "archivo": "spec/propmatch-martilleros/vo-mujer/f4.wav"
     },
     {
       "atS": 16.5,
-      "carril": "B",
-      "texto": "Y mirá qué contactos ya tienen match.",
-      "archivo": "spec/propmatch-martilleros/vo/vo6.wav"
+      "carril": "A",
+      "texto": "Sabé si tu precio está en rango.",
+      "archivo": "spec/propmatch-martilleros/vo-mujer/f5.wav"
     },
     {
-      "atS": 20.35,
+      "atS": 19.5,
+      "carril": "A",
+      "texto": "Y mirá qué contactos ya tienen match.",
+      "archivo": "spec/propmatch-martilleros/vo-mujer/f6.wav"
+    },
+    {
+      "atS": 21.95,
       "carril": "A",
       "texto": "PropMatch.",
-      "archivo": "spec/propmatch-martilleros/vo/vo7a.wav"
+      "archivo": "spec/propmatch-martilleros/vo-mujer/f7.wav"
     },
     {
-      "atS": 22.35,
+      "atS": 23.7,
       "carril": "A",
       "texto": "Sin pagar por aparecer primero.",
-      "archivo": "spec/propmatch-martilleros/vo/vo7b.wav"
+      "archivo": "spec/propmatch-martilleros/vo-mujer/f8.wav"
     }
   ],
   "musica": [
@@ -852,7 +826,7 @@
       "nombre": "cama provisoria",
       "archivo": "spec/propmatch-martilleros/musica/cama.wav",
       "desdeS": 0,
-      "volumen": 0.35,
+      "volumen": 0.42,
       "nota": "cama-escena.wav del editor en loop: grave y pareja. Reemplazar por un tema del pack con stems (drop en 20.2 s)."
     }
   ],
@@ -862,251 +836,97 @@
       "nombre": "trazo",
       "categoria": "luz",
       "nota": "entra la línea de luz",
-      "volumen": 0.3
+      "volumen": 0.2
     },
     {
-      "atS": 0.7,
+      "atS": 0.9,
       "nombre": "remate",
       "categoria": "golpe",
       "nota": "revienta el isotipo",
-      "volumen": 0.5
+      "volumen": 0.32
     },
     {
-      "atS": 1.6,
-      "nombre": "escena-entra",
-      "categoria": "whoosh",
-      "nota": "entra el tablero",
-      "volumen": 0.35
+      "atS": 1.5,
+      "nombre": "trazo",
+      "categoria": "luz",
+      "nota": "el borde de luz se dibuja en el CRM",
+      "volumen": 0.16
     },
     {
-      "atS": 3.9,
-      "nombre": "escena-entra",
-      "categoria": "whoosh",
-      "nota": "nueva propiedad",
-      "volumen": 0.35
-    },
-    {
-      "atS": 4.6,
-      "nombre": "tap",
-      "categoria": "ui",
-      "nota": "Publicar en 'vez'",
-      "volumen": 0.45
-    },
-    {
-      "atS": 5.05,
-      "nombre": "escena-entra",
-      "categoria": "whoosh",
-      "nota": "la ficha se abre en canales",
-      "volumen": 0.3
-    },
-    {
-      "atS": 5.2,
-      "nombre": "tarjeta",
-      "categoria": "ui",
-      "nota": "MercadoLibre",
-      "volumen": 0.35
-    },
-    {
-      "atS": 5.5,
-      "nombre": "tarjeta-b",
-      "categoria": "ui",
-      "nota": "Facebook",
-      "volumen": 0.35
-    },
-    {
-      "atS": 5.8,
-      "nombre": "tarjeta-c",
-      "categoria": "ui",
-      "nota": "Instagram",
-      "volumen": 0.35
-    },
-    {
-      "atS": 6.1,
-      "nombre": "tarjeta",
-      "categoria": "ui",
-      "nota": "App PropMatch",
-      "volumen": 0.35
-    },
-    {
-      "atS": 6.43,
-      "nombre": "check-b",
-      "categoria": "ui",
-      "nota": "publicada en la app",
-      "volumen": 0.35
-    },
-    {
-      "atS": 7.1,
+      "atS": 8.9,
       "nombre": "corte-broll",
       "categoria": "whoosh",
       "nota": "corte al mapa",
-      "volumen": 0.4
+      "volumen": 0.25
     },
     {
-      "atS": 7.3,
-      "nombre": "burbuja",
-      "categoria": "ui",
-      "nota": "pin de la propiedad",
-      "volumen": 0.4
-    },
-    {
-      "atS": 7.5,
+      "atS": 9.7,
       "nombre": "trazo",
       "categoria": "luz",
       "nota": "la línea cruza la ciudad",
-      "volumen": 0.3
+      "volumen": 0.18
     },
     {
-      "atS": 8.7,
-      "nombre": "pop-b",
-      "categoria": "ui",
-      "nota": "pin de la persona",
-      "volumen": 0.4
-    },
-    {
-      "atS": 9.85,
+      "atS": 12.1,
       "nombre": "remate-b",
       "categoria": "golpe",
-      "nota": "94 % match",
-      "volumen": 0.45
+      "nota": "aterriza la casa",
+      "volumen": 0.28
     },
     {
-      "atS": 10.9,
-      "nombre": "escena-entra",
-      "categoria": "whoosh",
-      "nota": "interesado conectado",
-      "volumen": 0.35
-    },
-    {
-      "atS": 11.02,
-      "nombre": "tarjeta",
+      "atS": 12.5,
+      "nombre": "burbuja",
       "categoria": "ui",
-      "nota": "nuevo interesado",
-      "volumen": 0.35
+      "nota": "notificación de match",
+      "volumen": 0.22
     },
     {
-      "atS": 11.37,
-      "nombre": "tarjeta-b",
-      "categoria": "ui",
-      "nota": "pidió visita",
-      "volumen": 0.35
-    },
-    {
-      "atS": 11.7,
-      "nombre": "check-b",
-      "categoria": "ui",
-      "nota": "visita",
-      "volumen": 0.3
-    },
-    {
-      "atS": 12.0,
-      "nombre": "escena-entra",
-      "categoria": "whoosh",
-      "nota": "dictado",
-      "volumen": 0.35
-    },
-    {
-      "atS": 13.05,
-      "nombre": "tarjeta",
-      "categoria": "ui",
-      "nota": "la ficha se completa",
-      "volumen": 0.3
-    },
-    {
-      "atS": 14.6,
-      "nombre": "escena-entra",
-      "categoria": "whoosh",
-      "nota": "diagnóstico de precio",
-      "volumen": 0.35
-    },
-    {
-      "atS": 15.5,
-      "nombre": "check-b",
-      "categoria": "ui",
-      "nota": "en rango",
-      "volumen": 0.35
-    },
-    {
-      "atS": 16.4,
-      "nombre": "escena-entra",
-      "categoria": "whoosh",
-      "nota": "leads de hoy",
-      "volumen": 0.35
-    },
-    {
-      "atS": 17.85,
-      "nombre": "pop-b",
-      "categoria": "ui",
-      "nota": "match",
-      "volumen": 0.4
-    },
-    {
-      "atS": 18.5,
-      "nombre": "escena-entra",
-      "categoria": "whoosh",
-      "nota": "pipeline",
-      "volumen": 0.35
-    },
-    {
-      "atS": 20.2,
+      "atS": 21.8,
       "nombre": "riser",
       "categoria": "luz",
       "nota": "riser al drop",
-      "volumen": 0.3
+      "volumen": 0.18
     },
     {
-      "atS": 20.2,
+      "atS": 21.8,
       "nombre": "cta-cierre",
       "categoria": "golpe",
       "nota": "drop del logo",
-      "volumen": 0.5
+      "volumen": 0.32
     },
     {
-      "atS": 20.2,
+      "atS": 21.8,
       "nombre": "golpe-grave",
       "categoria": "golpe",
       "nota": "sub del drop",
-      "volumen": 0.45
-    },
-    {
-      "atS": 22.2,
-      "nombre": "escena-entra",
-      "categoria": "whoosh",
-      "nota": "tagline",
       "volumen": 0.3
     },
     {
-      "atS": 23.4,
-      "nombre": "trazo",
-      "categoria": "luz",
-      "nota": "la línea subraya 'primero.'",
-      "volumen": 0.3
-    },
-    {
-      "atS": 24.0,
+      "atS": 25.4,
       "nombre": "remate-b",
       "categoria": "golpe",
       "nota": "remata el tagline",
-      "volumen": 0.4
+      "volumen": 0.24
     },
     {
-      "atS": 24.8,
-      "nombre": "escena-entra",
-      "categoria": "whoosh",
-      "nota": "end card",
-      "volumen": 0.3
-    },
-    {
-      "atS": 26.0,
+      "atS": 27.4,
       "nombre": "escena-sale",
       "categoria": "whoosh",
       "nota": "el logo se apaga en una línea",
-      "volumen": 0.3
+      "volumen": 0.2
     }
   ],
   "pendientes": [
-    "UI: pantallas del prototipo oscuro. Confirmar con Lucas si va la del CRM web real (tema claro).",
-    "Canales MercadoLibre / Facebook / Instagram como texto: confirmar que la publicación está activa.",
-    "Voz clonada de la muestra 'Juan' (seed_audio). Escuchar 'match' en la línea 6 y el acento.",
-    "Música provisoria (cama-escena en loop): reemplazar por un tema del pack con stems."
+    "UI: CRM web real (propmatch-crm, demo) re-skineado oscuro con la marca para el video; el CRM real sigue claro.",
+    "Voz: preset 'Amanda' (elegida por Cogne) hablando en español; acento sin confirmar.",
+    "Música provisoria (cama-escena en loop)."
+  ],
+  "_luces": [
+    {
+      "archivo": "spec/propmatch-martilleros/plates/luz-trazo.mp4",
+      "desdeS": 0,
+      "hastaS": 1.6,
+      "opacidad": 1
+    }
   ]
 }

@@ -1,6 +1,7 @@
 import { AbsoluteFill, Easing, Img, OffthreadVideo, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { Content, Stage } from "../capas";
 import { TINTA, alfa, fuenteDe, tintaAcento, useLayout, useSpec } from "../tema";
+import Notificacion from "../notificacion";
 import Texto from "../texto";
 import type { DatosMapa, Escena, PinMapa } from "../tipos";
 
@@ -20,6 +21,8 @@ const Pin = ({ pin }: { pin: PinMapa }) => {
   const y = (vertical && pin.yv !== undefined ? pin.yv : pin.y) * height;
   const grad = spec.marca.degradado ?? [spec.marca.color, spec.marca.color];
   const persona = pin.tipo === "persona";
+  // En 9:16 no hay lugar a la izquierda del pin: la etiqueta va siempre a la derecha.
+  const derecha = persona || vertical;
   const r = 18 * u;
   return (
     <div style={{ position: "absolute", left: x, top: y }}>
@@ -51,8 +54,8 @@ const Pin = ({ pin }: { pin: PinMapa }) => {
       <div
         style={{
           position: "absolute",
-          left: persona ? 30 * u : undefined,
-          right: persona ? undefined : 30 * u,
+          left: derecha ? 30 * u : undefined,
+          right: derecha ? undefined : 30 * u,
           top: -38 * u,
           whiteSpace: "nowrap",
           opacity: e,
@@ -126,6 +129,7 @@ export default function Mapa({ escena }: { escena: Escena & { datos: DatosMapa }
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
   const { vertical, u } = useLayout();
+  const { spec } = useSpec();
   const d = escena.datos;
   const archivo = vertical && d.archivoVertical ? d.archivoVertical : d.archivo;
   const esc = interpolate(frame, [0, durationInFrames], [1, d.empuje ?? 1.06]);
@@ -147,6 +151,7 @@ export default function Mapa({ escena }: { escena: Escena & { datos: DatosMapa }
         {d.pines.map((p, i) => (
           <Pin key={i} pin={p} />
         ))}
+        {d.notificacion && <Notificacion n={d.notificacion} icono={spec.marca.icono} />}
         {d.match && d.pines[d.match.pin] && <Match texto={d.match.texto} atS={d.match.atS} pin={d.pines[d.match.pin]} />}
         {(d.textos ?? []).map((tx, i) => {
           const sig = d.textos?.[i + 1];

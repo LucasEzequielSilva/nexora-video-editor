@@ -4,6 +4,7 @@ import Apertura from "./apertura";
 import Cierre from "./cierre";
 import Dispositivo from "./dispositivo";
 import Frase from "./frase";
+import Heroe from "./heroe";
 import Mapa from "./mapa";
 import Plate from "./plate";
 import Tarjetas from "./tarjetas";
@@ -17,6 +18,7 @@ export const ESCENAS_SPEC: Record<TipoEscena, ComponentType<{ escena: any }>> = 
   frase: Frase,
   plate: Plate,
   mapa: Mapa,
+  heroe: Heroe,
   cierre: Cierre,
 };
 

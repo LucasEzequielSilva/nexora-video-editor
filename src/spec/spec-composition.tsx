@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { AbsoluteFill, Audio, Easing, Sequence, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Audio, Easing, OffthreadVideo, Sequence, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import Sfx from "../reserva/components/sfx";
 import { useReservaFonts } from "../reserva/fonts";
 import { componenteDe } from "./escenas/registry";
@@ -61,6 +61,14 @@ export default function SpecComposition({ spec, capa }: SpecProps) {
           );
         })}
 
+        {capa !== "stage" &&
+          (spec.luces ?? []).map((l, i) => (
+            <Sequence key={`luz${i}`} from={f(l.desdeS)} durationInFrames={f(l.hastaS - l.desdeS)} name={`luz: ${l.archivo}`}>
+              <AbsoluteFill style={{ mixBlendMode: "screen", opacity: l.opacidad ?? 1, pointerEvents: "none" }}>
+                <OffthreadVideo src={staticFile(l.archivo)} muted playbackRate={l.velocidad ?? 1} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+              </AbsoluteFill>
+            </Sequence>
+          ))}
         {conAudio &&
           spec.sfx.map((c, i) =>
             c.nombre ? (
