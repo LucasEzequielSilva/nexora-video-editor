@@ -1,0 +1,99 @@
+{
+  "ancho": 1440,
+  "alto": 1000,
+  "dpr": 2,
+  "fondo": "fondo.png",
+  "completo": "completo.png",
+  "items": [
+    {
+      "id": "sep0",
+      "x": 664,
+      "y": 130,
+      "w": 752,
+      "h": 36.5,
+      "texto": "Ayer",
+      "archivo": "00-sep0.png"
+    },
+    {
+      "id": "m1-0",
+      "x": 664,
+      "y": 172.5,
+      "w": 752,
+      "h": 33,
+      "texto": "Hola! Quiero canjear mi iPhone 13 Pro por un iPhone 16Escrito por el cliente00:4",
+      "archivo": "01-m1-0.png"
+    },
+    {
+      "id": "m2-0",
+      "x": 664,
+      "y": 211.5,
+      "w": 752,
+      "h": 71.5,
+      "texto": "Asistente¡Hola Paula! Contame el estado de tu iPhone 13 Pro: capacidad, batería ",
+      "archivo": "02-m2-0.png"
+    },
+    {
+      "id": "m3-0",
+      "x": 664,
+      "y": 289,
+      "w": 752,
+      "h": 33,
+      "texto": "256 GB, batería 81%, le cambié la batería hace un añoEscrito por el cliente01:00",
+      "archivo": "03-m3-0.png"
+    },
+    {
+      "id": "m4-0",
+      "x": 664,
+      "y": 328,
+      "w": 752,
+      "h": 69.5,
+      "texto": "AsistenteEstaría entre US$ 480 y US$ 540 para el canje. ¿Querés coordinar una vi",
+      "archivo": "04-m4-0.png"
+    },
+    {
+      "id": "m4-1",
+      "x": 664,
+      "y": 401.5,
+      "w": 752,
+      "h": 152.5,
+      "texto": "iPhone 13 Pro 256 GB Sierra azulVisita agendadaBatería81%EstadoCon detallesIMEIS",
+      "archivo": "05-m4-1.png"
+    },
+    {
+      "id": "m5-0",
+      "x": 664,
+      "y": 560,
+      "w": 752,
+      "h": 33,
+      "texto": "Sí, pero estoy de viaje. ¿Podemos la semana que viene?Escrito por el cliente05:4",
+      "archivo": "06-m5-0.png"
+    },
+    {
+      "id": "m6-0",
+      "x": 664,
+      "y": 599,
+      "w": 752,
+      "h": 51.5,
+      "texto": "AsistenteTe agendé el turno para dentro de unos días a las 11:00.Lo respondió As",
+      "archivo": "07-m6-0.png"
+    },
+    {
+      "id": "m6-1",
+      "x": 664,
+      "y": 654.5,
+      "w": 752,
+      "h": 129.28125,
+      "texto": "Canje de un equipo usadoSin confirmarlun, 26 oct · 11:00 a 11:30Equipo reservado",
+      "archivo": "08-m6-1.png"
+    },
+    {
+      "id": "sofia",
+      "x": 256,
+      "y": 585,
+      "w": 383,
+      "h": 239,
+      "texto": "SQSofía QuirogaLead¿Alguien me puede responder? Tengo que decidir hoy3Mostrador ",
+      "archivo": "09-sofia.png"
+    }
+  ]
+}

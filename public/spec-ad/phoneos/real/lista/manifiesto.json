@@ -1,0 +1,63 @@
+{
+  "ancho": 390,
+  "alto": 844,
+  "dpr": 3,
+  "fondo": "fondo.png",
+  "completo": "completo.png",
+  "items": [
+    {
+      "id": "conv0",
+      "x": 0,
+      "y": 229.84375,
+      "w": 389,
+      "h": 116,
+      "texto": "IDImportadora Demo SurLeadLes puedo pasar la lista de precios del lote, ¿con qui",
+      "archivo": "00-conv0.png"
+    },
+    {
+      "id": "conv1",
+      "x": 0,
+      "y": 345.84375,
+      "w": 389,
+      "h": 116,
+      "texto": "JSJulieta SosaLeadQuería saber si tienen algo para recomendarme, no sé mucho de ",
+      "archivo": "01-conv1.png"
+    },
+    {
+      "id": "conv2",
+      "x": 0,
+      "y": 461.84375,
+      "w": 389,
+      "h": 182,
+      "texto": "CICamila IbáñezLead¿Y qué días tienen turnos?Publicidad · 11 5555-0202CanjeRepes",
+      "archivo": "02-conv2.png"
+    },
+    {
+      "id": "conv3",
+      "x": 0,
+      "y": 643.84375,
+      "w": 389,
+      "h": 239,
+      "texto": "SQSofía QuirogaLead¿Alguien me puede responder? Tengo que decidir hoy3Mostrador ",
+      "archivo": "03-conv3.png"
+    },
+    {
+      "id": "conv4",
+      "x": 0,
+      "y": 882.84375,
+      "w": 389,
+      "h": 114.5,
+      "texto": "MZMayorista Zona SurMayoristaPerfecto, ¿cuándo puedo pasar a buscarlos?1Publicid",
+      "archivo": "04-conv4.png"
+    },
+    {
+      "id": "conv5",
+      "x": 0,
+      "y": 997.34375,
+      "w": 389,
+      "h": 114.5,
+      "texto": "PCPromo Crédito FácilSpamÚltima oportunidad: crédito del 100% aprobado, respondé",
+      "archivo": "05-conv5.png"
+    }
+  ]
+}
