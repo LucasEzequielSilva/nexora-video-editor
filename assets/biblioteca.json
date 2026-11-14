@@ -1473,7 +1473,9 @@
     "duracion_seg": 5.45,
     "descripcion": "Living moderno: un hombre con gorra entra, se sienta en un sillón y el ambiente pasa de luz tenue a luz cálida con lámparas y velas encendidas. Plano único. Sirve para: llegar a casa, fin del día, descansar, desconectar, hogar.",
     "procedencia": "pack",
-    "usado_en": []
+    "usado_en": [
+      "beneficios-agente"
+    ]
   },
   {
     "id": "broll-147",
@@ -1803,7 +1805,9 @@
     "duracion_seg": 14.74,
     "descripcion": "Secuencia nocturna en un escritorio: joven en penumbra, cuaderno, escritura a mano, papeles arrugados; cierra con el joven frente a un monitor y el texto 'LEARN TO ADAPT'. Sirve para: planificar, escribir ideas, trabajo de noche, bloqueo creativo, frustración.",
     "procedencia": "pack",
-    "usado_en": []
+    "usado_en": [
+      "asi-se-automatiza"
+    ]
   },
   {
     "id": "broll-180",
@@ -2147,7 +2151,9 @@
     "duracion_seg": 11.66,
     "descripcion": "Living en penumbra: se enciende una lámpara de mesa y una mujer lee en el sillón al fondo, fuera de foco. Sirve para: noche en casa, encender la luz, leer, relajarse, hogar.",
     "procedencia": "pack",
-    "usado_en": []
+    "usado_en": [
+      "consultorio-cierra"
+    ]
   },
   {
     "id": "broll-214",
@@ -2627,7 +2633,9 @@
     "duracion_seg": 7.73,
     "descripcion": "Plano cenital fijo de un escritorio de madera: persona con gorra teclea, usa el celular, come, escribe en un cuaderno y toca la laptop; auriculares, micrófono y placa de audio sobre la mesa. Sirve para: trabajo desde casa, home office, productividad, rutina de trabajo, organizar el día.",
     "procedencia": "pack",
-    "usado_en": []
+    "usado_en": [
+      "asi-se-automatiza"
+    ]
   },
   {
     "id": "broll-262",
@@ -3339,7 +3347,9 @@
     "duracion_seg": 10.19,
     "descripcion": "Compilado de al menos 6 planos: parrilla, fachada de un local, platos de restaurante servidos y una ruta con montañas desde un auto. Sirve para: gastronomía, restaurante, salir a comer, cocina de autor, detalle artesanal.",
     "procedencia": "pack",
-    "usado_en": []
+    "usado_en": [
+      "beneficios-agente"
+    ]
   },
   {
     "id": "fuente-001",
@@ -6229,9 +6239,11 @@
     "categoria": "film-burn",
     "tipo": "video",
     "duracion_seg": 1.18,
-    "descripcion": null,
+    "descripcion": "Film burn vertical 1080x1920 sobre negro: destello rojo-naranja que entra por arriba a la derecha, llena el cuadro en amarillo-naranja y se va a bordó. Pico de brillo 0.83 s (brillo alto 0.6-0.9 s). Con mix-blend screen = flash de luz entre bloques (estilo Matías Costas).",
     "procedencia": "pack",
-    "usado_en": []
+    "usado_en": [
+      "app-marca-personal"
+    ]
   },
   {
     "id": "film-burn-004",
@@ -6259,9 +6271,11 @@
     "categoria": "film-burn",
     "tipo": "video",
     "duracion_seg": 1.02,
-    "descripcion": null,
+    "descripcion": "Film burn vertical 1080x1920 sobre negro: mancha roja que entra por la izquierda, pasa a naranja plano y sale en rojo. Pico 0.50 s (brillo alto 0.4-0.6 s), corto. Con mix-blend screen = flash rápido.",
     "procedencia": "pack",
-    "usado_en": []
+    "usado_en": [
+      "app-marca-personal"
+    ]
   },
   {
     "id": "film-burn-007",
@@ -6299,9 +6313,11 @@
     "categoria": "film-burn",
     "tipo": "video",
     "duracion_seg": 1.51,
-    "descripcion": null,
+    "descripcion": "Film burn vertical 1080x1920 sobre negro: destello naranja claro casi plano que se apaga a bordó con brillos rojos arriba. Pico 0.80 s (brillo alto 0.7-0.87 s), cola oscura larga. Con mix-blend screen = flash de luz.",
     "procedencia": "pack",
-    "usado_en": []
+    "usado_en": [
+      "app-marca-personal"
+    ]
   },
   {
     "id": "film-burn-011",
@@ -6869,7 +6885,7 @@
     "categoria": "transicion",
     "tipo": "video",
     "duracion_seg": 1.74,
-    "descripcion": null,
+    "descripcion": "Glitch transición horizontal 1920x1080 sobre negro (barrido azul claro, franjas). Imagen no sirve en vertical. Primeros 0.8 s de su audio (golpe a ~0.1 s) = SFX 'glitch-b' (public/reserva/sfx/glitch-b.wav).",
     "procedencia": "pack",
     "usado_en": []
   },
@@ -6919,7 +6935,7 @@
     "categoria": "transicion",
     "tipo": "video",
     "duracion_seg": 0.93,
-    "descripcion": null,
+    "descripcion": "Glitch transición horizontal 1920x1080 sobre negro (franjas azules y blancas). Imagen no sirve en vertical. Su audio (0.93 s, golpe a 0.15 s, 84 % arriba de 200 Hz) es el SFX 'glitch' (public/reserva/sfx/glitch.wav).",
     "procedencia": "pack",
     "usado_en": []
   },
@@ -7601,7 +7617,9 @@
     "duracion_seg": 77.21,
     "descripcion": null,
     "procedencia": "pack",
-    "usado_en": []
+    "usado_en": [
+      "consultorio-cierra"
+    ]
   },
   {
     "id": "musica-023",
@@ -7761,7 +7779,9 @@
     "duracion_seg": 260.06,
     "descripcion": null,
     "procedencia": "pack",
-    "usado_en": []
+    "usado_en": [
+      "asi-se-automatiza"
+    ]
   },
   {
     "id": "musica-039",
@@ -7801,7 +7821,9 @@
     "duracion_seg": 184.27,
     "descripcion": null,
     "procedencia": "pack",
-    "usado_en": []
+    "usado_en": [
+      "beneficios-agente"
+    ]
   },
   {
     "id": "musica-043",
@@ -7831,7 +7853,9 @@
     "duracion_seg": 189.01,
     "descripcion": null,
     "procedencia": "pack",
-    "usado_en": []
+    "usado_en": [
+      "app-marca-personal"
+    ]
   },
   {
     "id": "musica-046",
@@ -8145,7 +8169,9 @@
     "duracion_seg": 182.73,
     "descripcion": null,
     "procedencia": "pack",
-    "usado_en": []
+    "usado_en": [
+      "bldrs-estudio-motion"
+    ]
   },
   {
     "id": "musica-077",
@@ -8736,7 +8762,9 @@
     "descripcion": null,
     "procedencia": "pack",
     "usado_en": [
-      "empieza-a-romperse"
+      "empieza-a-romperse",
+      "asi-se-automatiza",
+      "app-marca-personal"
     ]
   },
   {
@@ -8758,7 +8786,9 @@
     "descripcion": null,
     "procedencia": "pack",
     "usado_en": [
-      "cuenta-juntos"
+      "cuenta-juntos",
+      "asi-se-automatiza",
+      "app-marca-personal"
     ]
   },
   {
@@ -8781,7 +8811,9 @@
     "procedencia": "pack",
     "usado_en": [
       "empieza-a-romperse",
-      "anuncio-demo"
+      "anuncio-demo",
+      "asi-se-automatiza",
+      "beneficios-agente"
     ]
   },
   {
@@ -8838,7 +8870,8 @@
     "descripcion": null,
     "procedencia": "pack",
     "usado_en": [
-      "empieza-a-romperse"
+      "empieza-a-romperse",
+      "consultorio-cierra"
     ]
   },
   {
@@ -8849,7 +8882,9 @@
     "duracion_seg": null,
     "descripcion": null,
     "procedencia": "pack",
-    "usado_en": []
+    "usado_en": [
+      "beneficios-agente"
+    ]
   },
   {
     "id": "objeto-3d-012",
@@ -8880,7 +8915,8 @@
     "descripcion": null,
     "procedencia": "pack",
     "usado_en": [
-      "cuenta-juntos"
+      "cuenta-juntos",
+      "asi-se-automatiza"
     ]
   },
   {
@@ -8904,7 +8940,9 @@
     "descripcion": null,
     "procedencia": "pack",
     "usado_en": [
-      "cuenta-juntos"
+      "cuenta-juntos",
+      "asi-se-automatiza",
+      "app-marca-personal"
     ]
   },
   {

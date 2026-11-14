@@ -40,7 +40,8 @@ deportivo, "tech/gaming". Anchos:
 - **Normal** (`TacticSans-*`): el más usable.
 - **Extended** (`TacticSansExd-*`) y **ExtraExtended** (`TacticSansExtExd-*`): muy anchas, entran pocas letras por
   línea en vertical (1080 px). Solo para una palabra suelta tipo logo/título.
-Pesos: Thn, Lgt, Reg, Med, Bld, Blk, Ult (Ult es la más pesada). Copiadas: `TacticSans-Bold/Black.otf`.
+Pesos: Thn, Lgt, Reg, Med, Bld, Blk, Ult (Ult es la más pesada). Copiadas: `TacticSans-Thin/Light/Bold/Black.otf`
+(Thin 100 y Light 300 para la línea fina de la familia neón, `src/pieza/neon/`; la Thin sobre piel casi no se lee).
 
 ### EuropaGrotesk SH DemiBold (solo en `public/reserva/fonts/`)
 Grotesca condensada con espaciado muy cerrado. La usa el sistema `reserva`; no está en el pack.
