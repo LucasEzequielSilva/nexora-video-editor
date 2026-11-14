@@ -26,6 +26,11 @@ video-editor/
 │                          la skill y recopiar)
 ├── formatos/motion-reel/  reel sin cara, solo motion graphics + música (bldrs-estudio-motion): anatomía, reglas,
 │                          circuito de calidad y chequeo. Un reel nuevo de este tipo arranca acá.
+├── formatos/spec-ad/      FORMATO SPEC AD (comercial de producto 16:9 + 9:16 estilo Revolut/Spotify/Amazon): README con
+│                          roles (Claude director, Remotion UI, Higgsfield plates), estructura, referencias, spec.json y
+│                          pipeline. Skill `/spec-ad`. Motor en `src/spec/`, piezas en `public/spec/<slug>/spec.json`.
+│                          También acá: `PROMPT-TEMPLATE.md` y los briefs `phoneos/` y `acelerator/` (UI real
+│                          capturada del producto, código en `src/spec-ad/`).
 ├── assets/catalogo/       catálogos legibles: brolls.md, musica.md, sonidos.md, iconos.md, fuentes.md, icon-set-prompt.md
 ├── assets/referencias/    videos de referencia de estilo + estilo-editorial.md
 ├── cortes/                <slug>.json = qué toma de qué clip va en la pieza (con la frase de cada una)
@@ -194,6 +199,19 @@ Lo que **todavía es manual o falta**: elegir tomas, escribir `props.json`, tran
 se transcribe el montaje entero y hay que parchear omisiones), SFX y música, conectar la biblioteca
 de `PACKS/` a los overlays, y que el editor proponga zooms/overlays solo.
 
+### 3c. Spec ads (`src/spec/`, 2026-10-16)
+
+Comerciales de producto sin grabación: todo sale de `public/spec/<slug>/spec.json` (escenas, motivo, voz, SFX, plates),
+que escribe Claude como director creativo. Composiciones `spec-<slug>` (1920x1080) y `spec-<slug>-9x16`, carpeta
+`spec-ads` en Studio. Capas sueltas para DaVinci con `--props='{"capa":"stage|content|bloom"}'`. `npm run spec -- <slug>`
+chequea el spec y escribe la cue sheet. Procedimiento completo en `formatos/spec-ad/README.md` y la skill `/spec-ad`.
+**Lo real**: escenas, cámara, glow, línea de luz, capas, SFX de la paleta, cue sheet, el kit de componentes de UI
+(`src/spec/kit.tsx`: Tile, Numero, Anillo, Boton, Pill, Fila, Campo, BarraRango, LogoCanal, Navegador, BordeLuz, Lienzo)
+y las escenas de producto (`tablero`, `ficha`, `canales`, `dictado`, `precio`, `contactos`, `mapa`, `heroe`), más
+`luces` (plates de luz en screen como transiciones) y `ambiente` (textura bokeh). **Lo manual todavía**: generar los
+plates en Higgsfield (con costo aprobado), grabar la voz y elegir la música; sin eso la pieza sale muda y con el escenario
+en lugar del plate. Demo: `demo-agente-turnos` (agente de turnos para consultorios; el chat es de ejemplo).
+
 ### 3b. Sistema `reserva` (horizontal, un solo video: IMG_7245) — el más viejo
 
 El sistema `src/reserva/` es maduro pero **buena parte del trabajo pesado es manual**:
@@ -318,6 +336,14 @@ beats), con etiqueta arriba con el modelo y cierre en silencio "Comentá SKILL y
 Quedan tres técnicas de Jacob sin implementar (texto kinético en profundidad, inserts de motion graphics,
 card de título de sección) — candidatas para cuando se decida construirlas.
 
+### Spec ads de Revolut / Spotify / Amazon ("Opus 5.5 + Katana", Riccardo Bosso), 2026-10-16
+
+Tres reels que mandó Cogne, analizados cuadro por cuadro + audio transcripto + lectura de las timelines de DaVinci que se
+ven en pantalla. Escenario oscuro con un glow de marca, UI real flotando, un motivo que viaja por todas las escenas (la línea
+de la sonrisa de Amazon), tagline cinético y end card que se apaga en una línea; escenas exportadas en capas STAGE / CONTENT /
+BLOOM / BAKED; VO en dos carriles; SFX con su timecode en el nombre. Detalle en `formatos/spec-ad/README.md` §3. Katana
+remixa una referencia **sobre la que hay que tener derechos**: esos ads no se usan como referencia.
+
 ### @xzecreative (Instagram), motion de UI empaquetado en un escritorio, 2026-11-10
 
 Lucas: "aprendé de todo ese perfil". La animación 16:9 (aviso de producto estilo Apple) se muestra en un monitor de un
@@ -421,6 +447,10 @@ formato.)*
 | Para detectar caras usar YuNet (`models/yunet/`, OpenCV), no el cascade LBP de skimage | El LBP no encontró la cara con anteojos de la referencia en varios cuadros y dio falsos positivos; YuNet la encontró en 1473 de 1484 con confianza ~0.94 |
 | Probar `reel-animacion-marca` con una marca que no sea la del ejemplo antes de darla por lista: un cuadro por beat + cuadros alrededor de cada corte + render con audio y `master.mjs`. El beat `heroe` baja el tamaño solo según el largo del texto (una línea) | 2026-11-12, prueba con una pizzería ficticia: `heroe` partía "0% comisión." en dos líneas alineadas a la izquierda con el pie centrado |
 | Dos SFX en el mismo cuadro se suman: el beat `logo` no lleva el whoosh de transición (ya tiene su sonido). Mirar siempre cuánto recorta el limitador de `master.mjs`: más de 3 dB es una mezcla mal | En el ejemplo Turnix el cierre sumaba whoosh + logo en el cuadro 643: pico −4,3 dBFS contra −8 del resto y el limitador recortaba 5,2 dB; ahora 2,5 dB |
+| Los stills/renders de Remotion se escriben relativos al cwd del shell, que puede haber quedado en otra carpeta: usar rutas absolutas en `out/` | Seis stills de verificación de la v4 de PropMatch aparecieron en `public/spec/.../vo-arg/out/` porque el shell había quedado en esa carpeta |
+| `generate_audio_batch` de Higgsfield: de a 3–4 trabajos; 6 a la vez hizo fallar 3 ("failed" sin motivo) | Voces de la v1 de PropMatch |
+| Los presets de voz de Higgsfield cuyo preview está en inglés hablan un español con acento marcado: clonar siempre desde una muestra en español (`audio_references`) | Voz "Amanda" en la v2 de PropMatch: "es una poronga" |
+| Todo texto de una línea con `textOverflow: ellipsis` se verifica con un **still a resolución completa** en 16:9 **y** 9:16 antes del render final (la hoja de contactos lo tapa): si el ancho de la columna de texto queda por debajo del nombre más largo, ensanchar la tarjeta, no achicar la fuente | En la v4 de PropMatch, las tarjetas de canales (350 px, columna de texto ≈152 px) recortaban "Mercado Li…" y "App PropM…" en 16:9; en la hoja de contactos no se notaba y en 9:16 (tarjetas de 470 px) nunca pasó. Se ensancharon a 390 px (ficha 280→260) |
 
 ## 8. Dirección creativa de Lucas
 
@@ -721,6 +751,29 @@ se corrige la vieja (no se acumulan las dos).
   "falta recortar correctamente el video... para que yo pueda recortar manualmente y a partir de ahí
   aprendas el porqué". El jumpcut automático no alcanza como criterio de corte. Ver herramienta de
   recorte (§3a) y guardar el motivo de cada recorte que él marque.
+
+- (2026-10-16) **Spec ads: UN componente grande por beat, nunca la pantalla entera chiquita** (Cogne, sobre la v2 de
+  PropMatch: "apenas se puede apreciar el producto, va rapidísimo, necesitamos que se pueda ver mejor, más zoom y
+  transiciones y efectos profesionales como el video de Amazon, Spotify, Revolut"). Es lo que hacen las referencias:
+  cada beat muestra un tile de vidrio con UN dato (número que cuenta, anillo que se llena, botón que se aprieta → tilde),
+  2–4 s por beat, cámara que empuja despacio. En el editor: kit `src/spec/kit.tsx` + escenas `tablero`, `ficha`,
+  `canales`, `dictado`, `precio`, `contactos`. La ventana entera solo como establishing shot y después pasa al fondo
+  desenfocada.
+- (2026-10-16) **La imagen acompaña a la voz, siempre**: "no mostrés pavadas que no tengan que ver con lo que habla la
+  voz". Cada escena se ancla a su línea de VO (los textos en pantalla son las mismas palabras); si una línea no tiene
+  imagen propia, no va escena. Los cortes dentro de una frase caen en la palabra (medir con whisper `word_timestamps`).
+- (2026-10-16) **Menos SFX en los spec ads**: "sin tanta saturación de sound effects". Solo los momentos clave (hook,
+  corte grande, el golpe del match, el drop del logo, el cierre): ~12–20 en 30 s, a 0.15–0.35. Distinto del formato
+  talking-head, donde Lucas pide más.
+- (2026-10-16) **Voz en off femenina, argentina o latina neutra, fluida**: las voces preset en inglés hablando español
+  son "una poronga". Lo que funcionó: generar con Seedance 2.5 un video con una locutora argentina diciendo frases del
+  guion (prompt con "native Rioplatense Spanish accent"), extraer el audio y clonarlo con `seed_audio`
+  (`audio_references`); una línea por archivo, verificar cada una con whisper. Cogne eligió esa muestra sobre las
+  presets de ElevenLabs/MiniMax.
+- (2026-10-16) **Tarjetas con amor y logos reales**: "no las hagas berreta simple, ponele amor, ponele el logo de fb,
+  de MercadoLibre, del que aplique". Logos oficiales de simple-icons (`LogoApp`, ahora también `facebook`) y, para
+  Mercado Libre (no está en simple-icons), el PNG oficial de su web (`public/spec/<slug>/logos/`). Tiles de vidrio
+  con relleno, borde fino, sombra larga y entrada desde la profundidad; nunca una caja plana.
 
 ### Notas por pieza
 

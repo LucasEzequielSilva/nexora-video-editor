@@ -7,6 +7,7 @@ import BldrsEstudioMotionCompositions from "./bldrs-estudio-motion/bldrs-estudio
 import MotionUiCompositions from "./motion-ui/motion-ui-root";
 import ReelMarcaCompositions from "./reel-marca/reel-marca-root";
 import CarruselCompositions from "./carrusel/carrusel-root";
+import SpecCompositions from "./spec/spec-root";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ export const RemotionRoot: React.FC = () => {
       <MotionUiCompositions />
       <ReelMarcaCompositions />
       <CarruselCompositions />
+      <SpecCompositions />
     </>
   );
 };
