@@ -1,0 +1,394 @@
+{
+  "fuente": "video-jc.mp4",
+  "hechoPor": "editor (2026-09-28), con el criterio de Lucas: pieza entregada entera para que él corrija",
+  "recortes": [
+    {
+      "desde": 8.43,
+      "hasta": 8.61,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.28 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "servicio.",
+        "despues": "vez",
+        "duracion": 0.18,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 14.15,
+      "hasta": 14.3,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.26 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "negocio.",
+        "despues": "les",
+        "duracion": 0.15,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 14.3,
+      "hasta": 19.08,
+      "motivo": "repeticion",
+      "nota": "'Mati les da un...' dicho tres veces: queda el 3º ('Mati les da un sistema que usan todos los días')."
+    },
+    {
+      "desde": 22.35,
+      "hasta": 22.83,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.58 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "días",
+        "despues": "poder",
+        "duracion": 0.48,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 24.37,
+      "hasta": 24.57,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.30 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "pyme,",
+        "despues": "lo",
+        "duracion": 0.2,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 26.45,
+      "hasta": 26.57,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.22 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "usan,",
+        "despues": "mensualmente.",
+        "duracion": 0.12,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 27.95,
+      "hasta": 28.05,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.20 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "mensualmente.",
+        "despues": "todo",
+        "duracion": 0.1,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 28.08,
+      "hasta": 30.88,
+      "motivo": "repeticion",
+      "nota": "'Antes todo es... Antes todo es todo.': queda 'Antes todo esto lo manejaban también...'."
+    },
+    {
+      "desde": 31.09,
+      "hasta": 31.17,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.18 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "todo.",
+        "despues": "todo",
+        "duracion": 0.08,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 35.37,
+      "hasta": 35.54,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.28 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "hojas.",
+        "despues": "trabajo...",
+        "duracion": 0.17,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 35.54,
+      "hasta": 38.3,
+      "motivo": "repeticion",
+      "nota": "'Mi trabajo... Mi trabajo...': queda el 3º ('Mi trabajo básicamente fue construir...')."
+    },
+    {
+      "desde": 43.91,
+      "hasta": 44.11,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.30 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "web.",
+        "despues": "en",
+        "duracion": 0.2,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 49.81,
+      "hasta": 50.05,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.34 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "clientes.",
+        "despues": "cargaron",
+        "duracion": 0.24,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 52.91,
+      "hasta": 53.15,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.34 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "productos.",
+        "despues": "registraron",
+        "duracion": 0.24,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 53.57,
+      "hasta": 53.67,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.20 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "Y",
+        "despues": "casi",
+        "duracion": 0.1,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 56.15,
+      "hasta": 56.47,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.42 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "ventas.",
+        "despues": "de",
+        "duracion": 0.32,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 59.77,
+      "hasta": 59.95,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.28 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "familiar.",
+        "despues": "usando",
+        "duracion": 0.18,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 63.65,
+      "hasta": 63.95,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.40 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "Excel.",
+        "despues": "hoy",
+        "duracion": 0.3,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 67.01,
+      "hasta": 67.17,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.26 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "lugar.",
+        "despues": "en",
+        "duracion": 0.16,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 71.29,
+      "hasta": 71.65,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.46 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "feedback,",
+        "despues": "cual",
+        "duracion": 0.36,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 78.13,
+      "hasta": 78.29,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.26 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "uso.",
+        "despues": "acá",
+        "duracion": 0.16,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 80.35,
+      "hasta": 80.55,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.30 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "ve.",
+        "despues": "tenés",
+        "duracion": 0.2,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 90.09,
+      "hasta": 90.29,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.30 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "uso,",
+        "despues": "te",
+        "duracion": 0.2,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 91.59,
+      "hasta": 91.69,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.20 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "darle",
+        "despues": "usabilidad",
+        "duracion": 0.1,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 93.61,
+      "hasta": 93.99,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.48 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "producto.",
+        "despues": "seguramente",
+        "duracion": 0.38,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 98.23,
+      "hasta": 98.43,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.30 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "aplicación",
+        "despues": "mobile,",
+        "duracion": 0.2,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 99.57,
+      "hasta": 99.91,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.44 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "o",
+        "despues": "en",
+        "duracion": 0.34,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 101.25,
+      "hasta": 101.53,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.38 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "software",
+        "despues": "servicio.",
+        "duracion": 0.28,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 102.51,
+      "hasta": 102.77,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.36 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "servicio.",
+        "despues": "la",
+        "duracion": 0.26,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 104.21,
+      "hasta": 104.31,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.20 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "SOFT",
+        "despues": "te...",
+        "duracion": 0.1,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 104.34,
+      "hasta": 105.3,
+      "motivo": "falso-arranque",
+      "nota": "'Y te...' cortado: queda 'Y te digo cómo lo convertiría en un producto'."
+    },
+    {
+      "desde": 107.41,
+      "hasta": 107.51,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.20 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "producto.",
+        "despues": "",
+        "duracion": 0.1,
+        "esSilencio": true
+      }
+    }
+  ]
+}

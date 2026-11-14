@@ -1,0 +1,11 @@
+{
+  "_comentario": "v1 (2026-09-28), large-v3. Whisper puso como preguntas frases que son enunciados: se pasan a enunciado con la misma cantidad de palabras (conservan su tiempo).",
+  "reemplazos": [
+    ["consultorio cómo atiende hoy y qué tareas tiene sentido automatizar después", "consultorio, cómo atiende hoy y qué tareas tiene sentido automatizar. Después"],
+    ["los protocolos tratamientos precios disponibilidad qué hacer ante una urgencia a qué puede responder el sistema qué no y en qué casos tiene que intervenir una persona con", "los protocolos: tratamientos, precios, disponibilidad, qué hacer ante una urgencia, a qué puede responder el sistema, qué no y en qué casos tiene que intervenir una persona. Con"],
+    ["ver y revisar las métricas del negocio conversaciones agendas y poder", "ver y revisar las métricas del negocio: conversaciones, agendas y poder"],
+    ["poder entender cuántos recordatorios hiciste y", "poder entender cuántos recordatorios hiciste, y"],
+    ["comenta la palabra agente", "Comentá la palabra AGENTE"]
+  ],
+  "tramos": []
+}

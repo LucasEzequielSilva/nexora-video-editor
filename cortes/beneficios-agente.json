@@ -1,0 +1,17 @@
+{
+  "base": "D:/moved/Downloads",
+  "cortes": [
+    { "archivo": "IMG_7321.MOV", "desde": 1.96, "hasta": 5.62, "nota": "HOOK: ¿Qué beneficios tiene tu agente conversacional en tu negocio? (94% a cámara)" },
+    { "archivo": "IMG_7321.MOV", "desde": 14.14, "hasta": 23.3, "nota": "En un consultorio puede responder consultas, clasificar urgencias, agendar, reprogramar y recordar turnos (2º intento: el 1º decía 'preguntas' y se cortaba)" },
+    { "archivo": "IMG_7321.MOV", "desde": 25.06, "hasta": 26.82, "nota": "En una inmobiliaria" },
+    { "archivo": "IMG_7321.MOV", "desde": 30.86, "hasta": 49.74, "nota": "puede filtrar interesados, entender qué propiedad buscan, presupuesto, zona, requisitos, derivar solamente los leads que realmente califican y recordar las conversaciones (salta el arranque en falso de 27.5-28.8)" },
+    { "archivo": "IMG_7321.MOV", "desde": 56.36, "hasta": 66.28, "nota": "En un restaurante puede tomar reservas, responder horarios, menú, ubicación, gestionar pedidos o consultas frecuentes (2º intento)" },
+    { "archivo": "IMG_7321.MOV", "desde": 69.86, "hasta": 79.6, "nota": "En una empresa de logística puede informar el estado del envío, recibir reclamos, clasificar incidencias" },
+    { "archivo": "IMG_7321.MOV", "desde": 80.74, "hasta": 82.44, "nota": "y derivar al área correcta (reinicio: el 1er 'y derivar' 79.9-80.74 queda afuera)" },
+    { "archivo": "IMG_7321.MOV", "desde": 89.16, "hasta": 102.22, "nota": "En una estética puede explicar tratamientos, informar precios, detectar qué servicio busca la persona y agendar directamente" },
+    { "archivo": "IMG_7321.MOV", "desde": 107.06, "hasta": 121.2, "nota": "En un e-commerce, donde reciben mucho volumen de consultas, puede responder dudas sobre productos, stock, envíos, cambios y acompañar al cliente hasta la compra" },
+    { "archivo": "IMG_7321.MOV", "desde": 136.12, "hasta": 151.66, "nota": "El beneficio no es solamente meter una IA en el negocio... que cada consulta llegue al flujo correcto, se ejecute una acción y tu equipo solamente intervenga cuando realmente hace falta" },
+    { "archivo": "IMG_7321.MOV", "desde": 154.42, "hasta": 159.78, "nota": "CTA: Comentá la palabra IA y vemos cómo podemos implementar IA en tu negocio de una forma real (100%)" }
+  ],
+  "propuesta": "editor 2026-09-28: una sola toma larga con reinicios; se sacan los arranques en falso. Mucho tramo leído (15-50% a cámara): va tapado con escenas por rubro. Lucas la ajusta con npm run cortar -- beneficios-agente"
+}

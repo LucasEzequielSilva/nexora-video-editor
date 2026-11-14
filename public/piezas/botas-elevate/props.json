@@ -1,0 +1,180 @@
+{
+  "_comentario": "Creativo Elevate Goods (botas de compresión). Estructura del anuncio ganador de la Biblioteca de anuncios (Caffi): creador a cámara + B-roll del producto sincronizado con las palabras cada ~3 s + subtítulos grandes + cierre con marca y CTA. B-roll provisorio: clips del listing de Amazon (con logo del fabricante), reemplazar por material propio.",
+  "durationSeconds": 40,
+  "subtitulos": {
+    "fuente": "satoshi",
+    "estilo": "grande",
+    "acentos": [
+      "Elevate",
+      "compresión",
+      "cansancio",
+      "30"
+    ]
+  },
+  "zooms": [],
+  "sfx": [],
+  "overlays": [
+    {
+      "tipo": "broll",
+      "archivo": "recursos/botas-atletas.mp4",
+      "desde": {
+        "palabra": "piernas",
+        "n": 1,
+        "offsetMs": -60
+      },
+      "hasta": {
+        "palabra": "mirá",
+        "n": 1,
+        "offsetMs": -80
+      },
+      "zoom": 1.06,
+      "sfx": "corte-broll",
+      "volumenSfx": 0.2
+    },
+    {
+      "tipo": "broll",
+      "archivo": "recursos/botas-producto.mp4",
+      "desde": {
+        "palabra": "estas",
+        "n": 1,
+        "offsetMs": -60
+      },
+      "hasta": {
+        "palabra": "funcionan",
+        "n": 1,
+        "offsetMs": -100
+      },
+      "zoom": 1.04,
+      "sfx": "corte-broll",
+      "volumenSfx": 0.2
+    },
+    {
+      "tipo": "broll",
+      "archivo": "recursos/botas-camaras.mp4",
+      "desde": {
+        "palabra": "sistema",
+        "n": 1,
+        "offsetMs": -60
+      },
+      "hasta": {
+        "palabra": "para",
+        "n": 1,
+        "offsetMs": -80
+      },
+      "zoom": 1.04,
+      "sfx": "corte-broll",
+      "volumenSfx": 0.2
+    },
+    {
+      "tipo": "broll",
+      "archivo": "recursos/botas-cansancio.mp4",
+      "desde": {
+        "palabra": "aliviar",
+        "n": 1,
+        "offsetMs": -60
+      },
+      "hasta": {
+        "palabra": "lo",
+        "n": 1,
+        "offsetMs": -100
+      },
+      "zoom": 1.06,
+      "sfx": "corte-broll",
+      "volumenSfx": 0.2
+    },
+    {
+      "tipo": "broll",
+      "archivo": "recursos/botas-sillon.mp4",
+      "desde": {
+        "palabra": "desde",
+        "n": 1,
+        "offsetMs": -60
+      },
+      "hasta": {
+        "palabra": "tiene",
+        "n": 1,
+        "offsetMs": -100
+      },
+      "zoom": 1.05,
+      "sfx": "corte-broll",
+      "volumenSfx": 0.2
+    },
+    {
+      "tipo": "broll",
+      "archivo": "recursos/botas-control.mp4",
+      "desde": {
+        "palabra": "tiene",
+        "n": 1,
+        "offsetMs": -60
+      },
+      "hasta": {
+        "palabra": "no",
+        "n": 1,
+        "offsetMs": -100
+      },
+      "zoom": 1.04,
+      "sfx": "corte-broll",
+      "volumenSfx": 0.2
+    },
+    {
+      "tipo": "broll",
+      "archivo": "recursos/botas-detalle.mp4",
+      "desde": {
+        "palabra": "también",
+        "n": 1,
+        "offsetMs": -60
+      },
+      "hasta": {
+        "palabra": "así",
+        "n": 1,
+        "offsetMs": -100
+      },
+      "zoom": 1.06,
+      "sfx": "corte-broll",
+      "volumenSfx": 0.2
+    },
+    {
+      "tipo": "broll",
+      "archivo": "recursos/botas-cierres.mp4",
+      "desde": {
+        "palabra": "sumar",
+        "n": 1,
+        "offsetMs": -60
+      },
+      "hasta": {
+        "palabra": "clickeá",
+        "n": 1,
+        "offsetMs": -100
+      },
+      "zoom": 1.05,
+      "sfx": "corte-broll",
+      "volumenSfx": 0.2
+    },
+    {
+      "tipo": "broll",
+      "archivo": "recursos/botas-cierre.mp4",
+      "desde": {
+        "palabra": "clickeá",
+        "n": 1,
+        "offsetMs": -100
+      },
+      "hasta": "fin",
+      "zoom": 1.02,
+      "sfx": "corte-broll",
+      "volumenSfx": 0.25
+    }
+  ],
+  "musica": {
+    "_comentario": "ANBR - Quantum (libre/biblioteca, dinamica 4.4 dB): cama ambiental ~18 dB bajo la voz. El MP4 final out/botas-elevate-musica.mp4 se mezclo con ffmpeg (sidechain), no con render de Remotion.",
+    "archivo": "recursos/musica-068.m4a",
+    "desde": {
+      "palabra": "terminar",
+      "n": 1
+    },
+    "inicioS": 4,
+    "volumen": 0.17,
+    "bajoVoz": 0.7,
+    "fadeInMs": 600,
+    "fadeOutMs": 1200
+  }
+}

@@ -1,0 +1,588 @@
+{
+  "_comentario": "v1 (2026-09-28): formato ganador. Voz de Lucas subida +11 dB (la grabación está 11 dB más baja que empieza-a-romperse) para que valgan los volúmenes de SFX calibrados. Escenas solas alternando blanco/negro con las cifras literales; b-roll 213 (sin usar); música Echo Sax End ganador desde el drop de 38.7 s, sin sub, ~20 dB bajo la voz.",
+  "durationSeconds": 31.862,
+  "subtitulos": {
+    "fuente": "satoshi",
+    "acentos": [
+      "whatsapp",
+      "agente"
+    ]
+  },
+  "pausas": [
+    {
+      "_comentario": "Negro del hook en el corte de toma de video-jc (3.067 s): fin de 'cierra' 2.86 + 197 ms.",
+      "tras": {
+        "palabra": "cierra",
+        "n": 2,
+        "fin": true,
+        "offsetMs": 197
+      },
+      "segundos": 0.9
+    },
+    {
+      "_comentario": "RESPIROS: sostienen el último cuadro mientras la escena termina de leerse.",
+      "tras": {
+        "palabra": "cerrado",
+        "fin": true,
+        "offsetMs": 40
+      },
+      "segundos": 0.5,
+      "modo": "congelar"
+    },
+    {
+      "tras": {
+        "palabra": "horario",
+        "fin": true,
+        "offsetMs": 40
+      },
+      "segundos": 0.4,
+      "modo": "congelar"
+    },
+    {
+      "tras": {
+        "palabra": "contesta",
+        "fin": true,
+        "offsetMs": 40
+      },
+      "segundos": 0.5,
+      "modo": "congelar"
+    },
+    {
+      "_comentario": "Al final: 1 s para que el CTA termine (respuesta y chip).",
+      "tras": {
+        "palabra": "agente",
+        "n": 2,
+        "fin": true,
+        "offsetMs": 200
+      },
+      "segundos": 1,
+      "modo": "congelar"
+    }
+  ],
+  "musica": {
+    "_comentario": "Echo Sax End ganador (musica-022) nivelada desde el drop de 38.7 s, sub -9 dB. Entra cuando vuelve la imagen.",
+    "archivo": "recursos/musica-022-suave.m4a",
+    "desde": {
+      "palabra": "medí",
+      "offsetMs": -273
+    },
+    "inicioS": 0,
+    "volumen": 0.084,
+    "bajoVoz": 0.7,
+    "fadeInMs": 40,
+    "fadeOutMs": 1200
+  },
+  "zooms": [
+    {
+      "_comentario": "HOOK: 'El WhatsApp no cierra' 1.0 -> 1.4 (selfie cerrado: la cara ya ocupa el 47 % del ancho, 1.4 es retrato).",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "el",
+        "n": 1
+      },
+      "fin": {
+        "palabra": "cierra",
+        "n": 2,
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 1.4
+    },
+    {
+      "_comentario": "Retrato sostenido dentro del negro hasta que vuelve la imagen.",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "cierra",
+        "n": 2,
+        "fin": true
+      },
+      "fin": {
+        "palabra": "medí",
+        "offsetMs": -273
+      },
+      "escalaInicial": 1.4,
+      "escala": 1.4
+    },
+    {
+      "_comentario": "VUELTA DEL NEGRO: 'Medí las consultas...' abre desde el retrato.",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "medí",
+        "offsetMs": -273
+      },
+      "fin": {
+        "palabra": "medí",
+        "offsetMs": 427
+      },
+      "escalaInicial": 1.4,
+      "escala": 1,
+      "curva": "salida"
+    },
+    {
+      "_comentario": "Deriva hasta que la escena de los 700 mensajes queda opaca.",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "medí",
+        "offsetMs": 427
+      },
+      "fin": {
+        "palabra": "en",
+        "offsetMs": 300
+      },
+      "escalaInicial": 1,
+      "escala": 1.06
+    },
+    {
+      "_comentario": "'Y no eran solamente consultas': la cara vuelve al salir el b-roll y sube hasta la escena de las urgencias.",
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "y"
+      },
+      "fin": {
+        "palabra": "consultas",
+        "n": 2,
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 1.35
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "consultas",
+        "n": 2,
+        "fin": true
+      },
+      "fin": {
+        "palabra": "de",
+        "n": 6,
+        "offsetMs": 300
+      },
+      "escalaInicial": 1.35,
+      "escala": 1.36
+    }
+  ],
+  "sfx": [
+    {
+      "nombre": "riser",
+      "palabra": "cierra",
+      "n": 2,
+      "fin": true,
+      "corte": {
+        "palabra": "cierra",
+        "n": 2,
+        "fin": true,
+        "offsetMs": 40
+      },
+      "volumen": 0.07
+    },
+    {
+      "_comentario": "Boom en el cuadro en que entra el negro (el corte de toma).",
+      "nombre": "boom-negro",
+      "palabra": "cierra",
+      "n": 2,
+      "fin": true,
+      "offsetMs": 297,
+      "volumen": 0.3
+    },
+    {
+      "archivo": "piezas/consultorio-cierra/cola-cierra.wav",
+      "palabra": "cierra",
+      "n": 2,
+      "offsetMs": -180,
+      "volumen": 1,
+      "_comentario": "Eco de 'cierra' (suena 2.52-2.98; words.json lo pone en 2.70)."
+    },
+    {
+      "_comentario": "Remate de 'uno de cada tres... estaba cerrado'.",
+      "nombre": "remate-b",
+      "palabra": "cerrado",
+      "fin": true,
+      "offsetMs": 90,
+      "volumen": 0.26
+    },
+    {
+      "_comentario": "Remate de '5 cayeron fuera de horario'.",
+      "nombre": "remate",
+      "palabra": "horario",
+      "fin": true,
+      "offsetMs": 90,
+      "volumen": 0.2
+    },
+    {
+      "_comentario": "Remate de la tesis 'sino quién les contesta'.",
+      "nombre": "remate",
+      "palabra": "contesta",
+      "fin": true,
+      "offsetMs": 90,
+      "volumen": 0.2
+    }
+  ],
+  "overlays": [
+    {
+      "_comentario": "HOOK: llave antigua 3D (el consultorio que se cierra) en 'Tu consultorio cierra a las siete'.",
+      "tipo": "icono",
+      "modelo": "recursos/objeto-3d-010.glb",
+      "en": {
+        "palabra": "consultorio",
+        "n": 1,
+        "offsetMs": -100
+      },
+      "duracionMs": 1300,
+      "tamano": 600,
+      "centroY": 70,
+      "volumenSfx": 0.2
+    },
+    {
+      "_comentario": "HOOK: logo de WhatsApp en 'El WhatsApp no cierra' (se va antes del negro).",
+      "tipo": "icono",
+      "marca": "whatsapp",
+      "en": {
+        "palabra": "whatsapp",
+        "offsetMs": -100
+      },
+      "duracionMs": 850,
+      "tamano": 420,
+      "centroY": 70,
+      "volumenSfx": 0.2
+    },
+    {
+      "_comentario": "ESCENA BLANCA: 12 días, más de 700 mensajes (literal).",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "blanco",
+      "pip": "ninguno",
+      "gananciaSfx": 2.7,
+      "desde": {
+        "palabra": "en",
+        "offsetMs": -200
+      },
+      "hasta": {
+        "palabra": "uno",
+        "offsetMs": 50
+      },
+      "cues": {
+        "dias": {
+          "palabra": "días"
+        },
+        "setecientos": {
+          "palabra": "700"
+        },
+        "pacientes": {
+          "palabra": "pacientes"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "en 12 días entraron más de",
+              "estilo": "serif",
+              "cue": "dias",
+              "tamano": 74
+            }
+          ],
+          [
+            {
+              "texto": "700",
+              "estilo": "sans",
+              "cue": "setecientos",
+              "tamano": 260
+            }
+          ],
+          [
+            {
+              "texto": "mensajes de pacientes.",
+              "estilo": "serif",
+              "cue": "pacientes",
+              "tamano": 84
+            }
+          ]
+        ],
+        "objeto": {
+          "marca": "whatsapp",
+          "cue": "dias",
+          "lado": 460,
+          "y": 480
+        }
+      }
+    },
+    {
+      "_comentario": "ESCENA NEGRA: uno de cada tres, con el consultorio cerrado (literal).",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "negro",
+      "pip": "ninguno",
+      "gananciaSfx": 2.7,
+      "desde": {
+        "palabra": "uno",
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "a",
+        "n": 2,
+        "offsetMs": 100
+      },
+      "cues": {
+        "uno": {
+          "palabra": "uno"
+        },
+        "tres": {
+          "palabra": "tres"
+        },
+        "cuando": {
+          "palabra": "cuando",
+          "n": 1
+        },
+        "cerrado": {
+          "palabra": "cerrado"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "uno de cada",
+              "estilo": "serif",
+              "cue": "uno",
+              "tamano": 90
+            },
+            {
+              "texto": "tres",
+              "estilo": "sans",
+              "cue": "tres",
+              "tamano": 200
+            }
+          ],
+          [
+            {
+              "texto": "llegaron cuando el consultorio estaba",
+              "estilo": "serif",
+              "cue": "cuando",
+              "tamano": 62
+            }
+          ],
+          [
+            {
+              "texto": "cerrado.",
+              "estilo": "sans",
+              "cue": "cerrado",
+              "tamano": 150
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "_comentario": "B-ROLL 'A la noche, temprano o el fin de semana': living en penumbra, se prende una lámpara (213, sin usar).",
+      "tipo": "broll",
+      "archivo": "recursos/broll-213.mp4",
+      "inicioS": 2.8,
+      "desde": {
+        "palabra": "a",
+        "n": 2
+      },
+      "hasta": {
+        "palabra": "y"
+      },
+      "sfx": "corte-broll",
+      "volumenSfx": 0.3
+    },
+    {
+      "_comentario": "ESCENA BLANCA: de las 7 urgencias, 5 fuera de horario (literal).",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "blanco",
+      "pip": "ninguno",
+      "gananciaSfx": 2.7,
+      "desde": {
+        "palabra": "de",
+        "n": 6,
+        "offsetMs": -200
+      },
+      "hasta": {
+        "palabra": "así",
+        "offsetMs": 50
+      },
+      "cues": {
+        "urgencias": {
+          "palabra": "urgencias"
+        },
+        "cinco": {
+          "palabra": "5"
+        },
+        "fuera": {
+          "palabra": "fuera"
+        },
+        "horario": {
+          "palabra": "horario"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "de las 7",
+              "estilo": "serif",
+              "cue": "urgencias",
+              "tamano": 90
+            },
+            {
+              "texto": "urgencias,",
+              "estilo": "sans",
+              "cue": "urgencias",
+              "tamano": 120
+            }
+          ],
+          [
+            {
+              "texto": "5",
+              "estilo": "sans",
+              "cue": "cinco",
+              "tamano": 260
+            }
+          ],
+          [
+            {
+              "texto": "cayeron fuera de",
+              "estilo": "serif",
+              "cue": "fuera",
+              "tamano": 80
+            },
+            {
+              "texto": "horario.",
+              "estilo": "sans",
+              "cue": "horario",
+              "tamano": 120
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "_comentario": "ESCENA NEGRA: la tesis (literal).",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "negro",
+      "pip": "ninguno",
+      "gananciaSfx": 2.7,
+      "desde": {
+        "palabra": "así",
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "si",
+        "n": 2,
+        "offsetMs": 50
+      },
+      "cues": {
+        "pregunta": {
+          "palabra": "pregunta"
+        },
+        "cerras": {
+          "palabra": "cerrás"
+        },
+        "sino": {
+          "palabra": "sino"
+        },
+        "quien": {
+          "palabra": "quién"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "la pregunta no es si te escriben",
+              "estilo": "serif",
+              "cue": "pregunta",
+              "tamano": 66
+            }
+          ],
+          [
+            {
+              "texto": "cuando",
+              "estilo": "serif",
+              "cue": "cerras",
+              "tamano": 80
+            },
+            {
+              "texto": "cerrás,",
+              "estilo": "sans",
+              "cue": "cerras",
+              "tamano": 120
+            }
+          ],
+          [
+            {
+              "texto": "sino",
+              "estilo": "serif",
+              "cue": "sino",
+              "tamano": 90
+            }
+          ],
+          [
+            {
+              "texto": "quién les contesta.",
+              "estilo": "sans",
+              "cue": "quien",
+              "tamano": 116
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "_comentario": "CTA: 'Si tenés un consultorio, comentá AGENTE'. Respuesta y chip: los genéricos del mecanismo de comentario.",
+      "tipo": "escena",
+      "escena": "cta",
+      "tema": "blanco",
+      "pip": "ninguno",
+      "gananciaSfx": 2.7,
+      "desde": {
+        "palabra": "si",
+        "n": 2,
+        "offsetMs": -150
+      },
+      "hasta": "fin",
+      "cues": {
+        "ver": {
+          "palabra": "si",
+          "n": 2
+        },
+        "comentar": {
+          "palabra": "comentá"
+        },
+        "palabra": {
+          "palabra": "agente",
+          "n": 2,
+          "fin": true
+        },
+        "respuesta": {
+          "palabra": "agente",
+          "n": 2,
+          "fin": true,
+          "offsetMs": 350
+        },
+        "privado": {
+          "palabra": "agente",
+          "n": 2,
+          "fin": true,
+          "offsetMs": 750
+        }
+      },
+      "datos": {
+        "cuenta": "nexorasistem.ar",
+        "usuario": "tu_consultorio",
+        "palabra": "AGENTE",
+        "respuesta": "¡Te lo enviamos por privado!",
+        "enviado": "Enviado por privado",
+        "verbo": "comentá",
+        "gancho": {
+          "serif": "si tenés un",
+          "sans": "consultorio"
+        }
+      }
+    }
+  ]
+}

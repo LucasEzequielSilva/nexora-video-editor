@@ -1,0 +1,1024 @@
+{
+  "durationSeconds": 86.433,
+  "subtitulos": {
+    "fuente": "satoshi",
+    "acentos": [
+      "agente",
+      "conversaciones",
+      "beneficio"
+    ],
+    "gradiente": "verde"
+  },
+  "pausas": [
+    {
+      "_comentario": "Negro del hook: cae en la unión del recorte de silencio 3.51-3.67 (corte de toma 3.667): 'negocio' 3.28 + 230 ms.",
+      "tras": {
+        "palabra": "negocio",
+        "n": 1,
+        "fin": true,
+        "offsetMs": 377
+      },
+      "segundos": 0.9,
+      "offsetMs": 230
+    },
+    {
+      "_comentario": "RESPIROS al cierre de cada rubro, justo antes del corte de toma (en silencio).",
+      "tras": {
+        "palabra": "turnos",
+        "fin": true,
+        "offsetMs": 300
+      },
+      "segundos": 0.4,
+      "modo": "congelar"
+    },
+    {
+      "tras": {
+        "palabra": "hablando",
+        "fin": true,
+        "offsetMs": 600
+      },
+      "segundos": 0.4,
+      "modo": "congelar"
+    },
+    {
+      "tras": {
+        "palabra": "frecuentes",
+        "fin": true,
+        "offsetMs": 450
+      },
+      "segundos": 0.4,
+      "modo": "congelar"
+    },
+    {
+      "tras": {
+        "palabra": "correcta",
+        "fin": true,
+        "offsetMs": 300
+      },
+      "segundos": 0.4,
+      "modo": "congelar"
+    },
+    {
+      "_comentario": "'directamente' suena hasta ~61.4 (whisper lo corta en 60.74).",
+      "tras": {
+        "palabra": "directamente",
+        "fin": true,
+        "offsetMs": 1000
+      },
+      "segundos": 0.4,
+      "modo": "congelar"
+    },
+    {
+      "tras": {
+        "palabra": "compra",
+        "fin": true,
+        "offsetMs": 500
+      },
+      "segundos": 0.4,
+      "modo": "congelar"
+    },
+    {
+      "tras": {
+        "palabra": "falta",
+        "fin": true,
+        "offsetMs": 450
+      },
+      "segundos": 0.4,
+      "modo": "congelar"
+    },
+    {
+      "_comentario": "Al final: 1 s para que el CTA termine.",
+      "tras": {
+        "palabra": "redituable",
+        "fin": true,
+        "offsetMs": 200
+      },
+      "segundos": 1,
+      "modo": "congelar"
+    }
+  ],
+  "zooms": [
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "tu",
+        "n": 1
+      },
+      "fin": {
+        "palabra": "negocio",
+        "n": 1,
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 1.4,
+      "_comentario": "HOOK hasta retrato (1.4: la cara ocupa el 44 %)."
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "negocio",
+        "n": 1,
+        "fin": true
+      },
+      "fin": {
+        "palabra": "en",
+        "n": 2,
+        "offsetMs": 600
+      },
+      "escalaInicial": 1.4,
+      "escala": 1.4,
+      "_comentario": "Retrato dentro del negro; al volver entra la escena."
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "y",
+        "n": 2
+      },
+      "fin": {
+        "palabra": "hablando",
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 1.45,
+      "_comentario": "'recordar las conversaciones... con quién está hablando'."
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "hablando",
+        "fin": true
+      },
+      "fin": {
+        "palabra": "en",
+        "n": 5,
+        "offsetMs": 300
+      },
+      "escalaInicial": 1.45,
+      "escala": 1.47
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "el",
+        "n": 2
+      },
+      "fin": {
+        "palabra": "consultas",
+        "n": 4,
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 1.45,
+      "_comentario": "'El beneficio no es solamente decir tengo una IA en el negocio'."
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "consultas",
+        "n": 4,
+        "fin": true
+      },
+      "fin": {
+        "palabra": "la",
+        "n": 4,
+        "offsetMs": 600
+      },
+      "escalaInicial": 1.45,
+      "escala": 1.47
+    }
+  ],
+  "sfx": [
+    {
+      "nombre": "riser",
+      "palabra": "negocio",
+      "n": 1,
+      "fin": true,
+      "corte": {
+        "palabra": "negocio",
+        "n": 1,
+        "fin": true,
+        "offsetMs": 40
+      },
+      "volumen": 0.07
+    },
+    {
+      "_comentario": "Boom en el cuadro en que entra el negro (3.51).",
+      "nombre": "boom-negro",
+      "palabra": "negocio",
+      "n": 1,
+      "fin": true,
+      "offsetMs": 370,
+      "volumen": 0.3
+    },
+    {
+      "_comentario": "Eco de 'negocio' (suena 2.84-3.40).",
+      "archivo": "piezas/beneficios-agente/cola-negocio.wav",
+      "palabra": "negocio",
+      "n": 1,
+      "volumen": 1
+    },
+    {
+      "_comentario": "Remate de 'con quién está hablando'.",
+      "nombre": "remate-b",
+      "palabra": "hablando",
+      "fin": true,
+      "offsetMs": 90,
+      "volumen": 0.26
+    },
+    {
+      "_comentario": "Remate de 'y que responda a las consultas'.",
+      "nombre": "remate",
+      "palabra": "consultas",
+      "n": 4,
+      "fin": true,
+      "offsetMs": 90,
+      "volumen": 0.2
+    }
+  ],
+  "overlays": [
+    {
+      "_comentario": "HOOK: logo de WhatsApp en 'agente conversacional'.",
+      "tipo": "icono",
+      "marca": "whatsapp",
+      "en": {
+        "palabra": "agente",
+        "n": 1,
+        "offsetMs": -100
+      },
+      "duracionMs": 1500,
+      "tamano": 420,
+      "centroY": 70,
+      "volumenSfx": 0.2
+    },
+    {
+      "_comentario": "CONSULTORIO 1/2 (blanco).",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "blanco",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "en",
+        "n": 2,
+        "offsetMs": 40
+      },
+      "hasta": {
+        "palabra": "responder",
+        "n": 1,
+        "offsetMs": -100
+      },
+      "cues": {
+        "en": {
+          "palabra": "en",
+          "n": 2,
+          "offsetMs": 40
+        },
+        "consultorio": {
+          "palabra": "consultorio"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "en un",
+              "estilo": "serif",
+              "cue": "en",
+              "tamano": 80
+            }
+          ],
+          [
+            {
+              "texto": "consultorio",
+              "estilo": "sans",
+              "cue": "consultorio",
+              "tamano": 160,
+              "gradiente": "verde"
+            }
+          ]
+        ],
+        "objeto": {
+          "marca": "googlecalendar",
+          "cue": "en",
+          "lado": 460,
+          "y": 600
+        }
+      }
+    },
+    {
+      "_comentario": "CONSULTORIO 2/2 (negro): el agente en el chat real de Raquel.",
+      "tipo": "escena",
+      "escena": "celular",
+      "tema": "negro",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "responder",
+        "n": 1,
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "una",
+        "n": 1,
+        "offsetMs": -250
+      },
+      "cues": {
+        "responder": {
+          "palabra": "responder",
+          "n": 1
+        },
+        "agendar": {
+          "palabra": "agendar",
+          "n": 1
+        },
+        "reprogramar": {
+          "palabra": "reprogramar"
+        },
+        "recordar": {
+          "palabra": "recordar",
+          "n": 1
+        }
+      },
+      "datos": {
+        "bajada": "puede",
+        "clips": [
+          {
+            "archivo": "recursos/raquel/agendamiento.mp4",
+            "desde": 0.5,
+            "cue": "responder",
+            "etiqueta": "responder"
+          },
+          {
+            "archivo": "recursos/raquel/agendamiento.mp4",
+            "desde": 10,
+            "cue": "agendar",
+            "etiqueta": "agendar"
+          },
+          {
+            "archivo": "recursos/raquel/reprogramacion.mp4",
+            "desde": 4,
+            "cue": "reprogramar",
+            "etiqueta": "reprogramar"
+          },
+          {
+            "archivo": "recursos/raquel/recordatorios.mp4",
+            "desde": 2.1,
+            "cue": "recordar",
+            "etiqueta": "recordar"
+          }
+        ]
+      }
+    },
+    {
+      "_comentario": "INMOBILIARIA 1/3 (blanco): llave 3D.",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "blanco",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "una",
+        "n": 1,
+        "offsetMs": -250
+      },
+      "hasta": {
+        "palabra": "entender",
+        "n": 1,
+        "offsetMs": -100
+      },
+      "cues": {
+        "una": {
+          "palabra": "una",
+          "n": 1
+        },
+        "inmobiliaria": {
+          "palabra": "inmobiliaria"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "en una",
+              "estilo": "serif",
+              "cue": "una",
+              "tamano": 80
+            }
+          ],
+          [
+            {
+              "texto": "inmobiliaria",
+              "estilo": "sans",
+              "cue": "inmobiliaria",
+              "tamano": 150,
+              "gradiente": "verde"
+            }
+          ]
+        ],
+        "objeto": {
+          "archivo": "recursos/objeto-3d-011.glb",
+          "cue": "una",
+          "lado": 560,
+          "y": 600
+        }
+      }
+    },
+    {
+      "_comentario": "INMOBILIARIA 2/3: b-roll de un living moderno (146) en 'qué propiedad buscan, presupuesto, zona'.",
+      "tipo": "broll",
+      "archivo": "recursos/broll-146.mp4",
+      "inicioS": 0.4,
+      "desde": {
+        "palabra": "entender",
+        "n": 1,
+        "offsetMs": -100
+      },
+      "hasta": {
+        "palabra": "derivar",
+        "n": 1,
+        "offsetMs": -100
+      },
+      "sfx": "corte-broll",
+      "volumenSfx": 0.3
+    },
+    {
+      "_comentario": "INMOBILIARIA 3/3 (negro).",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "negro",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "derivar",
+        "n": 1,
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "y",
+        "n": 2,
+        "offsetMs": 300
+      },
+      "cues": {
+        "leads": {
+          "palabra": "leads"
+        },
+        "califican": {
+          "palabra": "califican"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "solamente los leads que",
+              "estilo": "serif",
+              "cue": "leads",
+              "tamano": 70
+            }
+          ],
+          [
+            {
+              "texto": "califican",
+              "estilo": "sans",
+              "cue": "califican",
+              "tamano": 160,
+              "gradiente": "verde"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "_comentario": "Cerebro 3D (la memoria) en 'recordar las conversaciones'.",
+      "tipo": "icono",
+      "modelo": "recursos/objeto-3d-005.glb",
+      "en": {
+        "palabra": "recordar",
+        "n": 2,
+        "offsetMs": -100
+      },
+      "duracionMs": 1500,
+      "tamano": 600,
+      "centroY": 70,
+      "volumenSfx": 0.2
+    },
+    {
+      "_comentario": "RESTAURANTE 1/2: b-roll de platos servidos (332, desde 6.2 s: esquiva la fachada con logo).",
+      "tipo": "broll",
+      "archivo": "recursos/broll-332.mp4",
+      "inicioS": 6.2,
+      "desde": {
+        "palabra": "en",
+        "n": 5,
+        "offsetMs": -100
+      },
+      "hasta": {
+        "palabra": "responder",
+        "n": 2,
+        "offsetMs": -100
+      },
+      "sfx": "corte-broll-b",
+      "volumenSfx": 0.3
+    },
+    {
+      "_comentario": "RESTAURANTE 2/2 (negro).",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "negro",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "responder",
+        "n": 2,
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "en",
+        "n": 6,
+        "offsetMs": -100
+      },
+      "cues": {
+        "horarios": {
+          "palabra": "horarios"
+        },
+        "pedidos": {
+          "palabra": "pedidos"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "horarios, menú,",
+              "estilo": "serif",
+              "cue": "horarios",
+              "tamano": 76
+            }
+          ],
+          [
+            {
+              "texto": "pedidos",
+              "estilo": "sans",
+              "cue": "pedidos",
+              "tamano": 160,
+              "gradiente": "verde"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "_comentario": "LOGÍSTICA (blanco): los pasos entran uno por uno.",
+      "tipo": "escena",
+      "escena": "proceso",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "en",
+        "n": 6,
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "una",
+        "n": 3,
+        "offsetMs": -250
+      },
+      "cues": {
+        "titulo": {
+          "palabra": "en",
+          "n": 6
+        },
+        "p1": {
+          "palabra": "estado"
+        },
+        "p2": {
+          "palabra": "reclamos"
+        },
+        "p3": {
+          "palabra": "incidencias"
+        },
+        "p4": {
+          "palabra": "área"
+        }
+      },
+      "datos": {
+        "titulo": {
+          "chico": "en una empresa de",
+          "grande": "logística"
+        },
+        "pasos": [
+          {
+            "nombre": "Estado del envío",
+            "cue": "p1"
+          },
+          {
+            "nombre": "Reclamos",
+            "cue": "p2"
+          },
+          {
+            "nombre": "Incidencias",
+            "cue": "p3"
+          },
+          {
+            "nombre": "Área correcta",
+            "cue": "p4"
+          }
+        ]
+      }
+    },
+    {
+      "_comentario": "ESTÉTICA 1/2 (negro).",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "negro",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "una",
+        "n": 3,
+        "offsetMs": -250
+      },
+      "hasta": {
+        "palabra": "explicar",
+        "offsetMs": -100
+      },
+      "cues": {
+        "una": {
+          "palabra": "una",
+          "n": 3
+        },
+        "estetica": {
+          "palabra": "estética"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "en una",
+              "estilo": "serif",
+              "cue": "una",
+              "tamano": 80
+            }
+          ],
+          [
+            {
+              "texto": "estética",
+              "estilo": "sans",
+              "cue": "estetica",
+              "tamano": 160,
+              "gradiente": "verde"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "_comentario": "ESTÉTICA 2/2 (blanco): tratamientos, precios y agenda en el chat real.",
+      "tipo": "escena",
+      "escena": "celular",
+      "tema": "blanco",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "explicar",
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "en",
+        "n": 7,
+        "offsetMs": -150
+      },
+      "cues": {
+        "explicar": {
+          "palabra": "explicar"
+        },
+        "precios": {
+          "palabra": "precios"
+        },
+        "agendar": {
+          "palabra": "agendar",
+          "n": 2
+        }
+      },
+      "datos": {
+        "bajada": "puede",
+        "clips": [
+          {
+            "archivo": "recursos/raquel/confirmaciones.mp4",
+            "desde": 9,
+            "cue": "explicar",
+            "etiqueta": "tratamientos"
+          },
+          {
+            "archivo": "recursos/raquel/confirmaciones.mp4",
+            "desde": 9.6,
+            "cue": "precios",
+            "etiqueta": "precios"
+          },
+          {
+            "archivo": "recursos/raquel/agendamiento.mp4",
+            "desde": 10,
+            "cue": "agendar",
+            "etiqueta": "agendar"
+          }
+        ]
+      }
+    },
+    {
+      "_comentario": "E-COMMERCE 1/2 (negro).",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "negro",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "en",
+        "n": 7,
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "puede",
+        "n": 6,
+        "offsetMs": -100
+      },
+      "cues": {
+        "en": {
+          "palabra": "en",
+          "n": 7
+        },
+        "ecommerce": {
+          "palabra": "e-commerce"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "en un",
+              "estilo": "serif",
+              "cue": "en",
+              "tamano": 80
+            }
+          ],
+          [
+            {
+              "texto": "e-commerce",
+              "estilo": "sans",
+              "cue": "ecommerce",
+              "tamano": 150,
+              "gradiente": "verde"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "_comentario": "E-COMMERCE 2/2 (blanco): los pasos entran uno por uno.",
+      "tipo": "escena",
+      "escena": "proceso",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "puede",
+        "n": 6,
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "el",
+        "n": 2,
+        "offsetMs": -150
+      },
+      "cues": {
+        "titulo": {
+          "palabra": "puede",
+          "n": 6
+        },
+        "p1": {
+          "palabra": "productos"
+        },
+        "p2": {
+          "palabra": "stocks"
+        },
+        "p3": {
+          "palabra": "envíos"
+        },
+        "p4": {
+          "palabra": "cambios"
+        }
+      },
+      "datos": {
+        "titulo": {
+          "chico": "puede responder",
+          "grande": "dudas"
+        },
+        "pasos": [
+          {
+            "nombre": "Productos",
+            "cue": "p1"
+          },
+          {
+            "nombre": "Stock",
+            "cue": "p2"
+          },
+          {
+            "nombre": "Envíos",
+            "cue": "p3"
+          },
+          {
+            "nombre": "Cambios",
+            "cue": "p4"
+          }
+        ],
+        "estadoFinal": "hasta la compra"
+      }
+    },
+    {
+      "_comentario": "TESIS 1/3 (negro).",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "negro",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "la",
+        "n": 4,
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "se",
+        "n": 1,
+        "offsetMs": -100
+      },
+      "cues": {
+        "cada": {
+          "palabra": "cada"
+        },
+        "flujo": {
+          "palabra": "flujo"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "que cada consulta llegue al",
+              "estilo": "serif",
+              "cue": "cada",
+              "tamano": 64
+            }
+          ],
+          [
+            {
+              "texto": "flujo correcto",
+              "estilo": "sans",
+              "cue": "flujo",
+              "tamano": 130,
+              "gradiente": "verde"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "_comentario": "TESIS 2/3 (blanco): 'se ejecute una acción' en el chat real (confirma).",
+      "tipo": "escena",
+      "escena": "celular",
+      "tema": "blanco",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "se",
+        "n": 1,
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "y",
+        "n": 7,
+        "offsetMs": -100
+      },
+      "cues": {
+        "accion": {
+          "palabra": "se",
+          "n": 1
+        }
+      },
+      "datos": {
+        "bajada": "se ejecute una",
+        "clips": [
+          {
+            "archivo": "recursos/raquel/confirmaciones.mp4",
+            "desde": 6.5,
+            "cue": "accion",
+            "etiqueta": "acción"
+          }
+        ]
+      }
+    },
+    {
+      "_comentario": "TESIS 3/3 (negro).",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "negro",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "y",
+        "n": 7,
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "comentá",
+        "offsetMs": -300
+      },
+      "cues": {
+        "equipo": {
+          "palabra": "equipo"
+        },
+        "falta": {
+          "palabra": "hace"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "y tu equipo solamente intervenga cuando",
+              "estilo": "serif",
+              "cue": "equipo",
+              "tamano": 58
+            }
+          ],
+          [
+            {
+              "texto": "hace falta.",
+              "estilo": "sans",
+              "cue": "falta",
+              "tamano": 150,
+              "gradiente": "verde"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "_comentario": "CTA: 'Comentá la palabra IA y vemos cómo podemos implementar IA en tu negocio'.",
+      "tipo": "escena",
+      "escena": "cta",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "comentá",
+        "offsetMs": -350
+      },
+      "hasta": "fin",
+      "cues": {
+        "ver": {
+          "palabra": "comentá",
+          "offsetMs": -100
+        },
+        "comentar": {
+          "palabra": "comentá"
+        },
+        "palabra": {
+          "palabra": "ia",
+          "n": 2,
+          "fin": true
+        },
+        "respuesta": {
+          "palabra": "vemos"
+        },
+        "privado": {
+          "palabra": "redituable",
+          "fin": true,
+          "offsetMs": 300
+        }
+      },
+      "datos": {
+        "cuenta": "nexorasistem.ar",
+        "usuario": "tu_negocio",
+        "palabra": "IA",
+        "respuesta": "¡Vemos cómo implementar IA en tu negocio!",
+        "enviado": "Enviado por privado",
+        "verbo": "comentá",
+        "bajar": 320
+      }
+    }
+  ],
+  "_comentario": "v1 (2026-09-28): formato ganador con las notas de Lucas del día: silencios finos (scripts/silencios.mjs), animaciones que rotan cada 2-4 s (nunca una sola escena larga), grabaciones reales del agente de Raquel en el celular, palabras clave en degradé verde. Música 'if it's real, then i'll stay' (musica-042) nivelada y sin sub.",
+  "musica": {
+    "_comentario": "if it's real, then i'll stay (musica-042), nivelada desde 10 s, sub -9 dB; ~20 dB bajo la voz. v1b: 0.172 -> 0.115 (medido en el render: sola quedaba 13.5 dB bajo la voz; objetivo ~17).",
+    "archivo": "recursos/musica-042-suave.m4a",
+    "desde": {
+      "palabra": "en",
+      "n": 2,
+      "offsetMs": 40
+    },
+    "inicioS": 0,
+    "volumen": 0.115,
+    "bajoVoz": 0.7,
+    "fadeInMs": 40,
+    "fadeOutMs": 1200
+  }
+}

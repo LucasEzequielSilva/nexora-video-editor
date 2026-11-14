@@ -1,0 +1,733 @@
+{
+ "language": "es",
+ "duration": 40,
+ "segments": [
+  {
+   "start": 0.55,
+   "end": 39.27,
+   "text": " Terminar de entrenar. Y sentir las piernas completamente destruidas. Mirá esto. Estas son las botas de Elevate. Unas botas de compresión. Funcionan con un sistema de compresión de aire que va presionando distintas zonas de tus piernas. Para ayudarte a aliviar esa sensación de cansancio. Lo mejor de todo es que lo podés usar desde tu casa. Mientras mirás una serie o simplemente descansando. Tiene diferentes niveles de intensidad. Tres modos de funcionamiento y sesiones de hasta 30 minutos. Y no solamente es para deportistas. Si pasás muchas horas parado o terminás el día con las piernas pesadas. También puede servirte. Así que si querés. Sumar una forma práctica de recuperación para tus piernas. Clickeá en el enlace acá abajo.",
+   "words": [
+    {
+     "start": 0.55,
+     "end": 0.73,
+     "word": " Terminar",
+     "p": 0.618
+    },
+    {
+     "start": 0.73,
+     "end": 0.81,
+     "word": " de",
+     "p": 0.999
+    },
+    {
+     "start": 0.81,
+     "end": 1.21,
+     "word": " entrenar.",
+     "p": 0.998
+    },
+    {
+     "start": 1.76,
+     "end": 1.82,
+     "word": " Y",
+     "p": 0.348
+    },
+    {
+     "start": 1.8,
+     "end": 2.02,
+     "word": " sentir",
+     "p": 0.912
+    },
+    {
+     "start": 2.02,
+     "end": 2.12,
+     "word": " las",
+     "p": 0.996
+    },
+    {
+     "start": 2.28,
+     "end": 2.42,
+     "word": " piernas",
+     "p": 0.988
+    },
+    {
+     "start": 2.62,
+     "end": 2.82,
+     "word": " completamente",
+     "p": 0.992
+    },
+    {
+     "start": 2.82,
+     "end": 3.38,
+     "word": " destruidas.",
+     "p": 0.983
+    },
+    {
+     "start": 4.17,
+     "end": 4.29,
+     "word": " Mirá",
+     "p": 0.653
+    },
+    {
+     "start": 4.29,
+     "end": 4.35,
+     "word": " esto.",
+     "p": 0.998
+    },
+    {
+     "start": 5.01,
+     "end": 5.13,
+     "word": " Estas",
+     "p": 0.964
+    },
+    {
+     "start": 5.13,
+     "end": 5.23,
+     "word": " son",
+     "p": 0.999
+    },
+    {
+     "start": 5.27,
+     "end": 5.35,
+     "word": " las",
+     "p": 0.998
+    },
+    {
+     "start": 5.35,
+     "end": 5.63,
+     "word": " botas",
+     "p": 0.977
+    },
+    {
+     "start": 5.63,
+     "end": 5.69,
+     "word": " de",
+     "p": 0.871
+    },
+    {
+     "start": 5.63,
+     "end": 5.87,
+     "word": " Elevate.",
+     "p": 0.004
+    },
+    {
+     "start": 6.85,
+     "end": 6.95,
+     "word": " Unas",
+     "p": 0.881
+    },
+    {
+     "start": 6.95,
+     "end": 7.23,
+     "word": " botas",
+     "p": 0.997
+    },
+    {
+     "start": 7.23,
+     "end": 7.29,
+     "word": " de",
+     "p": 1
+    },
+    {
+     "start": 7.25,
+     "end": 7.65,
+     "word": " compresión.",
+     "p": 0.999
+    },
+    {
+     "start": 8.03,
+     "end": 8.31,
+     "word": " Funcionan",
+     "p": 0.891
+    },
+    {
+     "start": 8.31,
+     "end": 8.43,
+     "word": " con",
+     "p": 0.619
+    },
+    {
+     "start": 8.43,
+     "end": 8.53,
+     "word": " un",
+     "p": 0.998
+    },
+    {
+     "start": 8.53,
+     "end": 8.69,
+     "word": " sistema",
+     "p": 1
+    },
+    {
+     "start": 8.83,
+     "end": 8.95,
+     "word": " de",
+     "p": 1
+    },
+    {
+     "start": 8.95,
+     "end": 9.45,
+     "word": " compresión",
+     "p": 1
+    },
+    {
+     "start": 9.45,
+     "end": 9.51,
+     "word": " de",
+     "p": 0.995
+    },
+    {
+     "start": 9.51,
+     "end": 9.69,
+     "word": " aire",
+     "p": 1
+    },
+    {
+     "start": 9.69,
+     "end": 9.91,
+     "word": " que",
+     "p": 0.972
+    },
+    {
+     "start": 10.07,
+     "end": 10.13,
+     "word": " va",
+     "p": 1
+    },
+    {
+     "start": 10.13,
+     "end": 10.63,
+     "word": " presionando",
+     "p": 1
+    },
+    {
+     "start": 10.63,
+     "end": 11.07,
+     "word": " distintas",
+     "p": 0.997
+    },
+    {
+     "start": 11.23,
+     "end": 11.39,
+     "word": " zonas",
+     "p": 1
+    },
+    {
+     "start": 11.39,
+     "end": 11.49,
+     "word": " de",
+     "p": 1
+    },
+    {
+     "start": 11.49,
+     "end": 11.57,
+     "word": " tus",
+     "p": 0.999
+    },
+    {
+     "start": 11.75,
+     "end": 11.95,
+     "word": " piernas.",
+     "p": 1
+    },
+    {
+     "start": 12.53,
+     "end": 12.59,
+     "word": " Para",
+     "p": 0.404
+    },
+    {
+     "start": 12.55,
+     "end": 12.97,
+     "word": " ayudarte",
+     "p": 1
+    },
+    {
+     "start": 12.97,
+     "end": 13.13,
+     "word": " a",
+     "p": 0.993
+    },
+    {
+     "start": 13.21,
+     "end": 13.53,
+     "word": " aliviar",
+     "p": 0.984
+    },
+    {
+     "start": 13.55,
+     "end": 13.69,
+     "word": " esa",
+     "p": 0.979
+    },
+    {
+     "start": 13.69,
+     "end": 13.81,
+     "word": " sensación",
+     "p": 1
+    },
+    {
+     "start": 14.23,
+     "end": 14.31,
+     "word": " de",
+     "p": 0.991
+    },
+    {
+     "start": 14.53,
+     "end": 14.77,
+     "word": " cansancio.",
+     "p": 0.829
+    },
+    {
+     "start": 15.73,
+     "end": 15.87,
+     "word": " Lo",
+     "p": 0.729
+    },
+    {
+     "start": 16.05,
+     "end": 16.23,
+     "word": " mejor",
+     "p": 0.999
+    },
+    {
+     "start": 16.23,
+     "end": 16.35,
+     "word": " de",
+     "p": 0.994
+    },
+    {
+     "start": 16.35,
+     "end": 16.49,
+     "word": " todo",
+     "p": 0.999
+    },
+    {
+     "start": 16.49,
+     "end": 16.71,
+     "word": " es",
+     "p": 0.942
+    },
+    {
+     "start": 16.71,
+     "end": 16.77,
+     "word": " que",
+     "p": 0.999
+    },
+    {
+     "start": 16.85,
+     "end": 16.91,
+     "word": " lo",
+     "p": 0.952
+    },
+    {
+     "start": 16.91,
+     "end": 17.11,
+     "word": " podés",
+     "p": 0.698
+    },
+    {
+     "start": 17.11,
+     "end": 17.17,
+     "word": " usar",
+     "p": 0.995
+    },
+    {
+     "start": 17.27,
+     "end": 17.39,
+     "word": " desde",
+     "p": 0.994
+    },
+    {
+     "start": 17.39,
+     "end": 17.51,
+     "word": " tu",
+     "p": 0.988
+    },
+    {
+     "start": 17.67,
+     "end": 17.73,
+     "word": " casa.",
+     "p": 0.999
+    },
+    {
+     "start": 18.41,
+     "end": 18.61,
+     "word": " Mientras",
+     "p": 0.604
+    },
+    {
+     "start": 18.61,
+     "end": 18.89,
+     "word": " mirás",
+     "p": 0.988
+    },
+    {
+     "start": 18.89,
+     "end": 18.99,
+     "word": " una",
+     "p": 0.998
+    },
+    {
+     "start": 18.99,
+     "end": 19.17,
+     "word": " serie",
+     "p": 0.999
+    },
+    {
+     "start": 19.27,
+     "end": 19.49,
+     "word": " o",
+     "p": 0.859
+    },
+    {
+     "start": 19.71,
+     "end": 19.83,
+     "word": " simplemente",
+     "p": 0.995
+    },
+    {
+     "start": 19.83,
+     "end": 20.35,
+     "word": " descansando.",
+     "p": 0.987
+    },
+    {
+     "start": 21.59,
+     "end": 21.69,
+     "word": " Tiene",
+     "p": 0.64
+    },
+    {
+     "start": 21.69,
+     "end": 21.87,
+     "word": " diferentes",
+     "p": 0.993
+    },
+    {
+     "start": 22.11,
+     "end": 22.61,
+     "word": " niveles",
+     "p": 0.999
+    },
+    {
+     "start": 22.61,
+     "end": 22.67,
+     "word": " de",
+     "p": 0.995
+    },
+    {
+     "start": 22.67,
+     "end": 23.07,
+     "word": " intensidad.",
+     "p": 0.999
+    },
+    {
+     "start": 23.56,
+     "end": 23.64,
+     "word": " Tres",
+     "p": 0.645
+    },
+    {
+     "start": 23.64,
+     "end": 23.82,
+     "word": " modos",
+     "p": 0.774
+    },
+    {
+     "start": 23.82,
+     "end": 23.88,
+     "word": " de",
+     "p": 0.998
+    },
+    {
+     "start": 23.84,
+     "end": 24.48,
+     "word": " funcionamiento",
+     "p": 1
+    },
+    {
+     "start": 24.48,
+     "end": 24.64,
+     "word": " y",
+     "p": 0.907
+    },
+    {
+     "start": 24.84,
+     "end": 25.04,
+     "word": " sesiones",
+     "p": 0.943
+    },
+    {
+     "start": 25.04,
+     "end": 25.1,
+     "word": " de",
+     "p": 0.994
+    },
+    {
+     "start": 25.04,
+     "end": 25.18,
+     "word": " hasta",
+     "p": 0.998
+    },
+    {
+     "start": 25.22,
+     "end": 25.36,
+     "word": " 30",
+     "p": 0.99
+    },
+    {
+     "start": 25.44,
+     "end": 25.78,
+     "word": " minutos.",
+     "p": 0.998
+    },
+    {
+     "start": 26.79,
+     "end": 26.85,
+     "word": " Y",
+     "p": 0.8
+    },
+    {
+     "start": 26.79,
+     "end": 26.85,
+     "word": " no",
+     "p": 0.999
+    },
+    {
+     "start": 26.83,
+     "end": 27.13,
+     "word": " solamente",
+     "p": 0.993
+    },
+    {
+     "start": 27.13,
+     "end": 27.31,
+     "word": " es",
+     "p": 0.975
+    },
+    {
+     "start": 27.31,
+     "end": 27.39,
+     "word": " para",
+     "p": 1
+    },
+    {
+     "start": 27.39,
+     "end": 27.87,
+     "word": " deportistas.",
+     "p": 0.999
+    },
+    {
+     "start": 27.87,
+     "end": 27.93,
+     "word": " Si",
+     "p": 0.999
+    },
+    {
+     "start": 28.19,
+     "end": 28.25,
+     "word": " pasás",
+     "p": 0.787
+    },
+    {
+     "start": 28.35,
+     "end": 28.53,
+     "word": " muchas",
+     "p": 1
+    },
+    {
+     "start": 28.53,
+     "end": 28.69,
+     "word": " horas",
+     "p": 1
+    },
+    {
+     "start": 29.17,
+     "end": 29.47,
+     "word": " parado",
+     "p": 0.999
+    },
+    {
+     "start": 29.47,
+     "end": 29.61,
+     "word": " o",
+     "p": 0.908
+    },
+    {
+     "start": 29.87,
+     "end": 30.27,
+     "word": " terminás",
+     "p": 0.987
+    },
+    {
+     "start": 30.27,
+     "end": 30.33,
+     "word": " el",
+     "p": 0.998
+    },
+    {
+     "start": 30.37,
+     "end": 30.53,
+     "word": " día",
+     "p": 0.999
+    },
+    {
+     "start": 30.53,
+     "end": 30.65,
+     "word": " con",
+     "p": 1
+    },
+    {
+     "start": 30.73,
+     "end": 30.81,
+     "word": " las",
+     "p": 1
+    },
+    {
+     "start": 30.95,
+     "end": 31.09,
+     "word": " piernas",
+     "p": 1
+    },
+    {
+     "start": 31.39,
+     "end": 31.51,
+     "word": " pesadas.",
+     "p": 0.999
+    },
+    {
+     "start": 31.98,
+     "end": 32.1,
+     "word": " También",
+     "p": 0.465
+    },
+    {
+     "start": 32.1,
+     "end": 32.32,
+     "word": " puede",
+     "p": 0.984
+    },
+    {
+     "start": 32.46,
+     "end": 32.68,
+     "word": " servirte.",
+     "p": 0.98
+    },
+    {
+     "start": 33.4,
+     "end": 33.52,
+     "word": " Así",
+     "p": 0.708
+    },
+    {
+     "start": 33.52,
+     "end": 33.64,
+     "word": " que",
+     "p": 0.999
+    },
+    {
+     "start": 33.7,
+     "end": 33.8,
+     "word": " si",
+     "p": 0.887
+    },
+    {
+     "start": 33.88,
+     "end": 34.16,
+     "word": " querés.",
+     "p": 0.633
+    },
+    {
+     "start": 35,
+     "end": 35.2,
+     "word": " Sumar",
+     "p": 0.579
+    },
+    {
+     "start": 35.3,
+     "end": 35.36,
+     "word": " una",
+     "p": 0.987
+    },
+    {
+     "start": 35.36,
+     "end": 35.62,
+     "word": " forma",
+     "p": 0.998
+    },
+    {
+     "start": 35.92,
+     "end": 36.18,
+     "word": " práctica",
+     "p": 0.981
+    },
+    {
+     "start": 36.22,
+     "end": 36.32,
+     "word": " de",
+     "p": 0.991
+    },
+    {
+     "start": 36.38,
+     "end": 36.58,
+     "word": " recuperación",
+     "p": 0.999
+    },
+    {
+     "start": 36.94,
+     "end": 37.06,
+     "word": " para",
+     "p": 0.981
+    },
+    {
+     "start": 37.06,
+     "end": 37.16,
+     "word": " tus",
+     "p": 0.83
+    },
+    {
+     "start": 37.34,
+     "end": 37.54,
+     "word": " piernas.",
+     "p": 1
+    },
+    {
+     "start": 38.29,
+     "end": 38.47,
+     "word": " Clickeá",
+     "p": 0.66
+    },
+    {
+     "start": 38.49,
+     "end": 38.55,
+     "word": " en",
+     "p": 0.492
+    },
+    {
+     "start": 38.55,
+     "end": 38.69,
+     "word": " el",
+     "p": 0.992
+    },
+    {
+     "start": 38.69,
+     "end": 38.93,
+     "word": " enlace",
+     "p": 1
+    },
+    {
+     "start": 38.99,
+     "end": 39.07,
+     "word": " acá",
+     "p": 0.856
+    },
+    {
+     "start": 39.07,
+     "end": 39.27,
+     "word": " abajo.",
+     "p": 0.997
+    }
+   ]
+  }
+ ]
+}

@@ -1,7 +1,25 @@
 {
   "fuente": "video-jc.mp4",
   "hechoPor": "editor (2026-09-25), con el criterio de Lucas: pieza entregada entera para que él corrija",
-  "nota": "Sin recortes sobre video-jc: las trabas se resolvieron eligiendo tomas en cortes/empieza-a-romperse.json (el comercio arranca en el reinicio de 154.96; la toma 4 corta antes de 'no, a la mía'). La única 'posible traba' de trabas.mjs (45.49-45.81) es la cola de 'falta'.",
+  "nota": "v3 (2026-09-28): Lucas corrigió las tomas en Cut AI. El recorte manual de la v2 quedó obsoleto porque ahora el tramo arranca directamente en la toma correcta.",
   "recortes": [],
-  "descartadas": []
+  "descartadas": [
+    {
+      "desde": 16.1,
+      "hasta": 16.76,
+      "motivo": "traba",
+      "nota": "Lucas (2026-09-27): \"se traba con una marca pe…\". Arranque en falso 'una marca pe' (isla 16.14-16.66) + la pausa hasta el reinicio 'una marca personal' (16.78). Whisper lo había escrito como un solo 'una' de 0.64 s.",
+      "contexto": {
+        "texto": "una marca pe",
+        "antes": "lado,",
+        "despues": "una marca personal",
+        "duracion": 0.66,
+        "rmsDb": -19.5,
+        "bordeAntesDb": -81,
+        "bordeDespuesDb": -57,
+        "esSilencio": false
+      },
+      "descartadaPorque": "Obsoleto tras corregir la toma en Cut AI; aplicado a la v3 cortaría el inicio correcto de 'Una marca personal'."
+    }
+  ]
 }

@@ -1,0 +1,108 @@
+{
+  "base": "D:/moved/Downloads",
+  "cortes": [
+    {
+      "archivo": "IMG_7322.MOV",
+      "desde": 6.64,
+      "hasta": 11.64,
+      "nota": "HOOK: Le armé una aplicación a una marca personal súper pegada en el ámbito financiero (94%). Corta antes de 'y esto es lo que dicen sus usuarios': no hay material de testimonios (Lucas, 2026-09-28: 'mandale')."
+    },
+    {
+      "archivo": "IMG_7322.MOV",
+      "desde": 30.72,
+      "hasta": 34.3,
+      "nota": "Básicamente esto es un SaaS, un software como servicio (76%)"
+    },
+    {
+      "archivo": "IMG_7322.MOV",
+      "desde": 36.82,
+      "hasta": 42.52,
+      "nota": "En vez de venderle a sus clientes una capacitación y un Excel para manejar su negocio (78%)"
+    },
+    {
+      "archivo": "IMG_7322.MOV",
+      "desde": 45.6,
+      "hasta": 54.1,
+      "nota": "Mati les da un sistema que usan todos los días (corta antes del 1er 'para poder manejar')"
+    },
+    {
+      "archivo": "IMG_7322.MOV",
+      "desde": 58.9,
+      "hasta": 66.98,
+      "nota": "para poder manejar su pyme y lo pagan mientras lo usan, mensualmente (reinicio)"
+    },
+    {
+      "archivo": "IMG_7322.MOV",
+      "desde": 75.1,
+      "hasta": 82.84,
+      "nota": "Antes todo esto lo manejaban también, pero con un Excel de 15 hojas (2ª versión; la 1ª decía 'páginas')"
+    },
+    {
+      "archivo": "IMG_7322.MOV",
+      "desde": 85.52,
+      "hasta": 94.9,
+      "nota": "Mi trabajo básicamente fue construir todo esto, pero en un sistema, en un software, en una aplicación web (90%)"
+    },
+    {
+      "archivo": "IMG_7322.MOV",
+      "desde": 97.22,
+      "hasta": 103.14,
+      "nota": "Hoy en día ya lo usan casi 300 personas que vienen de parte de Mati, de sus clientes (82%)"
+    },
+    {
+      "archivo": "IMG_7322.MOV",
+      "desde": 104.46,
+      "hasta": 112.64,
+      "nota": "ya cargaron más de 34.000 productos y registraron casi 3.000 ventas (51%)"
+    },
+    {
+      "archivo": "IMG_7322.MOV",
+      "desde": 128.54,
+      "hasta": 132.72,
+      "nota": "Una de esas empresas es una distribuidora mayorista familiar (2º intento, completo)"
+    },
+    {
+      "archivo": "IMG_7322.MOV",
+      "desde": 139.88,
+      "hasta": 149.7,
+      "nota": "Venían usando tres sistemas distintos y resolviendo todo en un Excel. Y hoy en día lo manejan todo en un mismo lugar"
+    },
+    {
+      "archivo": "IMG_7322.MOV",
+      "desde": 149.84,
+      "hasta": 151.95,
+      "nota": "Hoy en día estamos haciendo integraciones con ARCA"
+    },
+    {
+      "archivo": "IMG_7322.MOV",
+      "desde": 157.3,
+      "hasta": 159.56,
+      "nota": "recibiendo y evaluando feedback (salta 'testeando feedback, recibiendo feedback')"
+    },
+    {
+      "archivo": "IMG_7322.MOV",
+      "desde": 162.3,
+      "hasta": 169.04,
+      "nota": "lo cual nos permite entender cuáles son las necesidades de los usuarios y cómo podemos mejorar todo para que le den más uso"
+    },
+    {
+      "archivo": "IMG_7322.MOV",
+      "desde": 184.9,
+      "hasta": 187.16,
+      "nota": "Y acá está la oportunidad que nadie ve (96%)"
+    },
+    {
+      "archivo": "IMG_7322.MOV",
+      "desde": 220.08,
+      "hasta": 246.54,
+      "nota": "Si tenés una marca personal, una consultora o un método que vive en un Excel, en un Notion, en planillas internas... convertirlo en una aplicación web o mobile, básicamente en un software como servicio (2ª versión, completa)"
+    },
+    {
+      "archivo": "IMG_7322.MOV",
+      "desde": 251.56,
+      "hasta": 257.1,
+      "nota": "CTA: Comentá la palabra SOFT (a confirmar) y te digo cómo lo convertiría en un producto (83%)"
+    }
+  ],
+  "propuesta": "editor 2026-09-28: última versión completa por frase, sin los reinicios. Lucas la ajusta con npm run cortar -- app-marca-personal"
+}

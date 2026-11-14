@@ -1,0 +1,11 @@
+{
+  "pieza": "consultorio-cierra",
+  "fuente": "video-jc.mp4",
+  "palabras": "words.jc.json",
+  "audio": {
+    "pisoDb": -47.181,
+    "vozDb": -31.154,
+    "umbralDb": -40.77
+  },
+  "trabas": []
+}

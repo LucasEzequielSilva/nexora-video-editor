@@ -1,0 +1,1625 @@
+{
+ "language": "es",
+ "duration": 86.848,
+ "segments": [
+  {
+   "start": 0.3,
+   "end": 2.24,
+   "text": " Así se automatiza un consultorio.",
+   "words": [
+    {
+     "start": 0.3,
+     "end": 0.5,
+     "word": " Así",
+     "p": 0.89
+    },
+    {
+     "start": 0.5,
+     "end": 0.66,
+     "word": " se",
+     "p": 0.994
+    },
+    {
+     "start": 0.66,
+     "end": 1.34,
+     "word": " automatiza",
+     "p": 0.999
+    },
+    {
+     "start": 1.34,
+     "end": 1.68,
+     "word": " un",
+     "p": 0.981
+    },
+    {
+     "start": 1.68,
+     "end": 2.24,
+     "word": " consultorio.",
+     "p": 0.892
+    }
+   ]
+  },
+  {
+   "start": 2.53,
+   "end": 4.29,
+   "text": " Así se automatiza un consultorio con IA.",
+   "words": [
+    {
+     "start": 2.53,
+     "end": 2.73,
+     "word": " Así",
+     "p": 0.934
+    },
+    {
+     "start": 2.73,
+     "end": 2.85,
+     "word": " se",
+     "p": 0.996
+    },
+    {
+     "start": 2.85,
+     "end": 3.33,
+     "word": " automatiza",
+     "p": 0.998
+    },
+    {
+     "start": 3.33,
+     "end": 3.39,
+     "word": " un",
+     "p": 0.998
+    },
+    {
+     "start": 3.39,
+     "end": 3.95,
+     "word": " consultorio",
+     "p": 0.995
+    },
+    {
+     "start": 3.95,
+     "end": 4.09,
+     "word": " con",
+     "p": 0.478
+    },
+    {
+     "start": 4.09,
+     "end": 4.29,
+     "word": " IA.",
+     "p": 0.768
+    }
+   ]
+  },
+  {
+   "start": 4.77,
+   "end": 7.57,
+   "text": " Lo primero que hacemos es mapear el negocio para poder entender",
+   "words": [
+    {
+     "start": 4.77,
+     "end": 4.89,
+     "word": " Lo",
+     "p": 0.866
+    },
+    {
+     "start": 4.89,
+     "end": 5.11,
+     "word": " primero",
+     "p": 0.996
+    },
+    {
+     "start": 5.11,
+     "end": 5.21,
+     "word": " que",
+     "p": 0.998
+    },
+    {
+     "start": 5.21,
+     "end": 5.47,
+     "word": " hacemos",
+     "p": 0.998
+    },
+    {
+     "start": 5.47,
+     "end": 5.83,
+     "word": " es",
+     "p": 0.984
+    },
+    {
+     "start": 5.83,
+     "end": 6.21,
+     "word": " mapear",
+     "p": 0.995
+    },
+    {
+     "start": 6.21,
+     "end": 6.25,
+     "word": " el",
+     "p": 0.992
+    },
+    {
+     "start": 6.25,
+     "end": 6.73,
+     "word": " negocio",
+     "p": 0.998
+    },
+    {
+     "start": 6.73,
+     "end": 6.95,
+     "word": " para",
+     "p": 0.854
+    },
+    {
+     "start": 6.95,
+     "end": 7.19,
+     "word": " poder",
+     "p": 0.995
+    },
+    {
+     "start": 7.19,
+     "end": 7.57,
+     "word": " entender",
+     "p": 0.999
+    }
+   ]
+  },
+  {
+   "start": 8.23,
+   "end": 9.51,
+   "text": " cómo funciona el consultorio.",
+   "words": [
+    {
+     "start": 8.23,
+     "end": 8.39,
+     "word": " cómo",
+     "p": 0.014
+    },
+    {
+     "start": 8.39,
+     "end": 8.77,
+     "word": " funciona",
+     "p": 0.977
+    },
+    {
+     "start": 8.77,
+     "end": 8.91,
+     "word": " el",
+     "p": 0.991
+    },
+    {
+     "start": 8.91,
+     "end": 9.51,
+     "word": " consultorio.",
+     "p": 0.996
+    }
+   ]
+  },
+  {
+   "start": 10.04,
+   "end": 10.8,
+   "text": " ¿Cómo atiende hoy?",
+   "words": [
+    {
+     "start": 10.04,
+     "end": 10.22,
+     "word": " ¿Cómo",
+     "p": 0.886
+    },
+    {
+     "start": 10.22,
+     "end": 10.62,
+     "word": " atiende",
+     "p": 0.996
+    },
+    {
+     "start": 10.62,
+     "end": 10.8,
+     "word": " hoy?",
+     "p": 0.999
+    }
+   ]
+  },
+  {
+   "start": 11.48,
+   "end": 13.44,
+   "text": " ¿Y qué tareas tiene sentido automatizar?",
+   "words": [
+    {
+     "start": 11.48,
+     "end": 11.62,
+     "word": " ¿Y",
+     "p": 0.802
+    },
+    {
+     "start": 11.62,
+     "end": 11.7,
+     "word": " qué",
+     "p": 0.996
+    },
+    {
+     "start": 11.7,
+     "end": 12.22,
+     "word": " tareas",
+     "p": 1.0
+    },
+    {
+     "start": 12.22,
+     "end": 12.52,
+     "word": " tiene",
+     "p": 0.819
+    },
+    {
+     "start": 12.52,
+     "end": 12.84,
+     "word": " sentido",
+     "p": 0.998
+    },
+    {
+     "start": 12.84,
+     "end": 13.44,
+     "word": " automatizar?",
+     "p": 0.997
+    }
+   ]
+  },
+  {
+   "start": 14.15,
+   "end": 15.13,
+   "text": " Después relevamos los...",
+   "words": [
+    {
+     "start": 14.15,
+     "end": 14.45,
+     "word": " Después",
+     "p": 0.859
+    },
+    {
+     "start": 14.45,
+     "end": 14.87,
+     "word": " relevamos",
+     "p": 0.98
+    },
+    {
+     "start": 14.87,
+     "end": 15.13,
+     "word": " los...",
+     "p": 0.743
+    }
+   ]
+  },
+  {
+   "start": 15.51,
+   "end": 16.95,
+   "text": " Después relevamos los protocolos.",
+   "words": [
+    {
+     "start": 15.51,
+     "end": 15.73,
+     "word": " Después",
+     "p": 0.85
+    },
+    {
+     "start": 15.73,
+     "end": 16.17,
+     "word": " relevamos",
+     "p": 0.988
+    },
+    {
+     "start": 16.17,
+     "end": 16.29,
+     "word": " los",
+     "p": 0.997
+    },
+    {
+     "start": 16.29,
+     "end": 16.95,
+     "word": " protocolos.",
+     "p": 0.997
+    }
+   ]
+  },
+  {
+   "start": 17.85,
+   "end": 19.75,
+   "text": " Tratamientos, precios, disponibilidad.",
+   "words": [
+    {
+     "start": 17.85,
+     "end": 18.51,
+     "word": " Tratamientos,",
+     "p": 0.746
+    },
+    {
+     "start": 18.57,
+     "end": 19.07,
+     "word": " precios,",
+     "p": 0.909
+    },
+    {
+     "start": 19.09,
+     "end": 19.75,
+     "word": " disponibilidad.",
+     "p": 0.997
+    }
+   ]
+  },
+  {
+   "start": 20.3,
+   "end": 21.62,
+   "text": " ¿Qué hacer ante una urgencia?",
+   "words": [
+    {
+     "start": 20.3,
+     "end": 20.44,
+     "word": " ¿Qué",
+     "p": 0.591
+    },
+    {
+     "start": 20.44,
+     "end": 20.68,
+     "word": " hacer",
+     "p": 0.931
+    },
+    {
+     "start": 20.68,
+     "end": 20.88,
+     "word": " ante",
+     "p": 0.995
+    },
+    {
+     "start": 20.88,
+     "end": 21.0,
+     "word": " una",
+     "p": 1.0
+    },
+    {
+     "start": 21.0,
+     "end": 21.62,
+     "word": " urgencia?",
+     "p": 0.999
+    }
+   ]
+  },
+  {
+   "start": 21.62,
+   "end": 23.1,
+   "text": " ¿A qué puede responder el sistema?",
+   "words": [
+    {
+     "start": 21.62,
+     "end": 21.9,
+     "word": " ¿A",
+     "p": 0.901
+    },
+    {
+     "start": 21.9,
+     "end": 21.92,
+     "word": " qué",
+     "p": 0.996
+    },
+    {
+     "start": 21.92,
+     "end": 22.14,
+     "word": " puede",
+     "p": 1.0
+    },
+    {
+     "start": 22.14,
+     "end": 22.5,
+     "word": " responder",
+     "p": 1.0
+    },
+    {
+     "start": 22.5,
+     "end": 22.78,
+     "word": " el",
+     "p": 0.999
+    },
+    {
+     "start": 22.78,
+     "end": 23.1,
+     "word": " sistema?",
+     "p": 0.999
+    }
+   ]
+  },
+  {
+   "start": 23.81,
+   "end": 24.15,
+   "text": " ¿Qué no?",
+   "words": [
+    {
+     "start": 23.81,
+     "end": 23.97,
+     "word": " ¿Qué",
+     "p": 0.649
+    },
+    {
+     "start": 23.97,
+     "end": 24.15,
+     "word": " no?",
+     "p": 0.999
+    }
+   ]
+  },
+  {
+   "start": 24.23,
+   "end": 26.75,
+   "text": " ¿Y en qué casos tiene que intervenir una persona?",
+   "words": [
+    {
+     "start": 24.23,
+     "end": 24.45,
+     "word": " ¿Y",
+     "p": 0.87
+    },
+    {
+     "start": 24.45,
+     "end": 24.55,
+     "word": " en",
+     "p": 1.0
+    },
+    {
+     "start": 24.55,
+     "end": 24.73,
+     "word": " qué",
+     "p": 0.999
+    },
+    {
+     "start": 24.73,
+     "end": 25.13,
+     "word": " casos",
+     "p": 0.946
+    },
+    {
+     "start": 25.13,
+     "end": 25.53,
+     "word": " tiene",
+     "p": 0.992
+    },
+    {
+     "start": 25.53,
+     "end": 25.75,
+     "word": " que",
+     "p": 1.0
+    },
+    {
+     "start": 25.75,
+     "end": 26.33,
+     "word": " intervenir",
+     "p": 1.0
+    },
+    {
+     "start": 26.33,
+     "end": 26.43,
+     "word": " una",
+     "p": 1.0
+    },
+    {
+     "start": 26.43,
+     "end": 26.75,
+     "word": " persona?",
+     "p": 1.0
+    }
+   ]
+  },
+  {
+   "start": 27.46,
+   "end": 29.92,
+   "text": " Con todo eso, armamos un agente conversacional",
+   "words": [
+    {
+     "start": 27.46,
+     "end": 27.6,
+     "word": " Con",
+     "p": 0.917
+    },
+    {
+     "start": 27.6,
+     "end": 27.82,
+     "word": " todo",
+     "p": 0.998
+    },
+    {
+     "start": 27.82,
+     "end": 28.2,
+     "word": " eso,",
+     "p": 0.98
+    },
+    {
+     "start": 28.24,
+     "end": 28.6,
+     "word": " armamos",
+     "p": 0.997
+    },
+    {
+     "start": 28.6,
+     "end": 28.78,
+     "word": " un",
+     "p": 0.901
+    },
+    {
+     "start": 28.78,
+     "end": 29.14,
+     "word": " agente",
+     "p": 0.995
+    },
+    {
+     "start": 29.14,
+     "end": 29.92,
+     "word": " conversacional",
+     "p": 0.997
+    }
+   ]
+  },
+  {
+   "start": 29.92,
+   "end": 33.32,
+   "text": " que atiende consultas, agenda, confirma,",
+   "words": [
+    {
+     "start": 29.92,
+     "end": 30.28,
+     "word": " que",
+     "p": 0.942
+    },
+    {
+     "start": 30.28,
+     "end": 30.82,
+     "word": " atiende",
+     "p": 0.999
+    },
+    {
+     "start": 30.82,
+     "end": 31.76,
+     "word": " consultas,",
+     "p": 0.984
+    },
+    {
+     "start": 31.76,
+     "end": 32.2,
+     "word": " agenda,",
+     "p": 0.482
+    },
+    {
+     "start": 32.5,
+     "end": 33.32,
+     "word": " confirma,",
+     "p": 0.999
+    }
+   ]
+  },
+  {
+   "start": 33.34,
+   "end": 36.78,
+   "text": " hace recordatorios, reprograma, cancela, cobra,",
+   "words": [
+    {
+     "start": 33.34,
+     "end": 33.76,
+     "word": " hace",
+     "p": 0.996
+    },
+    {
+     "start": 33.76,
+     "end": 34.68,
+     "word": " recordatorios,",
+     "p": 0.999
+    },
+    {
+     "start": 34.68,
+     "end": 35.48,
+     "word": " reprograma,",
+     "p": 1.0
+    },
+    {
+     "start": 35.48,
+     "end": 36.16,
+     "word": " cancela,",
+     "p": 0.999
+    },
+    {
+     "start": 36.24,
+     "end": 36.78,
+     "word": " cobra,",
+     "p": 0.995
+    }
+   ]
+  },
+  {
+   "start": 36.86,
+   "end": 38.3,
+   "text": " hace la recepción de los pagos.",
+   "words": [
+    {
+     "start": 36.86,
+     "end": 37.04,
+     "word": " hace",
+     "p": 0.998
+    },
+    {
+     "start": 37.04,
+     "end": 37.18,
+     "word": " la",
+     "p": 1.0
+    },
+    {
+     "start": 37.18,
+     "end": 37.62,
+     "word": " recepción",
+     "p": 1.0
+    },
+    {
+     "start": 37.62,
+     "end": 37.7,
+     "word": " de",
+     "p": 1.0
+    },
+    {
+     "start": 37.7,
+     "end": 37.78,
+     "word": " los",
+     "p": 1.0
+    },
+    {
+     "start": 37.78,
+     "end": 38.3,
+     "word": " pagos.",
+     "p": 0.957
+    }
+   ]
+  },
+  {
+   "start": 38.3,
+   "end": 40.04,
+   "text": " Y todo esto queda dentro de un mismo sistema,",
+   "words": [
+    {
+     "start": 38.3,
+     "end": 38.42,
+     "word": " Y",
+     "p": 0.996
+    },
+    {
+     "start": 38.42,
+     "end": 38.62,
+     "word": " todo",
+     "p": 1.0
+    },
+    {
+     "start": 38.62,
+     "end": 38.82,
+     "word": " esto",
+     "p": 0.999
+    },
+    {
+     "start": 38.82,
+     "end": 39.02,
+     "word": " queda",
+     "p": 0.999
+    },
+    {
+     "start": 39.02,
+     "end": 39.26,
+     "word": " dentro",
+     "p": 0.995
+    },
+    {
+     "start": 39.26,
+     "end": 39.36,
+     "word": " de",
+     "p": 0.999
+    },
+    {
+     "start": 39.36,
+     "end": 39.42,
+     "word": " un",
+     "p": 1.0
+    },
+    {
+     "start": 39.42,
+     "end": 39.62,
+     "word": " mismo",
+     "p": 1.0
+    },
+    {
+     "start": 39.62,
+     "end": 40.04,
+     "word": " sistema,",
+     "p": 1.0
+    }
+   ]
+  },
+  {
+   "start": 40.24,
+   "end": 42.22,
+   "text": " el cual es un dashboard que vas a poder ver.",
+   "words": [
+    {
+     "start": 40.24,
+     "end": 40.4,
+     "word": " el",
+     "p": 1.0
+    },
+    {
+     "start": 40.4,
+     "end": 40.6,
+     "word": " cual",
+     "p": 1.0
+    },
+    {
+     "start": 40.6,
+     "end": 40.94,
+     "word": " es",
+     "p": 1.0
+    },
+    {
+     "start": 40.94,
+     "end": 41.12,
+     "word": " un",
+     "p": 1.0
+    },
+    {
+     "start": 41.12,
+     "end": 41.42,
+     "word": " dashboard",
+     "p": 0.919
+    },
+    {
+     "start": 41.42,
+     "end": 41.6,
+     "word": " que",
+     "p": 0.998
+    },
+    {
+     "start": 41.6,
+     "end": 41.68,
+     "word": " vas",
+     "p": 1.0
+    },
+    {
+     "start": 41.68,
+     "end": 41.76,
+     "word": " a",
+     "p": 1.0
+    },
+    {
+     "start": 41.76,
+     "end": 41.96,
+     "word": " poder",
+     "p": 1.0
+    },
+    {
+     "start": 41.96,
+     "end": 42.22,
+     "word": " ver.",
+     "p": 1.0
+    }
+   ]
+  },
+  {
+   "start": 42.81999999999999,
+   "end": 43.3,
+   "text": " Y revisar.",
+   "words": [
+    {
+     "start": 42.81999999999999,
+     "end": 43.059999999999995,
+     "word": " Y",
+     "p": 0.115
+    },
+    {
+     "start": 43.059999999999995,
+     "end": 43.3,
+     "word": " revisar.",
+     "p": 0.83
+    }
+   ]
+  },
+  {
+   "start": 43.58,
+   "end": 46.72,
+   "text": " Las métricas del negocio, conversaciones, agendas.",
+   "words": [
+    {
+     "start": 43.58,
+     "end": 43.7,
+     "word": " Las",
+     "p": 0.488
+    },
+    {
+     "start": 43.7,
+     "end": 44.12,
+     "word": " métricas",
+     "p": 0.998
+    },
+    {
+     "start": 44.12,
+     "end": 44.2,
+     "word": " del",
+     "p": 0.997
+    },
+    {
+     "start": 44.2,
+     "end": 44.8,
+     "word": " negocio,",
+     "p": 1.0
+    },
+    {
+     "start": 44.84,
+     "end": 45.96,
+     "word": " conversaciones,",
+     "p": 0.999
+    },
+    {
+     "start": 46.02,
+     "end": 46.72,
+     "word": " agendas.",
+     "p": 0.999
+    }
+   ]
+  },
+  {
+   "start": 47.21,
+   "end": 48.07,
+   "text": " Y poder entender...",
+   "words": [
+    {
+     "start": 47.21,
+     "end": 47.35,
+     "word": " Y",
+     "p": 0.414
+    },
+    {
+     "start": 47.35,
+     "end": 47.51,
+     "word": " poder",
+     "p": 0.997
+    },
+    {
+     "start": 47.51,
+     "end": 48.07,
+     "word": " entender...",
+     "p": 0.752
+    }
+   ]
+  },
+  {
+   "start": 48.74,
+   "end": 50.18,
+   "text": " ¿Cuántos recordatorios hiciste?",
+   "words": [
+    {
+     "start": 48.74,
+     "end": 49.02,
+     "word": " ¿Cuántos",
+     "p": 0.894
+    },
+    {
+     "start": 49.02,
+     "end": 49.66,
+     "word": " recordatorios",
+     "p": 0.957
+    },
+    {
+     "start": 49.66,
+     "end": 50.18,
+     "word": " hiciste?",
+     "p": 1.0
+    }
+   ]
+  },
+  {
+   "start": 50.22,
+   "end": 51.42,
+   "text": " Y de esa manera entender...",
+   "words": [
+    {
+     "start": 50.22,
+     "end": 50.4,
+     "word": " Y",
+     "p": 0.936
+    },
+    {
+     "start": 50.4,
+     "end": 50.48,
+     "word": " de",
+     "p": 0.99
+    },
+    {
+     "start": 50.48,
+     "end": 50.66,
+     "word": " esa",
+     "p": 0.999
+    },
+    {
+     "start": 50.66,
+     "end": 50.92,
+     "word": " manera",
+     "p": 1.0
+    },
+    {
+     "start": 50.92,
+     "end": 51.42,
+     "word": " entender...",
+     "p": 0.883
+    }
+   ]
+  },
+  {
+   "start": 52.43,
+   "end": 55.29,
+   "text": " Y de esa manera entender la rentabilidad de la automatización.",
+   "words": [
+    {
+     "start": 52.43,
+     "end": 52.89,
+     "word": " Y",
+     "p": 0.435
+    },
+    {
+     "start": 52.89,
+     "end": 52.99,
+     "word": " de",
+     "p": 0.991
+    },
+    {
+     "start": 52.99,
+     "end": 53.17,
+     "word": " esa",
+     "p": 0.991
+    },
+    {
+     "start": 53.17,
+     "end": 53.41,
+     "word": " manera",
+     "p": 1.0
+    },
+    {
+     "start": 53.41,
+     "end": 53.65,
+     "word": " entender",
+     "p": 0.982
+    },
+    {
+     "start": 53.65,
+     "end": 53.95,
+     "word": " la",
+     "p": 0.997
+    },
+    {
+     "start": 53.95,
+     "end": 54.59,
+     "word": " rentabilidad",
+     "p": 1.0
+    },
+    {
+     "start": 54.59,
+     "end": 54.65,
+     "word": " de",
+     "p": 0.963
+    },
+    {
+     "start": 54.65,
+     "end": 54.69,
+     "word": " la",
+     "p": 1.0
+    },
+    {
+     "start": 54.69,
+     "end": 55.29,
+     "word": " automatización.",
+     "p": 1.0
+    }
+   ]
+  },
+  {
+   "start": 56.28,
+   "end": 58.62,
+   "text": " Además, el agente no responde todo de la misma manera.",
+   "words": [
+    {
+     "start": 56.28,
+     "end": 56.56,
+     "word": " Además,",
+     "p": 0.898
+    },
+    {
+     "start": 56.6,
+     "end": 56.76,
+     "word": " el",
+     "p": 0.004
+    },
+    {
+     "start": 56.76,
+     "end": 57.12,
+     "word": " agente",
+     "p": 0.993
+    },
+    {
+     "start": 57.12,
+     "end": 57.22,
+     "word": " no",
+     "p": 0.996
+    },
+    {
+     "start": 57.22,
+     "end": 57.68,
+     "word": " responde",
+     "p": 0.998
+    },
+    {
+     "start": 57.68,
+     "end": 57.82,
+     "word": " todo",
+     "p": 0.956
+    },
+    {
+     "start": 57.82,
+     "end": 58.0,
+     "word": " de",
+     "p": 0.996
+    },
+    {
+     "start": 58.0,
+     "end": 58.1,
+     "word": " la",
+     "p": 0.999
+    },
+    {
+     "start": 58.1,
+     "end": 58.32,
+     "word": " misma",
+     "p": 0.999
+    },
+    {
+     "start": 58.32,
+     "end": 58.62,
+     "word": " manera.",
+     "p": 0.998
+    }
+   ]
+  },
+  {
+   "start": 59.23,
+   "end": 62.37,
+   "text": " Cada mensaje se clasifica según la intención del paciente.",
+   "words": [
+    {
+     "start": 59.23,
+     "end": 59.35,
+     "word": " Cada",
+     "p": 0.951
+    },
+    {
+     "start": 59.35,
+     "end": 59.89,
+     "word": " mensaje",
+     "p": 1.0
+    },
+    {
+     "start": 59.89,
+     "end": 60.13,
+     "word": " se",
+     "p": 0.992
+    },
+    {
+     "start": 60.13,
+     "end": 60.81,
+     "word": " clasifica",
+     "p": 1.0
+    },
+    {
+     "start": 60.81,
+     "end": 61.11,
+     "word": " según",
+     "p": 0.998
+    },
+    {
+     "start": 61.11,
+     "end": 61.25,
+     "word": " la",
+     "p": 0.999
+    },
+    {
+     "start": 61.25,
+     "end": 61.71,
+     "word": " intención",
+     "p": 0.999
+    },
+    {
+     "start": 61.71,
+     "end": 61.81,
+     "word": " del",
+     "p": 0.999
+    },
+    {
+     "start": 61.81,
+     "end": 62.37,
+     "word": " paciente.",
+     "p": 1.0
+    }
+   ]
+  },
+  {
+   "start": 63.95,
+   "end": 65.93,
+   "text": " Si quiere sacar un turno, va al flujo agenda.",
+   "words": [
+    {
+     "start": 63.95,
+     "end": 64.05,
+     "word": " Si",
+     "p": 0.941
+    },
+    {
+     "start": 64.05,
+     "end": 64.21,
+     "word": " quiere",
+     "p": 0.369
+    },
+    {
+     "start": 64.21,
+     "end": 64.41,
+     "word": " sacar",
+     "p": 0.999
+    },
+    {
+     "start": 64.41,
+     "end": 64.65,
+     "word": " un",
+     "p": 0.994
+    },
+    {
+     "start": 64.65,
+     "end": 65.09,
+     "word": " turno,",
+     "p": 0.998
+    },
+    {
+     "start": 65.09,
+     "end": 65.27,
+     "word": " va",
+     "p": 0.999
+    },
+    {
+     "start": 65.27,
+     "end": 65.43,
+     "word": " al",
+     "p": 0.997
+    },
+    {
+     "start": 65.43,
+     "end": 65.79,
+     "word": " flujo",
+     "p": 0.992
+    },
+    {
+     "start": 65.79,
+     "end": 65.93,
+     "word": " agenda.",
+     "p": 0.586
+    }
+   ]
+  },
+  {
+   "start": 67.6,
+   "end": 70.44,
+   "text": " Si quiere cancelar, va al flujo de cancelación.",
+   "words": [
+    {
+     "start": 67.6,
+     "end": 67.7,
+     "word": " Si",
+     "p": 0.975
+    },
+    {
+     "start": 67.7,
+     "end": 67.88,
+     "word": " quiere",
+     "p": 0.998
+    },
+    {
+     "start": 67.88,
+     "end": 68.52,
+     "word": " cancelar,",
+     "p": 0.999
+    },
+    {
+     "start": 68.54,
+     "end": 68.94,
+     "word": " va",
+     "p": 1.0
+    },
+    {
+     "start": 68.94,
+     "end": 69.14,
+     "word": " al",
+     "p": 0.999
+    },
+    {
+     "start": 69.14,
+     "end": 69.58,
+     "word": " flujo",
+     "p": 0.997
+    },
+    {
+     "start": 69.58,
+     "end": 69.62,
+     "word": " de",
+     "p": 1.0
+    },
+    {
+     "start": 69.62,
+     "end": 70.44,
+     "word": " cancelación.",
+     "p": 0.986
+    }
+   ]
+  },
+  {
+   "start": 70.44,
+   "end": 72.1,
+   "text": " Y si detecta una posible urgencia,",
+   "words": [
+    {
+     "start": 70.44,
+     "end": 70.66,
+     "word": " Y",
+     "p": 0.989
+    },
+    {
+     "start": 70.66,
+     "end": 70.8,
+     "word": " si",
+     "p": 0.999
+    },
+    {
+     "start": 70.8,
+     "end": 71.24,
+     "word": " detecta",
+     "p": 0.998
+    },
+    {
+     "start": 71.24,
+     "end": 71.3,
+     "word": " una",
+     "p": 1.0
+    },
+    {
+     "start": 71.3,
+     "end": 71.52,
+     "word": " posible",
+     "p": 0.998
+    },
+    {
+     "start": 71.52,
+     "end": 72.1,
+     "word": " urgencia,",
+     "p": 1.0
+    }
+   ]
+  },
+  {
+   "start": 72.1,
+   "end": 74.78,
+   "text": " deriva automáticamente al posible flujo de urgencias",
+   "words": [
+    {
+     "start": 72.1,
+     "end": 72.54,
+     "word": " deriva",
+     "p": 1.0
+    },
+    {
+     "start": 72.54,
+     "end": 73.2,
+     "word": " automáticamente",
+     "p": 1.0
+    },
+    {
+     "start": 73.2,
+     "end": 73.52,
+     "word": " al",
+     "p": 0.999
+    },
+    {
+     "start": 73.52,
+     "end": 73.78,
+     "word": " posible",
+     "p": 0.998
+    },
+    {
+     "start": 73.78,
+     "end": 74.28,
+     "word": " flujo",
+     "p": 1.0
+    },
+    {
+     "start": 74.28,
+     "end": 74.28,
+     "word": " de",
+     "p": 1.0
+    },
+    {
+     "start": 74.28,
+     "end": 74.78,
+     "word": " urgencias",
+     "p": 1.0
+    }
+   ]
+  },
+  {
+   "start": 74.78,
+   "end": 76.76,
+   "text": " o deriva a una persona dependiendo del caso.",
+   "words": [
+    {
+     "start": 74.78,
+     "end": 75.1,
+     "word": " o",
+     "p": 0.899
+    },
+    {
+     "start": 75.1,
+     "end": 75.46,
+     "word": " deriva",
+     "p": 1.0
+    },
+    {
+     "start": 75.46,
+     "end": 75.48,
+     "word": " a",
+     "p": 0.996
+    },
+    {
+     "start": 75.48,
+     "end": 75.6,
+     "word": " una",
+     "p": 1.0
+    },
+    {
+     "start": 75.6,
+     "end": 75.96,
+     "word": " persona",
+     "p": 1.0
+    },
+    {
+     "start": 75.96,
+     "end": 76.46,
+     "word": " dependiendo",
+     "p": 0.965
+    },
+    {
+     "start": 76.46,
+     "end": 76.58,
+     "word": " del",
+     "p": 0.634
+    },
+    {
+     "start": 76.58,
+     "end": 76.76,
+     "word": " caso.",
+     "p": 1.0
+    }
+   ]
+  },
+  {
+   "start": 77.31,
+   "end": 80.25,
+   "text": " La idea de todo esto es construir un sistema para el negocio",
+   "words": [
+    {
+     "start": 77.31,
+     "end": 77.47,
+     "word": " La",
+     "p": 0.974
+    },
+    {
+     "start": 77.47,
+     "end": 77.67,
+     "word": " idea",
+     "p": 0.999
+    },
+    {
+     "start": 77.67,
+     "end": 77.87,
+     "word": " de",
+     "p": 0.998
+    },
+    {
+     "start": 77.87,
+     "end": 78.05,
+     "word": " todo",
+     "p": 0.997
+    },
+    {
+     "start": 78.05,
+     "end": 78.35,
+     "word": " esto",
+     "p": 0.998
+    },
+    {
+     "start": 78.35,
+     "end": 78.53,
+     "word": " es",
+     "p": 0.988
+    },
+    {
+     "start": 78.53,
+     "end": 78.91,
+     "word": " construir",
+     "p": 0.996
+    },
+    {
+     "start": 78.91,
+     "end": 79.13,
+     "word": " un",
+     "p": 0.999
+    },
+    {
+     "start": 79.13,
+     "end": 79.45,
+     "word": " sistema",
+     "p": 0.998
+    },
+    {
+     "start": 79.45,
+     "end": 79.71,
+     "word": " para",
+     "p": 0.998
+    },
+    {
+     "start": 79.71,
+     "end": 79.83,
+     "word": " el",
+     "p": 0.995
+    },
+    {
+     "start": 79.83,
+     "end": 80.25,
+     "word": " negocio",
+     "p": 1.0
+    }
+   ]
+  },
+  {
+   "start": 80.25,
+   "end": 83.53,
+   "text": " que entienda lo que está pasando y qué tiene que pasar después.",
+   "words": [
+    {
+     "start": 80.25,
+     "end": 80.55,
+     "word": " que",
+     "p": 0.984
+    },
+    {
+     "start": 80.55,
+     "end": 81.01,
+     "word": " entienda",
+     "p": 1.0
+    },
+    {
+     "start": 81.01,
+     "end": 81.31,
+     "word": " lo",
+     "p": 0.99
+    },
+    {
+     "start": 81.31,
+     "end": 81.49,
+     "word": " que",
+     "p": 0.998
+    },
+    {
+     "start": 81.49,
+     "end": 81.65,
+     "word": " está",
+     "p": 0.991
+    },
+    {
+     "start": 81.65,
+     "end": 82.05,
+     "word": " pasando",
+     "p": 1.0
+    },
+    {
+     "start": 82.05,
+     "end": 82.47,
+     "word": " y",
+     "p": 0.992
+    },
+    {
+     "start": 82.47,
+     "end": 82.57,
+     "word": " qué",
+     "p": 0.914
+    },
+    {
+     "start": 82.57,
+     "end": 82.85,
+     "word": " tiene",
+     "p": 0.999
+    },
+    {
+     "start": 82.85,
+     "end": 82.99,
+     "word": " que",
+     "p": 0.999
+    },
+    {
+     "start": 82.99,
+     "end": 83.23,
+     "word": " pasar",
+     "p": 0.999
+    },
+    {
+     "start": 83.23,
+     "end": 83.53,
+     "word": " después.",
+     "p": 0.999
+    }
+   ]
+  },
+  {
+   "start": 83.83,
+   "end": 86.55,
+   "text": " Comenta la palabra agente y te muestro uno funcionando.",
+   "words": [
+    {
+     "start": 83.83,
+     "end": 84.31,
+     "word": " Comenta",
+     "p": 0.833
+    },
+    {
+     "start": 84.31,
+     "end": 84.35,
+     "word": " la",
+     "p": 1.0
+    },
+    {
+     "start": 84.35,
+     "end": 84.63,
+     "word": " palabra",
+     "p": 0.999
+    },
+    {
+     "start": 84.63,
+     "end": 85.17,
+     "word": " agente",
+     "p": 0.506
+    },
+    {
+     "start": 85.17,
+     "end": 85.39,
+     "word": " y",
+     "p": 0.999
+    },
+    {
+     "start": 85.39,
+     "end": 85.49,
+     "word": " te",
+     "p": 0.997
+    },
+    {
+     "start": 85.49,
+     "end": 85.79,
+     "word": " muestro",
+     "p": 0.999
+    },
+    {
+     "start": 85.79,
+     "end": 85.95,
+     "word": " uno",
+     "p": 1.0
+    },
+    {
+     "start": 85.95,
+     "end": 86.55,
+     "word": " funcionando.",
+     "p": 1.0
+    }
+   ]
+  }
+ ]
+}

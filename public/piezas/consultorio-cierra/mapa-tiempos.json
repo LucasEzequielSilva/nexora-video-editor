@@ -1,0 +1,85 @@
+{
+  "duracion_s": 31.862,
+  "tramos": [
+    {
+      "origen": [
+        0,
+        3.057
+      ],
+      "salida": 0
+    },
+    {
+      "negro": 0.9,
+      "salida": 3.057
+    },
+    {
+      "origen": [
+        3.057,
+        10.601
+      ],
+      "salida": 3.957
+    },
+    {
+      "origen": [
+        10.744,
+        14.44
+      ],
+      "salida": 11.501
+    },
+    {
+      "negro": 0.5,
+      "salida": 15.197,
+      "congelar": true
+    },
+    {
+      "origen": [
+        14.44,
+        22.28
+      ],
+      "salida": 15.697
+    },
+    {
+      "negro": 0.4,
+      "salida": 23.537,
+      "congelar": true
+    },
+    {
+      "origen": [
+        22.28,
+        23.621
+      ],
+      "salida": 23.937
+    },
+    {
+      "origen": [
+        23.802,
+        26.87
+      ],
+      "salida": 25.278
+    },
+    {
+      "negro": 0.5,
+      "salida": 28.346,
+      "congelar": true
+    },
+    {
+      "origen": [
+        27.1,
+        29
+      ],
+      "salida": 28.846
+    },
+    {
+      "negro": 1,
+      "salida": 30.746,
+      "congelar": true
+    },
+    {
+      "origen": [
+        29,
+        29.08
+      ],
+      "salida": 31.746
+    }
+  ]
+}

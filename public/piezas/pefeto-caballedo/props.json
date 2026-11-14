@@ -1,0 +1,274 @@
+{
+  "_comentario": "v1 (2026-10-14): reel Nexora x 'Pefeto Caballedo', concepto 'Te llama tu Excel'. No es talking-head: video.mp4 es un montaje de clips de Higgsfield (villero G1v2, empresario G2, 'Estoy feliz' G3) con VOZ GUÍA de ElevenLabs (villero con filtro de llamada), armado con D:/moved/Downloads/pefeto/armado/montaje_editor.py. words.json escrito a mano con la grafía del meme (caballedo, uté, vite) y tiempos de whisper por línea. El negro después de 'coso' ya está en el video. Al cambiar la voz: rearmar el montaje y words.json, y regenerar cola-coso.wav.",
+  "durationSeconds": 38.5,
+  "subtitulos": {
+    "fuente": "satoshi",
+    "acentos": ["pefeto", "caballedo", "excel", "whatsapp", "coso", "domingo", "dólare"],
+    "gradiente": "verde"
+  },
+  "zooms": [
+    {
+      "tipo": "suave",
+      "inicio": { "palabra": "hola" },
+      "fin": { "palabra": "vite", "n": 1, "fin": true },
+      "escalaInicial": 1,
+      "escala": 1.25,
+      "_comentario": "HOOK: el villero se acerca hasta el 'vite'."
+    },
+    {
+      "tipo": "suave",
+      "inicio": { "palabra": "vite", "n": 1, "fin": true },
+      "fin": { "atMs": 3500 },
+      "escalaInicial": 1.25,
+      "escala": 1.25,
+      "_comentario": "Sostiene hasta el corte al empresario."
+    },
+    {
+      "tipo": "suave",
+      "inicio": { "palabra": "sí", "n": 1 },
+      "fin": { "atMs": 7000 },
+      "escalaInicial": 1,
+      "escala": 1.4,
+      "_comentario": "'Sí, sí, me encanta' hacia la cara, suelta en el corte."
+    },
+    {
+      "tipo": "punch",
+      "inicio": { "palabra": "pefeto", "n": 1 },
+      "fin": { "palabra": "pefeto", "n": 2 },
+      "escala": 1.3,
+      "rampa": 4,
+      "rampaSalida": 0
+    },
+    {
+      "tipo": "punch",
+      "inicio": { "palabra": "pefeto", "n": 2 },
+      "fin": { "atMs": 9450 },
+      "escala": 1.6,
+      "rampa": 4,
+      "rampaSalida": 0,
+      "_comentario": "Segundo golpe más cerca; suelta en seco en el corte al caos."
+    },
+    {
+      "tipo": "suave",
+      "inicio": { "atMs": 9450 },
+      "fin": { "atMs": 14850 },
+      "escalaInicial": 1,
+      "escala": 1.15
+    },
+    {
+      "tipo": "suave",
+      "inicio": { "atMs": 15700 },
+      "fin": { "atMs": 17550 },
+      "escalaInicial": 1,
+      "escala": 1.2
+    },
+    {
+      "tipo": "suave",
+      "inicio": { "palabra": "tá" },
+      "fin": { "palabra": "feliz", "fin": true },
+      "escalaInicial": 1,
+      "escala": 1.9,
+      "_comentario": "Hasta retrato en 'Estoy feliz'."
+    },
+    {
+      "tipo": "suave",
+      "inicio": { "palabra": "feliz", "fin": true },
+      "fin": { "atMs": 20900 },
+      "escalaInicial": 1.9,
+      "escala": 1.92
+    },
+    {
+      "tipo": "suave",
+      "inicio": { "atMs": 20900 },
+      "fin": { "atMs": 24100 },
+      "escalaInicial": 1,
+      "escala": 1.5,
+      "_comentario": "Tensión antes del giro (incluye el cuadro congelado)."
+    },
+    {
+      "tipo": "suave",
+      "inicio": { "palabra": "pa", "n": 1 },
+      "fin": { "palabra": "el", "n": 2 },
+      "escalaInicial": 1,
+      "escala": 1.3
+    },
+    {
+      "tipo": "suave",
+      "inicio": { "palabra": "el", "n": 2 },
+      "fin": { "palabra": "coso", "n": 2, "fin": true },
+      "escalaInicial": 1.3,
+      "escala": 1.9,
+      "_comentario": "Hasta retrato en 'el coso'."
+    },
+    {
+      "tipo": "suave",
+      "inicio": { "palabra": "coso", "n": 2, "fin": true },
+      "fin": { "atMs": 31000 },
+      "escalaInicial": 1.9,
+      "escala": 1.9,
+      "_comentario": "Retrato sostenido dentro del negro."
+    }
+  ],
+  "sfx": [
+    {
+      "_comentario": "Riser del hook: sube durante la frase y se corta en seco en el 'vite'.",
+      "nombre": "riser",
+      "palabra": "vite",
+      "n": 1,
+      "fin": true,
+      "corte": { "palabra": "vite", "n": 1, "fin": true, "offsetMs": 40 },
+      "volumen": 0.09
+    },
+    { "nombre": "zoom-punch", "palabra": "pefeto", "n": 1, "volumen": 0.25 },
+    { "nombre": "zoom-punch", "palabra": "pefeto", "n": 2, "volumen": 0.25 },
+    { "nombre": "whoosh-short", "atMs": 9450, "volumen": 0.15 },
+    { "nombre": "remate-b", "palabra": "feliz", "fin": true, "offsetMs": 90, "volumen": 0.2 },
+    {
+      "_comentario": "Eco de 'coso' (cola-reverb.py 29.68-30.08, 1.3 1.52 230 4).",
+      "archivo": "piezas/pefeto-caballedo/cola-coso.wav",
+      "palabra": "coso",
+      "n": 2,
+      "offsetMs": -20,
+      "volumen": 1
+    },
+    {
+      "_comentario": "Boom en el cuadro en que entra el negro.",
+      "nombre": "boom-negro",
+      "palabra": "coso",
+      "n": 2,
+      "fin": true,
+      "offsetMs": 40,
+      "volumen": 0.3
+    }
+  ],
+  "overlays": [
+    {
+      "_comentario": "Quién llama: el Excel.",
+      "tipo": "titular",
+      "desde": { "atMs": 0 },
+      "hasta": { "palabra": "vite", "n": 1, "fin": true, "offsetMs": 100 },
+      "arriba": "llamada entrante de",
+      "grande": "SU EXCEL",
+      "color": "blanco",
+      "centroY": 13
+    },
+    {
+      "tipo": "icono",
+      "marca": "whatsapp",
+      "en": { "palabra": "whatsapp", "n": 1, "offsetMs": -100 },
+      "duracionMs": 900,
+      "tamano": 420,
+      "sfx": "pop",
+      "volumenSfx": 0.2
+    },
+    {
+      "tipo": "icono",
+      "marca": "whatsapp",
+      "en": { "palabra": "whatsapp", "n": 2, "offsetMs": -100 },
+      "duracionMs": 1400,
+      "tamano": 480,
+      "sfx": "pop",
+      "volumenSfx": 0.2
+    },
+    {
+      "tipo": "icono",
+      "marca": "googlecalendar",
+      "en": { "palabra": "domingo", "offsetMs": -100 },
+      "duracionMs": 1000,
+      "tamano": 420,
+      "sfx": "pop",
+      "volumenSfx": 0.2
+    },
+    {
+      "_comentario": "Billetes premium (son dólares, como dice).",
+      "tipo": "icono",
+      "imagen": "piezas/pefeto-caballedo/billetes.png",
+      "en": { "palabra": "veinte", "offsetMs": -100 },
+      "duracionMs": 1700,
+      "tamano": 620,
+      "centroY": 70,
+      "sfx": "pop",
+      "volumenSfx": 0.2
+    },
+    {
+      "_comentario": "CIERRE 1/3 (negro): el claim.",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "negro",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": { "atMs": 31000 },
+      "hasta": { "atMs": 33000 },
+      "cues": { "a": { "atMs": 31150 }, "b": { "atMs": 31600 } },
+      "datos": {
+        "lineas": [
+          [{ "texto": "al coso le", "estilo": "serif", "cue": "a", "tamano": 96 }],
+          [{ "texto": "ponemos nombre", "estilo": "sans", "cue": "b", "tamano": 108, "gradiente": "verde" }]
+        ]
+      }
+    },
+    {
+      "_comentario": "CIERRE 2/3 (blanco): del coso al sistema.",
+      "tipo": "escena",
+      "escena": "proceso",
+      "tema": "blanco",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": { "atMs": 33000 },
+      "hasta": { "atMs": 35400 },
+      "cues": {
+        "titulo": { "atMs": 33100 },
+        "p1": { "atMs": 33500 },
+        "p2": { "atMs": 33800 },
+        "p3": { "atMs": 34100 },
+        "p4": { "atMs": 34400 }
+      },
+      "datos": {
+        "titulo": { "chico": "del coso al", "grande": "sistema" },
+        "pasos": [
+          { "nombre": "CRM", "cue": "p1" },
+          { "nombre": "Agente IA", "cue": "p2" },
+          { "nombre": "Automatizaciones", "cue": "p3" },
+          { "nombre": "Dashboard", "cue": "p4" }
+        ],
+        "estadoFinal": "Negocio ordenado"
+      }
+    },
+    {
+      "_comentario": "CIERRE 3/3 (negro): CTA sin voz.",
+      "tipo": "escena",
+      "escena": "cta",
+      "tema": "negro",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": { "atMs": 35400 },
+      "hasta": "fin",
+      "cues": {
+        "ver": { "atMs": 35500 },
+        "comentar": { "atMs": 35800 },
+        "palabra": { "atMs": 36400 },
+        "respuesta": { "atMs": 37100 },
+        "privado": { "atMs": 37700 }
+      },
+      "datos": {
+        "cuenta": "nexorasistem.ar",
+        "usuario": "tu_negocio",
+        "palabra": "COSO",
+        "respuesta": "¡Te mostramos cómo ordenarlo!",
+        "enviado": "Enviado por privado",
+        "verbo": "comentá",
+        "bajar": 320
+      }
+    }
+  ],
+  "musica": {
+    "_comentario": "METAMORPHOSIS ganador nivelada (arranca en el drop): entra en la vuelta del negro. Comercial: riesgo de mute.",
+    "archivo": "recursos/musica-056-nivelada.m4a",
+    "desde": { "atMs": 31000 },
+    "inicioS": 0,
+    "volumen": 0.85,
+    "bajoVoz": 0.7,
+    "fadeInMs": 40,
+    "fadeOutMs": 1200
+  }
+}

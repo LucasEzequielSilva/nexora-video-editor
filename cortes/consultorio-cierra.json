@@ -1,0 +1,54 @@
+{
+  "base": "D:/moved/Downloads",
+  "cortes": [
+    {
+      "archivo": "IMG_7326.MOV",
+      "desde": 8.34,
+      "hasta": 11.92,
+      "nota": "HOOK: Tu consultorio cierra a las siete, el WhatsApp no cierra (94% a cámara; la otra versión de 29.0 dice 'El consultorio... pero', 86%)"
+    },
+    {
+      "archivo": "IMG_7326.MOV",
+      "desde": 37.98,
+      "hasta": 42.8,
+      "nota": "Medí las consultas de una clínica donde tengo un agente instalado (100%)"
+    },
+    {
+      "archivo": "IMG_7326.MOV",
+      "desde": 49.86,
+      "hasta": 53.12,
+      "nota": "En 12 días entraron más de 700 mensajes de pacientes (100%)"
+    },
+    {
+      "archivo": "IMG_7326.MOV",
+      "desde": 56.22,
+      "hasta": 60.06,
+      "nota": "Uno de cada tres llegaron cuando el consultorio estaba cerrado (95%)"
+    },
+    {
+      "archivo": "IMG_7326.MOV",
+      "desde": 65.12,
+      "hasta": 67.48,
+      "nota": "A la noche, temprano o el fin de semana (única toma, 50% a cámara: va tapada)"
+    },
+    {
+      "archivo": "IMG_7326.MOV",
+      "desde": 78.0,
+      "hasta": 83.78,
+      "nota": "Y no eran solamente consultas: de las siete urgencias, cinco cayeron fuera de horario (única, 56%)"
+    },
+    {
+      "archivo": "IMG_7326.MOV",
+      "desde": 88.92,
+      "hasta": 96.06,
+      "nota": "Así que la pregunta no es si te escriben cuando cerrás, sino quién les contesta (única, 40%; la pausa de 2.7 s antes de 'quién' la saca el jumpcut)"
+    },
+    {
+      "archivo": "IMG_7326.MOV",
+      "desde": 124.6,
+      "hasta": 126.62,
+      "nota": "CTA: Si tenés un consultorio, comentá AGENTE (3er y último intento, 100%)"
+    }
+  ],
+  "propuesta": "editor 2026-09-28: última toma completa a cámara por frase (mirada + islas de voz); Lucas la ajusta con npm run cortar -- consultorio-cierra"
+}
