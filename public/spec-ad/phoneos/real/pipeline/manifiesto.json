@@ -1,0 +1,108 @@
+{
+  "ancho": 1440,
+  "alto": 5594,
+  "dpr": 2,
+  "fondo": "fondo.png",
+  "completo": "completo.png",
+  "items": [
+    {
+      "id": "consulta-0",
+      "x": 297,
+      "y": 284.5,
+      "w": 253,
+      "h": 142.671875,
+      "texto": "Julieta Sosa11 5555-0008Sin equipo todavíaLeadMostrador · 11 5555-0101Sin respue",
+      "archivo": "00-consulta-0.png"
+    },
+    {
+      "id": "consulta-1",
+      "x": 297,
+      "y": 435.171875,
+      "w": 253,
+      "h": 142.671875,
+      "texto": "Importadora Demo Sur11 5555-0022Sin equipo todavíaLeadMostrador · 11 5555-0101Si",
+      "archivo": "01-consulta-1.png"
+    },
+    {
+      "id": "consulta-2",
+      "x": 297,
+      "y": 585.84375,
+      "w": 253,
+      "h": 115.53125,
+      "texto": "Emiliano Rojas11 5555-0012iPhone 16 128 GBLeadPublicidad · 11 5555-0202",
+      "archivo": "02-consulta-2.png"
+    },
+    {
+      "id": "cotizo-3",
+      "x": 580,
+      "y": 284.5,
+      "w": 253,
+      "h": 164.671875,
+      "texto": "Camila Ibáñez11 5555-0002iPhone 12 Pro Max 128 GBLeadCanjeRepescaPublicidad · 11",
+      "archivo": "03-cotizo-3.png"
+    },
+    {
+      "id": "turno-4",
+      "x": 863,
+      "y": 284.5,
+      "w": 253,
+      "h": 192.390625,
+      "texto": "Nicolás Barrientos11 5555-0005iPhone 15 128 GBCotizado US$ 780 ($ 920.400)Turno ",
+      "archivo": "04-turno-4.png"
+    },
+    {
+      "id": "turno-5",
+      "x": 863,
+      "y": 484.890625,
+      "w": 253,
+      "h": 167.53125,
+      "texto": "Brenda Toledo11 5555-0011iPhone 14 128 GBCotizado US$ 640 ($ 768.000)Turno jueve",
+      "archivo": "05-turno-5.png"
+    },
+    {
+      "id": "turno-6",
+      "x": 863,
+      "y": 660.421875,
+      "w": 253,
+      "h": 234.671875,
+      "texto": "Joaquín Paredes11 5555-0003iPhone 13 128 GB → iPhone 15 Pro 256 GBCanje: toma US",
+      "archivo": "06-turno-6.png"
+    },
+    {
+      "id": "turno-7",
+      "x": 863,
+      "y": 903.09375,
+      "w": 253,
+      "h": 189.53125,
+      "texto": "Marcos Ferreyra11 5555-0001iPhone 15 128 GBCotizado US$ 780 ($ 936.000)Turno sáb",
+      "archivo": "07-turno-7.png"
+    },
+    {
+      "id": "turno-8",
+      "x": 863,
+      "y": 1100.625,
+      "w": 253,
+      "h": 198.671875,
+      "texto": "Sofía Quiroga11 5555-0004iPhone 14 Pro 256 GBCotizado US$ 880 ($ 1.056.000)Turno",
+      "archivo": "08-turno-8.png"
+    },
+    {
+      "id": "compro-9",
+      "x": 1146,
+      "y": 284.5,
+      "w": 253,
+      "h": 164.390625,
+      "texto": "Agustina Lencina11 5555-0006iPhone 13 128 GBTurno jueves, 15 de octubre, 15:00Cl",
+      "archivo": "09-compro-9.png"
+    },
+    {
+      "id": "compro-10",
+      "x": 1146,
+      "y": 456.890625,
+      "w": 253,
+      "h": 192.390625,
+      "texto": "Lautaro Medina11 5555-0014iPhone 14 128 GBCotizado US$ 640 ($ 761.600)Turno lune",
+      "archivo": "10-compro-10.png"
+    }
+  ]
+}

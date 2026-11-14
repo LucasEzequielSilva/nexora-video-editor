@@ -2,10 +2,20 @@ import { useMemo } from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { ease } from "../reserva/motion";
 import { FONT, FPS } from "../reserva/theme";
-import type { Acento, FuenteSubtitulo, RawWord } from "./types";
+import { type Gradiente, textoGradiente } from "./gradientes";
+import type { Acento, FuenteSubtitulo, RawWord, SubtitulosConfig } from "./types";
 
-const MAX_WORDS = 4;
-const MAX_CHARS = 26;
+type Estilo = NonNullable<SubtitulosConfig["estilo"]>;
+
+/** Límites de página por estilo: "grande" (juanexplica.ia) o "anuncio" (frases cortas, referencia anuncio-2026-09-27). */
+const LIMITES = { grande: { palabras: 4, caracteres: 26 }, neon: { palabras: 4, caracteres: 26 }, anuncio: { palabras: 3, caracteres: 20 } } as const;
+
+const NEON_DEFAULT = "#3dff8f";
+/** Núcleo blanco + tres capas de halo del color + una sombra oscura abajo para que se lea sobre la pared clara. */
+const halo = (color: string, k: number) =>
+  `0 0 ${3 * k}px #ffffff, 0 0 ${10 * k}px ${color}, 0 0 ${24 * k}px ${color}, 0 0 ${46 * k}px ${color}, 0 3px 10px rgba(0,0,0,0.5)`;
+/** Parpadeo de cartel que se prende, en los primeros cuadros de la palabra clave. */
+const PARPADEO = [0.15, 1, 0.35, 1, 0.7, 1];
 const GAP_BREAK_S = 0.35;
 const LINGER_FRAMES = 8;
 /** Jerarquía de tamaños (patrón juanexplica.ia): la palabra clave crece, las funcionales se achican. */
@@ -47,7 +57,8 @@ const markAccents = (words: CapWord[], acentos: Acento[]) => {
   }
 };
 
-const buildPages = (raw: RawWord[], acentos: Acento[]): Page[] => {
+const buildPages = (raw: RawWord[], acentos: Acento[], estilo: Estilo): Page[] => {
+  const { palabras: MAX_WORDS, caracteres: MAX_CHARS } = LIMITES[estilo];
   const words: CapWord[] = raw.map((w) => ({
     text: w.word.trim(),
     from: Math.round(w.start * FPS),
@@ -90,17 +101,22 @@ type CaptionsProps = {
   acentos?: Acento[];
   /** Centro vertical del subtítulo, en % del alto. Default 54: sobre el pecho, sin tapar la cara. */
   centroY?: number;
+  estilo?: Estilo;
+  neon?: string;
+  gradiente?: Gradiente;
 };
 
 /**
  * Subtítulos sin fondo, grandes y centrados (patrón @juanexplica.ia): cada palabra aparece cuando se dice,
  * el tamaño varía por jerarquía (palabra clave grande, funcionales chicas) y las clave van en serif itálica.
  */
-export default function CaptionsVertical({ words, fuente = "satoshi", acentos = [], centroY = 54 }: CaptionsProps) {
+export default function CaptionsVertical({ words, fuente = "satoshi", acentos = [], centroY = 54, estilo = "grande", neon = NEON_DEFAULT, gradiente }: CaptionsProps) {
   const frame = useCurrentFrame();
-  const pages = useMemo(() => buildPages(words, acentos), [words, acentos]);
+  const pages = useMemo(() => buildPages(words, acentos, estilo), [words, acentos, estilo]);
   const page = pages.find((p) => frame >= p.from && frame < p.to);
   if (!page) return null;
+
+  if (estilo === "anuncio") return <PaginaAnuncio page={page} frame={frame} centroY={centroY} />;
 
   const cfg = FUENTES[fuente];
   const enter = ease(frame, [page.from - 2, page.from + 4]);
@@ -129,11 +145,14 @@ export default function CaptionsVertical({ words, fuente = "satoshi", acentos = 
           const appear = ease(frame, [word.from - 1, word.from + 5]);
           const isAccent = word.accent !== undefined;
           const scale = isAccent ? SCALE_ACCENT : FUNCTIONAL.has(normalize(word.text)) ? SCALE_FUNCTIONAL : 1;
+          const esNeon = estilo === "neon";
+          const colorNeon = word.accent?.color ?? neon;
+          const parpadeo = esNeon && isAccent ? PARPADEO[Math.min(PARPADEO.length - 1, Math.max(0, frame - word.from))] : 1;
           return (
             <span
               key={`${word.from}-${i}`}
               style={{
-                opacity: appear,
+                opacity: appear * parpadeo,
                 transform: `translateY(${(1 - appear) * 16}px)`,
                 filter: `blur(${(1 - appear) * 8}px)`,
                 display: "inline-block",
@@ -144,8 +163,14 @@ export default function CaptionsVertical({ words, fuente = "satoshi", acentos = 
                 letterSpacing: isAccent ? "-0.02em" : cfg.spacing,
                 textTransform: cfg.upper && !isAccent ? "uppercase" : "none",
                 lineHeight: 0.95,
-                color: word.accent?.color ?? "#ffffff",
-                textShadow: "0 3px 22px rgba(0,0,0,0.6), 0 2px 5px rgba(0,0,0,0.65)",
+                color: esNeon ? (isAccent ? colorNeon : "#ffffff") : (word.accent?.color ?? "#ffffff"),
+                textShadow: esNeon
+                  ? halo(colorNeon, isAccent ? 1.3 : 0.7)
+                  : "0 3px 22px rgba(0,0,0,0.6), 0 2px 5px rgba(0,0,0,0.65)",
+                // El degradé pinta solo dentro de la caja: el padding deja entrar el vuelo de la itálica.
+                ...(gradiente && isAccent && !word.accent?.color && !esNeon
+                  ? { ...textoGradiente(gradiente, { blur: (1 - appear) * 8 }), padding: "0 0.12em", margin: "0 -0.12em" }
+                  : {}),
               }}
             >
               {word.text.replace(/[,;:]$/, "")}
@@ -156,3 +181,55 @@ export default function CaptionsVertical({ words, fuente = "satoshi", acentos = 
     </AbsoluteFill>
   );
 }
+
+/**
+ * Estilo anuncio: la frase entra entera, desenfocada y achicándose apenas; blanca, chica (54 px), sans medio-pesada y la
+ * palabra clave en serif itálica del mismo tamaño ("tenés una *agencia*"). Sin jerarquía de tamaños.
+ */
+const PaginaAnuncio = ({ page, frame, centroY }: { page: Page; frame: number; centroY: number }) => {
+  const enter = ease(frame, [page.from - 2, page.from + 5]);
+  const exit = ease(frame, [page.to - 3, page.to], [1, 0]);
+  return (
+    <AbsoluteFill style={{ pointerEvents: "none" }}>
+      <div
+        style={{
+          position: "absolute",
+          left: 120,
+          right: 120,
+          top: `${centroY}%`,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "baseline",
+          columnGap: "0.24em",
+          flexWrap: "wrap",
+          fontSize: 56,
+          opacity: Math.min(enter, exit),
+          transform: `translateY(-50%) scale(${1.06 - 0.06 * enter})`,
+          filter: enter < 0.999 ? `blur(${(1 - enter) * 10}px)` : undefined,
+          color: "#ffffff",
+          textShadow: "0 2px 14px rgba(0,0,0,0.5), 0 1px 3px rgba(0,0,0,0.5)",
+        }}
+      >
+        {page.words.map((word, i) => {
+          const acento = word.accent !== undefined;
+          return (
+            <span
+              key={`${word.from}-${i}`}
+              style={{
+                fontFamily: acento ? FONT.serif : "Satoshi, system-ui, sans-serif",
+                fontStyle: acento ? "italic" : "normal",
+                fontWeight: acento ? 400 : 700,
+                fontSize: acento ? "1.12em" : "1em",
+                letterSpacing: acento ? "-0.01em" : "-0.02em",
+                lineHeight: 1,
+                color: word.accent?.color ?? "#ffffff",
+              }}
+            >
+              {word.text.replace(/[,;:]$/, "")}
+            </span>
+          );
+        })}
+      </div>
+    </AbsoluteFill>
+  );
+};

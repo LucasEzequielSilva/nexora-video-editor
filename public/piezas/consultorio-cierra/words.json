@@ -1,0 +1,523 @@
+{
+ "language": "es",
+ "duration": 31.826,
+ "segments": [
+  {
+   "start": 0.24,
+   "end": 30.546,
+   "text": " Tu consultorio cierra a las siete. El WhatsApp no cierra. Medí las consultas de una clínica donde tengo un agente instalado. En 12 días entraron más de 700 mensajes de pacientes. Uno de cada tres llegaron cuando el consultorio estaba cerrado. A la noche, temprano o el fin de semana. Y no eran solamente consultas: de las 7 urgencias, 5 cayeron fuera de horario. Así que la pregunta no es si te escriben cuando cerrás, sino quién les contesta. Si tenés un consultorio, comentá AGENTE.",
+   "words": [
+    {
+     "start": 0.24,
+     "end": 0.3,
+     "word": " Tu",
+     "p": 0.462
+    },
+    {
+     "start": 0.62,
+     "end": 0.68,
+     "word": " consultorio",
+     "p": 0.996
+    },
+    {
+     "start": 0.9,
+     "end": 1.16,
+     "word": " cierra",
+     "p": 0.986
+    },
+    {
+     "start": 1.16,
+     "end": 1.3,
+     "word": " a",
+     "p": 0.951
+    },
+    {
+     "start": 1.3,
+     "end": 1.48,
+     "word": " las",
+     "p": 0.997
+    },
+    {
+     "start": 1.48,
+     "end": 1.64,
+     "word": " siete.",
+     "p": 0.255
+    },
+    {
+     "start": 1.84,
+     "end": 2.14,
+     "word": " El",
+     "p": 0.558
+    },
+    {
+     "start": 2.14,
+     "end": 2.44,
+     "word": " WhatsApp",
+     "p": 0.479
+    },
+    {
+     "start": 2.44,
+     "end": 2.64,
+     "word": " no",
+     "p": 0.949
+    },
+    {
+     "start": 2.7,
+     "end": 2.76,
+     "word": " cierra.",
+     "p": 0.994
+    },
+    {
+     "start": 4.23,
+     "end": 4.45,
+     "word": " Medí",
+     "p": 0.623
+    },
+    {
+     "start": 4.45,
+     "end": 4.51,
+     "word": " las",
+     "p": 0.994
+    },
+    {
+     "start": 5.09,
+     "end": 5.17,
+     "word": " consultas",
+     "p": 0.999
+    },
+    {
+     "start": 5.45,
+     "end": 5.63,
+     "word": " de",
+     "p": 0.988
+    },
+    {
+     "start": 5.63,
+     "end": 5.87,
+     "word": " una",
+     "p": 0.996
+    },
+    {
+     "start": 5.91,
+     "end": 5.97,
+     "word": " clínica",
+     "p": 0.987
+    },
+    {
+     "start": 6.59,
+     "end": 6.67,
+     "word": " donde",
+     "p": 0.914
+    },
+    {
+     "start": 6.97,
+     "end": 7.03,
+     "word": " tengo",
+     "p": 0.869
+    },
+    {
+     "start": 7.07,
+     "end": 7.13,
+     "word": " un",
+     "p": 0.916
+    },
+    {
+     "start": 7.21,
+     "end": 7.63,
+     "word": " agente",
+     "p": 0.981
+    },
+    {
+     "start": 7.63,
+     "end": 8.11,
+     "word": " instalado.",
+     "p": 0.998
+    },
+    {
+     "start": 8.51,
+     "end": 8.57,
+     "word": " En",
+     "p": 0.315
+    },
+    {
+     "start": 8.78,
+     "end": 8.91,
+     "word": " 12",
+     "p": 0.315
+    },
+    {
+     "start": 8.91,
+     "end": 8.97,
+     "word": " días",
+     "p": 0.315
+    },
+    {
+     "start": 9.24,
+     "end": 9.53,
+     "word": " entraron",
+     "p": 0.315
+    },
+    {
+     "start": 9.57,
+     "end": 9.63,
+     "word": " más",
+     "p": 0.315
+    },
+    {
+     "start": 10.12,
+     "end": 10.18,
+     "word": " de",
+     "p": 0.315
+    },
+    {
+     "start": 10.15,
+     "end": 10.21,
+     "word": " 700",
+     "p": 0.315
+    },
+    {
+     "start": 10.6,
+     "end": 10.66,
+     "word": " mensajes",
+     "p": 0.315
+    },
+    {
+     "start": 10.77,
+     "end": 11.08,
+     "word": " de",
+     "p": 0.315
+    },
+    {
+     "start": 11.08,
+     "end": 11.39,
+     "word": " pacientes.",
+     "p": 0.315
+    },
+    {
+     "start": 11.527,
+     "end": 11.787,
+     "word": " Uno",
+     "p": 0.576
+    },
+    {
+     "start": 11.947,
+     "end": 12.007,
+     "word": " de",
+     "p": 0.998
+    },
+    {
+     "start": 11.987,
+     "end": 12.047,
+     "word": " cada",
+     "p": 0.999
+    },
+    {
+     "start": 12.227,
+     "end": 12.307,
+     "word": " tres",
+     "p": 0.978
+    },
+    {
+     "start": 12.867,
+     "end": 13.087,
+     "word": " llegaron",
+     "p": 0.588
+    },
+    {
+     "start": 13.517,
+     "end": 13.797,
+     "word": " cuando",
+     "p": 0.183
+    },
+    {
+     "start": 13.797,
+     "end": 14.017,
+     "word": " el",
+     "p": 0.995
+    },
+    {
+     "start": 14.017,
+     "end": 14.437,
+     "word": " consultorio",
+     "p": 0.995
+    },
+    {
+     "start": 14.437,
+     "end": 14.637,
+     "word": " estaba",
+     "p": 0.994
+    },
+    {
+     "start": 14.897,
+     "end": 14.957,
+     "word": " cerrado.",
+     "p": 0.999
+    },
+    {
+     "start": 15.777,
+     "end": 16.017,
+     "word": " A",
+     "p": 0.325
+    },
+    {
+     "start": 16.097,
+     "end": 16.157,
+     "word": " la",
+     "p": 0.992
+    },
+    {
+     "start": 16.157,
+     "end": 16.217,
+     "word": " noche,",
+     "p": 0.991
+    },
+    {
+     "start": 16.817,
+     "end": 16.957,
+     "word": " temprano",
+     "p": 0.998
+    },
+    {
+     "start": 17.077,
+     "end": 17.197,
+     "word": " o",
+     "p": 0.902
+    },
+    {
+     "start": 17.197,
+     "end": 17.257,
+     "word": " el",
+     "p": 0.808
+    },
+    {
+     "start": 17.437,
+     "end": 17.497,
+     "word": " fin",
+     "p": 0.986
+    },
+    {
+     "start": 17.437,
+     "end": 17.497,
+     "word": " de",
+     "p": 1
+    },
+    {
+     "start": 17.677,
+     "end": 17.797,
+     "word": " semana.",
+     "p": 0.998
+    },
+    {
+     "start": 18.237,
+     "end": 18.297,
+     "word": " Y",
+     "p": 0.612
+    },
+    {
+     "start": 18.297,
+     "end": 18.437,
+     "word": " no",
+     "p": 0.988
+    },
+    {
+     "start": 18.437,
+     "end": 18.577,
+     "word": " eran",
+     "p": 0.924
+    },
+    {
+     "start": 18.777,
+     "end": 18.857,
+     "word": " solamente",
+     "p": 0.962
+    },
+    {
+     "start": 19.537,
+     "end": 19.597,
+     "word": " consultas:",
+     "p": 0.994
+    },
+    {
+     "start": 20.167,
+     "end": 20.227,
+     "word": " de",
+     "p": 0.262
+    },
+    {
+     "start": 20.367,
+     "end": 20.427,
+     "word": " las",
+     "p": 0.979
+    },
+    {
+     "start": 20.607,
+     "end": 20.667,
+     "word": " 7",
+     "p": 0.388
+    },
+    {
+     "start": 20.867,
+     "end": 21.067,
+     "word": " urgencias,",
+     "p": 0.979
+    },
+    {
+     "start": 21.757,
+     "end": 21.937,
+     "word": " 5",
+     "p": 0.572
+    },
+    {
+     "start": 22.557,
+     "end": 22.617,
+     "word": " cayeron",
+     "p": 0.868
+    },
+    {
+     "start": 22.797,
+     "end": 22.997,
+     "word": " fuera",
+     "p": 0.993
+    },
+    {
+     "start": 22.997,
+     "end": 23.057,
+     "word": " de",
+     "p": 0.821
+    },
+    {
+     "start": 23.117,
+     "end": 23.437,
+     "word": " horario.",
+     "p": 0.978
+    },
+    {
+     "start": 24.157,
+     "end": 24.217,
+     "word": " Así",
+     "p": 0.61
+    },
+    {
+     "start": 24.377,
+     "end": 24.437,
+     "word": " que",
+     "p": 0.997
+    },
+    {
+     "start": 24.437,
+     "end": 24.497,
+     "word": " la",
+     "p": 0.976
+    },
+    {
+     "start": 24.597,
+     "end": 24.857,
+     "word": " pregunta",
+     "p": 0.997
+    },
+    {
+     "start": 24.977,
+     "end": 25.057,
+     "word": " no",
+     "p": 0.982
+    },
+    {
+     "start": 25.057,
+     "end": 25.117,
+     "word": " es",
+     "p": 0.827
+    },
+    {
+     "start": 25.306,
+     "end": 25.486,
+     "word": " si",
+     "p": 0.31
+    },
+    {
+     "start": 25.486,
+     "end": 25.706,
+     "word": " te",
+     "p": 0.985
+    },
+    {
+     "start": 25.706,
+     "end": 25.966,
+     "word": " escriben",
+     "p": 0.98
+    },
+    {
+     "start": 25.966,
+     "end": 26.246,
+     "word": " cuando",
+     "p": 0.99
+    },
+    {
+     "start": 26.246,
+     "end": 26.566,
+     "word": " cerrás,",
+     "p": 1
+    },
+    {
+     "start": 27.106,
+     "end": 27.206,
+     "word": " sino",
+     "p": 1
+    },
+    {
+     "start": 27.466,
+     "end": 27.586,
+     "word": " quién",
+     "p": 1
+    },
+    {
+     "start": 27.586,
+     "end": 27.646,
+     "word": " les",
+     "p": 1
+    },
+    {
+     "start": 27.966,
+     "end": 28.026,
+     "word": " contesta.",
+     "p": 1
+    },
+    {
+     "start": 28.846,
+     "end": 29.026,
+     "word": " Si",
+     "p": 0.756
+    },
+    {
+     "start": 29.146,
+     "end": 29.206,
+     "word": " tenés",
+     "p": 0.823
+    },
+    {
+     "start": 29.306,
+     "end": 29.366,
+     "word": " un",
+     "p": 0.993
+    },
+    {
+     "start": 29.766,
+     "end": 29.946,
+     "word": " consultorio,",
+     "p": 0.998
+    },
+    {
+     "start": 30.246,
+     "end": 30.306,
+     "word": " comentá",
+     "p": 0.829
+    },
+    {
+     "start": 30.466,
+     "end": 30.546,
+     "word": " AGENTE.",
+     "p": 0.005
+    }
+   ]
+  }
+ ]
+}

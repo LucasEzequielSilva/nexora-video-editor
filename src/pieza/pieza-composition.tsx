@@ -4,10 +4,14 @@ import Sfx from "../reserva/components/sfx";
 import { useReservaFonts } from "../reserva/fonts";
 import { ease, easeInOut } from "../reserva/motion";
 import { msToFrame, resolverMs } from "./anclas";
+import { AroLayer, TitularLayer } from "./anuncio";
 import CaptionsVertical from "./captions-vertical";
+import { CapaGlitchIa, SonidoGlitchIa } from "./glitch-ia";
+import { DestelloLayer, DetrasFrente, DetrasLayer, PersonaDelante, presencia, rangoDetras } from "./detras";
 import Musica from "./musica";
 import { type CaraCuadro, caraEn, inicioDePlano, suavizarCara } from "./cara";
-import { BrollLayer, EscenaLayer, IconoLayer, rangoEscena, StrikeLayer } from "./overlays";
+import { CapaNeon, esNeon, rangoNeon } from "./neon/capas";
+import { BrollLayer, EscenaLayer, IconoLayer, rangoBroll, rangoEscena, StrikeLayer } from "./overlays";
 import type { PiezaProps, RawWord, Zoom } from "./types";
 
 const DEFAULT_ORIGIN_Y = 38;
@@ -94,36 +98,92 @@ export default function PiezaComposition({ slug, config, words, cara }: PiezaPro
   const escenasSinSubtitulos = useMemo(
     () =>
       (config?.overlays ?? []).flatMap((o) => {
+        if (esNeon(o)) {
+          const r = o.subtitulos ? null : rangoNeon(o, words);
+          return r ? [r] : [];
+        }
         if (o.tipo !== "escena" || o.subtitulos) return [];
         const r = rangoEscena(o, words, durationInFrames);
         return r ? [r] : [];
       }),
     [config, words, durationInFrames],
   );
+  // Escenas y b-rolls a los que les sigue una escena pegada (arranca entre 12 cuadros antes y 3 después de su fin):
+  // se quedan opacos debajo mientras la otra entra, así el cruce no deja ver la cara.
+  const encadenadas = useMemo(() => {
+    const ovs = config?.overlays ?? [];
+    const rango = (o: (typeof ovs)[number]) =>
+      o.tipo === "escena" ? rangoEscena(o, words, durationInFrames) : o.tipo === "broll" ? rangoBroll(o, words) : null;
+    const set = new Set<number>();
+    ovs.forEach((o, i) => {
+      const r = rango(o);
+      if (!r) return;
+      const fin = r.from + r.duration;
+      const pegada = ovs.some((p, j) => {
+        if (j === i || p.tipo !== "escena" || (o.tipo === "escena" && j < i)) return false;
+        const rp = rangoEscena(p, words, durationInFrames);
+        return rp !== null && rp.from >= fin - 12 && rp.from <= fin + 3;
+      });
+      if (pegada) set.add(i);
+    });
+    return set;
+  }, [config, words, durationInFrames]);
+  const detras = useMemo(
+    () =>
+      (config?.overlays ?? []).flatMap((o) => {
+        if (o.tipo !== "detras") return [];
+        const r = rangoDetras(o, words);
+        return r ? [{ r, subtitulos: o.subtitulos ?? false }] : [];
+      }),
+    [config, words],
+  );
   if (!config) return null;
 
   const { scale, originY } = zoomAt(frame, zooms);
+  const estiloEncuadre = encuadre(scale, caraEn(caraSuave.cuadros, frame), frame, caraSuave.cortes, originY);
   const overlays = config.overlays;
-  const tapados = escenasSinSubtitulos.reduce((acc, r) => {
-    const fin = r.from + r.duration;
-    const sale = fin >= durationInFrames - 1 ? 1 : ease(frame, [fin - RAMPA_SUBTITULOS, fin], [1, 0]);
-    return Math.max(acc, Math.min(ease(frame, [r.from, r.from + RAMPA_SUBTITULOS]), sale));
-  }, 0);
+  const tapados = Math.max(
+    escenasSinSubtitulos.reduce((acc, r) => {
+      const fin = r.from + r.duration;
+      const sale = fin >= durationInFrames - 1 ? 1 : ease(frame, [fin - RAMPA_SUBTITULOS, fin], [1, 0]);
+      return Math.max(acc, Math.min(ease(frame, [r.from, r.from + RAMPA_SUBTITULOS]), sale));
+    }, 0),
+    ...detras.filter((d) => !d.subtitulos).map((d) => presencia(d.r, frame)),
+  );
 
   return (
     <AbsoluteFill style={{ backgroundColor: "#000" }}>
-      <AbsoluteFill style={encuadre(scale, caraEn(caraSuave.cuadros, frame), frame, caraSuave.cortes, originY)}>
+      <AbsoluteFill style={estiloEncuadre}>
         <OffthreadVideo src={staticFile(`piezas/${slug}/video.mp4`)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+        {overlays.map((o, i) => (o.tipo === "glitch-ia" ? <CapaGlitchIa key={`g${i}`} overlay={o} words={words} slug={slug} /> : null))}
       </AbsoluteFill>
-      {overlays.map((o, i) => (o.tipo === "broll" ? <BrollLayer key={`b${i}`} overlay={o} words={words} /> : null))}
+      {overlays.map((o, i) => (o.tipo === "glitch-ia" ? <SonidoGlitchIa key={`gs${i}`} overlay={o} words={words} /> : null))}
+      {overlays.map((o, i) => (o.tipo === "broll" ? <BrollLayer key={`b${i}`} overlay={o} words={words} encadenada={encadenadas.has(i)} /> : null))}
+      {overlays.map((o, i) => (o.tipo === "detras" ? <DetrasLayer key={`d${i}`} overlay={o} words={words} /> : null))}
+      {detras.length > 0 && <PersonaDelante slug={slug} rangos={detras.map((d) => d.r)} estiloEncuadre={estiloEncuadre} />}
+      {overlays.map((o, i) => (o.tipo === "detras" ? <DetrasFrente key={`df${i}`} overlay={o} words={words} /> : null))}
+      {overlays.map((o, i) => {
+        if (o.tipo === "aro") return <AroLayer key={`a${i}`} overlay={o} words={words} totalFrames={durationInFrames} />;
+        if (o.tipo === "titular") return <TitularLayer key={`t${i}`} overlay={o} words={words} />;
+        return null;
+      })}
       {overlays.map((o, i) =>
         o.tipo === "escena" ? (
-          <EscenaLayer key={`e${i}`} overlay={o} words={words} slug={slug} totalFrames={durationInFrames} cara={caraSuave.cuadros} />
+          <EscenaLayer
+            key={`e${i}`}
+            overlay={o}
+            words={words}
+            slug={slug}
+            totalFrames={durationInFrames}
+            cara={caraSuave.cuadros}
+            encadenada={encadenadas.has(i)}
+          />
         ) : null,
       )}
       {overlays.map((o, i) => {
         if (o.tipo === "strike") return <StrikeLayer key={`s${i}`} overlay={o} words={words} />;
         if (o.tipo === "icono") return <IconoLayer key={`i${i}`} overlay={o} words={words} />;
+        if (esNeon(o)) return <CapaNeon key={`n${i}`} overlay={o} words={words} />;
         return null;
       })}
       {config.musica && <Musica musica={config.musica} words={words} />}
@@ -146,8 +206,17 @@ export default function PiezaComposition({ slug, config, words, cara }: PiezaPro
         return <Sfx key={i} name={cue.nombre} at={msToFrame(ms)} volume={cue.volumen ?? 0.3} cutAt={corte === null ? undefined : msToFrame(corte)} />;
       })}
       <AbsoluteFill style={{ opacity: 1 - tapados }}>
-        <CaptionsVertical words={words} fuente={config.subtitulos?.fuente} acentos={config.subtitulos?.acentos} />
+        <CaptionsVertical
+          words={words}
+          fuente={config.subtitulos?.fuente}
+          acentos={config.subtitulos?.acentos}
+          estilo={config.subtitulos?.estilo}
+          neon={config.subtitulos?.neon}
+          gradiente={config.subtitulos?.gradiente}
+          centroY={config.subtitulos?.estilo === "anuncio" ? 55 : undefined}
+        />
       </AbsoluteFill>
+      {overlays.map((o, i) => (o.tipo === "destello" ? <DestelloLayer key={`f${i}`} overlay={o} words={words} /> : null))}
     </AbsoluteFill>
   );
 }

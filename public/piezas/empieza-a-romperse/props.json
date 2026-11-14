@@ -1,6 +1,6 @@
 {
   "_comentario": "v1 (2026-09-25): formato ganador con las reglas nuevas de Lucas: escenas solas alternando blanco/negro sin grilla, 3D del pack (cofre, archivos, pilar) y logos oficiales en vez de iconos Airbnb, b-rolls que no se repiten con piezas anteriores (065, 340, 122), negro del hook en el corte de toma. Voz -18.5 LUFS (mas fuerte que la ganadora): musica 0.45, whooshes x2.7, remates x2.",
-  "durationSeconds": 52.833,
+  "durationSeconds": 49.8,
   "subtitulos": {
     "fuente": "satoshi",
     "acentos": [
@@ -11,11 +11,11 @@
   },
   "pausas": [
     {
-      "_comentario": "En el corte de toma de video-jc (cuadro 86 = 2.867 s): fin de 'romperse' 2.72 + 130 ms.",
+      "_comentario": "En el corte de toma de video-jc (cuadro 86 = 2.867 s): fin de romperse 2.88 (medium) - 25 ms (v2).",
       "tras": {
         "palabra": "romperse",
         "fin": true,
-        "offsetMs": 130
+        "offsetMs": -25
       },
       "segundos": 0.9
     },
@@ -56,15 +56,6 @@
       "modo": "congelar"
     },
     {
-      "tras": {
-        "palabra": "contestó",
-        "fin": true,
-        "offsetMs": 40
-      },
-      "segundos": 0.4,
-      "modo": "congelar"
-    },
-    {
       "_comentario": "Al final: 1 s para que el CTA termine (respuesta y chip).",
       "tras": {
         "palabra": "tiene",
@@ -77,15 +68,15 @@
     }
   ],
   "musica": {
-    "_comentario": "METAMORPHOSIS ganador nivelada, drop en la vuelta del negro; el 2do drop cae solo a ~47.7 s (entrada del CTA). Comercial: riesgo de mute avisado.",
-    "archivo": "recursos/musica-056-nivelada.m4a",
+    "_comentario": "METAMORPHOSIS ganador nivelada, drop en la vuelta del negro; el 2do drop cae solo a ~47.7 s (entrada del CTA). Comercial: riesgo de mute avisado. v3b (Lucas: 'con auris se me hace mucho ruido la musica, deberia estar mas chill'): sub del 808 -9 dB (bass g=-9 f=110) y volumen 0.45 -> 0.34.",
+    "archivo": "recursos/musica-056-suave.m4a",
     "desde": {
       "palabra": "te",
       "n": 1,
       "offsetMs": 67
     },
     "inicioS": 0,
-    "volumen": 0.45,
+    "volumen": 0.17,
     "bajoVoz": 0.7,
     "fadeInMs": 40,
     "fadeOutMs": 1200
@@ -175,7 +166,7 @@
       },
       "fin": {
         "palabra": "las",
-        "offsetMs": 67
+        "offsetMs": -70
       },
       "escalaInicial": 1.6,
       "escala": 1.65
@@ -185,7 +176,7 @@
       "tipo": "suave",
       "inicio": {
         "palabra": "las",
-        "offsetMs": 67
+        "offsetMs": -70
       },
       "fin": {
         "palabra": "las",
@@ -376,11 +367,11 @@
       "inicio": {
         "palabra": "tu",
         "n": 2,
-        "offsetMs": 300
+        "offsetMs": 130
       },
       "fin": {
         "palabra": "no",
-        "n": 7,
+        "n": 6,
         "fin": true
       },
       "escalaInicial": 1,
@@ -390,14 +381,14 @@
       "tipo": "suave",
       "inicio": {
         "palabra": "no",
-        "n": 7,
+        "n": 6,
         "fin": true
       },
       "fin": {
         "palabra": "no",
-        "n": 7,
+        "n": 6,
         "fin": true,
-        "offsetMs": 147
+        "offsetMs": 590
       },
       "escalaInicial": 2,
       "escala": 2.05
@@ -407,15 +398,15 @@
       "tipo": "suave",
       "inicio": {
         "palabra": "no",
-        "n": 7,
+        "n": 6,
         "fin": true,
-        "offsetMs": 147
+        "offsetMs": 590
       },
       "fin": {
         "palabra": "no",
-        "n": 7,
+        "n": 6,
         "fin": true,
-        "offsetMs": 947
+        "offsetMs": 1390
       },
       "escalaInicial": 2.05,
       "escala": 1,
@@ -425,9 +416,9 @@
       "tipo": "suave",
       "inicio": {
         "palabra": "no",
-        "n": 7,
+        "n": 6,
         "fin": true,
-        "offsetMs": 947
+        "offsetMs": 1390
       },
       "fin": {
         "palabra": "trabajando"
@@ -830,7 +821,7 @@
         "offsetMs": -200
       },
       "hasta": {
-        "palabra": "nadie",
+        "palabra": "tu",
         "n": 2,
         "offsetMs": 100
       },
@@ -876,76 +867,6 @@
             }
           ]
         ]
-      }
-    },
-    {
-      "_comentario": "ESCENA BLANCA: 'nadie anota el mensaje que no contestó' + WhatsApp tachado en 'contestó'.",
-      "tipo": "escena",
-      "escena": "frase",
-      "tema": "blanco",
-      "pip": "ninguno",
-      "gananciaSfx": 2.7,
-      "desde": {
-        "palabra": "nadie",
-        "n": 2,
-        "offsetMs": -250
-      },
-      "hasta": {
-        "palabra": "tu",
-        "n": 2,
-        "offsetMs": 300
-      },
-      "cues": {
-        "nadie": {
-          "palabra": "nadie",
-          "n": 2
-        },
-        "mensaje": {
-          "palabra": "mensaje"
-        },
-        "que": {
-          "palabra": "no",
-          "n": 6,
-          "offsetMs": -120
-        },
-        "contesto": {
-          "palabra": "contestó"
-        }
-      },
-      "datos": {
-        "lineas": [
-          [
-            {
-              "texto": "nadie anota el",
-              "estilo": "serif",
-              "cue": "nadie"
-            },
-            {
-              "texto": "mensaje",
-              "estilo": "sans",
-              "cue": "mensaje"
-            }
-          ],
-          [
-            {
-              "texto": "que no",
-              "estilo": "serif",
-              "cue": "que"
-            },
-            {
-              "texto": "contestó.",
-              "estilo": "sans",
-              "cue": "contesto"
-            }
-          ]
-        ],
-        "objeto": {
-          "marca": "whatsapp",
-          "cue": "nadie",
-          "tachar": "contesto",
-          "lado": 520,
-          "y": 560
-        }
       }
     },
     {

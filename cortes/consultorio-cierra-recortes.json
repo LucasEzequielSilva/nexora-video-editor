@@ -1,0 +1,56 @@
+{
+  "fuente": "video-jc.mp4",
+  "hechoPor": "editor (2026-09-28), con el criterio de Lucas: pieza entregada entera para que él corrija",
+  "nota": "Sin recortes sobre video-jc: los reinicios se resolvieron eligiendo tomas (CTA: 3er intento). trabas.mjs: 0 posibles trabas.",
+  "recortes": [
+    {
+      "desde": 10.601,
+      "hasta": 10.744,
+      "motivo": "silencio",
+      "nota": "",
+      "contexto": {
+        "texto": "",
+        "antes": "pacientes.",
+        "despues": "de",
+        "duracion": 0.143,
+        "rmsDb": -58.47,
+        "bordeAntesDb": -43.052,
+        "bordeDespuesDb": -27.815,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 23.621,
+      "hasta": 23.802,
+      "motivo": "silencio",
+      "nota": "",
+      "contexto": {
+        "texto": "",
+        "antes": "es",
+        "despues": "si",
+        "duracion": 0.181,
+        "rmsDb": -52.807,
+        "bordeAntesDb": -38.819,
+        "bordeDespuesDb": -39.066,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 26.888,
+      "hasta": 27.1,
+      "motivo": "silencio",
+      "nota": "Fin corrido de 27.197 a 27.10 (2026-09-29, con Lucas): el corte se comía el arranque del 'Si' del CTA (la voz empieza en 27.12).",
+      "contexto": {
+        "texto": "Si",
+        "antes": "contesta.",
+        "despues": "tenés",
+        "duracion": 0.212,
+        "rmsDb": -46.049,
+        "bordeAntesDb": -43.772,
+        "bordeDespuesDb": -34.714,
+        "esSilencio": true
+      }
+    }
+  ],
+  "editadoPor": "Lucas (Cut AI)"
+}

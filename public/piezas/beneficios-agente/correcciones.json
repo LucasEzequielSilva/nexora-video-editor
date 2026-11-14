@@ -1,0 +1,19 @@
+{
+  "_comentario": "v1 (2026-09-28), large-v3. 'decir tengo una idea en el negocio' -> 'IA' (whisper confunde IA con idea; a confirmar con Lucas). Puntuación de enunciados con la misma cantidad de palabras.",
+  "reemplazos": [
+    ["consultorio puede responder", "consultorio puede responder"],
+    ["inmobiliaria puede filtrar", "inmobiliaria puede filtrar"],
+    ["requisitos derivar solamente", "requisitos, derivar solamente"],
+    ["restaurante puede tomar reservas responder horarios menú", "restaurante puede tomar reservas, responder horarios, menú"],
+    ["logística puede informar", "logística, puede informar"],
+    ["envío recibir reclamos clasificar", "envío, recibir reclamos, clasificar"],
+    ["derivar la salaria correcta", "derivar al área correcta"],
+    ["estética puede explicar tratamientos informar precios detectar qué servicio busca la persona y agendar directamente en", "estética puede explicar tratamientos, informar precios, detectar qué servicio busca la persona y agendar directamente. En"],
+    ["e -commerce", "e-commerce"],
+    ["de consultas puede responder dudas", "de consultas, puede responder dudas"],
+    ["tengo una idea en el negocio", "tengo una IA en el negocio"],
+    ["correcto se ejecute una acción y tu equipo", "correcto, se ejecute una acción y tu equipo"],
+    ["comenta la palabra ia", "Comentá la palabra IA"]
+  ],
+  "tramos": []
+}

@@ -1,55 +1,15 @@
 {
+  "_comentario": "v3 (2026-09-28): montaje corregido por Lucas en Cut AI. Se quitaron los tramos medidos sobre la v2 porque sus tiempos ya no corresponden.",
   "reemplazos": [
-    [
-      "empiezas a romper",
-      "empieza a romperse"
-    ],
-    [
-      "lleva la agenda",
-      "llena la agenda"
-    ],
-    [
-      "entra un triple",
-      "entra el triple"
-    ],
-    [
-      "a ese tiempo",
-      "a tiempo"
-    ],
-    [
-      "lo arreglas",
-      "lo arreglás"
-    ],
-    [
-      "no sabes cuánta",
-      "no sabés cuánta"
-    ],
-    [
-      "escribime estructura",
-      "escribime ESTRUCTURA"
-    ],
-    [
-      "cómo soy un negocio",
-      "cómo se ve un negocio"
-    ]
+    ["negocio empiece a andar", "negocio empieza a andar"],
+    ["día que empiezas a romper", "día que empieza a romperse"],
+    ["consultorio que lleva la agenda", "consultorio que llena la agenda"],
+    ["ahora le entra en un filtro de consultas", "ahora le entra el triple de consultas"],
+    ["no llegan a responderse a tiempo", "no llegan a responder a tiempo"],
+    ["lo arreglas cuando", "lo arreglás cuando"],
+    ["no sabes cuánta", "no sabés cuánta"],
+    ["escribime estructura", "Escribime ESTRUCTURA"],
+    ["negocio que sí la tiene", "negocio que sí lo tiene"]
   ],
-  "tramos": [
-    {
-      "desde": 40.3,
-      "hasta": 41.85,
-      "nota": "Whisper escribió 'estructura, instalando lo que falta' donde se dice 'estructura no' (large-v3 sobre el crudo: 'no' 405.34-405.42). Islas de energía: 40.34-40.66 y 40.72-41.04.",
-      "palabras": [
-        {
-          "word": "estructura",
-          "start": 40.34,
-          "end": 40.7
-        },
-        {
-          "word": "no.",
-          "start": 40.72,
-          "end": 41.02
-        }
-      ]
-    }
-  ]
+  "tramos": []
 }

@@ -1,0 +1,493 @@
+{
+ "language": "es",
+ "duration": 38.5,
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 3.29,
+   "text": " Hola, caballedo, lo tamo llamando de su Excel, vite.",
+   "words": [
+    {
+     "start": 0.0,
+     "end": 0.35,
+     "word": " Hola,",
+     "p": 0.99
+    },
+    {
+     "start": 0.49,
+     "end": 1.01,
+     "word": " caballedo,",
+     "p": 0.99
+    },
+    {
+     "start": 1.41,
+     "end": 1.61,
+     "word": " lo",
+     "p": 0.99
+    },
+    {
+     "start": 1.61,
+     "end": 1.81,
+     "word": " tamo",
+     "p": 0.99
+    },
+    {
+     "start": 1.81,
+     "end": 2.29,
+     "word": " llamando",
+     "p": 0.99
+    },
+    {
+     "start": 2.29,
+     "end": 2.45,
+     "word": " de",
+     "p": 0.99
+    },
+    {
+     "start": 2.45,
+     "end": 2.65,
+     "word": " su",
+     "p": 0.99
+    },
+    {
+     "start": 2.65,
+     "end": 2.95,
+     "word": " Excel,",
+     "p": 0.99
+    },
+    {
+     "start": 3.09,
+     "end": 3.29,
+     "word": " vite.",
+     "p": 0.99
+    }
+   ]
+  },
+  {
+   "start": 3.64,
+   "end": 5.42,
+   "text": " ¿A uté le gusta manejá todo por WhatsApp?",
+   "words": [
+    {
+     "start": 3.64,
+     "end": 3.7,
+     "word": " ¿A",
+     "p": 0.99
+    },
+    {
+     "start": 3.7,
+     "end": 3.8,
+     "word": " uté",
+     "p": 0.99
+    },
+    {
+     "start": 3.8,
+     "end": 4.02,
+     "word": " le",
+     "p": 0.99
+    },
+    {
+     "start": 4.02,
+     "end": 4.18,
+     "word": " gusta",
+     "p": 0.99
+    },
+    {
+     "start": 4.18,
+     "end": 4.66,
+     "word": " manejá",
+     "p": 0.99
+    },
+    {
+     "start": 4.66,
+     "end": 4.9,
+     "word": " todo",
+     "p": 0.99
+    },
+    {
+     "start": 4.9,
+     "end": 5.12,
+     "word": " por",
+     "p": 0.99
+    },
+    {
+     "start": 5.12,
+     "end": 5.42,
+     "word": " WhatsApp?",
+     "p": 0.99
+    }
+   ]
+  },
+  {
+   "start": 5.58,
+   "end": 6.8,
+   "text": " Sí, sí, me encanta.",
+   "words": [
+    {
+     "start": 5.58,
+     "end": 6.04,
+     "word": " Sí,",
+     "p": 0.99
+    },
+    {
+     "start": 6.14,
+     "end": 6.3,
+     "word": " sí,",
+     "p": 0.99
+    },
+    {
+     "start": 6.3,
+     "end": 6.48,
+     "word": " me",
+     "p": 0.99
+    },
+    {
+     "start": 6.48,
+     "end": 6.8,
+     "word": " encanta.",
+     "p": 0.99
+    }
+   ]
+  },
+  {
+   "start": 7.13,
+   "end": 9.27,
+   "text": " ¡Pefeto! ¡Pefeto caballedo!",
+   "words": [
+    {
+     "start": 7.13,
+     "end": 7.78,
+     "word": " ¡Pefeto!",
+     "p": 0.99
+    },
+    {
+     "start": 8.13,
+     "end": 8.77,
+     "word": " ¡Pefeto",
+     "p": 0.99
+    },
+    {
+     "start": 8.77,
+     "end": 9.27,
+     "word": " caballedo!",
+     "p": 0.99
+    }
+   ]
+  },
+  {
+   "start": 9.5,
+   "end": 11.86,
+   "text": " Por gustarle el WhatsApp, coso.",
+   "words": [
+    {
+     "start": 9.5,
+     "end": 9.82,
+     "word": " Por",
+     "p": 0.99
+    },
+    {
+     "start": 9.82,
+     "end": 10.32,
+     "word": " gustarle",
+     "p": 0.99
+    },
+    {
+     "start": 10.32,
+     "end": 10.5,
+     "word": " el",
+     "p": 0.99
+    },
+    {
+     "start": 10.5,
+     "end": 11.0,
+     "word": " WhatsApp,",
+     "p": 0.99
+    },
+    {
+     "start": 11.4,
+     "end": 11.86,
+     "word": " coso.",
+     "p": 0.99
+    }
+   ]
+  },
+  {
+   "start": 12.17,
+   "end": 14.72,
+   "text": " Uté ganó, podé laburá lo domingo.",
+   "words": [
+    {
+     "start": 12.17,
+     "end": 12.5,
+     "word": " Uté",
+     "p": 0.99
+    },
+    {
+     "start": 12.52,
+     "end": 12.93,
+     "word": " ganó,",
+     "p": 0.99
+    },
+    {
+     "start": 13.62,
+     "end": 13.86,
+     "word": " podé",
+     "p": 0.99
+    },
+    {
+     "start": 13.86,
+     "end": 14.18,
+     "word": " laburá",
+     "p": 0.99
+    },
+    {
+     "start": 14.18,
+     "end": 14.36,
+     "word": " lo",
+     "p": 0.99
+    },
+    {
+     "start": 14.36,
+     "end": 14.72,
+     "word": " domingo.",
+     "p": 0.99
+    }
+   ]
+  },
+  {
+   "start": 14.88,
+   "end": 15.56,
+   "text": " Buenísimo.",
+   "words": [
+    {
+     "start": 14.88,
+     "end": 15.56,
+     "word": " Buenísimo.",
+     "p": 0.99
+    }
+   ]
+  },
+  {
+   "start": 15.75,
+   "end": 17.39,
+   "text": " Por todo un año, vite.",
+   "words": [
+    {
+     "start": 15.75,
+     "end": 16.09,
+     "word": " Por",
+     "p": 0.99
+    },
+    {
+     "start": 16.09,
+     "end": 16.35,
+     "word": " todo",
+     "p": 0.99
+    },
+    {
+     "start": 16.35,
+     "end": 16.59,
+     "word": " un",
+     "p": 0.99
+    },
+    {
+     "start": 16.59,
+     "end": 16.83,
+     "word": " año,",
+     "p": 0.99
+    },
+    {
+     "start": 17.03,
+     "end": 17.39,
+     "word": " vite.",
+     "p": 0.99
+    }
+   ]
+  },
+  {
+   "start": 17.78,
+   "end": 19.37,
+   "text": " ¿Tá contento, caballedo?",
+   "words": [
+    {
+     "start": 17.78,
+     "end": 18.09,
+     "word": " ¿Tá",
+     "p": 0.99
+    },
+    {
+     "start": 18.09,
+     "end": 18.58,
+     "word": " contento,",
+     "p": 0.99
+    },
+    {
+     "start": 18.75,
+     "end": 19.37,
+     "word": " caballedo?",
+     "p": 0.99
+    }
+   ]
+  },
+  {
+   "start": 19.5,
+   "end": 20.4,
+   "text": " Estoy feliz.",
+   "words": [
+    {
+     "start": 19.5,
+     "end": 19.87,
+     "word": " Estoy",
+     "p": 0.99
+    },
+    {
+     "start": 19.87,
+     "end": 20.4,
+     "word": " feliz.",
+     "p": 0.99
+    }
+   ]
+  },
+  {
+   "start": 20.98,
+   "end": 23.12,
+   "text": " ¡Pefeto! ¡Pefeto caballedo!",
+   "words": [
+    {
+     "start": 20.98,
+     "end": 21.63,
+     "word": " ¡Pefeto!",
+     "p": 0.99
+    },
+    {
+     "start": 21.98,
+     "end": 22.62,
+     "word": " ¡Pefeto",
+     "p": 0.99
+    },
+    {
+     "start": 22.62,
+     "end": 23.12,
+     "word": " caballedo!",
+     "p": 0.99
+    }
+   ]
+  },
+  {
+   "start": 24.18,
+   "end": 27.98,
+   "text": " Pa podé seguí así, uté tiene que pagá veinte mil dólare.",
+   "words": [
+    {
+     "start": 24.18,
+     "end": 24.46,
+     "word": " Pa",
+     "p": 0.99
+    },
+    {
+     "start": 24.46,
+     "end": 24.66,
+     "word": " podé",
+     "p": 0.99
+    },
+    {
+     "start": 24.66,
+     "end": 25.04,
+     "word": " seguí",
+     "p": 0.99
+    },
+    {
+     "start": 25.04,
+     "end": 25.36,
+     "word": " así,",
+     "p": 0.99
+    },
+    {
+     "start": 25.59,
+     "end": 25.86,
+     "word": " uté",
+     "p": 0.99
+    },
+    {
+     "start": 25.86,
+     "end": 26.18,
+     "word": " tiene",
+     "p": 0.99
+    },
+    {
+     "start": 26.18,
+     "end": 26.4,
+     "word": " que",
+     "p": 0.99
+    },
+    {
+     "start": 26.4,
+     "end": 26.66,
+     "word": " pagá",
+     "p": 0.99
+    },
+    {
+     "start": 26.66,
+     "end": 27.1,
+     "word": " veinte",
+     "p": 0.99
+    },
+    {
+     "start": 27.1,
+     "end": 27.5,
+     "word": " mil",
+     "p": 0.99
+    },
+    {
+     "start": 27.5,
+     "end": 27.98,
+     "word": " dólare.",
+     "p": 0.99
+    }
+   ]
+  },
+  {
+   "start": 28.2,
+   "end": 30.08,
+   "text": " Sí, e pa pagá el coso.",
+   "words": [
+    {
+     "start": 28.2,
+     "end": 28.56,
+     "word": " Sí,",
+     "p": 0.99
+    },
+    {
+     "start": 28.93,
+     "end": 29.14,
+     "word": " e",
+     "p": 0.99
+    },
+    {
+     "start": 29.14,
+     "end": 29.3,
+     "word": " pa",
+     "p": 0.99
+    },
+    {
+     "start": 29.3,
+     "end": 29.54,
+     "word": " pagá",
+     "p": 0.99
+    },
+    {
+     "start": 29.54,
+     "end": 29.7,
+     "word": " el",
+     "p": 0.99
+    },
+    {
+     "start": 29.7,
+     "end": 30.08,
+     "word": " coso.",
+     "p": 0.99
+    }
+   ]
+  }
+ ]
+}

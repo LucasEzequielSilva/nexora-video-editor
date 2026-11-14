@@ -1,0 +1,29 @@
+{
+  "duracion_s": 29.028,
+  "uniones": [
+    {
+      "salida_s": 1.842,
+      "origen_antes_s": 1.842,
+      "origen_despues_s": 2.397,
+      "silencio_quitado_s": 0.555
+    },
+    {
+      "salida_s": 5.531,
+      "origen_antes_s": 6.086,
+      "origen_despues_s": 6.576,
+      "silencio_quitado_s": 0.491
+    },
+    {
+      "salida_s": 18.794,
+      "origen_antes_s": 19.84,
+      "origen_despues_s": 20.131,
+      "silencio_quitado_s": 0.291
+    },
+    {
+      "salida_s": 25.343,
+      "origen_antes_s": 26.68,
+      "origen_despues_s": 29.245,
+      "silencio_quitado_s": 2.566
+    }
+  ]
+}

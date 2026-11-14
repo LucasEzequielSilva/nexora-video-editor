@@ -1,0 +1,81 @@
+{
+  "ancho": 390,
+  "alto": 2100,
+  "dpr": 3,
+  "fondo": "fondo.png",
+  "completo": "completo.png",
+  "items": [
+    {
+      "id": "equipo",
+      "x": 33,
+      "y": 599.75,
+      "w": 324,
+      "h": 127,
+      "texto": "Equipo reservadoiPhone 15 128 GB NegroIMEI 000000000001214Reserva consumida",
+      "archivo": "00-equipo.png"
+    },
+    {
+      "id": "cierre",
+      "x": 33,
+      "y": 726.75,
+      "w": 324,
+      "h": 77,
+      "texto": "CierreResultadoVendido",
+      "archivo": "01-cierre.png"
+    },
+    {
+      "id": "eslabon0",
+      "x": 33,
+      "y": 1178.75,
+      "w": 96,
+      "h": 46.5,
+      "texto": "LeadVinculado",
+      "archivo": "02-eslabon0.png"
+    },
+    {
+      "id": "eslabon1",
+      "x": 137,
+      "y": 1178.75,
+      "w": 114.625,
+      "h": 46.5,
+      "texto": "ConversaciónVinculado",
+      "archivo": "03-eslabon1.png"
+    },
+    {
+      "id": "eslabon2",
+      "x": 33,
+      "y": 1233.25,
+      "w": 132.4375,
+      "h": 63,
+      "texto": "TurnoRetiro de un equipoVinculado",
+      "archivo": "04-eslabon2.png"
+    },
+    {
+      "id": "eslabon3",
+      "x": 173.4375,
+      "y": 1233.25,
+      "w": 96,
+      "h": 63,
+      "texto": "UnidadFalta",
+      "archivo": "05-eslabon3.png"
+    },
+    {
+      "id": "eslabon4",
+      "x": 33,
+      "y": 1304.25,
+      "w": 96,
+      "h": 63,
+      "texto": "OperaciónVentaPor confirmar",
+      "archivo": "06-eslabon4.png"
+    },
+    {
+      "id": "eslabon5",
+      "x": 137,
+      "y": 1304.25,
+      "w": 133.453125,
+      "h": 63,
+      "texto": "StockReserva consumidaVinculado",
+      "archivo": "07-eslabon5.png"
+    }
+  ]
+}

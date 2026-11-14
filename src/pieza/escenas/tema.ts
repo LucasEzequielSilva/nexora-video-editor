@@ -2,7 +2,8 @@ import { createContext, useContext } from "react";
 import { PAPER, SHADOW } from "../../reserva/theme";
 
 /** Fondo de la escena. Lucas (2026-09-25): "ir rotando de white screen a black screen". */
-export type TemaEscena = "blanco" | "negro";
+/** "limpio": blanco casi puro, sin sombras (estilo anuncio, referencia anuncio-2026-09-27). */
+export type TemaEscena = "blanco" | "negro" | "limpio";
 
 export type Tinta = {
   tinta: string;
@@ -15,6 +16,14 @@ export type Tinta = {
 
 export const TINTAS: Record<TemaEscena, Tinta> = {
   blanco: {
+    tinta: PAPER.ink,
+    tintaSuave: PAPER.inkSoft,
+    tarjeta: PAPER.card,
+    tarjetaBorde: "rgba(0,0,0,0.04)",
+    sombraTarjeta: SHADOW.card,
+    pista: "#f1f1ee",
+  },
+  limpio: {
     tinta: PAPER.ink,
     tintaSuave: PAPER.inkSoft,
     tarjeta: PAPER.card,

@@ -1,0 +1,71 @@
+{
+  "duracion_s": 91.707,
+  "uniones": [
+    {
+      "salida_s": 6.269,
+      "origen_antes_s": 6.269,
+      "origen_despues_s": 7.182,
+      "silencio_quitado_s": 0.913
+    },
+    {
+      "salida_s": 35.555,
+      "origen_antes_s": 36.468,
+      "origen_despues_s": 37.567,
+      "silencio_quitado_s": 1.099
+    },
+    {
+      "salida_s": 43.287,
+      "origen_antes_s": 45.299,
+      "origen_despues_s": 46.606,
+      "silencio_quitado_s": 1.307
+    },
+    {
+      "salida_s": 45.659,
+      "origen_antes_s": 48.979,
+      "origen_despues_s": 49.395,
+      "silencio_quitado_s": 0.416
+    },
+    {
+      "salida_s": 52.519,
+      "origen_antes_s": 56.255,
+      "origen_despues_s": 56.956,
+      "silencio_quitado_s": 0.701
+    },
+    {
+      "salida_s": 54.491,
+      "origen_antes_s": 58.928,
+      "origen_despues_s": 59.801,
+      "silencio_quitado_s": 0.872
+    },
+    {
+      "salida_s": 56.215,
+      "origen_antes_s": 61.525,
+      "origen_despues_s": 61.761,
+      "silencio_quitado_s": 0.236
+    },
+    {
+      "salida_s": 57.531,
+      "origen_antes_s": 63.077,
+      "origen_despues_s": 63.34,
+      "silencio_quitado_s": 0.263
+    },
+    {
+      "salida_s": 58.628,
+      "origen_antes_s": 64.437,
+      "origen_despues_s": 64.825,
+      "silencio_quitado_s": 0.388
+    },
+    {
+      "salida_s": 65.768,
+      "origen_antes_s": 71.966,
+      "origen_despues_s": 75.564,
+      "silencio_quitado_s": 3.599
+    },
+    {
+      "salida_s": 77.409,
+      "origen_antes_s": 87.205,
+      "origen_despues_s": 88.763,
+      "silencio_quitado_s": 1.558
+    }
+  ]
+}

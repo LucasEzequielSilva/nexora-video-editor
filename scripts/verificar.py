@@ -248,8 +248,9 @@ def modo_audio(e):
             datos["margen_voz_db"] = {"mediana": round(med, 1), "p10": round(float(np.percentile(margen, 10)), 1),
                                       "p90": round(float(np.percentile(margen, 90)), 1)}
             texto = (f"(c) música+SFX bajo la voz: mediana {med:.1f} dB (p10 {datos['margen_voz_db']['p10']}, "
-                     f"p90 {datos['margen_voz_db']['p90']}); objetivo 9–15 dB")
-            items.append(item("ok" if 9 <= med <= 15 else "aviso", texto))
+                     f"p90 {datos['margen_voz_db']['p90']}); objetivo 17–23 dB")
+            # 2026-09-28: con 12–14 dB "se escucha mucho la música, tapa la voz" (CLAUDE.md §8)
+            items.append(item("ok" if 17 <= med <= 23 else "aviso", texto))
     else:
         items.append(item("info", "la pieza no tiene música (props.musica)"))
 

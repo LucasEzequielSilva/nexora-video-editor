@@ -4,7 +4,7 @@
 // cuadrando sin re-transcribir, y ajusta la duración en props.json. Nunca toca video-jc.mp4.
 // Uso: node scripts/recortar.mjs public/piezas/<slug> [--dry]
 import { spawnSync } from "node:child_process";
-import { copyFileSync, existsSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { copyFileSync, existsSync, mkdtempSync, readFileSync, renameSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -54,6 +54,24 @@ for (const [a, b] of quitar) {
 }
 if (total - cursor > 0.05) conservar.push([cursor, total]);
 
+// Energía del audio cada 20 ms: whisper estira el final de las palabras hasta la pausa siguiente, así que
+// para saber si una palabra se sacó hay que mirar dónde suena de verdad, no su tramo de whisper.
+const VENTANA = 0.02;
+const pcm = spawnSync("ffmpeg", ["-v", "error", "-i", fuente, "-vn", "-af", "aresample=async=1", "-ac", "1", "-ar", "16000", "-f", "f32le", "-"], {
+  maxBuffer: 512 * 1024 * 1024,
+}).stdout;
+const muestras = new Float32Array(pcm.buffer, pcm.byteOffset, Math.floor(pcm.byteLength / 4));
+const porVentana = 16000 * VENTANA;
+const db = [];
+for (let i = 0; i + porVentana <= muestras.length; i += porVentana) {
+  let s = 0;
+  for (let k = i; k < i + porVentana; k++) s += muestras[k] * muestras[k];
+  db.push(20 * Math.log10(Math.sqrt(s / porVentana) + 1e-9));
+}
+const ordenados = [...db].sort((a, b) => a - b);
+const VOZ = ordenados[Math.floor(ordenados.length * 0.1)] + 15;
+const suena = (t) => (db[Math.floor(t / VENTANA)] ?? -100) > VOZ;
+
 // Pausas (props.json → "pausas": [{ tras: <ancla>, segundos, modo? }]): un tramo en silencio que se inserta
 // después de una palabra de la fuente. Si el ancla cae adentro de un recorte, va en la unión de ese recorte.
 // modo "negro" (default): pantalla negra (el negro del hook). modo "congelar": sostiene el último cuadro; es el
@@ -70,12 +88,28 @@ const resolverFuente = (ancla) => {
   const w = wordsFuente.filter((x) => normPal(x.word) === normPal(ancla.palabra))[(ancla.n ?? 1) - 1];
   return w ? (ancla.fin ? w.end : w.start) + off : null;
 };
+// Whisper suele cerrar la palabra antes de que termine la voz: un respiro puesto en su fin parte la última sílaba
+// (Lucas, 2026-09-29: "quién les contest… no llega a escucharse la a"). Se corre hasta donde la voz baja de
+// verdad (p90 − 17 dB, 60 ms seguidos), sin pasar 350 ms ni llegar a la palabra siguiente.
+const UMBRAL_FIN = ordenados[Math.floor(ordenados.length * 0.9)] - 17;
+const finDeVoz = (t) => {
+  const siguiente = wordsFuente.find((w) => w.start > t + 0.01)?.start ?? total;
+  const tope = Math.min(t + 0.35, siguiente - 0.03);
+  let u = t;
+  while (u < tope && [0, 1, 2].some((k) => (db[Math.floor(u / VENTANA) + k] ?? -100) >= UMBRAL_FIN)) u += VENTANA;
+  return Math.max(t, Math.min(u, tope));
+};
 const pausas = pausasCfg
   .map((p) => {
     let t = resolverFuente(p.tras);
     if (t === null) {
       console.log(`⚠ pausa sin resolver: ${JSON.stringify(p.tras)}`);
       return null;
+    }
+    if (p.modo === "congelar" && p.tras.fin) {
+      const u = finDeVoz(t);
+      if (u - t > 0.02) console.log(`  respiro tras "${p.tras.palabra}" corrido +${Math.round((u - t) * 1000)} ms: la voz sigue hasta ${u.toFixed(2)}`);
+      t = u;
     }
     const corte = quitar.find(([a, b]) => t >= a && t <= b);
     if (corte) t = corte[0];
@@ -130,6 +164,7 @@ if (soloPalabras) {
   filters.push(`${items.map((_, i) => `[v${i}][a${i}]`).join("")}concat=n=${items.length}:v=1:a=1[vc][ac];[vc]fps=30[v];[ac]aresample=async=1:first_pts=0[a]`);
 
   const work = mkdtempSync(path.join(tmpdir(), "recortar-"));
+  const temporal = path.join(dir, "video.tmp.mp4");
   const scriptFile = path.join(work, "filter.txt");
   writeFileSync(scriptFile, filters.join(";\n"), "utf8");
   const r = spawnSync(
@@ -138,15 +173,27 @@ if (soloPalabras) {
       "-hide_banner", "-loglevel", "error", "-y", "-i", fuente,
       "-/filter_complex", scriptFile,
       "-map", "[v]", "-map", "[a]",
-      "-c:v", "libx264", "-crf", "18", "-preset", "medium", "-g", "30", "-bf", "0", "-pix_fmt", "yuv420p",
+      // 2 hilos: con la PC al tope de memoria comprometida, x264 con un hilo por núcleo no conseguía sus buffers.
+      "-c:v", "libx264", "-threads", "2", "-crf", "18", "-preset", "medium", "-g", "30", "-bf", "0", "-pix_fmt", "yuv420p",
       "-c:a", "aac", "-b:a", "192k",
       "-movflags", "+faststart",
-      destino,
+      temporal,
     ],
     { stdio: "inherit" },
   );
   rmSync(work, { recursive: true, force: true });
-  if (r.status !== 0) process.exit(r.status ?? 1);
+  // Si ffmpeg se cae (p. ej. sin memoria), el video.mp4 anterior queda intacto.
+  if (r.status !== 0) {
+    rmSync(temporal, { force: true });
+    process.exit(r.status ?? 1);
+  }
+  try {
+    renameSync(temporal, destino);
+  } catch {
+    // En Windows, con Studio abierto el archivo está en uso y no se puede reemplazar, pero sí sobrescribir.
+    copyFileSync(temporal, destino);
+    rmSync(temporal, { force: true });
+  }
 }
 
 const tramos = [];
@@ -177,23 +224,6 @@ const mapear = (t) => {
 };
 const dentroDeRecorte = (t) => quitar.some(([a, b]) => t >= a && t <= b);
 
-// Energía del audio cada 20 ms: whisper estira el final de las palabras hasta la pausa siguiente, así que
-// para saber si una palabra se sacó hay que mirar dónde suena de verdad, no su tramo de whisper.
-const VENTANA = 0.02;
-const pcm = spawnSync("ffmpeg", ["-v", "error", "-i", fuente, "-vn", "-af", "aresample=async=1", "-ac", "1", "-ar", "16000", "-f", "f32le", "-"], {
-  maxBuffer: 512 * 1024 * 1024,
-}).stdout;
-const muestras = new Float32Array(pcm.buffer, pcm.byteOffset, Math.floor(pcm.byteLength / 4));
-const porVentana = 16000 * VENTANA;
-const db = [];
-for (let i = 0; i + porVentana <= muestras.length; i += porVentana) {
-  let s = 0;
-  for (let k = i; k < i + porVentana; k++) s += muestras[k] * muestras[k];
-  db.push(20 * Math.log10(Math.sqrt(s / porVentana) + 1e-9));
-}
-const ordenados = [...db].sort((a, b) => a - b);
-const VOZ = ordenados[Math.floor(ordenados.length * 0.1)] + 15;
-const suena = (t) => (db[Math.floor(t / VENTANA)] ?? -100) > VOZ;
 // La palabra es la isla de voz más grande dentro de su tramo de whisper (el tramo suele llegar hasta el
 // arranque de lo que viene después, y eso no es parte de la palabra).
 const nucleo = (w) => {

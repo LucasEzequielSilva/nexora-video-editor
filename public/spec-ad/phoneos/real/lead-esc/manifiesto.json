@@ -1,0 +1,153 @@
+{
+  "ancho": 1440,
+  "alto": 2100,
+  "dpr": 2,
+  "fondo": "fondo.png",
+  "completo": "completo.png",
+  "items": [
+    {
+      "id": "como-llego",
+      "x": 304,
+      "y": 248.5,
+      "w": 704,
+      "h": 28,
+      "texto": "Cómo llegóAnuncio",
+      "archivo": "00-como-llego.png"
+    },
+    {
+      "id": "traza0",
+      "x": 304,
+      "y": 794.5,
+      "w": 170,
+      "h": 86,
+      "texto": "LeadConfirmado",
+      "archivo": "01-traza0.png"
+    },
+    {
+      "id": "traza1",
+      "x": 482,
+      "y": 794.5,
+      "w": 170,
+      "h": 86,
+      "texto": "ConversaciónConfirmado",
+      "archivo": "02-traza1.png"
+    },
+    {
+      "id": "traza2",
+      "x": 660,
+      "y": 794.5,
+      "w": 170,
+      "h": 86,
+      "texto": "TurnoConfirmado",
+      "archivo": "03-traza2.png"
+    },
+    {
+      "id": "traza3",
+      "x": 838,
+      "y": 794.5,
+      "w": 170,
+      "h": 86,
+      "texto": "UnidadPropuesto: falta confirmar000000000001214",
+      "archivo": "04-traza3.png"
+    },
+    {
+      "id": "traza4",
+      "x": 304,
+      "y": 888.5,
+      "w": 348,
+      "h": 70,
+      "texto": "OperaciónTodavía no",
+      "archivo": "05-traza4.png"
+    },
+    {
+      "id": "traza5",
+      "x": 660,
+      "y": 888.5,
+      "w": 348,
+      "h": 70,
+      "texto": "StockConfirmadoVendida",
+      "archivo": "06-traza5.png"
+    },
+    {
+      "id": "evento0",
+      "x": 321,
+      "y": 1216.5,
+      "w": 687,
+      "h": 74,
+      "texto": "martes, 6 de octubre, 07:20 · Lead · AsistenteLead creadoAlta de lead: Compra di",
+      "archivo": "07-evento0.png"
+    },
+    {
+      "id": "evento1",
+      "x": 321,
+      "y": 1302.5,
+      "w": 687,
+      "h": 74,
+      "texto": "martes, 6 de octubre, 07:24 · Lead · SistemaCambio de etapaCambio de etapa: «En ",
+      "archivo": "08-evento1.png"
+    },
+    {
+      "id": "evento2",
+      "x": 321,
+      "y": 1388.5,
+      "w": 687,
+      "h": 74,
+      "texto": "miércoles, 7 de octubre, 07:20 · Lead · AsistenteCotización emitidaCotización: i",
+      "archivo": "09-evento2.png"
+    },
+    {
+      "id": "evento3",
+      "x": 321,
+      "y": 1474.5,
+      "w": 687,
+      "h": 74,
+      "texto": "miércoles, 7 de octubre, 07:20 · Lead · SistemaCambio de etapaCambio de etapa: «",
+      "archivo": "10-evento3.png"
+    },
+    {
+      "id": "evento4",
+      "x": 321,
+      "y": 1560.5,
+      "w": 687,
+      "h": 74,
+      "texto": "lunes, 12 de octubre, 07:20 · Turno · AsistenteTurno agendadoAlta de turno para ",
+      "archivo": "11-evento4.png"
+    },
+    {
+      "id": "evento5",
+      "x": 321,
+      "y": 1646.5,
+      "w": 687,
+      "h": 74,
+      "texto": "lunes, 12 de octubre, 07:20 · Lead · SistemaCambio de etapaCambio de etapa: «Tur",
+      "archivo": "12-evento5.png"
+    },
+    {
+      "id": "evento6",
+      "x": 321,
+      "y": 1732.5,
+      "w": 687,
+      "h": 74,
+      "texto": "martes, 13 de octubre, 07:20 · Turno · SistemaTurno confirmadoConfirmación de tu",
+      "archivo": "13-evento6.png"
+    },
+    {
+      "id": "evento7",
+      "x": 321,
+      "y": 1818.5,
+      "w": 687,
+      "h": 74,
+      "texto": "miércoles, 14 de octubre, 09:20 · Turno · Valeria DemoTurno cumplidoCierre de tu",
+      "archivo": "14-evento7.png"
+    },
+    {
+      "id": "evento8",
+      "x": 321,
+      "y": 1904.5,
+      "w": 687,
+      "h": 74,
+      "texto": "miércoles, 14 de octubre, 09:20 · Lead · SistemaCambio de etapaCambio de etapa: ",
+      "archivo": "15-evento8.png"
+    }
+  ]
+}

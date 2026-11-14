@@ -1,0 +1,1208 @@
+{
+  "durationSeconds": 94.496,
+  "subtitulos": {
+    "fuente": "satoshi",
+    "acentos": [
+      "sistema",
+      "oportunidad"
+    ],
+    "gradiente": "verde"
+  },
+  "pausas": [
+    {
+      "_comentario": "Negro del hook en el corte de toma de video-jc (5.0 s): 'financiero' 4.76 + 230 ms.",
+      "tras": {
+        "palabra": "financiero",
+        "fin": true,
+        "offsetMs": 230
+      },
+      "segundos": 0.9
+    },
+    {
+      "_comentario": "RESPIROS al cierre de cada escena.",
+      "tras": {
+        "palabra": "servicio",
+        "n": 1,
+        "fin": true,
+        "offsetMs": 40
+      },
+      "segundos": 0.4,
+      "modo": "congelar"
+    },
+    {
+      "tras": {
+        "palabra": "hojas",
+        "fin": true,
+        "offsetMs": 40
+      },
+      "segundos": 0.4,
+      "modo": "congelar"
+    },
+    {
+      "tras": {
+        "palabra": "ventas",
+        "fin": true,
+        "offsetMs": 40
+      },
+      "segundos": 0.4,
+      "modo": "congelar"
+    },
+    {
+      "tras": {
+        "palabra": "lugar",
+        "fin": true,
+        "offsetMs": 40
+      },
+      "segundos": 0.4,
+      "modo": "congelar"
+    },
+    {
+      "tras": {
+        "palabra": "ve",
+        "fin": true,
+        "offsetMs": 40
+      },
+      "segundos": 0.5,
+      "modo": "congelar"
+    },
+    {
+      "_comentario": "Al final: 1 s para que el CTA termine.",
+      "tras": {
+        "palabra": "producto",
+        "n": 2,
+        "fin": true,
+        "offsetMs": 200
+      },
+      "segundos": 1,
+      "modo": "congelar"
+    }
+  ],
+  "zooms": [
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "súper"
+      },
+      "fin": {
+        "palabra": "financiero",
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 1.4,
+      "_comentario": "HOOK hasta retrato (1.4: la cara ocupa el 44 %)."
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "financiero",
+        "fin": true
+      },
+      "fin": {
+        "palabra": "básicamente",
+        "n": 1,
+        "offsetMs": 300
+      },
+      "escalaInicial": 1.4,
+      "escala": 1.4,
+      "_comentario": "Retrato dentro del negro; al volver entra la escena del SaaS."
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "en",
+        "n": 2
+      },
+      "fin": {
+        "palabra": "clientes",
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 1.3,
+      "_comentario": "'En vez de venderle a sus clientes'."
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "clientes",
+        "fin": true
+      },
+      "fin": {
+        "palabra": "una",
+        "n": 3,
+        "offsetMs": 300
+      },
+      "escalaInicial": 1.3,
+      "escala": 1.32
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "mati",
+        "n": 1
+      },
+      "fin": {
+        "palabra": "sistema",
+        "n": 1,
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 1.35,
+      "_comentario": "'Mati les da un sistema'."
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "sistema",
+        "n": 1,
+        "fin": true
+      },
+      "fin": {
+        "palabra": "que",
+        "n": 1,
+        "offsetMs": 300
+      },
+      "escalaInicial": 1.35,
+      "escala": 1.37
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "mi"
+      },
+      "fin": {
+        "palabra": "web",
+        "n": 1,
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 1.45,
+      "_comentario": "'Mi trabajo básicamente fue construir todo esto... en una aplicación web' hasta retrato."
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "web",
+        "n": 1,
+        "fin": true
+      },
+      "fin": {
+        "palabra": "hoy",
+        "n": 1,
+        "offsetMs": 300
+      },
+      "escalaInicial": 1.45,
+      "escala": 1.47
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "una",
+        "n": 5
+      },
+      "fin": {
+        "palabra": "familiar",
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 1.35,
+      "_comentario": "'Una de esas empresas es una distribuidora mayorista familiar'."
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "familiar",
+        "fin": true
+      },
+      "fin": {
+        "palabra": "venían",
+        "offsetMs": 300
+      },
+      "escalaInicial": 1.35,
+      "escala": 1.37
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "hoy",
+        "n": 3
+      },
+      "fin": {
+        "palabra": "arca",
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 1.3,
+      "_comentario": "'Hoy en día estamos haciendo integraciones con ARCA'."
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "arca",
+        "fin": true
+      },
+      "fin": {
+        "palabra": "recibiendo",
+        "offsetMs": 300
+      },
+      "escalaInicial": 1.3,
+      "escala": 1.32
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "acá"
+      },
+      "fin": {
+        "palabra": "ve",
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 1.45,
+      "_comentario": "'Y acá está la oportunidad que nadie ve' hasta retrato (remate)."
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "ve",
+        "fin": true
+      },
+      "fin": {
+        "palabra": "si",
+        "n": 1,
+        "offsetMs": 100
+      },
+      "escalaInicial": 1.45,
+      "escala": 1.45,
+      "_comentario": "Retrato sostenido en el respiro; cambia en el corte."
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "si",
+        "n": 1
+      },
+      "fin": {
+        "palabra": "método",
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 1.3,
+      "_comentario": "'Si tenés una marca personal, una consultora o un método'."
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "método",
+        "fin": true
+      },
+      "fin": {
+        "palabra": "que",
+        "n": 5,
+        "offsetMs": 300
+      },
+      "escalaInicial": 1.3,
+      "escala": 1.32
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "y",
+        "n": 8
+      },
+      "fin": {
+        "palabra": "producto",
+        "n": 1,
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 1.35,
+      "_comentario": "'y te gustaría darle más usabilidad a tu producto'."
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "producto",
+        "n": 1,
+        "fin": true
+      },
+      "fin": {
+        "palabra": "esto",
+        "n": 4,
+        "offsetMs": 300
+      },
+      "escalaInicial": 1.35,
+      "escala": 1.37
+    }
+  ],
+  "sfx": [
+    {
+      "nombre": "riser",
+      "palabra": "financiero",
+      "fin": true,
+      "corte": {
+        "palabra": "financiero",
+        "fin": true,
+        "offsetMs": 40
+      },
+      "volumen": 0.07
+    },
+    {
+      "_comentario": "Boom en el cuadro en que entra el negro (4.99).",
+      "nombre": "boom-negro",
+      "palabra": "financiero",
+      "fin": true,
+      "offsetMs": 570,
+      "volumen": 0.3
+    },
+    {
+      "_comentario": "Eco de 'financiero' (suena 4.00-4.88).",
+      "archivo": "piezas/app-marca-personal/cola-financiero.wav",
+      "palabra": "financiero",
+      "offsetMs": -260,
+      "volumen": 1
+    },
+    {
+      "_comentario": "Remate de 'en una aplicación web'.",
+      "nombre": "remate-b",
+      "palabra": "web",
+      "n": 1,
+      "fin": true,
+      "offsetMs": 90,
+      "volumen": 0.26
+    },
+    {
+      "_comentario": "Remate de 'la oportunidad que nadie ve'.",
+      "nombre": "remate",
+      "palabra": "ve",
+      "fin": true,
+      "offsetMs": 90,
+      "volumen": 0.2
+    },
+    {
+      "_comentario": "Aterriza 'SaaS'.",
+      "nombre": "remate-b",
+      "palabra": "saas",
+      "volumen": 0.1
+    },
+    {
+      "_comentario": "Entra 'un software como servicio'.",
+      "nombre": "tarjeta",
+      "palabra": "software",
+      "n": 1,
+      "volumen": 0.06
+    },
+    {
+      "_comentario": "Entra 'Excel'.",
+      "nombre": "tarjeta-b",
+      "palabra": "excel",
+      "n": 1,
+      "volumen": 0.06
+    },
+    {
+      "_comentario": "Aterriza 'todos los días'.",
+      "nombre": "remate-b",
+      "palabra": "días",
+      "volumen": 0.1
+    },
+    {
+      "_comentario": "Aterriza 'mensualmente'.",
+      "nombre": "remate-b",
+      "palabra": "mensualmente",
+      "volumen": 0.1
+    },
+    {
+      "_comentario": "Aterriza '15 hojas'.",
+      "nombre": "remate-b",
+      "palabra": "15",
+      "volumen": 0.1
+    },
+    {
+      "_comentario": "Aterriza '300 personas'.",
+      "nombre": "remate-b",
+      "palabra": "300",
+      "volumen": 0.1
+    },
+    {
+      "_comentario": "Aterriza '3 sistemas'.",
+      "nombre": "remate-b",
+      "palabra": "tres",
+      "volumen": 0.1
+    },
+    {
+      "_comentario": "Entra 'y todo en un Excel'.",
+      "nombre": "tarjeta-c",
+      "palabra": "tres",
+      "volumen": 0.06
+    },
+    {
+      "_comentario": "Aterriza 'un mismo lugar'.",
+      "nombre": "remate-b",
+      "palabra": "mismo",
+      "volumen": 0.1
+    },
+    {
+      "_comentario": "Aterriza 'Notion'.",
+      "nombre": "remate-b",
+      "palabra": "notion",
+      "volumen": 0.1
+    },
+    {
+      "_comentario": "Aterriza 'aplicación web'.",
+      "nombre": "remate-b",
+      "palabra": "aplicación",
+      "n": 3,
+      "volumen": 0.1
+    },
+    {
+      "_comentario": "Aterriza 'software como servicio'.",
+      "nombre": "remate-b",
+      "palabra": "software",
+      "n": 3,
+      "volumen": 0.1
+    }
+  ],
+  "overlays": [
+    {
+      "_comentario": "HOOK: paca de billetes 3D en 'el ámbito financiero'.",
+      "tipo": "icono",
+      "modelo": "recursos/objeto-3d-016.glb",
+      "en": {
+        "palabra": "ámbito",
+        "offsetMs": -200
+      },
+      "duracionMs": 1000,
+      "tamano": 600,
+      "centroY": 70,
+      "volumenSfx": 0.2
+    },
+    {
+      "_comentario": "SAAS (negro).",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "negro",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "básicamente",
+        "n": 1,
+        "offsetMs": -110
+      },
+      "hasta": {
+        "palabra": "en",
+        "n": 2,
+        "offsetMs": -100
+      },
+      "cues": {
+        "basicamente": {
+          "palabra": "básicamente",
+          "n": 1
+        },
+        "saas": {
+          "palabra": "saas"
+        },
+        "software": {
+          "palabra": "software",
+          "n": 1
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "básicamente esto es un",
+              "estilo": "serif",
+              "cue": "basicamente",
+              "tamano": 76
+            }
+          ],
+          [
+            {
+              "texto": "SaaS",
+              "estilo": "sans",
+              "cue": "saas",
+              "tamano": 200,
+              "gradiente": "verde"
+            }
+          ],
+          [
+            {
+              "texto": "un software como servicio",
+              "estilo": "serif",
+              "cue": "software",
+              "tamano": 70
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "_comentario": "CAPACITACIÓN Y EXCEL (blanco): archivos 3D que se tachan en 'Excel'.",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "blanco",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "una",
+        "n": 3,
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "mati",
+        "n": 1,
+        "offsetMs": -100
+      },
+      "cues": {
+        "capacitacion": {
+          "palabra": "capacitación"
+        },
+        "excel": {
+          "palabra": "excel",
+          "n": 1
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "una capacitación y un",
+              "estilo": "serif",
+              "cue": "capacitacion",
+              "tamano": 76
+            }
+          ],
+          [
+            {
+              "texto": "Excel",
+              "estilo": "sans",
+              "cue": "excel",
+              "tamano": 170
+            }
+          ]
+        ],
+        "objeto": {
+          "archivo": "recursos/objeto-3d-001.glb",
+          "cue": "capacitacion",
+          "tachar": "excel",
+          "lado": 540,
+          "y": 600
+        }
+      }
+    },
+    {
+      "_comentario": "MATI 2/3 (negro): 'que usan todos los días'.",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "negro",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "que",
+        "n": 1,
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "y",
+        "n": 2,
+        "offsetMs": -100
+      },
+      "cues": {
+        "usan": {
+          "palabra": "usan",
+          "n": 1
+        },
+        "dias": {
+          "palabra": "días"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "que usan",
+              "estilo": "serif",
+              "cue": "usan",
+              "tamano": 80
+            }
+          ],
+          [
+            {
+              "texto": "todos los días",
+              "estilo": "sans",
+              "cue": "dias",
+              "tamano": 150,
+              "gradiente": "verde"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "_comentario": "MATI 3/3 (blanco): 'lo pagan... mensualmente' + billetera 3D.",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "blanco",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "y",
+        "n": 2,
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "antes",
+        "offsetMs": -100
+      },
+      "cues": {
+        "pagan": {
+          "palabra": "pagan"
+        },
+        "mensualmente": {
+          "palabra": "mensualmente"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "y lo pagan mientras lo usan,",
+              "estilo": "serif",
+              "cue": "pagan",
+              "tamano": 68
+            }
+          ],
+          [
+            {
+              "texto": "mensualmente",
+              "estilo": "sans",
+              "cue": "mensualmente",
+              "tamano": 140,
+              "gradiente": "verde"
+            }
+          ]
+        ],
+        "objeto": {
+          "archivo": "recursos/objeto-3d-003.glb",
+          "cue": "pagan",
+          "lado": 520,
+          "y": 600,
+          "inclinacion": 1.1
+        }
+      }
+    },
+    {
+      "_comentario": "ANTES (negro): '15 hojas'.",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "negro",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "antes",
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "mi",
+        "offsetMs": -100
+      },
+      "cues": {
+        "excel": {
+          "palabra": "excel",
+          "n": 2
+        },
+        "hojas": {
+          "palabra": "15"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "antes, con un Excel de",
+              "estilo": "serif",
+              "cue": "excel",
+              "tamano": 76
+            }
+          ],
+          [
+            {
+              "texto": "15 hojas",
+              "estilo": "sans",
+              "cue": "hojas",
+              "tamano": 190,
+              "gradiente": "verde"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "_comentario": "300 PERSONAS (negro).",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "negro",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "hoy",
+        "n": 1,
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "ya",
+        "n": 2,
+        "offsetMs": -100
+      },
+      "cues": {
+        "usan": {
+          "palabra": "usan",
+          "n": 3
+        },
+        "trescientas": {
+          "palabra": "300"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "hoy ya lo usan casi",
+              "estilo": "serif",
+              "cue": "usan",
+              "tamano": 80
+            }
+          ],
+          [
+            {
+              "texto": "300 personas",
+              "estilo": "sans",
+              "cue": "trescientas",
+              "tamano": 150,
+              "gradiente": "verde"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "_comentario": "PANEL (blanco): las cifras que dice Lucas (reales, no de ejemplo).",
+      "tipo": "escena",
+      "escena": "panel",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "ya",
+        "n": 2,
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "una",
+        "n": 5,
+        "offsetMs": -150
+      },
+      "cues": {
+        "panel": {
+          "palabra": "ya",
+          "n": 2
+        },
+        "personas": {
+          "palabra": "ya",
+          "n": 2,
+          "offsetMs": 200
+        },
+        "productos": {
+          "palabra": "34000"
+        },
+        "ventas": {
+          "palabra": "3000"
+        }
+      },
+      "datos": {
+        "titulo": "La app de Mati",
+        "periodo": "hoy",
+        "panelCue": "panel",
+        "metricas": [
+          {
+            "etiqueta": "Personas (casi)",
+            "valor": 300,
+            "cue": "personas",
+            "tono": "neutro"
+          },
+          {
+            "etiqueta": "Productos (más de)",
+            "valor": 34000,
+            "cue": "productos",
+            "tono": "bueno"
+          },
+          {
+            "etiqueta": "Ventas (casi)",
+            "valor": 3000,
+            "cue": "ventas",
+            "tono": "bueno"
+          }
+        ]
+      }
+    },
+    {
+      "_comentario": "DISTRIBUIDORA 2/3 (negro).",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "negro",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "venían",
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "y",
+        "n": 5,
+        "offsetMs": -100
+      },
+      "cues": {
+        "venian": {
+          "palabra": "venían"
+        },
+        "tres": {
+          "palabra": "tres"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "venían usando",
+              "estilo": "serif",
+              "cue": "venian",
+              "tamano": 80
+            }
+          ],
+          [
+            {
+              "texto": "3 sistemas",
+              "estilo": "sans",
+              "cue": "tres",
+              "tamano": 170,
+              "gradiente": "verde"
+            }
+          ],
+          [
+            {
+              "texto": "y todo en un Excel",
+              "estilo": "serif",
+              "cue": "tres",
+              "tamano": 70
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "_comentario": "DISTRIBUIDORA 3/3 (blanco).",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "blanco",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "y",
+        "n": 5,
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "hoy",
+        "n": 3,
+        "offsetMs": -100
+      },
+      "cues": {
+        "manejan": {
+          "palabra": "manejan"
+        },
+        "lugar": {
+          "palabra": "mismo"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "hoy lo manejan todo en",
+              "estilo": "serif",
+              "cue": "manejan",
+              "tamano": 76
+            }
+          ],
+          [
+            {
+              "texto": "un mismo lugar",
+              "estilo": "sans",
+              "cue": "lugar",
+              "tamano": 140,
+              "gradiente": "verde"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "_comentario": "FEEDBACK (blanco): los pasos entran uno por uno.",
+      "tipo": "escena",
+      "escena": "proceso",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "recibiendo",
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "acá",
+        "offsetMs": -150
+      },
+      "cues": {
+        "titulo": {
+          "palabra": "recibiendo"
+        },
+        "p1": {
+          "palabra": "necesidades"
+        },
+        "p2": {
+          "palabra": "mejorar"
+        },
+        "p3": {
+          "palabra": "uso",
+          "n": 1
+        }
+      },
+      "datos": {
+        "titulo": {
+          "chico": "recibiendo y evaluando",
+          "grande": "feedback"
+        },
+        "pasos": [
+          {
+            "nombre": "Necesidades de los usuarios",
+            "cue": "p1"
+          },
+          {
+            "nombre": "Mejorar todo",
+            "cue": "p2"
+          },
+          {
+            "nombre": "Más uso",
+            "cue": "p3"
+          }
+        ]
+      }
+    },
+    {
+      "_comentario": "EXCEL / NOTION (blanco): el logo de Notion se tacha en 'complejizar'.",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "blanco",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "que",
+        "n": 5,
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "y",
+        "n": 8,
+        "offsetMs": -100
+      },
+      "cues": {
+        "vive": {
+          "palabra": "vive"
+        },
+        "notion": {
+          "palabra": "notion"
+        },
+        "complejizar": {
+          "palabra": "complejizar"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "vive en un Excel, en un",
+              "estilo": "serif",
+              "cue": "vive",
+              "tamano": 72
+            }
+          ],
+          [
+            {
+              "texto": "Notion",
+              "estilo": "sans",
+              "cue": "notion",
+              "tamano": 170,
+              "gradiente": "verde"
+            }
+          ]
+        ],
+        "objeto": {
+          "marca": "notion",
+          "cue": "vive",
+          "tachar": "complejizar",
+          "lado": 460,
+          "y": 600
+        }
+      }
+    },
+    {
+      "_comentario": "CONVERTIRLO (negro).",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "negro",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "esto",
+        "n": 4,
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "o",
+        "n": 2,
+        "offsetMs": -100
+      },
+      "cues": {
+        "senal": {
+          "palabra": "señal"
+        },
+        "web": {
+          "palabra": "aplicación",
+          "n": 3
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "la señal de poder convertirlo en una",
+              "estilo": "serif",
+              "cue": "senal",
+              "tamano": 62
+            }
+          ],
+          [
+            {
+              "texto": "aplicación web",
+              "estilo": "sans",
+              "cue": "web",
+              "tamano": 140,
+              "gradiente": "verde"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "_comentario": "SOFTWARE COMO SERVICIO (blanco).",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "blanco",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "o",
+        "n": 2,
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "comentá",
+        "offsetMs": -300
+      },
+      "cues": {
+        "mobile": {
+          "palabra": "mobile"
+        },
+        "software": {
+          "palabra": "software",
+          "n": 3
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "o mobile, básicamente en un",
+              "estilo": "serif",
+              "cue": "mobile",
+              "tamano": 70
+            }
+          ],
+          [
+            {
+              "texto": "software como servicio",
+              "estilo": "sans",
+              "cue": "software",
+              "tamano": 110,
+              "gradiente": "verde"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "_comentario": "CTA: 'Comentá la palabra SOFT y te digo cómo lo convertiría en un producto'.",
+      "tipo": "escena",
+      "escena": "cta",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "comentá",
+        "offsetMs": -350
+      },
+      "hasta": "fin",
+      "cues": {
+        "ver": {
+          "palabra": "comentá",
+          "offsetMs": -100
+        },
+        "comentar": {
+          "palabra": "comentá"
+        },
+        "palabra": {
+          "palabra": "soft",
+          "fin": true
+        },
+        "respuesta": {
+          "palabra": "digo"
+        },
+        "privado": {
+          "palabra": "producto",
+          "n": 2,
+          "fin": true,
+          "offsetMs": 300
+        }
+      },
+      "datos": {
+        "cuenta": "nexorasistem.ar",
+        "usuario": "tu_marca",
+        "palabra": "SOFT",
+        "respuesta": "¡Te digo cómo convertirlo en un producto!",
+        "enviado": "Enviado por privado",
+        "verbo": "comentá",
+        "bajar": 320
+      }
+    }
+  ],
+  "_comentario": "v3 (2026-09-29): la v1 + SFX en cada línea de las escenas de frase; los bloques 'detrás' y los flashes de la v2 se sacaron (Lucas: 'más sobrio, o sea el anterior estaba bien'). v1 (2026-09-28): la app de Mati, sin el material de testimonios ni capturas (Lucas: 'mandale'): el hook corta antes de 'y esto es lo que dicen sus usuarios'. Tropiezos cortados ('Mati les da un' x3, 'Antes todo es' x3, 'Mi trabajo' x3, 'Y te...'), silencios finos, animaciones que rotan, cifras reales en el panel. CTA: SOFT (a confirmar).",
+  "musica": {
+    "_comentario": "joel sunny - luminary (musica-045) desde el golpe de 42.7 s, nivelada, sub -9 dB; ~20 dB bajo la voz.",
+    "archivo": "recursos/musica-045-suave.m4a",
+    "desde": {
+      "palabra": "básicamente",
+      "n": 1,
+      "offsetMs": -110
+    },
+    "inicioS": 0,
+    "volumen": 0.12,
+    "bajoVoz": 0.7,
+    "fadeInMs": 40,
+    "fadeOutMs": 1200
+  }
+}

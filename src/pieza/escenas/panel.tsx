@@ -133,7 +133,7 @@ const Fila = ({ metrica, at, max, top }: { metrica: Datos["metricas"][number]; a
               fontVariantNumeric: "tabular-nums",
             }}
           >
-            {Math.round(metrica.valor * cuenta)}
+            {Math.round(metrica.valor * cuenta).toLocaleString("es-AR")}
           </span>
           <div style={{ position: "absolute", left: 36, right: 36, bottom: 28, height: 14, borderRadius: 7, background: "#ececea" }}>
             <div

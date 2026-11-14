@@ -500,6 +500,20 @@ coincide con eso, mandan el código y `props.json` (ver §8.1).
   - el `hasta` tiene que caer después del último ícono + `strikeDelay` + 8 cuadros. `npm run verificar` no revisa
     esto en los strikes; el chequeo del formato sí.
 
+### 4.7.1 Palabra detrás de la cabeza y flashes (estilo Matías Costas) — descartado
+**No se usa en el formato.** Se probó en `app-marca-personal` v2 para la versión con pauta y Lucas pidió volver atrás:
+"más sobrio, o sea el anterior estaba bien" (2026-09-29). Queda documentado por si lo pide para otra marca. Necesita
+`persona.webm` (§5, `silueta.py`). Referencia: `assets/referencias/matias-costas.md`.
+- `detras` (`src/pieza/detras.tsx`): el fondo pasa a un degradé oscuro (verde; violeta para el remate), el que habla
+  se achica hacia abajo (0.72, costados fundidos) y la palabra clave (Tactic Sans Black con degradé) queda **detrás de
+  su cabeza**; una segunda línea puede ir `delante`, sobre el pecho. 3–4 bloques por pieza, de 2–4 s: hook, concepto
+  central, cifra, remate. El del hook con `sinEntrada` (el cuadro 0 ya está armado).
+- Legibilidad: la coronilla tapa **solo la base** de la palabra (`bajoY` 29–32 en un selfie cerrado). Tactic es ancha
+  (~0.72 em por mayúscula): medir el ancho con fontTools antes de elegir `tamano` (máximo ~1000 px).
+- Bordes del bloque en un corte de `cara.json`; el zoom va a 1 durante el bloque (o un empuje lento hasta 1.1).
+- `destello`: film burn del pack (`film-burn-003/006/010`, pico medido en la biblioteca) en modo `screen`, con el pico
+  en el cambio de bloque. 2–3 por pieza; nunca adentro del negro del hook (que el negro quede negro).
+
 ### 4.8 Sonido (SFX)
 - **Cada evento visual lleva su sonido**, con una familia coherente por tipo de evento, por debajo de la voz y
   audible en un celular (contenido por arriba de 200 Hz).
@@ -764,7 +778,7 @@ Si después cambian los recortes o las `pausas`, se repiten 4.4 a 5.2, en orden.
      el hook;
    - Studio en Chrome headless, en 1677x930 y 900x1800 (usa el de :3000 o levanta uno en :3123): sin errores en la
      página ni en la consola. Reemplaza la revisión manual con Playwright;
-   - la mezcla renderizada por Remotion, en la banda de celular: música presente y pareja, margen de 9 a 15 dB bajo
+   - la mezcla renderizada por Remotion, en la banda de celular: música presente y pareja, margen de 17 a 23 dB bajo
      la voz, enmascaramiento, cola sonando en el negro, pico y LUFS, SFX audibles;
    - fotogramas clave con un solo bundle → `hoja.jpg`: fin del hook, mitad del negro, primer cuadro después, mitad
      de cada escena y b-roll, íconos, tachados y último cuadro;
@@ -963,4 +977,5 @@ En todos los casos mandan el código y `props.json`.
     diccionario global todavía no lo corrige.
 13. **Margen de la mezcla**: la versión anterior de este README daba 14.8 dB para la ganadora, medido con otro script;
     `npm run verificar` mide 12.5 dB (mediana, con otras ventanas y otra máscara de habla). El objetivo es el de
-    `verificar`: 9–15 dB.
+    `verificar`: 17–23 dB desde el 2026-09-28 (con 12–14 dB el equipo dijo "se escucha mucho la música, tapa la voz";
+    CLAUDE.md §8).

@@ -1,95 +1,83 @@
 {
-  "duracion_s": 52.833,
+  "duracion_s": 49.8,
   "tramos": [
     {
       "origen": [
         0,
-        2.85
+        2.695
       ],
       "salida": 0
     },
     {
       "negro": 0.9,
-      "salida": 2.85
+      "salida": 2.695
     },
     {
       "origen": [
-        2.85,
-        6.6
+        2.695,
+        6.64
       ],
-      "salida": 3.75
+      "salida": 3.595
     },
     {
       "negro": 0.5,
-      "salida": 7.5,
+      "salida": 7.54,
       "congelar": true
     },
     {
       "origen": [
-        6.6,
-        20.56
+        6.64,
+        19.94
       ],
-      "salida": 8
+      "salida": 8.04
     },
     {
       "negro": 0.5,
-      "salida": 21.96,
+      "salida": 21.34,
       "congelar": true
     },
     {
       "origen": [
-        20.56,
-        30
+        19.94,
+        28.96
       ],
-      "salida": 22.46
+      "salida": 21.84
     },
     {
       "negro": 0.5,
-      "salida": 31.9,
+      "salida": 30.86,
       "congelar": true
     },
     {
       "origen": [
-        30,
-        37.18
+        28.96,
+        36.04
       ],
-      "salida": 32.4
+      "salida": 31.36
     },
     {
       "negro": 0.4,
-      "salida": 39.58,
+      "salida": 38.44,
       "congelar": true
     },
     {
       "origen": [
-        37.18,
-        38.84
+        36.04,
+        45.8
       ],
-      "salida": 39.98
-    },
-    {
-      "negro": 0.4,
-      "salida": 41.64,
-      "congelar": true
-    },
-    {
-      "origen": [
-        38.84,
-        48.54
-      ],
-      "salida": 42.04
+      "salida": 38.84
     },
     {
       "negro": 1,
-      "salida": 51.74,
+      "salida": 48.6,
       "congelar": true
     },
     {
       "origen": [
-        48.54,
-        48.6
+        45.8,
+        45.967
       ],
-      "salida": 52.74
+      "salida": 49.6
     }
   ]
 }

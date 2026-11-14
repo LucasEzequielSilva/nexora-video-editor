@@ -1,0 +1,1621 @@
+{
+ "language": "es",
+ "duration": 94.307,
+ "segments": [
+  {
+   "start": 0.06,
+   "end": 92.87,
+   "text": " Le armé una aplicación a una marca personal súper pegada en el ámbito financiero. Básicamente esto es un SaaS, un software como servicio. En vez de venderle a sus clientes una capacitación y un Excel para manejar su negocio. Mati les da un sistema que usan todos los días para poder manejar su pyme, y lo pagan mientras lo usan, mensualmente. Antes todo esto lo manejaban también, pero con un Excel de 15 hojas. Mi trabajo básicamente fue construir todo esto, pero en un sistema, en un software, en una aplicación web. Hoy en día ya lo usan casi 300 personas que vienen de parte de Mati, de sus clientes. Ya cargaron más de 34.000 productos. Y registraron casi 3.000 ventas. Una de esas empresas es una distribuidora mayorista familiar. Venían usando tres sistemas distintos y resolviendo todo en un Excel. Y hoy en día lo manejan todo en un mismo lugar. Hoy en día estamos haciendo integraciones con ARCA, recibiendo y evaluando feedback, lo cual nos permite entender cuáles son las necesidades de los usuarios, y cómo podemos mejorar todo para que ellos le den más uso. acá está la oportunidad que nadie ve. Si tenés una marca personal, una consultora o un método que vive en un Excel, en un Notion, en planillas internas que lo único que hacen es complejizar el uso, y te gustaría darle más usabilidad a tu producto. Esto seguramente debe ser la señal de poder convertirlo en una aplicación web o mobile, básicamente en un software como servicio. Comentá la palabra SOFT Y te digo cómo lo convertiría en un producto.",
+   "words": [
+    {
+     "start": 0.06,
+     "end": 0.12,
+     "word": " Le",
+     "p": 0.488
+    },
+    {
+     "start": 0.1,
+     "end": 0.28,
+     "word": " armé",
+     "p": 0.957
+    },
+    {
+     "start": 0.28,
+     "end": 0.36,
+     "word": " una",
+     "p": 0.997
+    },
+    {
+     "start": 0.36,
+     "end": 0.82,
+     "word": " aplicación",
+     "p": 0.997
+    },
+    {
+     "start": 1.16,
+     "end": 1.24,
+     "word": " a",
+     "p": 0.996
+    },
+    {
+     "start": 1.52,
+     "end": 1.66,
+     "word": " una",
+     "p": 0.999
+    },
+    {
+     "start": 1.66,
+     "end": 1.9,
+     "word": " marca",
+     "p": 0.999
+    },
+    {
+     "start": 1.9,
+     "end": 2.12,
+     "word": " personal",
+     "p": 0.998
+    },
+    {
+     "start": 2.24,
+     "end": 2.4,
+     "word": " súper",
+     "p": 0.47
+    },
+    {
+     "start": 3.1,
+     "end": 3.42,
+     "word": " pegada",
+     "p": 0.998
+    },
+    {
+     "start": 3.42,
+     "end": 3.58,
+     "word": " en",
+     "p": 0.999
+    },
+    {
+     "start": 3.68,
+     "end": 3.78,
+     "word": " el",
+     "p": 1
+    },
+    {
+     "start": 3.78,
+     "end": 4.06,
+     "word": " ámbito",
+     "p": 1
+    },
+    {
+     "start": 4.26,
+     "end": 4.42,
+     "word": " financiero.",
+     "p": 0.999
+    },
+    {
+     "start": 6,
+     "end": 6.26,
+     "word": " Básicamente",
+     "p": 0.999
+    },
+    {
+     "start": 6.26,
+     "end": 6.6,
+     "word": " esto",
+     "p": 0.994
+    },
+    {
+     "start": 6.6,
+     "end": 6.7,
+     "word": " es",
+     "p": 0.999
+    },
+    {
+     "start": 6.7,
+     "end": 6.78,
+     "word": " un",
+     "p": 1
+    },
+    {
+     "start": 6.9,
+     "end": 7.08,
+     "word": " SaaS,",
+     "p": 0.975
+    },
+    {
+     "start": 7.34,
+     "end": 7.58,
+     "word": " un",
+     "p": 1
+    },
+    {
+     "start": 7.58,
+     "end": 7.74,
+     "word": " software",
+     "p": 0.992
+    },
+    {
+     "start": 8.06,
+     "end": 8.28,
+     "word": " como",
+     "p": 1
+    },
+    {
+     "start": 8.38,
+     "end": 8.58,
+     "word": " servicio.",
+     "p": 1
+    },
+    {
+     "start": 9.8,
+     "end": 9.86,
+     "word": " En",
+     "p": 0.916
+    },
+    {
+     "start": 9.8,
+     "end": 9.94,
+     "word": " vez",
+     "p": 0.999
+    },
+    {
+     "start": 9.94,
+     "end": 10.08,
+     "word": " de",
+     "p": 0.999
+    },
+    {
+     "start": 10.08,
+     "end": 10.4,
+     "word": " venderle",
+     "p": 0.979
+    },
+    {
+     "start": 10.4,
+     "end": 10.48,
+     "word": " a",
+     "p": 1
+    },
+    {
+     "start": 10.48,
+     "end": 10.6,
+     "word": " sus",
+     "p": 0.998
+    },
+    {
+     "start": 10.84,
+     "end": 11.3,
+     "word": " clientes",
+     "p": 1
+    },
+    {
+     "start": 11.54,
+     "end": 11.6,
+     "word": " una",
+     "p": 0.997
+    },
+    {
+     "start": 11.54,
+     "end": 11.98,
+     "word": " capacitación",
+     "p": 0.996
+    },
+    {
+     "start": 12.58,
+     "end": 12.76,
+     "word": " y",
+     "p": 0.997
+    },
+    {
+     "start": 12.92,
+     "end": 13.04,
+     "word": " un",
+     "p": 0.999
+    },
+    {
+     "start": 13.04,
+     "end": 13.38,
+     "word": " Excel",
+     "p": 0.851
+    },
+    {
+     "start": 13.58,
+     "end": 13.74,
+     "word": " para",
+     "p": 0.998
+    },
+    {
+     "start": 13.74,
+     "end": 14,
+     "word": " manejar",
+     "p": 0.999
+    },
+    {
+     "start": 14.14,
+     "end": 14.2,
+     "word": " su",
+     "p": 0.998
+    },
+    {
+     "start": 14.32,
+     "end": 14.74,
+     "word": " negocio.",
+     "p": 1
+    },
+    {
+     "start": 15.34,
+     "end": 15.7,
+     "word": " Mati",
+     "p": 0.876
+    },
+    {
+     "start": 15.7,
+     "end": 15.86,
+     "word": " les",
+     "p": 0.977
+    },
+    {
+     "start": 15.86,
+     "end": 16.06,
+     "word": " da",
+     "p": 0.996
+    },
+    {
+     "start": 16.06,
+     "end": 16.16,
+     "word": " un",
+     "p": 0.999
+    },
+    {
+     "start": 16.16,
+     "end": 16.5,
+     "word": " sistema",
+     "p": 0.998
+    },
+    {
+     "start": 16.6,
+     "end": 16.88,
+     "word": " que",
+     "p": 0.982
+    },
+    {
+     "start": 17.02,
+     "end": 17.2,
+     "word": " usan",
+     "p": 0.998
+    },
+    {
+     "start": 17.32,
+     "end": 17.44,
+     "word": " todos",
+     "p": 0.997
+    },
+    {
+     "start": 17.58,
+     "end": 17.76,
+     "word": " los",
+     "p": 1
+    },
+    {
+     "start": 17.76,
+     "end": 18.02,
+     "word": " días",
+     "p": 0.99
+    },
+    {
+     "start": 18.61,
+     "end": 18.67,
+     "word": " para",
+     "p": 0.338
+    },
+    {
+     "start": 18.67,
+     "end": 18.85,
+     "word": " poder",
+     "p": 0.997
+    },
+    {
+     "start": 18.85,
+     "end": 19.19,
+     "word": " manejar",
+     "p": 0.999
+    },
+    {
+     "start": 19.25,
+     "end": 19.31,
+     "word": " su",
+     "p": 0.995
+    },
+    {
+     "start": 19.55,
+     "end": 19.65,
+     "word": " pyme,",
+     "p": 0.432
+    },
+    {
+     "start": 20.08,
+     "end": 20.14,
+     "word": " y",
+     "p": 0.54
+    },
+    {
+     "start": 20.14,
+     "end": 20.28,
+     "word": " lo",
+     "p": 0.991
+    },
+    {
+     "start": 20.28,
+     "end": 20.62,
+     "word": " pagan",
+     "p": 0.992
+    },
+    {
+     "start": 20.62,
+     "end": 20.88,
+     "word": " mientras",
+     "p": 0.996
+    },
+    {
+     "start": 20.88,
+     "end": 21.1,
+     "word": " lo",
+     "p": 0.987
+    },
+    {
+     "start": 21.2,
+     "end": 21.48,
+     "word": " usan,",
+     "p": 0.999
+    },
+    {
+     "start": 22.34,
+     "end": 22.72,
+     "word": " mensualmente.",
+     "p": 0.685
+    },
+    {
+     "start": 23.61,
+     "end": 23.73,
+     "word": " Antes",
+     "p": 0.139
+    },
+    {
+     "start": 23.73,
+     "end": 23.97,
+     "word": " todo",
+     "p": 0.879
+    },
+    {
+     "start": 23.97,
+     "end": 24.23,
+     "word": " esto",
+     "p": 0.998
+    },
+    {
+     "start": 24.23,
+     "end": 24.37,
+     "word": " lo",
+     "p": 0.991
+    },
+    {
+     "start": 24.37,
+     "end": 24.863,
+     "word": " manejaban",
+     "p": 0.828
+    },
+    {
+     "start": 24.863,
+     "end": 25.243,
+     "word": " también,",
+     "p": 0.828
+    },
+    {
+     "start": 25.357,
+     "end": 25.517,
+     "word": " pero",
+     "p": 0.828
+    },
+    {
+     "start": 25.85,
+     "end": 25.97,
+     "word": " con",
+     "p": 1
+    },
+    {
+     "start": 26.01,
+     "end": 26.13,
+     "word": " un",
+     "p": 0.999
+    },
+    {
+     "start": 26.13,
+     "end": 26.35,
+     "word": " Excel",
+     "p": 0.908
+    },
+    {
+     "start": 26.49,
+     "end": 26.67,
+     "word": " de",
+     "p": 0.999
+    },
+    {
+     "start": 26.69,
+     "end": 26.83,
+     "word": " 15",
+     "p": 0.993
+    },
+    {
+     "start": 27.17,
+     "end": 27.39,
+     "word": " hojas.",
+     "p": 0.999
+    },
+    {
+     "start": 28.19,
+     "end": 28.25,
+     "word": " Mi",
+     "p": 0.916
+    },
+    {
+     "start": 28.23,
+     "end": 28.53,
+     "word": " trabajo",
+     "p": 1
+    },
+    {
+     "start": 28.53,
+     "end": 28.99,
+     "word": " básicamente",
+     "p": 0.816
+    },
+    {
+     "start": 29.01,
+     "end": 29.43,
+     "word": " fue",
+     "p": 0.994
+    },
+    {
+     "start": 29.53,
+     "end": 29.87,
+     "word": " construir",
+     "p": 0.991
+    },
+    {
+     "start": 30.03,
+     "end": 30.29,
+     "word": " todo",
+     "p": 0.998
+    },
+    {
+     "start": 30.29,
+     "end": 30.55,
+     "word": " esto,",
+     "p": 0.998
+    },
+    {
+     "start": 30.69,
+     "end": 30.83,
+     "word": " pero",
+     "p": 0.999
+    },
+    {
+     "start": 31.09,
+     "end": 31.23,
+     "word": " en",
+     "p": 0.996
+    },
+    {
+     "start": 31.23,
+     "end": 31.33,
+     "word": " un",
+     "p": 1
+    },
+    {
+     "start": 31.33,
+     "end": 31.57,
+     "word": " sistema,",
+     "p": 0.999
+    },
+    {
+     "start": 31.87,
+     "end": 31.95,
+     "word": " en",
+     "p": 0.996
+    },
+    {
+     "start": 31.95,
+     "end": 32.01,
+     "word": " un",
+     "p": 0.998
+    },
+    {
+     "start": 31.97,
+     "end": 32.09,
+     "word": " software,",
+     "p": 0.999
+    },
+    {
+     "start": 32.47,
+     "end": 32.53,
+     "word": " en",
+     "p": 1
+    },
+    {
+     "start": 32.61,
+     "end": 32.71,
+     "word": " una",
+     "p": 1
+    },
+    {
+     "start": 32.71,
+     "end": 32.85,
+     "word": " aplicación",
+     "p": 0.999
+    },
+    {
+     "start": 33.33,
+     "end": 33.43,
+     "word": " web.",
+     "p": 1
+    },
+    {
+     "start": 33.81,
+     "end": 33.87,
+     "word": " Hoy",
+     "p": 0.706
+    },
+    {
+     "start": 33.87,
+     "end": 33.97,
+     "word": " en",
+     "p": 0.986
+    },
+    {
+     "start": 33.97,
+     "end": 34.15,
+     "word": " día",
+     "p": 0.988
+    },
+    {
+     "start": 34.15,
+     "end": 34.39,
+     "word": " ya",
+     "p": 0.903
+    },
+    {
+     "start": 34.39,
+     "end": 34.51,
+     "word": " lo",
+     "p": 0.961
+    },
+    {
+     "start": 34.51,
+     "end": 34.79,
+     "word": " usan",
+     "p": 0.997
+    },
+    {
+     "start": 34.79,
+     "end": 34.87,
+     "word": " casi",
+     "p": 0.993
+    },
+    {
+     "start": 34.99,
+     "end": 35.07,
+     "word": " 300",
+     "p": 0.967
+    },
+    {
+     "start": 35.73,
+     "end": 36.11,
+     "word": " personas",
+     "p": 0.998
+    },
+    {
+     "start": 36.57,
+     "end": 36.81,
+     "word": " que",
+     "p": 0.9
+    },
+    {
+     "start": 37.09,
+     "end": 37.29,
+     "word": " vienen",
+     "p": 0.994
+    },
+    {
+     "start": 37.31,
+     "end": 37.51,
+     "word": " de",
+     "p": 0.981
+    },
+    {
+     "start": 37.51,
+     "end": 37.61,
+     "word": " parte",
+     "p": 0.972
+    },
+    {
+     "start": 37.75,
+     "end": 37.93,
+     "word": " de",
+     "p": 0.991
+    },
+    {
+     "start": 37.93,
+     "end": 38.15,
+     "word": " Mati,",
+     "p": 0.552
+    },
+    {
+     "start": 38.23,
+     "end": 38.41,
+     "word": " de",
+     "p": 0.854
+    },
+    {
+     "start": 38.41,
+     "end": 38.47,
+     "word": " sus",
+     "p": 0.996
+    },
+    {
+     "start": 38.79,
+     "end": 39.03,
+     "word": " clientes.",
+     "p": 0.999
+    },
+    {
+     "start": 39.53,
+     "end": 39.59,
+     "word": " Ya",
+     "p": 0.639
+    },
+    {
+     "start": 39.57,
+     "end": 40.07,
+     "word": " cargaron",
+     "p": 0.996
+    },
+    {
+     "start": 40.07,
+     "end": 40.25,
+     "word": " más",
+     "p": 0.975
+    },
+    {
+     "start": 40.25,
+     "end": 40.43,
+     "word": " de",
+     "p": 0.997
+    },
+    {
+     "start": 40.93,
+     "end": 41.19,
+     "word": " 34.000",
+     "p": 0.894
+    },
+    {
+     "start": 41.43,
+     "end": 41.73,
+     "word": " productos.",
+     "p": 0.999
+    },
+    {
+     "start": 42.32,
+     "end": 42.41,
+     "word": " Y",
+     "p": 0.604
+    },
+    {
+     "start": 43.11,
+     "end": 43.47,
+     "word": " registraron",
+     "p": 0.999
+    },
+    {
+     "start": 43.47,
+     "end": 43.67,
+     "word": " casi",
+     "p": 0.999
+    },
+    {
+     "start": 44.07,
+     "end": 44.41,
+     "word": " 3.000",
+     "p": 0.901
+    },
+    {
+     "start": 44.41,
+     "end": 44.85,
+     "word": " ventas.",
+     "p": 1
+    },
+    {
+     "start": 45.68,
+     "end": 45.74,
+     "word": " Una",
+     "p": 0.959
+    },
+    {
+     "start": 45.72,
+     "end": 45.78,
+     "word": " de",
+     "p": 1
+    },
+    {
+     "start": 45.78,
+     "end": 45.94,
+     "word": " esas",
+     "p": 0.998
+    },
+    {
+     "start": 45.94,
+     "end": 46.36,
+     "word": " empresas",
+     "p": 0.999
+    },
+    {
+     "start": 46.48,
+     "end": 46.6,
+     "word": " es",
+     "p": 0.994
+    },
+    {
+     "start": 46.82,
+     "end": 46.88,
+     "word": " una",
+     "p": 0.999
+    },
+    {
+     "start": 47.26,
+     "end": 47.54,
+     "word": " distribuidora",
+     "p": 0.997
+    },
+    {
+     "start": 47.54,
+     "end": 47.96,
+     "word": " mayorista",
+     "p": 0.998
+    },
+    {
+     "start": 48.1,
+     "end": 48.16,
+     "word": " familiar.",
+     "p": 0.999
+    },
+    {
+     "start": 49.01,
+     "end": 49.17,
+     "word": " Venían",
+     "p": 0.539
+    },
+    {
+     "start": 49.17,
+     "end": 49.41,
+     "word": " usando",
+     "p": 0.99
+    },
+    {
+     "start": 49.41,
+     "end": 49.77,
+     "word": " tres",
+     "p": 0.689
+    },
+    {
+     "start": 49.83,
+     "end": 49.95,
+     "word": " sistemas",
+     "p": 0.993
+    },
+    {
+     "start": 50.23,
+     "end": 50.61,
+     "word": " distintos",
+     "p": 0.978
+    },
+    {
+     "start": 50.75,
+     "end": 51.07,
+     "word": " y",
+     "p": 0.925
+    },
+    {
+     "start": 51.07,
+     "end": 51.23,
+     "word": " resolviendo",
+     "p": 0.994
+    },
+    {
+     "start": 51.49,
+     "end": 51.65,
+     "word": " todo",
+     "p": 0.985
+    },
+    {
+     "start": 51.73,
+     "end": 51.87,
+     "word": " en",
+     "p": 0.993
+    },
+    {
+     "start": 51.87,
+     "end": 51.95,
+     "word": " un",
+     "p": 0.316
+    },
+    {
+     "start": 51.95,
+     "end": 52.07,
+     "word": " Excel.",
+     "p": 0.774
+    },
+    {
+     "start": 52.7,
+     "end": 52.76,
+     "word": " Y",
+     "p": 0.725
+    },
+    {
+     "start": 52.72,
+     "end": 52.88,
+     "word": " hoy",
+     "p": 0.997
+    },
+    {
+     "start": 52.88,
+     "end": 53,
+     "word": " en",
+     "p": 0.998
+    },
+    {
+     "start": 53,
+     "end": 53.3,
+     "word": " día",
+     "p": 1
+    },
+    {
+     "start": 53.3,
+     "end": 53.54,
+     "word": " lo",
+     "p": 0.964
+    },
+    {
+     "start": 53.62,
+     "end": 54.14,
+     "word": " manejan",
+     "p": 0.86
+    },
+    {
+     "start": 54.14,
+     "end": 54.32,
+     "word": " todo",
+     "p": 0.474
+    },
+    {
+     "start": 54.48,
+     "end": 54.64,
+     "word": " en",
+     "p": 1
+    },
+    {
+     "start": 54.64,
+     "end": 54.7,
+     "word": " un",
+     "p": 1
+    },
+    {
+     "start": 54.7,
+     "end": 54.92,
+     "word": " mismo",
+     "p": 1
+    },
+    {
+     "start": 54.92,
+     "end": 55.22,
+     "word": " lugar.",
+     "p": 1
+    },
+    {
+     "start": 56.14,
+     "end": 56.2,
+     "word": " Hoy",
+     "p": 0.841
+    },
+    {
+     "start": 56.18,
+     "end": 56.26,
+     "word": " en",
+     "p": 0.987
+    },
+    {
+     "start": 56.26,
+     "end": 56.34,
+     "word": " día",
+     "p": 0.993
+    },
+    {
+     "start": 56.34,
+     "end": 56.5,
+     "word": " estamos",
+     "p": 0.987
+    },
+    {
+     "start": 56.5,
+     "end": 56.72,
+     "word": " haciendo",
+     "p": 0.99
+    },
+    {
+     "start": 56.72,
+     "end": 57.26,
+     "word": " integraciones",
+     "p": 0.994
+    },
+    {
+     "start": 57.4,
+     "end": 57.5,
+     "word": " con",
+     "p": 0.998
+    },
+    {
+     "start": 57.62,
+     "end": 58,
+     "word": " ARCA,",
+     "p": 0.679
+    },
+    {
+     "start": 58.4,
+     "end": 58.76,
+     "word": " recibiendo",
+     "p": 0.916
+    },
+    {
+     "start": 58.76,
+     "end": 58.86,
+     "word": " y",
+     "p": 0.997
+    },
+    {
+     "start": 58.86,
+     "end": 59.28,
+     "word": " evaluando",
+     "p": 0.999
+    },
+    {
+     "start": 59.28,
+     "end": 59.44,
+     "word": " feedback,",
+     "p": 0.981
+    },
+    {
+     "start": 60.29,
+     "end": 60.35,
+     "word": " lo",
+     "p": 0.579
+    },
+    {
+     "start": 60.31,
+     "end": 60.53,
+     "word": " cual",
+     "p": 0.995
+    },
+    {
+     "start": 60.53,
+     "end": 60.65,
+     "word": " nos",
+     "p": 0.994
+    },
+    {
+     "start": 60.65,
+     "end": 60.95,
+     "word": " permite",
+     "p": 0.998
+    },
+    {
+     "start": 60.95,
+     "end": 61.31,
+     "word": " entender",
+     "p": 0.998
+    },
+    {
+     "start": 61.31,
+     "end": 61.67,
+     "word": " cuáles",
+     "p": 0.985
+    },
+    {
+     "start": 61.87,
+     "end": 61.99,
+     "word": " son",
+     "p": 0.999
+    },
+    {
+     "start": 62.03,
+     "end": 62.13,
+     "word": " las",
+     "p": 0.998
+    },
+    {
+     "start": 62.13,
+     "end": 62.45,
+     "word": " necesidades",
+     "p": 1
+    },
+    {
+     "start": 62.69,
+     "end": 62.81,
+     "word": " de",
+     "p": 0.997
+    },
+    {
+     "start": 62.81,
+     "end": 62.89,
+     "word": " los",
+     "p": 0.999
+    },
+    {
+     "start": 63.21,
+     "end": 63.37,
+     "word": " usuarios,",
+     "p": 0.999
+    },
+    {
+     "start": 63.43,
+     "end": 63.49,
+     "word": " y",
+     "p": 0.98
+    },
+    {
+     "start": 63.69,
+     "end": 63.75,
+     "word": " cómo",
+     "p": 0.876
+    },
+    {
+     "start": 63.75,
+     "end": 64.01,
+     "word": " podemos",
+     "p": 0.998
+    },
+    {
+     "start": 64.01,
+     "end": 64.39,
+     "word": " mejorar",
+     "p": 0.999
+    },
+    {
+     "start": 64.47,
+     "end": 64.69,
+     "word": " todo",
+     "p": 0.995
+    },
+    {
+     "start": 64.83,
+     "end": 65.11,
+     "word": " para",
+     "p": 0.961
+    },
+    {
+     "start": 65.23,
+     "end": 65.41,
+     "word": " que",
+     "p": 0.999
+    },
+    {
+     "start": 65.47,
+     "end": 65.53,
+     "word": " ellos",
+     "p": 0.811
+    },
+    {
+     "start": 65.65,
+     "end": 65.73,
+     "word": " le",
+     "p": 0.961
+    },
+    {
+     "start": 65.73,
+     "end": 65.89,
+     "word": " den",
+     "p": 0.998
+    },
+    {
+     "start": 65.89,
+     "end": 66.03,
+     "word": " más",
+     "p": 0.998
+    },
+    {
+     "start": 66.21,
+     "end": 66.31,
+     "word": " uso.",
+     "p": 0.999
+    },
+    {
+     "start": 66.76,
+     "end": 66.86,
+     "word": " acá",
+     "p": 0.994
+    },
+    {
+     "start": 66.92,
+     "end": 67.04,
+     "word": " está",
+     "p": 0.982
+    },
+    {
+     "start": 67.04,
+     "end": 67.18,
+     "word": " la",
+     "p": 0.998
+    },
+    {
+     "start": 67.18,
+     "end": 67.4,
+     "word": " oportunidad",
+     "p": 0.998
+    },
+    {
+     "start": 67.48,
+     "end": 67.88,
+     "word": " que",
+     "p": 0.99
+    },
+    {
+     "start": 67.96,
+     "end": 68.14,
+     "word": " nadie",
+     "p": 0.999
+    },
+    {
+     "start": 68.14,
+     "end": 68.32,
+     "word": " ve.",
+     "p": 0.996
+    },
+    {
+     "start": 69.24,
+     "end": 69.33,
+     "word": " Si",
+     "p": 0.954
+    },
+    {
+     "start": 69.33,
+     "end": 69.59,
+     "word": " tenés",
+     "p": 0.985
+    },
+    {
+     "start": 69.59,
+     "end": 69.69,
+     "word": " una",
+     "p": 0.999
+    },
+    {
+     "start": 69.69,
+     "end": 69.97,
+     "word": " marca",
+     "p": 0.999
+    },
+    {
+     "start": 69.97,
+     "end": 70.35,
+     "word": " personal,",
+     "p": 0.999
+    },
+    {
+     "start": 70.93,
+     "end": 70.99,
+     "word": " una",
+     "p": 0.999
+    },
+    {
+     "start": 70.93,
+     "end": 71.39,
+     "word": " consultora",
+     "p": 0.999
+    },
+    {
+     "start": 71.99,
+     "end": 72.09,
+     "word": " o",
+     "p": 0.955
+    },
+    {
+     "start": 72.23,
+     "end": 72.37,
+     "word": " un",
+     "p": 0.999
+    },
+    {
+     "start": 72.37,
+     "end": 72.91,
+     "word": " método",
+     "p": 0.999
+    },
+    {
+     "start": 72.91,
+     "end": 73.05,
+     "word": " que",
+     "p": 0.982
+    },
+    {
+     "start": 73.17,
+     "end": 73.33,
+     "word": " vive",
+     "p": 0.974
+    },
+    {
+     "start": 73.33,
+     "end": 73.45,
+     "word": " en",
+     "p": 1
+    },
+    {
+     "start": 73.45,
+     "end": 73.57,
+     "word": " un",
+     "p": 0.998
+    },
+    {
+     "start": 73.57,
+     "end": 73.83,
+     "word": " Excel,",
+     "p": 0.986
+    },
+    {
+     "start": 74.15,
+     "end": 74.29,
+     "word": " en",
+     "p": 0.999
+    },
+    {
+     "start": 74.35,
+     "end": 74.45,
+     "word": " un",
+     "p": 0.999
+    },
+    {
+     "start": 74.45,
+     "end": 74.81,
+     "word": " Notion,",
+     "p": 0.995
+    },
+    {
+     "start": 75.13,
+     "end": 75.29,
+     "word": " en",
+     "p": 0.999
+    },
+    {
+     "start": 75.35,
+     "end": 75.77,
+     "word": " planillas",
+     "p": 0.999
+    },
+    {
+     "start": 76.19,
+     "end": 76.47,
+     "word": " internas",
+     "p": 1
+    },
+    {
+     "start": 76.47,
+     "end": 76.53,
+     "word": " que",
+     "p": 0.93
+    },
+    {
+     "start": 76.71,
+     "end": 76.77,
+     "word": " lo",
+     "p": 1
+    },
+    {
+     "start": 76.73,
+     "end": 76.89,
+     "word": " único",
+     "p": 1
+    },
+    {
+     "start": 76.89,
+     "end": 77.03,
+     "word": " que",
+     "p": 1
+    },
+    {
+     "start": 77.03,
+     "end": 77.19,
+     "word": " hacen",
+     "p": 1
+    },
+    {
+     "start": 77.27,
+     "end": 77.33,
+     "word": " es",
+     "p": 1
+    },
+    {
+     "start": 77.65,
+     "end": 77.75,
+     "word": " complejizar",
+     "p": 0.999
+    },
+    {
+     "start": 77.99,
+     "end": 78.13,
+     "word": " el",
+     "p": 1
+    },
+    {
+     "start": 78.13,
+     "end": 78.35,
+     "word": " uso,",
+     "p": 1
+    },
+    {
+     "start": 78.78,
+     "end": 78.87,
+     "word": " y",
+     "p": 0.518
+    },
+    {
+     "start": 78.95,
+     "end": 79.01,
+     "word": " te",
+     "p": 0.986
+    },
+    {
+     "start": 78.95,
+     "end": 79.19,
+     "word": " gustaría",
+     "p": 0.999
+    },
+    {
+     "start": 79.19,
+     "end": 79.51,
+     "word": " darle",
+     "p": 0.996
+    },
+    {
+     "start": 80.16,
+     "end": 80.22,
+     "word": " más",
+     "p": 0.844
+    },
+    {
+     "start": 80.48,
+     "end": 80.84,
+     "word": " usabilidad",
+     "p": 0.992
+    },
+    {
+     "start": 80.84,
+     "end": 80.9,
+     "word": " a",
+     "p": 0.212
+    },
+    {
+     "start": 80.86,
+     "end": 80.98,
+     "word": " tu",
+     "p": 0.998
+    },
+    {
+     "start": 80.98,
+     "end": 81.36,
+     "word": " producto.",
+     "p": 1
+    },
+    {
+     "start": 82.07,
+     "end": 82.15,
+     "word": " Esto",
+     "p": 0.917
+    },
+    {
+     "start": 82.15,
+     "end": 82.67,
+     "word": " seguramente",
+     "p": 0.998
+    },
+    {
+     "start": 82.67,
+     "end": 82.87,
+     "word": " debe",
+     "p": 0.988
+    },
+    {
+     "start": 82.87,
+     "end": 83.07,
+     "word": " ser",
+     "p": 0.558
+    },
+    {
+     "start": 83.09,
+     "end": 83.27,
+     "word": " la",
+     "p": 0.999
+    },
+    {
+     "start": 83.27,
+     "end": 83.67,
+     "word": " señal",
+     "p": 1
+    },
+    {
+     "start": 83.71,
+     "end": 83.79,
+     "word": " de",
+     "p": 0.992
+    },
+    {
+     "start": 83.93,
+     "end": 84.15,
+     "word": " poder",
+     "p": 0.998
+    },
+    {
+     "start": 84.15,
+     "end": 84.55,
+     "word": " convertirlo",
+     "p": 0.999
+    },
+    {
+     "start": 84.73,
+     "end": 84.93,
+     "word": " en",
+     "p": 1
+    },
+    {
+     "start": 84.93,
+     "end": 85.09,
+     "word": " una",
+     "p": 0.998
+    },
+    {
+     "start": 85.09,
+     "end": 85.43,
+     "word": " aplicación",
+     "p": 0.997
+    },
+    {
+     "start": 85.63,
+     "end": 85.95,
+     "word": " web",
+     "p": 0.256
+    },
+    {
+     "start": 86.292,
+     "end": 86.755,
+     "word": " o",
+     "p": 0.256
+    },
+    {
+     "start": 86.755,
+     "end": 87.055,
+     "word": " mobile,",
+     "p": 0.256
+    },
+    {
+     "start": 87.618,
+     "end": 87.74,
+     "word": " básicamente",
+     "p": 0.256
+    },
+    {
+     "start": 87.74,
+     "end": 87.9,
+     "word": " en",
+     "p": 0.944
+    },
+    {
+     "start": 87.9,
+     "end": 87.98,
+     "word": " un",
+     "p": 1
+    },
+    {
+     "start": 87.98,
+     "end": 88.3,
+     "word": " software",
+     "p": 0.997
+    },
+    {
+     "start": 88.82,
+     "end": 88.88,
+     "word": " como",
+     "p": 0.259
+    },
+    {
+     "start": 88.88,
+     "end": 89.2,
+     "word": " servicio.",
+     "p": 0.994
+    },
+    {
+     "start": 89.76,
+     "end": 90.04,
+     "word": " Comentá",
+     "p": 0.782
+    },
+    {
+     "start": 90.04,
+     "end": 90.1,
+     "word": " la",
+     "p": 0.988
+    },
+    {
+     "start": 90.08,
+     "end": 90.3,
+     "word": " palabra",
+     "p": 0.995
+    },
+    {
+     "start": 90.3,
+     "end": 90.56,
+     "word": " SOFT",
+     "p": 0.849
+    },
+    {
+     "start": 91.17,
+     "end": 91.23,
+     "word": " Y",
+     "p": 0.597
+    },
+    {
+     "start": 91.19,
+     "end": 91.27,
+     "word": " te",
+     "p": 0.995
+    },
+    {
+     "start": 91.29,
+     "end": 91.49,
+     "word": " digo",
+     "p": 0.999
+    },
+    {
+     "start": 91.49,
+     "end": 91.67,
+     "word": " cómo",
+     "p": 0.736
+    },
+    {
+     "start": 91.67,
+     "end": 91.81,
+     "word": " lo",
+     "p": 0.997
+    },
+    {
+     "start": 91.81,
+     "end": 92.45,
+     "word": " convertiría",
+     "p": 0.998
+    },
+    {
+     "start": 92.45,
+     "end": 92.51,
+     "word": " en",
+     "p": 0.998
+    },
+    {
+     "start": 92.49,
+     "end": 92.57,
+     "word": " un",
+     "p": 0.976
+    },
+    {
+     "start": 92.57,
+     "end": 92.87,
+     "word": " producto.",
+     "p": 0.999
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,310 @@
+{
+  "fuente": "video-jc.mp4",
+  "hechoPor": "editor (2026-09-28), con el criterio de Lucas: pieza entregada entera para que él corrija",
+  "recortes": [
+    {
+      "desde": 3.51,
+      "hasta": 3.67,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.26 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "negocio?",
+        "despues": "un",
+        "duracion": 0.16,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 5.66,
+      "hasta": 6.42,
+      "motivo": "silencio",
+      "nota": "Pausa larga entre 'puede' y 'responder consultas' (consultorio)."
+    },
+    {
+      "desde": 11.83,
+      "hasta": 11.93,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.48 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "turnos.",
+        "despues": "una",
+        "duracion": 0.1,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 11.93,
+      "hasta": 13.74,
+      "motivo": "repeticion",
+      "nota": "'En una inmobiliaria.' dicho dos veces: queda el 2º ('En una inmobiliaria puede filtrar...')."
+    },
+    {
+      "desde": 21.49,
+      "hasta": 21.81,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.42 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "derivar",
+        "despues": "los",
+        "duracion": 0.32,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 24.51,
+      "hasta": 24.61,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.20 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "califican.",
+        "despues": "por",
+        "duracion": 0.1,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 28.83,
+      "hasta": 28.93,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.20 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "casos.",
+        "despues": "la",
+        "duracion": 0.1,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 32.39,
+      "hasta": 32.59,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.30 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "hablando.",
+        "despues": "un",
+        "duracion": 0.2,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 35.35,
+      "hasta": 35.73,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.48 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "reservas,",
+        "despues": "horarios,",
+        "duracion": 0.38,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 37.01,
+      "hasta": 37.33,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.42 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "horarios,",
+        "despues": "ubicación,",
+        "duracion": 0.32,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 41.17,
+      "hasta": 41.43,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.36 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "frecuentes.",
+        "despues": "una",
+        "duracion": 0.26,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 43.07,
+      "hasta": 43.29,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.32 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "logística,",
+        "despues": "informar",
+        "duracion": 0.22,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 45.43,
+      "hasta": 45.85,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.52 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "envío,",
+        "despues": "reclamos,",
+        "duracion": 0.42,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 47.29,
+      "hasta": 47.59,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.40 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "reclamos,",
+        "despues": "incidencias",
+        "duracion": 0.3,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 51.2,
+      "hasta": 52.78,
+      "motivo": "repeticion",
+      "nota": "'En una estética.' dicho dos veces: queda el 2º ('En una estética puede explicar...')."
+    },
+    {
+      "desde": 54.21,
+      "hasta": 54.47,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.36 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "puede",
+        "despues": "tratamientos,",
+        "duracion": 0.26,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 56.01,
+      "hasta": 56.19,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.28 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "tratamientos,",
+        "despues": "precios,",
+        "duracion": 0.18,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 57.33,
+      "hasta": 57.53,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.30 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "precios,",
+        "despues": "qué",
+        "duracion": 0.2,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 58.39,
+      "hasta": 58.63,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.34 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "detectar",
+        "despues": "servicio",
+        "duracion": 0.24,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 61.63,
+      "hasta": 62.01,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.48 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "directamente.",
+        "despues": "un",
+        "duracion": 0.38,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 65.57,
+      "hasta": 65.81,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.34 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "consultas,",
+        "despues": "responder",
+        "duracion": 0.24,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 72.13,
+      "hasta": 72.73,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.70 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "compra.",
+        "despues": "beneficio",
+        "duracion": 0.6,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 77.09,
+      "hasta": 77.69,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.70 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "consultas.",
+        "despues": "idea",
+        "duracion": 0.6,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 86.15,
+      "hasta": 86.43,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.38 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "falta.",
+        "despues": "la",
+        "duracion": 0.28,
+        "esSilencio": true
+      }
+    },
+    {
+      "desde": 91.59,
+      "hasta": 91.73,
+      "motivo": "silencio",
+      "nota": "silencio fino (scripts/silencios.mjs): pausa de 0.24 s, quedan 0.10 s",
+      "contexto": {
+        "texto": "",
+        "antes": "redituable.",
+        "despues": "",
+        "duracion": 0.14,
+        "esSilencio": true
+      }
+    }
+  ]
+}

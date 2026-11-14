@@ -1,0 +1,17 @@
+{
+  "reemplazos": [
+    ["terminá de entrenar", "terminar de entrenar"],
+    ["y sentí las", "y sentir las"],
+    ["mira esto", "mirá esto"],
+    ["aliviar esa sensación de descansación", "aliviar esa sensación de cansancio"],
+    ["miras una serie", "mirás una serie"],
+    ["y sesión de hasta", "y sesiones de hasta"],
+    ["así que si crees", "así que si querés"],
+    ["clicle en el enlace", "clickeá en el enlace"]
+  ],
+  "inserciones": [],
+  "tramos": [
+    { "desde": 0.0, "hasta": 0.4, "nota": "whisper inventó 'y bueno eso es todo' sobre el silencio inicial", "palabras": [] },
+    { "desde": 39.7, "hasta": 40.0, "nota": "whisper inventó 'gracias por ver el video' sobre el silencio final", "palabras": [] }
+  ]
+}

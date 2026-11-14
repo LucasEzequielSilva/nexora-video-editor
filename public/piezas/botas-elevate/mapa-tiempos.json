@@ -1,0 +1,12 @@
+{
+  "duracion_s": 40,
+  "tramos": [
+    {
+      "origen": [
+        0,
+        40
+      ],
+      "salida": 0
+    }
+  ]
+}

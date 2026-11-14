@@ -55,6 +55,9 @@ export const SFX_FILES = {
   "whoosh-cine": "reserva/sfx/whoosh-cine.wav",
   "golpe-grave": "reserva/sfx/golpe-grave.wav",
   "golpe-seco": "reserva/sfx/golpe-seco.wav",
+  /** Glitch digital (audio de PACKS/GLITCH TRANSITIONS 6 y 1): el salto real <-> versión IA. */
+  glitch: "reserva/sfx/glitch.wav",
+  "glitch-b": "reserva/sfx/glitch-b.wav",
 } as const;
 
 export type SfxName = keyof typeof SFX_FILES;
@@ -103,6 +106,8 @@ export const SFX_HIT_SECONDS: Record<SfxName, number> = {
   "whoosh-cine": 0.26,
   "golpe-grave": 0.022,
   "golpe-seco": 0.072,
+  glitch: 0.15,
+  "glitch-b": 0.1,
 };
 
 type SfxProps = {

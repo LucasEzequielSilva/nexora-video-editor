@@ -1,0 +1,304 @@
+{
+  "_comentario": "DEMO del template estilo anuncio (referencia assets/referencias/anuncio-2026-09-27.mp4) con el material de empieza-a-romperse: subtítulo anuncio, aro, titulares azules, escenas blancas (capturas, neón, letras, cerebro 3D). Texto literal del guion.",
+  "durationSeconds": 52.833,
+  "subtitulos": {
+    "fuente": "satoshi",
+    "estilo": "anuncio",
+    "acentos": [
+      "agenda",
+      "estructura",
+      "plata"
+    ]
+  },
+  "zooms": [],
+  "sfx": [],
+  "overlays": [
+    {
+      "tipo": "aro",
+      "desde": {
+        "palabra": "el",
+        "n": 1
+      },
+      "hasta": "fin"
+    },
+    {
+      "_comentario": "Titular del hook, como '[4 A 6]' de la referencia.",
+      "tipo": "titular",
+      "desde": {
+        "palabra": "el",
+        "n": 1
+      },
+      "hasta": {
+        "palabra": "te",
+        "n": 1,
+        "offsetMs": -900
+      },
+      "arriba": "el día que tu negocio",
+      "grande": "ANDAR BIEN",
+      "corchetes": true,
+      "abajo": "empieza a romperse",
+      "abajoEn": {
+        "palabra": "romperse"
+      }
+    },
+    {
+      "tipo": "escena",
+      "tema": "limpio",
+      "pip": "ninguno",
+      "gananciaSfx": 2.7,
+      "escena": "capturas",
+      "desde": {
+        "palabra": "un",
+        "n": 1,
+        "offsetMs": -200
+      },
+      "hasta": {
+        "palabra": "ahora",
+        "n": 1,
+        "offsetMs": 120
+      },
+      "cues": {
+        "llena": {
+          "palabra": "llena"
+        }
+      },
+      "datos": {
+        "etiquetas": [
+          {
+            "texto": "llena la agenda",
+            "cue": "llena"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "escena",
+      "tema": "limpio",
+      "pip": "ninguno",
+      "gananciaSfx": 2.7,
+      "escena": "frase",
+      "desde": {
+        "palabra": "ahora",
+        "n": 1,
+        "offsetMs": 120
+      },
+      "hasta": {
+        "palabra": "y",
+        "n": 1,
+        "offsetMs": 300
+      },
+      "cues": {
+        "ahora": {
+          "palabra": "ahora",
+          "n": 1,
+          "offsetMs": 150
+        },
+        "triple": {
+          "palabra": "triple"
+        },
+        "consultas": {
+          "palabra": "consultas"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "ahora le entra el",
+              "estilo": "serif",
+              "cue": "ahora"
+            }
+          ],
+          [
+            {
+              "texto": "TRIPLE",
+              "estilo": "neon",
+              "cue": "triple",
+              "animar": "letras",
+              "tamano": 190
+            }
+          ],
+          [
+            {
+              "texto": "de consultas",
+              "estilo": "etiqueta",
+              "cue": "consultas",
+              "tamano": 72
+            }
+          ]
+        ],
+        "textoY": 640
+      }
+    },
+    {
+      "_comentario": "'En los tres pasó exactamente lo mismo' con la cifra entre corchetes.",
+      "tipo": "titular",
+      "desde": {
+        "palabra": "en",
+        "n": 1
+      },
+      "hasta": {
+        "palabra": "y",
+        "n": 4,
+        "offsetMs": -150
+      },
+      "arriba": "en los",
+      "grande": "3",
+      "corchetes": true,
+      "abajo": "pasó exactamente lo mismo",
+      "abajoEn": {
+        "palabra": "pasó"
+      }
+    },
+    {
+      "tipo": "escena",
+      "tema": "limpio",
+      "pip": "ninguno",
+      "gananciaSfx": 2.7,
+      "escena": "frase",
+      "desde": {
+        "palabra": "y",
+        "n": 4,
+        "offsetMs": -100
+      },
+      "hasta": {
+        "palabra": "por",
+        "n": 2,
+        "offsetMs": 300
+      },
+      "cues": {
+        "aca": {
+          "palabra": "acá"
+        },
+        "trampa": {
+          "palabra": "trampa"
+        },
+        "siente1": {
+          "palabra": "siente",
+          "n": 1
+        },
+        "ocupado": {
+          "palabra": "ocupado"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "y acá está la",
+              "estilo": "serif",
+              "cue": "aca"
+            },
+            {
+              "texto": "trampa",
+              "estilo": "sans",
+              "cue": "trampa",
+              "animar": "letras",
+              "tamano": 130
+            }
+          ],
+          [
+            {
+              "texto": "no se siente como un problema,",
+              "estilo": "etiqueta",
+              "cue": "siente1",
+              "tamano": 56
+            }
+          ],
+          [
+            {
+              "texto": "ocupado.",
+              "estilo": "neon",
+              "cue": "ocupado",
+              "tamano": 150
+            }
+          ]
+        ],
+        "objeto": {
+          "archivo": "recursos/objeto-3d-005.glb",
+          "cue": "aca",
+          "lado": 460,
+          "x": 540,
+          "y": 520
+        }
+      }
+    },
+    {
+      "tipo": "escena",
+      "tema": "limpio",
+      "pip": "ninguno",
+      "gananciaSfx": 2.7,
+      "escena": "frase",
+      "desde": {
+        "palabra": "porque",
+        "offsetMs": -200
+      },
+      "hasta": {
+        "palabra": "nadie",
+        "n": 2,
+        "offsetMs": 120
+      },
+      "cues": {
+        "lo": {
+          "palabra": "lo",
+          "n": 5
+        },
+        "deja": {
+          "palabra": "deja"
+        },
+        "rastro": {
+          "palabra": "rastro"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "lo que se pierde",
+              "estilo": "serif",
+              "cue": "lo"
+            }
+          ],
+          [
+            {
+              "texto": "no deja",
+              "estilo": "sans",
+              "cue": "deja",
+              "tamano": 130
+            }
+          ],
+          [
+            {
+              "texto": "RASTRO",
+              "estilo": "neon",
+              "cue": "rastro",
+              "animar": "letras",
+              "tamano": 190
+            }
+          ]
+        ],
+        "textoY": 700
+      }
+    },
+    {
+      "_comentario": "Titular de la tesis, sin corchetes.",
+      "tipo": "titular",
+      "desde": {
+        "palabra": "tu",
+        "n": 2
+      },
+      "hasta": {
+        "palabra": "y",
+        "n": 6,
+        "offsetMs": -100
+      },
+      "arriba": "tu negocio crece, pero tu",
+      "grande": "ESTRUCTURA",
+      "abajo": "no.",
+      "abajoEn": {
+        "palabra": "no",
+        "n": 7
+      }
+    }
+  ]
+}

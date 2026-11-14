@@ -1,0 +1,1000 @@
+{
+  "durationSeconds": 72.818,
+  "subtitulos": {
+    "fuente": "satoshi",
+    "acentos": [
+      "agente",
+      "sistema"
+    ],
+    "gradiente": "verde"
+  },
+  "pausas": [
+    {
+      "_comentario": "Negro del hook: en video-jc cae en la unión del recorte de silencio 4.57-4.81 (el corte de toma está en 4.8): 'IA' 4.29 + 280 ms.",
+      "tras": {
+        "palabra": "ia",
+        "fin": true,
+        "offsetMs": 500
+      },
+      "segundos": 0.9,
+      "offsetMs": 280
+    },
+    {
+      "_comentario": "RESPIROS después de cada escena.",
+      "tras": {
+        "palabra": "persona",
+        "n": 1,
+        "fin": true,
+        "offsetMs": 40
+      },
+      "segundos": 0.5,
+      "modo": "congelar"
+    },
+    {
+      "_comentario": "Después de la cola de 'automatización' (suena hasta ~55.9, whisper la corta en 55.29).",
+      "tras": {
+        "palabra": "automatización",
+        "fin": true,
+        "offsetMs": 610
+      },
+      "segundos": 0.5,
+      "modo": "congelar"
+    },
+    {
+      "tras": {
+        "palabra": "caso",
+        "fin": true,
+        "offsetMs": 40
+      },
+      "segundos": 0.5,
+      "modo": "congelar"
+    },
+    {
+      "_comentario": "Al final: 1 s para que el CTA termine.",
+      "tras": {
+        "palabra": "funcionando",
+        "fin": true,
+        "offsetMs": 200
+      },
+      "segundos": 1,
+      "modo": "congelar"
+    }
+  ],
+  "zooms": [
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "automatiza"
+      },
+      "fin": {
+        "palabra": "ia",
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 1.45,
+      "_comentario": "HOOK hasta retrato (1.45 con la cara al 38 %)."
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "ia",
+        "fin": true
+      },
+      "fin": {
+        "palabra": "lo",
+        "n": 1,
+        "offsetMs": -80
+      },
+      "escalaInicial": 1.45,
+      "escala": 1.45,
+      "_comentario": "Retrato sostenido dentro del negro."
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "lo",
+        "n": 1,
+        "offsetMs": -80
+      },
+      "fin": {
+        "palabra": "lo",
+        "n": 1,
+        "offsetMs": 620
+      },
+      "escalaInicial": 1.45,
+      "escala": 1,
+      "curva": "salida",
+      "_comentario": "VUELTA DEL NEGRO."
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "lo",
+        "n": 1,
+        "offsetMs": 620
+      },
+      "fin": {
+        "palabra": "mapear",
+        "offsetMs": 100
+      },
+      "escalaInicial": 1,
+      "escala": 1.08
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "cómo",
+        "n": 1
+      },
+      "fin": {
+        "palabra": "automatizar",
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 1.5,
+      "_comentario": "Sale el b-roll y sube hasta 'automatizar'."
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "automatizar",
+        "fin": true
+      },
+      "fin": {
+        "palabra": "después",
+        "n": 1,
+        "offsetMs": 300
+      },
+      "escalaInicial": 1.5,
+      "escala": 1.52
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "con",
+        "n": 2
+      },
+      "fin": {
+        "palabra": "conversacional",
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 1.45,
+      "_comentario": "'Con todo eso armamos un agente conversacional'."
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "conversacional",
+        "fin": true
+      },
+      "fin": {
+        "palabra": "atiende",
+        "n": 2,
+        "offsetMs": 300
+      },
+      "escalaInicial": 1.45,
+      "escala": 1.47
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "cobra",
+        "offsetMs": -100
+      },
+      "fin": {
+        "palabra": "todo",
+        "n": 2
+      },
+      "escalaInicial": 1,
+      "escala": 1.25,
+      "_comentario": "'cobra... los pagos' hasta el corte de 'Y todo esto' (33.5)."
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "todo",
+        "n": 2
+      },
+      "fin": {
+        "palabra": "sistema",
+        "n": 2,
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 1.4,
+      "_comentario": "Arranca en el corte: 'queda dentro de un mismo sistema'."
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "sistema",
+        "n": 2,
+        "fin": true
+      },
+      "fin": {
+        "palabra": "dashboard",
+        "offsetMs": 300
+      },
+      "escalaInicial": 1.4,
+      "escala": 1.42
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "además"
+      },
+      "fin": {
+        "palabra": "manera",
+        "n": 2,
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 1.45,
+      "_comentario": "'Además, el agente no responde todo de la misma manera'."
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "manera",
+        "n": 2,
+        "fin": true
+      },
+      "fin": {
+        "palabra": "cada",
+        "offsetMs": 300
+      },
+      "escalaInicial": 1.45,
+      "escala": 1.47
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "la",
+        "n": 6
+      },
+      "fin": {
+        "palabra": "esto",
+        "n": 2,
+        "offsetMs": -120
+      },
+      "escalaInicial": 1,
+      "escala": 1.1,
+      "_comentario": "TESIS hasta el corte interno (65.1)."
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "esto",
+        "n": 2,
+        "offsetMs": -120
+      },
+      "fin": {
+        "palabra": "negocio",
+        "n": 3,
+        "fin": true
+      },
+      "escalaInicial": 1,
+      "escala": 1.4,
+      "_comentario": "Arranca en el corte: 'es construir un sistema para el negocio'."
+    },
+    {
+      "tipo": "suave",
+      "inicio": {
+        "palabra": "negocio",
+        "n": 3,
+        "fin": true
+      },
+      "fin": {
+        "palabra": "entienda",
+        "offsetMs": 300
+      },
+      "escalaInicial": 1.4,
+      "escala": 1.42
+    }
+  ],
+  "sfx": [
+    {
+      "nombre": "riser",
+      "palabra": "ia",
+      "fin": true,
+      "corte": {
+        "palabra": "ia",
+        "fin": true,
+        "offsetMs": 40
+      },
+      "volumen": 0.07
+    },
+    {
+      "_comentario": "Boom en el cuadro en que entra el negro (1.88 s desde 2026-09-30, con los silencios sin margen).",
+      "nombre": "boom-negro",
+      "palabra": "ia",
+      "fin": true,
+      "offsetMs": 170,
+      "volumen": 0.3
+    },
+    {
+      "_comentario": "Eco de 'IA' (suena 1.52-1.92).",
+      "archivo": "piezas/asi-se-automatiza/cola-ia.wav",
+      "palabra": "ia",
+      "offsetMs": 10,
+      "volumen": 1
+    },
+    {
+      "_comentario": "Remate de 'qué tareas tiene sentido automatizar'.",
+      "nombre": "remate-b",
+      "palabra": "automatizar",
+      "fin": true,
+      "offsetMs": 90,
+      "volumen": 0.26
+    },
+    {
+      "_comentario": "Remate de la tesis 'qué tiene que pasar después'.",
+      "nombre": "remate",
+      "palabra": "después",
+      "n": 2,
+      "fin": true,
+      "offsetMs": 90,
+      "volumen": 0.2
+    }
+  ],
+  "overlays": [
+    {
+      "_comentario": "HOOK con glitch a la versión médico (Kling O3 video edit sobre jc 1.40-4.46, scripts/higgsfield.py). Lucas, 2026-10-05: 'en un consultorio con ropa médica y que haya como un glitch de eso para generar retención'. 'consultorio' suena en el clip IA a los 1.99 s + 50 ms de atraso medido (correlación de movimiento).",
+      "tipo": "glitch-ia",
+      "archivo": "piezas/asi-se-automatiza/hook-medico.mp4",
+      "ancla": {
+        "palabra": "consultorio",
+        "n": 1
+      },
+      "anclaFuenteS": 2.04,
+      "tramos": [
+        {
+          "desde": {
+            "palabra": "automatiza",
+            "n": 1,
+            "offsetMs": -30
+          },
+          "hasta": {
+            "palabra": "con",
+            "n": 1
+          }
+        }
+      ],
+      "volumenSfx": 0.25
+    },
+    {
+      "_comentario": "B-ROLL 'mapear el negocio': escritorio cenital (261).",
+      "tipo": "broll",
+      "archivo": "recursos/broll-261.mp4",
+      "inicioS": 2,
+      "desde": {
+        "palabra": "mapear",
+        "offsetMs": -100
+      },
+      "hasta": {
+        "palabra": "cómo",
+        "n": 1
+      },
+      "sfx": "corte-broll",
+      "volumenSfx": 0.3
+    },
+    {
+      "_comentario": "PROTOCOLOS 1/3 (blanco): la palabra clave + lupa 3D. Entra antes (2026-09-30): Lucas veía el giro de la cara a la pantalla durante el fundido.",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "blanco",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "automatizar",
+        "fin": true,
+        "offsetMs": -170
+      },
+      "hasta": {
+        "palabra": "tratamientos",
+        "offsetMs": -100
+      },
+      "cues": {
+        "despues": {
+          "palabra": "después",
+          "n": 1
+        },
+        "protocolos": {
+          "palabra": "protocolos"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "después relevamos los",
+              "estilo": "serif",
+              "cue": "despues",
+              "tamano": 80
+            }
+          ],
+          [
+            {
+              "texto": "protocolos",
+              "estilo": "sans",
+              "cue": "protocolos",
+              "tamano": 170,
+              "gradiente": "verde"
+            }
+          ]
+        ],
+        "objeto": {
+          "archivo": "recursos/objeto-3d-014.glb",
+          "cue": "despues",
+          "lado": 600,
+          "y": 620
+        }
+      }
+    },
+    {
+      "_comentario": "PROTOCOLOS 2/3 (negro): la consulta, el valor y los horarios en el chat real de Raquel.",
+      "tipo": "escena",
+      "escena": "celular",
+      "tema": "negro",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "tratamientos",
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "qué",
+        "n": 2,
+        "offsetMs": -100
+      },
+      "cues": {
+        "tratamientos": {
+          "palabra": "tratamientos"
+        },
+        "precios": {
+          "palabra": "precios"
+        },
+        "disponibilidad": {
+          "palabra": "disponibilidad"
+        }
+      },
+      "datos": {
+        "bajada": "relevamos",
+        "clips": [
+          {
+            "archivo": "recursos/raquel/confirmaciones.mp4",
+            "desde": 9,
+            "cue": "tratamientos",
+            "etiqueta": "tratamientos"
+          },
+          {
+            "archivo": "recursos/raquel/confirmaciones.mp4",
+            "desde": 9.6,
+            "cue": "precios",
+            "etiqueta": "precios"
+          },
+          {
+            "archivo": "recursos/raquel/agendamiento.mp4",
+            "desde": 1,
+            "cue": "disponibilidad",
+            "etiqueta": "disponibilidad"
+          }
+        ]
+      }
+    },
+    {
+      "_comentario": "PROTOCOLOS 3/3 (blanco): urgencia / una persona.",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "blanco",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "qué",
+        "n": 2,
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "con",
+        "n": 2,
+        "offsetMs": 300
+      },
+      "cues": {
+        "urgencia": {
+          "palabra": "urgencia",
+          "n": 1
+        },
+        "casos": {
+          "palabra": "casos"
+        },
+        "persona": {
+          "palabra": "persona",
+          "n": 1
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "qué hacer ante una",
+              "estilo": "serif",
+              "cue": "urgencia",
+              "tamano": 76
+            }
+          ],
+          [
+            {
+              "texto": "urgencia",
+              "estilo": "sans",
+              "cue": "urgencia",
+              "tamano": 160,
+              "gradiente": "verde"
+            }
+          ],
+          [
+            {
+              "texto": "en qué casos tiene que intervenir",
+              "estilo": "serif",
+              "cue": "casos",
+              "tamano": 62
+            }
+          ],
+          [
+            {
+              "texto": "una persona.",
+              "estilo": "sans",
+              "cue": "persona",
+              "tamano": 110
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "_comentario": "ACCIONES (blanco): el agente en el chat real de Raquel, un clip por acción (inicios donde ya se ve el mensaje).",
+      "tipo": "escena",
+      "escena": "celular",
+      "tema": "blanco",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "atiende",
+        "n": 2,
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "cobra",
+        "offsetMs": -100
+      },
+      "cues": {
+        "consultas": {
+          "palabra": "atiende",
+          "n": 2
+        },
+        "agenda": {
+          "palabra": "agenda",
+          "n": 1
+        },
+        "confirma": {
+          "palabra": "confirma"
+        },
+        "recordatorios": {
+          "palabra": "recordatorios",
+          "n": 1
+        },
+        "reprograma": {
+          "palabra": "reprograma"
+        },
+        "cancela": {
+          "palabra": "cancela"
+        }
+      },
+      "datos": {
+        "bajada": "el agente",
+        "clips": [
+          {
+            "archivo": "recursos/raquel/agendamiento.mp4",
+            "desde": 0.5,
+            "cue": "consultas",
+            "etiqueta": "consultas"
+          },
+          {
+            "archivo": "recursos/raquel/agendamiento.mp4",
+            "desde": 10,
+            "cue": "agenda",
+            "etiqueta": "agenda"
+          },
+          {
+            "archivo": "recursos/raquel/confirmaciones.mp4",
+            "desde": 6.5,
+            "cue": "confirma",
+            "etiqueta": "confirma"
+          },
+          {
+            "archivo": "recursos/raquel/recordatorios.mp4",
+            "desde": 2.1,
+            "cue": "recordatorios",
+            "etiqueta": "recuerda"
+          },
+          {
+            "archivo": "recursos/raquel/reprogramacion.mp4",
+            "desde": 4,
+            "cue": "reprograma",
+            "etiqueta": "reprograma"
+          },
+          {
+            "archivo": "recursos/raquel/cancelaciones.mp4",
+            "desde": 5.2,
+            "cue": "cancela",
+            "etiqueta": "cancela"
+          }
+        ]
+      }
+    },
+    {
+      "_comentario": "Billetera 3D en 'cobra, hace la recepción de los pagos'.",
+      "tipo": "icono",
+      "en": {
+        "palabra": "cobra",
+        "offsetMs": -100
+      },
+      "duracionMs": 1300,
+      "centroY": 70,
+      "volumenSfx": 0.2,
+      "modelo": "recursos/objeto-3d-003.glb",
+      "tamano": 600
+    },
+    {
+      "_comentario": "DASHBOARD (panel). Números ILUSTRATIVOS: mostrárselos a Lucas.",
+      "tipo": "escena",
+      "escena": "panel",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "dashboard",
+        "offsetMs": -200
+      },
+      "hasta": {
+        "palabra": "y",
+        "n": 5,
+        "offsetMs": -100
+      },
+      "cues": {
+        "dashboard": {
+          "palabra": "dashboard"
+        },
+        "panel": {
+          "palabra": "ver"
+        },
+        "conversaciones": {
+          "palabra": "conversaciones"
+        },
+        "agendas": {
+          "palabra": "agendas"
+        },
+        "recordatorios": {
+          "palabra": "agendas",
+          "offsetMs": 500
+        }
+      },
+      "datos": {
+        "palabra": {
+          "texto": "Dashboard",
+          "cue": "dashboard"
+        },
+        "titulo": "Métricas del negocio",
+        "periodo": "Esta semana",
+        "panelCue": "panel",
+        "metricas": [
+          {
+            "etiqueta": "Conversaciones",
+            "valor": 184,
+            "cue": "conversaciones",
+            "tono": "neutro"
+          },
+          {
+            "etiqueta": "Agendas",
+            "valor": 37,
+            "cue": "agendas",
+            "tono": "bueno"
+          },
+          {
+            "etiqueta": "Recordatorios",
+            "valor": 52,
+            "cue": "recordatorios",
+            "tono": "bueno"
+          }
+        ]
+      }
+    },
+    {
+      "_comentario": "RENTABILIDAD (negro): la palabra clave + paca de billetes 3D.",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "negro",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "y",
+        "n": 5,
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "además",
+        "offsetMs": 300
+      },
+      "cues": {
+        "manera": {
+          "palabra": "manera",
+          "n": 1
+        },
+        "rentabilidad": {
+          "palabra": "rentabilidad"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "de esa manera entender la",
+              "estilo": "serif",
+              "cue": "manera",
+              "tamano": 72
+            }
+          ],
+          [
+            {
+              "texto": "rentabilidad",
+              "estilo": "sans",
+              "cue": "rentabilidad",
+              "tamano": 150,
+              "gradiente": "verde"
+            }
+          ]
+        ],
+        "objeto": {
+          "archivo": "recursos/objeto-3d-016.glb",
+          "cue": "manera",
+          "lado": 560,
+          "y": 620
+        }
+      }
+    },
+    {
+      "_comentario": "FLUJOS 1/3 (blanco): 'se clasifica según la intención' + archivos 3D. Entra antes (2026-09-30): mismo motivo.",
+      "tipo": "escena",
+      "escena": "frase",
+      "tema": "blanco",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "manera",
+        "n": 2,
+        "fin": true,
+        "offsetMs": -190
+      },
+      "hasta": {
+        "palabra": "si",
+        "n": 1,
+        "offsetMs": -100
+      },
+      "cues": {
+        "cada": {
+          "palabra": "cada"
+        },
+        "intencion": {
+          "palabra": "intención"
+        }
+      },
+      "datos": {
+        "lineas": [
+          [
+            {
+              "texto": "se clasifica según la",
+              "estilo": "serif",
+              "cue": "cada",
+              "tamano": 80
+            }
+          ],
+          [
+            {
+              "texto": "intención",
+              "estilo": "sans",
+              "cue": "intencion",
+              "tamano": 160,
+              "gradiente": "verde"
+            }
+          ]
+        ],
+        "objeto": {
+          "archivo": "recursos/objeto-3d-001.glb",
+          "cue": "cada",
+          "lado": 540,
+          "y": 620
+        }
+      }
+    },
+    {
+      "_comentario": "FLUJOS 2/3 (negro): sacar un turno / cancelar en el chat real.",
+      "tipo": "escena",
+      "escena": "celular",
+      "tema": "negro",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "si",
+        "n": 1,
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "y",
+        "n": 6,
+        "offsetMs": -100
+      },
+      "cues": {
+        "turno": {
+          "palabra": "si",
+          "n": 1
+        },
+        "cancelar": {
+          "palabra": "cancelar"
+        }
+      },
+      "datos": {
+        "bajada": "si quiere",
+        "clips": [
+          {
+            "archivo": "recursos/raquel/agendamiento.mp4",
+            "desde": 0.5,
+            "cue": "turno",
+            "etiqueta": "turno"
+          },
+          {
+            "archivo": "recursos/raquel/cancelaciones.mp4",
+            "desde": 3.5,
+            "cue": "cancelar",
+            "etiqueta": "cancelar"
+          }
+        ]
+      }
+    },
+    {
+      "_comentario": "FLUJOS 3/3 (blanco): cada mensaje a su flujo.",
+      "tipo": "escena",
+      "escena": "proceso",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "y",
+        "n": 6,
+        "offsetMs": -150
+      },
+      "hasta": {
+        "palabra": "la",
+        "n": 6,
+        "offsetMs": 300
+      },
+      "cues": {
+        "titulo": {
+          "palabra": "y",
+          "n": 6
+        },
+        "p1": {
+          "palabra": "y",
+          "n": 6,
+          "offsetMs": 100
+        },
+        "p2": {
+          "palabra": "detecta"
+        },
+        "p3": {
+          "palabra": "urgencias"
+        },
+        "p4": {
+          "palabra": "persona",
+          "n": 2
+        }
+      },
+      "datos": {
+        "titulo": {
+          "chico": "cada mensaje va a su",
+          "grande": "flujo"
+        },
+        "pasos": [
+          {
+            "nombre": "Agenda",
+            "cue": "p1"
+          },
+          {
+            "nombre": "Cancelación",
+            "cue": "p2"
+          },
+          {
+            "nombre": "Urgencias",
+            "cue": "p3"
+          },
+          {
+            "nombre": "Una persona",
+            "cue": "p4"
+          }
+        ],
+        "estadoFinal": "dependiendo del caso"
+      }
+    },
+    {
+      "_comentario": "B-ROLL 'que entienda lo que está pasando y qué tiene que pasar después' (Lucas: acá desvía la mirada): 179 desde 4.9 s.",
+      "tipo": "broll",
+      "archivo": "recursos/broll-179.mp4",
+      "inicioS": 4.9,
+      "desde": {
+        "palabra": "entienda",
+        "offsetMs": -100
+      },
+      "hasta": {
+        "palabra": "comentá",
+        "offsetMs": -350
+      },
+      "sfx": "corte-broll-b",
+      "volumenSfx": 0.3
+    },
+    {
+      "_comentario": "CTA: 'Comentá la palabra AGENTE y te muestro uno funcionando'.",
+      "tipo": "escena",
+      "escena": "cta",
+      "pip": "ninguno",
+      "gananciaSfx": 2.2,
+      "desde": {
+        "palabra": "comentá",
+        "offsetMs": -350
+      },
+      "hasta": "fin",
+      "cues": {
+        "ver": {
+          "palabra": "comentá",
+          "offsetMs": -100
+        },
+        "comentar": {
+          "palabra": "comentá"
+        },
+        "palabra": {
+          "palabra": "agente",
+          "n": 3,
+          "fin": true
+        },
+        "respuesta": {
+          "palabra": "muestro"
+        },
+        "privado": {
+          "palabra": "funcionando",
+          "fin": true,
+          "offsetMs": 300
+        }
+      },
+      "datos": {
+        "cuenta": "nexorasistem.ar",
+        "usuario": "tu_consultorio",
+        "palabra": "AGENTE",
+        "respuesta": "¡Te muestro uno funcionando!",
+        "enviado": "Enviado por privado",
+        "verbo": "comentá",
+        "bajar": 320
+      }
+    }
+  ],
+  "_comentario": "v1 (2026-09-28): formato ganador. Hook 'Así se automatiza un consultorio con IA' (se dijo 2 veces: queda el 2º). Escenas: protocolos (frase negra), dashboard (panel, números ILUSTRATIVOS a mostrar a Lucas), flujos por intención (proceso). B-roll 261 sin usar. Música HOME resonance (musica-038) sin sub, ~20 dB bajo la voz. Cara al 38 % del ancho: retrato 1.5. v1b (2026-09-28, notas de Lucas): silencios finos (scripts/silencios.mjs, 78.7 s), menos texto y más visual (grabaciones reales del agente de Raquel en la escena celular), palabras clave en degradé verde.",
+  "musica": {
+    "_comentario": "HOME resonance (slowed reverb), pareja; desde 10 s del tema, sub -9 dB. Entra cuando vuelve la imagen (3.11).",
+    "archivo": "recursos/musica-038-suave.m4a",
+    "desde": {
+      "palabra": "lo",
+      "n": 1,
+      "offsetMs": -80
+    },
+    "inicioS": 0,
+    "volumen": 0.159,
+    "bajoVoz": 0.7,
+    "fadeInMs": 40,
+    "fadeOutMs": 1200
+  }
+}

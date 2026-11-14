@@ -18,6 +18,15 @@ const ESTILO: Record<TemaEscena, { base: string; luz: string; sombra: string; op
     mezcla: "multiply",
     vineta: "radial-gradient(ellipse 85% 75% at 50% 45%, transparent 55%, rgba(0,0,0,0.16) 100%)",
   },
+  limpio: {
+    base: "#fbfbfb",
+    luz: "radial-gradient(ellipse 80% 65% at 50% 45%, #ffffff 0%, #fcfcfc 60%, #f3f3f3 100%)",
+    sombra: "#000",
+    opacidadSombra: 0,
+    ruido: 0.03,
+    mezcla: "multiply",
+    vineta: "radial-gradient(ellipse 90% 80% at 50% 45%, transparent 65%, rgba(0,0,0,0.06) 100%)",
+  },
   negro: {
     base: "#0a0a0a",
     luz: "radial-gradient(ellipse 75% 60% at 50% 42%, #1c1c1c 0%, #121212 50%, #070707 100%)",

@@ -1,0 +1,63 @@
+{
+  "ancho": 390,
+  "alto": 3300,
+  "dpr": 3,
+  "fondo": "fondo.png",
+  "completo": "completo.png",
+  "items": [
+    {
+      "id": "traza0",
+      "x": 16,
+      "y": 924.5,
+      "w": 358,
+      "h": 54,
+      "texto": "LeadConfirmado",
+      "archivo": "00-traza0.png"
+    },
+    {
+      "id": "traza1",
+      "x": 16,
+      "y": 986.5,
+      "w": 358,
+      "h": 54,
+      "texto": "ConversaciónConfirmado",
+      "archivo": "01-traza1.png"
+    },
+    {
+      "id": "traza2",
+      "x": 16,
+      "y": 1048.5,
+      "w": 358,
+      "h": 54,
+      "texto": "TurnoConfirmado",
+      "archivo": "02-traza2.png"
+    },
+    {
+      "id": "traza3",
+      "x": 16,
+      "y": 1110.5,
+      "w": 358,
+      "h": 70,
+      "texto": "UnidadConfirmado000000000001222",
+      "archivo": "03-traza3.png"
+    },
+    {
+      "id": "traza4",
+      "x": 16,
+      "y": 1188.5,
+      "w": 358,
+      "h": 70,
+      "texto": "OperaciónConfirmadoVenta",
+      "archivo": "04-traza4.png"
+    },
+    {
+      "id": "traza5",
+      "x": 16,
+      "y": 1266.5,
+      "w": 358,
+      "h": 70,
+      "texto": "StockConfirmadoVendida",
+      "archivo": "05-traza5.png"
+    }
+  ]
+}

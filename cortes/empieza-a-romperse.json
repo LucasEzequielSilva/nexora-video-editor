@@ -28,14 +28,14 @@
     {
       "archivo": "IMG_3525.MOV",
       "desde": 154.91,
-      "hasta": 160.21,
-      "nota": "Un comercio que vende más: ahora tiene más presupuestos pendientes, y el que no recibe respuesta hoy se va a otro lado (desde el reinicio en 154.96: el primer intento se trababa en 'ahora tiene más...')"
+      "hasta": 160.49,
+      "nota": "\"presupuestos pendientes y el que no recibe respuesta hoy se va a otro lado.\" (ajustada por Lucas en Cut AI)"
     },
     {
       "archivo": "IMG_3525.MOV",
-      "desde": 202.03,
+      "desde": 203.18,
       "hasta": 207.14,
-      "nota": "Una marca personal que crece: más gente escribiéndote y vos contestando cada vez menos (última)"
+      "nota": "Una marca personal que crece: más gente escribiéndote y vos contestando cada vez menos (última). Arranca en el reinicio (voz 203.24): 202.06-202.60 era el arranque en falso 'una marca pe…' (Lucas, 2026-09-27: 'se traba con una marca pe')"
     },
     {
       "archivo": "IMG_3525.MOV",
@@ -63,28 +63,23 @@
     },
     {
       "archivo": "IMG_3525.MOV",
-      "desde": 381.88,
-      "hasta": 384.54,
-      "nota": "Nadie anota el mensaje que no contestó (65% a cámara; la de 396.5 era leída, 0%)"
-    },
-    {
-      "archivo": "IMG_3525.MOV",
       "desde": 403.38,
-      "hasta": 405.53,
-      "nota": "Tu negocio crece, pero tu estructura no"
+      "hasta": 405.95,
+      "nota": "\"negocio crece pero tu estructura no.\" (ajustada por Lucas en Cut AI)"
     },
     {
       "archivo": "IMG_3525.MOV",
-      "desde": 455.29,
+      "desde": 456.76,
       "hasta": 460.72,
-      "nota": "Y eso no se arregla trabajando más horas. Se arregla instalando lo que falta (última; después 'Está bien, ¿no?')"
+      "nota": "\"no se arregla trabajando más horas. Se arregla instalando lo que falta.\" (ajustada por Lucas en Cut AI)"
     },
     {
       "archivo": "IMG_3525.MOV",
-      "desde": 463.27,
-      "hasta": 466.0,
-      "nota": "Escribí ESTRUCTURA y te muestro cómo se ve un negocio que sí lo tiene (CTA)"
+      "desde": 488.02,
+      "hasta": 491.27,
+      "nota": "\"\" (ajustada por Lucas en Cut AI)"
     }
   ],
-  "propuesta": "editor 2026-09-26 con el detector de mirada (scripts/mirada.py); Lucas ajusta con npm run tomas -- empieza-a-romperse"
+  "propuesta": "editor 2026-09-26 con el detector de mirada (scripts/mirada.py); Lucas ajusta con npm run tomas -- empieza-a-romperse",
+  "editadoPor": "Lucas (Cut AI)"
 }

@@ -1,0 +1,17 @@
+{
+  "base": "D:/moved/Downloads",
+  "cortes": [
+    { "archivo": "IMG_7319.MOV", "desde": 0.9, "hasta": 5.7, "nota": "HOOK: Así se automatiza un consultorio… (única)" },
+    { "archivo": "IMG_7319.MOV", "desde": 54.46, "hasta": 63.84, "nota": "Lo primero que hacemos es mapear el negocio para poder entender cómo funciona el consultorio, cómo atiende hoy y qué tareas tiene sentido automatizar (4ª y última versión)" },
+    { "archivo": "IMG_7319.MOV", "desde": 94.74, "hasta": 109.12, "nota": "Después relevamos los protocolos: tratamientos, precios, disponibilidad, qué hacer ante una urgencia, qué puede responder el sistema, qué no y en qué casos tiene que intervenir una persona (2ª; la 1ª tropieza en 'qué hacer en tu una urgencia')" },
+    { "archivo": "IMG_7319.MOV", "desde": 122.84, "hasta": 133.72, "nota": "Con todo eso armamos un agente conversacional que atiende consultas, agenda, confirma, hace recordatorios, reprograma, cancela, cobra, hace la recepción de los pagos (2ª, completa; corta antes de la 'y' colgada)" },
+    { "archivo": "IMG_7319.MOV", "desde": 194.64, "hasta": 215.1, "nota": "Y todo esto queda dentro de un mismo sistema, un dashboard... métricas, conversaciones, agendas, recordatorios... la rentabilidad de la automatización (2ª versión, completa; la 1ª se traba en 'cómo te está favoreciendo tener la...')" },
+    { "archivo": "IMG_7319.MOV", "desde": 218.4, "hasta": 221.66, "nota": "Además, el agente no responde todo de la misma manera" },
+    { "archivo": "IMG_7319.MOV", "desde": 224.66, "hasta": 228.48, "nota": "Cada mensaje se clasifica según la intención del paciente" },
+    { "archivo": "IMG_7319.MOV", "desde": 230.64, "hasta": 241.2, "nota": "Si quiere sacar un turno va al flujo de agenda, si quiere cancelar va al flujo de cancelación (corta antes de la 'y')" },
+    { "archivo": "IMG_7319.MOV", "desde": 264.36, "hasta": 270.9, "nota": "y si detecta una posible urgencia deriva automáticamente al flujo de urgencias o a una persona, dependiendo del caso (5º y único completo)" },
+    { "archivo": "IMG_7319.MOV", "desde": 295.18, "hasta": 301.9, "nota": "La idea de todo esto es construir un sistema para el negocio que entienda lo que está pasando y qué tiene que pasar después (2ª, completa)" },
+    { "archivo": "IMG_7319.MOV", "desde": 311.34, "hasta": 314.3, "nota": "CTA: Comentá la palabra AGENTE y te muestro uno funcionando" }
+  ],
+  "propuesta": "editor 2026-09-28: última versión completa por frase (islas de voz); pendiente cruzar con la mirada. Lucas la ajusta con npm run cortar -- asi-se-automatiza"
+}

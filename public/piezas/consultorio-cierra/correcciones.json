@@ -1,0 +1,24 @@
+{
+  "_comentario": "v1 (2026-09-28), transcripto con medium (large-v3 no entró en memoria). La cifra es 700 (Lucas lo confirmó: small oía 700, medium 'seis... cientos').",
+  "reemplazos": [
+    ["en doce días entraba más de seis cientos mensajes de pacientes", "En 12 días entraron más de 700 mensajes de pacientes"],
+    ["uno de cada tres chigaron cuando", "Uno de cada tres llegaron cuando"],
+    ["consultas de las siete urgencias cinco cayeron", "consultas: de las 7 urgencias, 5 cayeron"],
+    ["fuera de horario así", "fuera de horario. Así"],
+    ["no es si te", "no es si te"]
+  ],
+  "tramos": [
+    {
+      "desde": 24.7,
+      "hasta": 26.8,
+      "nota": "'cerras. Si no, ¿quién les conteste?' -> 'cerrás, sino quién les contesta.' con los tiempos de medium (un reemplazo con otra cantidad de palabras cruzaba el corte del CTA en 26.88)",
+      "palabras": [
+        { "word": "cerrás,", "start": 24.77, "end": 25.09 },
+        { "word": "sino", "start": 25.29, "end": 25.87 },
+        { "word": "quién", "start": 25.97, "end": 26.11 },
+        { "word": "les", "start": 26.11, "end": 26.45 },
+        { "word": "contesta.", "start": 26.45, "end": 26.67 }
+      ]
+    }
+  ]
+}

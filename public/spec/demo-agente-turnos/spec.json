@@ -1,0 +1,180 @@
+{
+  "titulo": "Nexora — Agente de turnos (demo del formato)",
+  "tipoPieza": "spec",
+  "concepto": "El consultorio cerró, pero su WhatsApp sigue atendiendo: una luz verde lleva el mensaje del paciente hasta el turno confirmado.",
+  "motivo": "Una línea de luz verde (el mensaje): entra al logo, viaja hasta el teléfono cuando escribe el paciente, subraya el tagline y se apaga en el end card.",
+  "marca": { "nombre": "Nexora", "color": "#22C55E", "fondo": "#04070A", "fuente": "satoshi" },
+  "duracionS": 23.4,
+  "escenas": [
+    {
+      "id": "S01",
+      "nombre": "Logo",
+      "tipo": "apertura",
+      "origen": "codigo",
+      "desdeS": 0,
+      "hastaS": 2.4,
+      "empuje": 1.04,
+      "datos": { "logo": "reserva/img/nexora-logo-white.png", "revientaS": 1.0 },
+      "linea": [
+        {
+          "puntos": [[-0.05, 0.72], [0.22, 0.66], [0.38, 0.5], [0.5, 0.5]],
+          "puntosVertical": [[-0.05, 0.62], [0.2, 0.6], [0.36, 0.5], [0.5, 0.5]],
+          "desdeS": 0.05,
+          "hastaS": 1.0,
+          "cola": 0.4,
+          "apagaS": 1.05
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "nombre": "El paciente escribe",
+      "tipo": "dispositivo",
+      "origen": "codigo",
+      "desdeS": 2.4,
+      "hastaS": 9.8,
+      "brillo": { "intensidad": 0.9 },
+      "datos": {
+        "lado": "derecha",
+        "giro": { "desde": [10, -24, 3], "hasta": [4, -12, 1] },
+        "pantalla": {
+          "tipo": "chat",
+          "contacto": "Martina",
+          "hora": "23:58",
+          "mensajes": [
+            { "de": "cliente", "texto": "Hola! ¿Tienen turno para una limpieza esta semana?", "atS": 0.9, "escribeS": 0.35 },
+            { "de": "negocio", "texto": "¡Hola Martina! Sí: jueves 10:30 o viernes 16:00. ¿Cuál te queda mejor?", "atS": 2.4, "escribeS": 1.6 },
+            { "de": "cliente", "texto": "Jueves 10:30", "atS": 3.9, "escribeS": 3.4 }
+          ],
+          "turno": { "etiqueta": "Limpieza dental", "detalle": "Jueves · 10:30", "confirmado": "Confirmado", "atS": 5.0, "confirmaS": 5.8 }
+        },
+        "textos": [
+          { "atS": 0.5, "lineas": [{ "palabras": "Un paciente escribe" }, { "palabras": [{ "t": "a las" }, { "t": "23:58", "acento": true }] }] },
+          { "atS": 2.4, "lineas": [{ "palabras": "Y alguien responde" }, { "palabras": [{ "t": "al" }, { "t": "instante.", "acento": true }] }] },
+          { "atS": 5.0, "lineas": [{ "palabras": [{ "t": "Turno" }, { "t": "confirmado.", "acento": true }] }] }
+        ]
+      },
+      "linea": [
+        {
+          "puntos": [[0.5, 1.05], [0.545, 0.78], [0.57, 0.5], [0.615, 0.33]],
+          "puntosVertical": [[0.0, 1.0], [0.25, 0.8], [0.42, 0.58], [0.5, 0.42]],
+          "desdeS": 0.15,
+          "hastaS": 0.9,
+          "cola": 0.35,
+          "apagaS": 1.0
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "nombre": "Agenda, confirma, recuerda",
+      "tipo": "tarjetas",
+      "origen": "codigo",
+      "desdeS": 9.8,
+      "hastaS": 14.6,
+      "brillo": { "x": 0.68, "y": 0.5 },
+      "datos": {
+        "tarjetas": [
+          { "titulo": "Turno agendado", "detalle": "Jueves 10:30 · Limpieza", "icono": "googlecalendar", "check": true, "atS": 0.3 },
+          { "titulo": "Paciente confirmó", "detalle": "Respondió por WhatsApp", "icono": "whatsapp", "check": true, "atS": 1.5 },
+          { "titulo": "Recordatorio enviado", "detalle": "Miércoles 18:00 · 16 h antes", "icono": "whatsapp", "check": true, "atS": 2.7 }
+        ],
+        "textos": [
+          {
+            "atS": 0.3,
+            "pasoS": 1.2,
+            "lineas": [{ "palabras": "Agenda." }, { "palabras": "Confirma." }, { "palabras": [{ "t": "Recuerda.", "acento": true }] }]
+          }
+        ]
+      }
+    },
+    {
+      "id": "S04",
+      "nombre": "Consultorio de noche",
+      "tipo": "plate",
+      "origen": "higgsfield",
+      "desdeS": 14.6,
+      "hastaS": 17.6,
+      "empuje": 1.0,
+      "datos": {
+        "prompt": "Dark dental clinic reception at night, lights off, empty waiting chairs, a single smartphone glowing on the front desk lighting the counter in soft green, cinematic, shallow depth of field, slow push-in, no people, no text",
+        "modelo": "soul_cinematic (plate) → seedance_2_5 (3 s, push-in)",
+        "empuje": 1.08,
+        "oscurecer": 0.4,
+        "textos": [{ "atS": 0.35, "lineas": [{ "palabras": "Sin que levantes" }, { "palabras": [{ "t": "el" }, { "t": "teléfono.", "acento": true }] }] }]
+      }
+    },
+    {
+      "id": "S05",
+      "nombre": "Tagline",
+      "tipo": "frase",
+      "origen": "codigo",
+      "desdeS": 17.6,
+      "hastaS": 20.4,
+      "brillo": { "intensidad": 0.8 },
+      "empuje": 1.03,
+      "datos": {
+        "textos": [{ "atS": 0.15, "pasoS": 0.12, "lineas": [{ "palabras": "Tu consultorio," }, { "palabras": [{ "t": "abierto" }, { "t": "24/7.", "acento": true }] }] }]
+      },
+      "linea": [
+        {
+          "puntos": [[0.3, 0.64], [0.5, 0.655], [0.7, 0.64]],
+          "puntosVertical": [[0.14, 0.585], [0.5, 0.595], [0.86, 0.585]],
+          "desdeS": 0.9,
+          "hastaS": 1.55,
+          "grosor": 5
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "nombre": "End card",
+      "tipo": "cierre",
+      "origen": "codigo",
+      "desdeS": 20.4,
+      "hastaS": 23.4,
+      "empuje": 1.03,
+      "datos": { "logo": "reserva/img/nexora-logo-white.png", "bajada": "Agentes de IA para tu negocio", "apagaS": 2.0 }
+    }
+  ],
+  "voz": [
+    { "atS": 2.9, "carril": "A", "texto": "Un paciente te escribe a medianoche." },
+    { "atS": 4.9, "carril": "B", "texto": "Y alguien le responde al instante." },
+    { "atS": 10.0, "carril": "A", "texto": "Agenda. Confirma. Recuerda." },
+    { "atS": 14.9, "carril": "B", "texto": "Sin que levantes el teléfono." },
+    { "atS": 17.8, "carril": "A", "texto": "Tu consultorio, abierto las 24 horas." },
+    { "atS": 20.7, "carril": "B", "texto": "Nexora." }
+  ],
+  "musica": [
+    { "nombre": "cama con stems", "nota": "Tema de biblioteca con stems (drums / bass / pad), ~100 BPM, sin voz. Pad solo hasta 2.4 s, entran drums con el teléfono, drop en 17.6 s (tagline), todo se corta en 22.4 s con el apagado del logo." }
+  ],
+  "sfx": [
+    { "atS": 0.15, "nombre": "trazo", "categoria": "luz", "nota": "entra la línea de luz", "volumen": 0.3 },
+    { "atS": 1.0, "nombre": "remate", "categoria": "golpe", "nota": "revienta el logo", "volumen": 0.45 },
+    { "atS": 2.4, "nombre": "escena-entra", "categoria": "whoosh", "nota": "entra el teléfono", "volumen": 0.35 },
+    { "atS": 3.3, "nombre": "burbuja", "categoria": "ui", "nota": "mensaje del paciente", "volumen": 0.4 },
+    { "atS": 4.8, "nombre": "burbuja", "categoria": "ui", "nota": "responde el agente", "volumen": 0.4 },
+    { "atS": 6.3, "nombre": "burbuja", "categoria": "ui", "nota": "elige jueves 10:30", "volumen": 0.4 },
+    { "atS": 7.4, "nombre": "tarjeta", "categoria": "ui", "nota": "tarjeta del turno", "volumen": 0.35 },
+    { "atS": 8.2, "nombre": "check-b", "categoria": "ui", "nota": "turno confirmado", "volumen": 0.4 },
+    { "atS": 9.8, "nombre": "escena-entra", "categoria": "whoosh", "nota": "entran las tarjetas", "volumen": 0.35 },
+    { "atS": 10.1, "nombre": "tarjeta", "categoria": "ui", "nota": "turno agendado", "volumen": 0.35 },
+    { "atS": 10.43, "nombre": "check-b", "categoria": "ui", "nota": "check 1", "volumen": 0.3 },
+    { "atS": 11.3, "nombre": "tarjeta-b", "categoria": "ui", "nota": "paciente confirmó", "volumen": 0.35 },
+    { "atS": 11.63, "nombre": "check-b", "categoria": "ui", "nota": "check 2", "volumen": 0.3 },
+    { "atS": 12.5, "nombre": "tarjeta-c", "categoria": "ui", "nota": "recordatorio enviado", "volumen": 0.35 },
+    { "atS": 12.83, "nombre": "check-b", "categoria": "ui", "nota": "check 3", "volumen": 0.3 },
+    { "atS": 14.6, "nombre": "corte-broll", "categoria": "whoosh", "nota": "corte al consultorio de noche", "volumen": 0.35 },
+    { "atS": 17.6, "nombre": "escena-entra", "categoria": "whoosh", "nota": "entra el tagline", "volumen": 0.35 },
+    { "atS": 18.5, "nombre": "trazo", "categoria": "luz", "nota": "la línea subraya 24/7", "volumen": 0.3 },
+    { "atS": 19.15, "nombre": "remate-b", "categoria": "golpe", "nota": "remata el tagline", "volumen": 0.4 },
+    { "atS": 20.4, "nombre": "cta-cierre", "categoria": "golpe", "nota": "logo final", "volumen": 0.45 },
+    { "atS": 22.4, "nombre": "escena-sale", "categoria": "whoosh", "nota": "el logo se apaga en una línea", "volumen": 0.3 }
+  ],
+  "pendientes": [
+    "El chat es de ejemplo: para el caso Raquel va una conversación REAL de su agente (con su OK y sin datos de pacientes reales).",
+    "S04 sin plate: cotizar en Higgsfield (get_cost) y aprobar el costo antes de generar.",
+    "Voz en off sin grabar (carriles A/B): ElevenLabs o voz propia.",
+    "Música: elegir del pack un tema con stems y libre de derechos."
+  ]
+}

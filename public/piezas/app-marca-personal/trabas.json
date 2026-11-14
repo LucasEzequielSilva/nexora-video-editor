@@ -1,0 +1,109 @@
+{
+  "pieza": "app-marca-personal",
+  "fuente": "video-jc.mp4",
+  "palabras": "words.jc.json",
+  "audio": {
+    "pisoDb": -41.955,
+    "vozDb": -17.37,
+    "umbralDb": -32.121
+  },
+  "trabas": [
+    {
+      "id": "habla-sin-texto-1807",
+      "desde": 18.07,
+      "hasta": 18.51,
+      "tipo": "habla-sin-texto",
+      "texto": "",
+      "detalle": "0.38 s de voz sin palabras (pico -15.4 dB)",
+      "confianza": "alta",
+      "sugerencia": {
+        "desde": 18.07,
+        "hasta": 18.51
+      },
+      "senales": [
+        "habla-sin-texto"
+      ]
+    },
+    {
+      "id": "repeticion-2802",
+      "desde": 28.02,
+      "hasta": 29.8,
+      "tipo": "repeticion",
+      "texto": "Antes todo es... Antes todo es",
+      "detalle": "\"antes todo\" repetido a 1.18 s · \"todo es\" repetido a 1.18 s · whisper dudó con \"es\" (p=0.001)",
+      "confianza": "media",
+      "sugerencia": {
+        "desde": 28.07,
+        "hasta": 29.19
+      },
+      "senales": [
+        "repeticion",
+        "baja-confianza"
+      ]
+    },
+    {
+      "id": "repeticion-3550",
+      "desde": 35.5,
+      "hasta": 38.68,
+      "tipo": "repeticion",
+      "texto": "Mi trabajo... Mi trabajo... Mi trabajo",
+      "detalle": "\"mi trabajo\" repetido a 1.38 s · \"trabajo mi\" repetido a 1.38 s · \"mi trabajo\" repetido a 1.36 s",
+      "confianza": "media",
+      "sugerencia": {
+        "desde": 35.55,
+        "hasta": 36.87
+      },
+      "senales": [
+        "repeticion"
+      ]
+    },
+    {
+      "id": "estirada-4534",
+      "desde": 45.34,
+      "hasta": 46.06,
+      "tipo": "estirada",
+      "texto": "300",
+      "detalle": "\"300\" dura 0.72 s con 0.20 s de silencio adentro (sonido suelto o respiración antes de la pausa)",
+      "confianza": "media",
+      "sugerencia": {
+        "desde": 45.37,
+        "hasta": 45.79
+      },
+      "senales": [
+        "estirada"
+      ]
+    },
+    {
+      "id": "estirada-5323",
+      "desde": 53.23,
+      "hasta": 54.4,
+      "tipo": "estirada",
+      "texto": "registraron",
+      "detalle": "\"registraron\" dura 1.16 s con 0.24 s de silencio adentro (sonido suelto o respiración antes de la pausa)",
+      "confianza": "media",
+      "sugerencia": {
+        "desde": 53.23,
+        "hasta": 53.71
+      },
+      "senales": [
+        "estirada"
+      ]
+    },
+    {
+      "id": "repeticion-10427",
+      "desde": 104.27,
+      "hasta": 105.43,
+      "tipo": "repeticion",
+      "texto": "y te... Y te",
+      "detalle": "\"y te\" repetido a 0.96 s",
+      "confianza": "media",
+      "sugerencia": {
+        "desde": 104.33,
+        "hasta": 105.22
+      },
+      "senales": [
+        "repeticion"
+      ]
+    }
+  ]
+}

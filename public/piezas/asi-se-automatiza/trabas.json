@@ -1,0 +1,44 @@
+{
+  "pieza": "asi-se-automatiza",
+  "fuente": "video-jc.mp4",
+  "palabras": "words.jc.json",
+  "audio": {
+    "pisoDb": -40.816,
+    "vozDb": -17.619,
+    "umbralDb": -31.537
+  },
+  "trabas": [
+    {
+      "id": "repeticion-1415",
+      "desde": 14.15,
+      "hasta": 16.29,
+      "tipo": "repeticion",
+      "texto": "Después relevamos los... Después relevamos los",
+      "detalle": "\"despues relevamos\" repetido a 1.36 s · \"relevamos los\" repetido a 1.28 s",
+      "confianza": "media",
+      "sugerencia": {
+        "desde": 14.17,
+        "hasta": 15.5
+      },
+      "senales": [
+        "repeticion"
+      ]
+    },
+    {
+      "id": "habla-sin-texto-5531",
+      "desde": 55.31,
+      "hasta": 55.63,
+      "tipo": "habla-sin-texto",
+      "texto": "",
+      "detalle": "0.24 s de voz sin palabras (pico -20.7 dB)",
+      "confianza": "media",
+      "sugerencia": {
+        "desde": 55.31,
+        "hasta": 55.63
+      },
+      "senales": [
+        "habla-sin-texto"
+      ]
+    }
+  ]
+}
