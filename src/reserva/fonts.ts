@@ -14,6 +14,8 @@ const FONTS: FontSpec[] = [
   { family: "Helvetica Neue", file: "reserva/fonts/HelveticaNeue-Bold.otf", weight: "700", style: "normal" },
   { family: "Helvetica Neue", file: "reserva/fonts/HelveticaNeue-Heavy.otf", weight: "800", style: "normal" },
   { family: "Helvetica Neue", file: "reserva/fonts/HelveticaNeue-Black.otf", weight: "900", style: "normal" },
+  { family: "Tactic Sans", file: "reserva/fonts/TacticSans-Thin.otf", weight: "100", style: "normal" },
+  { family: "Tactic Sans", file: "reserva/fonts/TacticSans-Light.otf", weight: "300", style: "normal" },
   { family: "Tactic Sans", file: "reserva/fonts/TacticSans-Bold.otf", weight: "700", style: "normal" },
   { family: "Tactic Sans", file: "reserva/fonts/TacticSans-Black.otf", weight: "900", style: "normal" },
   { family: "Bebas Neue", file: "reserva/fonts/BebasNeue-Regular.ttf", weight: "400", style: "normal" },

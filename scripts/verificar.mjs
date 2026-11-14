@@ -648,7 +648,7 @@ const chequearAudio = async () => {
       "node",
       [
         "scripts/turno.mjs", "npx", "remotion", "render", "src/index.ts", slug, rel(mezcla), "--codec=wav", "--concurrency=1",
-        "--timeout=120000", "--offthreadvideo-cache-size-in-bytes=300000000", "--log=error",
+        "--timeout=120000", "--offthreadvideo-cache-size-in-bytes=60000000", "--offthreadvideo-video-threads=1", "--log=error",
       ],
       { log: path.join(SALIDA, "render-audio.log"), mostrar: true },
     );
@@ -795,7 +795,7 @@ const chequearCamara = async () => {
     "node",
     [
       "scripts/turno.mjs", "npx", "remotion", "render", "src/index.ts", slug, rel(video), `--frames=${a}-${b}`, "--muted", "--concurrency=1",
-      "--timeout=120000", "--offthreadvideo-cache-size-in-bytes=300000000", "--log=error",
+      "--timeout=120000", "--offthreadvideo-cache-size-in-bytes=60000000", "--offthreadvideo-video-threads=1", "--log=error",
     ],
     { log: path.join(SALIDA, "render-camara.log"), mostrar: true },
   );

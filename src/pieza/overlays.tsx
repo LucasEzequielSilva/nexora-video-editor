@@ -5,7 +5,7 @@ import { ease, lerp, springAt } from "../reserva/motion";
 import { ACCENT, FPS, SHADOW, SPRING } from "../reserva/theme";
 import { msToFrame, resolverMs } from "./anclas";
 import type { CaraCuadro } from "./cara";
-import { ContenidoEscena, MarcoEscena, Recorte, SonidoEscena } from "./escenas/marco";
+import { ContenidoEscena, ENTRA, MarcoEscena, Recorte, SonidoEscena } from "./escenas/marco";
 import LogoApp from "./marca";
 import Objeto3D from "./objeto-3d";
 import type { BrollOverlay, EscenaOverlay, IconoOverlay, RawWord, StrikeOverlay } from "./types";
@@ -128,9 +128,9 @@ export const StrikeLayer = ({ overlay, words }: { overlay: StrikeOverlay; words:
   );
 };
 
-const BrollInner = ({ overlay, duration }: { overlay: BrollOverlay; duration: number }) => {
+const BrollInner = ({ overlay, duration, encadenada }: { overlay: BrollOverlay; duration: number; encadenada: boolean }) => {
   const frame = useCurrentFrame();
-  const visible = Math.min(ease(frame, [0, 6]), ease(frame, [duration - 6, duration], [1, 0]));
+  const visible = Math.min(ease(frame, [0, 6]), encadenada ? 1 : ease(frame, [duration - 6, duration], [1, 0]));
   const push = interpolate(frame, [0, duration], [1.02, overlay.zoom ?? 1.1], { extrapolateRight: "clamp" });
   return (
     <AbsoluteFill style={{ opacity: visible }}>
@@ -148,15 +148,27 @@ const BrollInner = ({ overlay, duration }: { overlay: BrollOverlay; duration: nu
   );
 };
 
-export const BrollLayer = ({ overlay, words }: { overlay: BrollOverlay; words: RawWord[] }) => {
+/** Frames que ocupa un b-roll en la pieza, o null si alguna ancla no resuelve. */
+export const rangoBroll = (overlay: BrollOverlay, words: RawWord[]): Rango | null => {
   const desde = resolverMs(overlay.desde, words);
   const hasta = resolverMs(overlay.hasta, words);
   if (desde === null || hasta === null) return null;
   const from = msToFrame(desde);
-  const duration = Math.max(1, msToFrame(hasta) - from);
+  return { from, duration: Math.max(1, msToFrame(hasta) - from) };
+};
+
+/**
+ * `encadenada`: la sigue una escena pegada. No se desvanece y se queda ENTRA cuadros más, opaca debajo, mientras la
+ * otra entra: si las dos se funden a la vez, en el cruce se ve la cara (Lucas, 2026-09-30: "no llegás a taparme por
+ * completo, se llega a ver cómo cambio la cara al mirar la cámara").
+ */
+export const BrollLayer = ({ overlay, words, encadenada = false }: { overlay: BrollOverlay; words: RawWord[]; encadenada?: boolean }) => {
+  const rango = rangoBroll(overlay, words);
+  if (!rango) return null;
+  const duration = rango.duration + (encadenada ? ENTRA : 0);
   return (
-    <Sequence from={from} durationInFrames={duration} name={`broll:${overlay.archivo}`}>
-      <BrollInner overlay={overlay} duration={duration} />
+    <Sequence from={rango.from} durationInFrames={duration} name={`broll:${overlay.archivo}`}>
+      <BrollInner overlay={overlay} duration={duration} encadenada={encadenada} />
     </Sequence>
   );
 };
@@ -223,17 +235,21 @@ export const EscenaLayer = ({
   slug,
   totalFrames,
   cara,
+  encadenada = false,
 }: {
   overlay: EscenaOverlay;
   words: RawWord[];
   slug: string;
   totalFrames: number;
   cara: (CaraCuadro | null)[];
+  /** La sigue otra escena pegada: sin salida, opaca debajo mientras la otra entra (ver BrollLayer). */
+  encadenada?: boolean;
 }) => {
   const rango = rangoEscena(overlay, words, totalFrames);
   if (!rango) return null;
-  const { from, duration } = rango;
-  const llegaAlFinal = from + duration >= totalFrames - 1;
+  const from = rango.from;
+  const duration = Math.min(totalFrames - from, rango.duration + (encadenada ? ENTRA : 0));
+  const llegaAlFinal = encadenada || from + duration >= totalFrames - 1;
   const cues: Record<string, number> = {};
   for (const [nombre, ancla] of Object.entries(overlay.cues ?? {})) {
     const ms = resolverMs(ancla, words);

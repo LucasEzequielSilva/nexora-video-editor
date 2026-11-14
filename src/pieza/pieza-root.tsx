@@ -3,12 +3,24 @@ import { FPS } from "../reserva/theme";
 import { PREVIEWS_EDITORIAL } from "./editorial/previews";
 import EscenaPreviewComp from "./escenas/preview";
 import { ESCENA_IDS, ESCENAS } from "./escenas/registry";
+import { PREVIEWS_NEON } from "./neon/previews";
 import PiezaComposition from "./pieza-composition";
 import SubtitulosEstilos from "./previews/subtitulos-estilos";
 import type { CaraTrack, PiezaConfig, PiezaProps, RawWord } from "./types";
 
 /** Piezas verticales. Cada slug lee public/piezas/<slug>/{video.mp4, words.json, props.json}. */
-const PIEZAS = ["estructura-nexora", "cuenta-juntos", "empieza-a-romperse", "anuncio-demo"] as const;
+const PIEZAS = [
+  "estructura-nexora",
+  "cuenta-juntos",
+  "empieza-a-romperse",
+  "anuncio-demo",
+  "consultorio-cierra",
+  "asi-se-automatiza",
+  "beneficios-agente",
+  "app-marca-personal",
+  "pefeto-caballedo",
+  "botas-elevate",
+] as const;
 
 const WIDTH = 1080;
 const HEIGHT = 1920;
@@ -48,6 +60,11 @@ export default function PiezaCompositions() {
       <Composition id="SubtitulosEstilos" component={SubtitulosEstilos} durationInFrames={150} fps={FPS} width={WIDTH} height={HEIGHT} />
       <Folder name="editorial">
         {PREVIEWS_EDITORIAL.map((p) => (
+          <Composition key={p.id} id={p.id} component={p.component} durationInFrames={p.durationInFrames} fps={FPS} width={WIDTH} height={HEIGHT} />
+        ))}
+      </Folder>
+      <Folder name="neon">
+        {PREVIEWS_NEON.map((p) => (
           <Composition key={p.id} id={p.id} component={p.component} durationInFrames={p.durationInFrames} fps={FPS} width={WIDTH} height={HEIGHT} />
         ))}
       </Folder>

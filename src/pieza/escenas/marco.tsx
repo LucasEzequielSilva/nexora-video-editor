@@ -9,7 +9,8 @@ import { type DatosPorEscena, ESCENAS, type EscenaId } from "./registry";
 import { TemaContext, type TemaEscena } from "./tema";
 import { type EscenaProps, type PosicionPip, RECORTE } from "./tipos";
 
-const ENTRA = 14;
+/** Cuadros que tarda una escena en entrar (exportado: la escena anterior se queda opaca debajo ese tiempo). */
+export const ENTRA = 14;
 const SALE = 10;
 /** Ojos cuando no hay cara.json (previews). */
 const OJOS_DEFAULT: Punto = { x: 480, y: 740 };

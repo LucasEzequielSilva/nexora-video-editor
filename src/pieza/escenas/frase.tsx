@@ -5,6 +5,7 @@ import { ease, lerp, springAt } from "../../reserva/motion";
 import { ACCENT, FONT, SHADOW, SPRING } from "../../reserva/theme";
 import LogoApp from "../marca";
 import type { Marca } from "../marcas-paths";
+import { type Gradiente, textoGradiente } from "../gradientes";
 import Objeto3D from "../objeto-3d";
 import { useTinta } from "./tema";
 import type { EscenaPreview, EscenaProps } from "./tipos";
@@ -19,7 +20,7 @@ export type Datos = {
    * estilo: "serif" (bajada itálica), "sans" (remate pesado), y del estilo anuncio (2026-09-27): "neon" (rosa/rojo con
    * brillo, "30 DÍAS") y "etiqueta" (negro con borde blanco, tipo sticker). animar "letras": entra letra por letra.
    */
-  lineas: { texto: string; estilo: "serif" | "sans" | "neon" | "etiqueta"; cue: string; tamano?: number; animar?: "letras" }[][];
+  lineas: { texto: string; estilo: "serif" | "sans" | "neon" | "etiqueta"; cue: string; tamano?: number; animar?: "letras"; gradiente?: Gradiente }[][];
   /** Alto (px) donde arranca el bloque de texto. Default: debajo del objeto, o 760 sin objeto. */
   textoY?: number;
   objeto?: {
@@ -202,6 +203,10 @@ export default function Frase({ durationInFrames, cues, datos }: EscenaProps<Dat
                     lineHeight: 1,
                     ...estiloTexto(p.estilo, p.tamano, tinta, tintaSuave),
                     ...(p.animar === "letras" ? {} : entra(frame, at)),
+                    // Degradé de palabra clave (2026-09-28): va después de entra() porque suma el halo al desenfoque.
+                    ...(p.gradiente
+                      ? { ...textoGradiente(p.gradiente, { sombra: false, blur: (1 - ease(frame, [at, at + 12])) * 12 }), padding: "0 0.1em", margin: "0 -0.1em" }
+                      : {}),
                   }}
                 >
                   {p.animar === "letras" ? <Letras texto={p.texto} at={at} frame={frame} /> : p.texto}

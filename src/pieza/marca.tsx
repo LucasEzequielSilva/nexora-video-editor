@@ -9,6 +9,7 @@ const ESTILO: Record<Marca, { fondo: string; glifo: string }> = {
   },
   googlecalendar: { fondo: "#ffffff", glifo: "#1A73E8" },
   gmail: { fondo: "#ffffff", glifo: "#EA4335" },
+  notion: { fondo: "#ffffff", glifo: "#000000" },
 };
 
 type LogoAppProps = {

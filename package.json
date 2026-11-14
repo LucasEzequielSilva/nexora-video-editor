@@ -9,6 +9,7 @@
     "render:reserva": "npx remotion render src/index.ts Reserva7245 out/reserva-7245.mp4 --crf=18",
     "render:reserva:draft": "npx remotion render src/index.ts Reserva7245 out/reserva-7245-draft.mp4 --scale=0.5 --crf=28",
     "recursos": "node scripts/recursos.mjs",
+    "cortar": "node scripts/cortar.mjs",
     "recortador": "node scripts/recortador.mjs",
     "tomas": "node scripts/tomas.mjs",
     "verificar": "node scripts/verificar.mjs"
